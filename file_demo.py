@@ -32,4 +32,13 @@ f1.write("new")
 f1.close()
 '''
 
+'''
+f1 = open("D:/linyouwei/python/line.txt")
+print  f1.read()
+f1.close()
+'''
+
+f1 = open("D:/linyouwei/python/line.txt")
+print  f1.readlines()
+f1.close()
 

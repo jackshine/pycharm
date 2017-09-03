@@ -1,10 +1,7 @@
 # coding=utf-8
 from selenium import  webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-url="http://115.29.142.212:8010/Home/BookPage/index.html"
-login_text = '登录'
-account = '13480251015'
-pwd = '111111b'
+
 def get_ele_time(driver,times,func):#得到一个元素在多少秒之内
     return WebDriverWait(driver,times).until(func)
 def openBrower():
@@ -33,7 +30,7 @@ def findElement(d,arg):
     pwdEle = d.find_element_by_id(arg['pwdid'])
     loginEle = d.find_element_by_id(arg['loginid'])
     return (useEle,pwdEle,loginEle)
-def sendVals(eletuple,arg):
+def sendVals(eletuple,arg):  # {'uname':account,'pwd':pwd}
     '''
     ele tuple
     acount :uname,pwd
@@ -47,20 +44,26 @@ def sendVals(eletuple,arg):
         i+=1
     eletuple[2].click()
 
-def login_test():
+def login_test(ele_dict,user_list):
     d = openBrower()#打开浏览器
     openUrl(d,url)#打开链接
-    ele_dict= {'text_id':'login_text','userid':'requestUsername',\
-               'pwdid':'requestPassword','loginid':'requestSubmit'}
     ele_tuple = findElement(d,ele_dict)
-    account_dict = {'uname':account,'pwd':pwd}
-    sendVals(ele_tuple,account_dict)
-    checkResult(d,"密码不正确")
+    for arg in user_list:
+        sendVals(ele_tuple,arg)
+        checkResult(d,ele_dict['errorid'])
 def checkResult(d,text):
         text = d.find_element_by_id("login-tip").text
         print text
 if __name__ == '__main__':
-    login_test()
+    url = "http://115.29.142.212:8010/Home/BookPage/index.html"
+    login_text = '登录'
+    account = '13480251014'
+    pwd = '111111b'
+    ele_dict = {'url':url,'text_id': login_text, 'userid': 'requestUsername', \
+                'pwdid': 'requestPassword', 'loginid': 'requestSubmit', 'uname':account,'pwd':pwd,\
+                'errorid':'该账号格式不正确'}
+    user_list = [{'uname':account,'pwd':pwd}]
+    login_test(ele_dict,user_list)
 
 
 
