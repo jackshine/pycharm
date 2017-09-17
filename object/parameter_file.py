@@ -1,7 +1,11 @@
 #coding=utf-8
 from selenium import webdriver
 from  usedata_otherWay import getInfo,get_userinfo
+from log_module import Loginfo
 import time
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 account_name = '13480251015'
 account_pwd = "111111a"
 list_Ele = []
@@ -19,7 +23,6 @@ def findEle(b,dict):
     list_Ele.append(name_Ele)
     list_Ele.append(pwd_Ele)
     list_Ele.append(login_Ele)
-    print list_Ele
     return list_Ele
 def sendInfo(list,arg):
     b = 0
@@ -28,7 +31,6 @@ def sendInfo(list,arg):
     # pwd_Ele = b.find_element_by_id("requestPassword")
     # login_Ele = b.find_element_by_id("requestSubmit")
     list_key = ['uname','pwd']
-    print list
     b = 0
     for i in list_key:
         list[b].send_keys("")
@@ -36,26 +38,43 @@ def sendInfo(list,arg):
         b+=1
     list[2].click()
 #检查结果
-def checkResult(b,text):
+def checkResult(b,err,arg,log):
+    time.sleep(3)
+    result = -1
     try:
-        a = b.find_element_by_id("login-tip").text
-        print  a
-        if b.find_element_by_id("login-tip").text==unicode(text,'utf-8'):
-            print "error"
+        e = b.find_element_by_id(err).text
+        msg = '%s %s:error:%s'%(arg['uname'],arg['pwd'],e)
+        log.log_write(msg.encode('gbk'))
     except:
-        print "Right"
+        msg = '%s %s:pass'%(arg['uname'],arg['pwd'])
+        log.log_write(msg.encode('gbk'))
+        result = True
+    return result
+def loginout(b,dict):
+    ele = b.find_element_by_link_text(dict['loginout']).click()
 def login_test(dict,user_list):
      #获得句柄
     b = getHandler()
     #打开浏览器
     openUrl(b,dict['url'])
+    log = Loginfo()
     #查找元素，得到一个元组
     list = findEle(b,dict)
     #插入登录信息
-    for i in user_list:
-        sendInfo(list,i)
-    #检查结果
-    checkResult(b,dict['errorid'])
+    for arg in user_list:
+        print '123'
+        print list
+        print arg
+        sendInfo(list,arg)
+        result = checkResult(b, dict['errorid'],arg,log)
+        if result:
+            time.sleep(2)
+        #退出登录，重新进入
+            loginout(b,dict)
+            time.sleep(2)
+            list = findEle(b, dict)
+            #检查结果
+    log.log_close()
 if __name__ == "__main__":
     print("aaa")
     dict = getInfo(r"D:\linyouwei\python\pycharm\object\webinfo.txt")
