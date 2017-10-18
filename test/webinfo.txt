@@ -1,0 +1,6 @@
+url="http://115.29.142.212:8010/Home/BookPage/index.html"
+text_id=登录
+userid=requestUsername
+pwdid=requestPassword
+loginid=requestSubmit
+errorid=用户不存在
