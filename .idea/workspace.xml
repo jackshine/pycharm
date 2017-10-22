@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test19.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test18_way1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test18_way2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test19_way2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test23_way2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test23_way3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/p_test23_way4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Practice/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jenkins/asset/pyunit_unittest_demo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jenkins/asset/pyunit_unittest_jenkins.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Practice/p_test19.py" afterPath="$PROJECT_DIR$/Practice/p_test19.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jenkins/asset/asset_demo.py" afterPath="$PROJECT_DIR$/Practice/p_test23_way1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +28,13 @@
     <SUITE FILE_PATH="coverage/pycharm$https_demo.coverage" NAME="https_demo Coverage Results" MODIFIED="1507958408033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$destroy_demo.coverage" NAME="destroy_demo Coverage Results" MODIFIED="1504411599710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk_demo.coverage" NAME="os_walk_demo Coverage Results" MODIFIED="1504406249477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test18_way1.coverage" NAME="p_test18_way1 Coverage Results" MODIFIED="1508569529326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods.coverage" NAME="Unittests for basic_demo.TestStringMethods Coverage Results" MODIFIED="1503417202207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_post.coverage" NAME="jenkins_build_post Coverage Results" MODIFIED="1508340794768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_urllib2_get.coverage" NAME="jenkins_urllib2_get Coverage Results" MODIFIED="1508248629458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_demo.coverage" NAME="jenkins_build_demo Coverage Results" MODIFIED="1508340862312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$http_demo.coverage" NAME="http_demo Coverage Results" MODIFIED="1507960189476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test23_way2.coverage" NAME="p_test23_way2 Coverage Results" MODIFIED="1508606044682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk.coverage" NAME="os_walk Coverage Results" MODIFIED="1504405524923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$test_demo7.coverage" NAME="test_demo7 Coverage Results" MODIFIED="1508424347498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
     <SUITE FILE_PATH="coverage/pycharm$alert_click__1_.coverage" NAME="alert_click (1) Coverage Results" MODIFIED="1503733669390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -36,17 +48,25 @@
     <SUITE FILE_PATH="coverage/pycharm$httplib_get.coverage" NAME="httplib_get Coverage Results" MODIFIED="1508046306444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/httplib" />
     <SUITE FILE_PATH="coverage/pycharm$copy_demo.coverage" NAME="copy_demo Coverage Results" MODIFIED="1508426926987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
     <SUITE FILE_PATH="coverage/pycharm$requests_makecard_demo.coverage" NAME="requests_makecard_demo Coverage Results" MODIFIED="1508343598916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
+    <SUITE FILE_PATH="coverage/pycharm$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1508565761124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test23_way1.coverage" NAME="p_test23_way1 Coverage Results" MODIFIED="1508605367688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$simulate_mouse.coverage" NAME="simulate_mouse Coverage Results" MODIFIED="1503589827996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
-    <SUITE FILE_PATH="coverage/pycharm$test.coverage" NAME="test Coverage Results" MODIFIED="1508429618163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/pycharm$test.coverage" NAME="test Coverage Results" MODIFIED="1508654269811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$exception_demo.coverage" NAME="exception_demo Coverage Results" MODIFIED="1504408276521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test18_way2.coverage" NAME="p_test18_way2 Coverage Results" MODIFIED="1508571778072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_getJob.coverage" NAME="jenkins_build_getJob Coverage Results" MODIFIED="1508254508030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$test_demo8.coverage" NAME="test_demo8 Coverage Results" MODIFIED="1508430934703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_requests_post__1_.coverage" NAME="jenkins_build_requests_post (1) Coverage Results" MODIFIED="1508342446711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test23_way4.coverage" NAME="p_test23_way4 Coverage Results" MODIFIED="1508654323653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build.coverage" NAME="jenkins_build Coverage Results" MODIFIED="1508166645299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$get_demo.coverage" NAME="get_demo Coverage Results" MODIFIED="1507903513099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase Coverage Results" MODIFIED="1508657005232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods_test_upper.coverage" NAME="Unittests for basic_demo.TestStringMethods.test_upper Coverage Results" MODIFIED="1503417623133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$Extends_demo.coverage" NAME="Extends_demo Coverage Results" MODIFIED="1504411877675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test19_way2.coverage" NAME="p_test19_way2 Coverage Results" MODIFIED="1508566206274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample Coverage Results" MODIFIED="1508656824045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$file_demo.coverage" NAME="file_demo Coverage Results" MODIFIED="1504193397929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4 Coverage Results" MODIFIED="1508675603788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_httplib_get.coverage" NAME="jenkins_httplib_get Coverage Results" MODIFIED="1508248407359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$requests_cancelcard_demo.coverage" NAME="requests_cancelcard_demo Coverage Results" MODIFIED="1508249954265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
     <SUITE FILE_PATH="coverage/pycharm$module.coverage" NAME="module Coverage Results" MODIFIED="1503797432910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -58,7 +78,8 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods_test_isupper.coverage" NAME="Unittests for basic_demo.TestStringMethods.test_isupper Coverage Results" MODIFIED="1503417320112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$autumated_test.coverage" NAME="autumated_test Coverage Results" MODIFIED="1504429276329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/object" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_get.coverage" NAME="jenkins_build_get Coverage Results" MODIFIED="1508342401412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
-    <SUITE FILE_PATH="coverage/pycharm$p_test19.coverage" NAME="p_test19 Coverage Results" MODIFIED="1508509287046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_1_div_1.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_1_div_1 Coverage Results" MODIFIED="1508675646748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test19.coverage" NAME="p_test19 Coverage Results" MODIFIED="1508515108240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_requests_post.coverage" NAME="jenkins_build_requests_post Coverage Results" MODIFIED="1508341586003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$alert_click.coverage" NAME="alert_click Coverage Results" MODIFIED="1503733120181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$Parameterization.coverage" NAME="Parameterization Coverage Results" MODIFIED="1504429306403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/object" />
@@ -66,7 +87,10 @@
     <SUITE FILE_PATH="coverage/pycharm$post_demo.coverage" NAME="post_demo Coverage Results" MODIFIED="1508254591757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$requests_getcard_demo.coverage" NAME="requests_getcard_demo Coverage Results" MODIFIED="1508339048048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
     <SUITE FILE_PATH="coverage/pycharm$private_attr_demo.coverage" NAME="private_attr_demo Coverage Results" MODIFIED="1504413413948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test23_way3.coverage" NAME="p_test23_way3 Coverage Results" MODIFIED="1508605919194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$pyunit_unittest_jenkins.coverage" NAME="pyunit_unittest_jenkins Coverage Results" MODIFIED="1508679421799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$requests_api.coverage" NAME="requests_api Coverage Results" MODIFIED="1508162291989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_pyunit_unIttest_demo_py.coverage" NAME="Unittests in pyunit_unIttest_demo.py Coverage Results" MODIFIED="1508656831747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$request_get.coverage" NAME="request_get Coverage Results" MODIFIED="1507983940106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
   </component>
   <component name="FavoritesManager">
@@ -74,21 +98,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="p_test7.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Practice/p_test7.py">
+      <file leaf-file-name="pyunit_unittest_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jenkins/asset/pyunit_unittest_demo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="p_test19.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Practice/p_test19.py">
+      <file leaf-file-name="pyunit_unittest_jenkins.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jenkins/asset/pyunit_unittest_jenkins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="95">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -122,18 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/destroy_demo.py" />
-        <option value="$PROJECT_DIR$/Extends_demo.py" />
-        <option value="$PROJECT_DIR$/private_attr_demo.py" />
-        <option value="$PROJECT_DIR$/long_module.py" />
-        <option value="$PROJECT_DIR$/object/autumated_test.py" />
-        <option value="$PROJECT_DIR$/object/Parameterization.py" />
-        <option value="$PROJECT_DIR$/object/test.py" />
-        <option value="$PROJECT_DIR$/object/django_test.py" />
-        <option value="$PROJECT_DIR$/django/HelloWorld/HelloWorld/urls.py" />
-        <option value="$PROJECT_DIR$/django/HelloWorld/HelloWorld/settings.py" />
-        <option value="$PROJECT_DIR$/django/HelloWorld/HelloWorld/view.py" />
-        <option value="$PROJECT_DIR$/django/HelloWorld/templates/hello.html" />
         <option value="$PROJECT_DIR$/mysite/cmdb/__init__.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/templates/index.html" />
@@ -173,6 +185,18 @@
         <option value="$PROJECT_DIR$/test_demo/test.py" />
         <option value="$PROJECT_DIR$/test_demo/test_demo8.py" />
         <option value="$PROJECT_DIR$/Practice/p_test19.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test19_way2.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test18_way1.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test18_way2.py" />
+        <option value="$PROJECT_DIR$/jenkins/asset/asset_demo.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test23_way3.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test23_way2.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test23_way1.py" />
+        <option value="$PROJECT_DIR$/Practice/test.py" />
+        <option value="$PROJECT_DIR$/Practice/p_test23_way4.py" />
+        <option value="$PROJECT_DIR$/jenkins/asset/pyunit_unIttest_demo.py" />
+        <option value="$PROJECT_DIR$/jenkins/asset/pyunit_unittest_demo.py" />
+        <option value="$PROJECT_DIR$/jenkins/asset/pyunit_unittest_jenkins.py" />
       </list>
     </option>
   </component>
@@ -183,10 +207,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="433" />
-    <option name="y" value="65" />
-    <option name="width" value="1314" />
-    <option name="height" value="978" />
+    <option name="x" value="604" />
+    <option name="y" value="66" />
+    <option name="width" value="1336" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -206,8 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,17 +240,25 @@
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-              <item name="test_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="asset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="Practice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,6 +268,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\jenkins\asset" />
+      <recent name="D:\linyouwei\python\pycharm\Practice" />
       <recent name="D:\linyouwei\python\pycharm\test_demo" />
       <recent name="D:\linyouwei\python\pycharm\jenkins" />
     </key>
@@ -257,111 +289,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.p_test19">
-    <configuration name="copy_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pyunit_unittest_jenkins">
+    <configuration name="Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jenkins/asset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_demo/copy_demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;jenkins.asset.pyunit_unittest_demo.MyfirstTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="p_test19" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_1_div_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jenkins/asset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/p_test19.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_1_div_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_3_div_4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jenkins/asset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_demo/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_3_div_4&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="test_demo7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in pyunit_unittest_demo.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jenkins/asset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_demo/test_demo7.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/jenkins/asset/pyunit_unittest_demo.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="test_demo8" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pyunit_unittest_jenkins" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jenkins/asset" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_demo/test_demo8.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jenkins/asset/pyunit_unittest_jenkins.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test_demo7" />
-      <item index="1" class="java.lang.String" itemvalue="Python.copy_demo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_demo8" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.p_test19" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in pyunit_unittest_demo.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_3_div_4" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_1_div_1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pyunit_unittest_jenkins" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.p_test19" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_demo8" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.copy_demo" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_demo7" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pyunit_unittest_jenkins" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_1_div_1" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase.test_3_div_4" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for jenkins.asset.pyunit_unittest_demo.MyfirstTestCase" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in pyunit_unittest_demo.py" />
       </list>
     </recent_temporary>
   </component>
@@ -464,37 +484,53 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_basic_demo_TestStringMethods - 2017.08.22 at 23h 53m 22s.xml">
-      <configuration name="Unittests for basic_demo.TestStringMethods" configurationId="tests" />
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase - 2017.10.22 at 15h 23m 25s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_basic_demo_TestStringMethods_test_isupper - 2017.08.22 at 23h 55m 20s.xml">
-      <configuration name="Unittests for basic_demo.TestStringMethods.test_isupper" configurationId="tests" />
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_1_div_1 - 2017.10.22 at 20h 34m 06s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_1_div_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_basic_demo_TestStringMethods_test_upper - 2017.08.22 at 23h 55m 50s.xml">
-      <configuration name="Unittests for basic_demo.TestStringMethods.test_upper" configurationId="tests" />
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4 - 2017.10.22 at 17h 18m 23s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_basic_demo_TestStringMethods_test_upper - 2017.08.22 at 23h 56m 02s.xml">
-      <configuration name="Unittests for basic_demo.TestStringMethods.test_upper" configurationId="tests" />
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4 - 2017.10.22 at 20h 33m 24s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_basic_demo_TestStringMethods_test_upper - 2017.08.23 at 00h 00m 23s.xml">
-      <configuration name="Unittests for basic_demo.TestStringMethods.test_upper" configurationId="tests" />
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample - 2017.10.22 at 14h 50m 19s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample - 2017.10.22 at 14h 50m 33s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample - 2017.10.22 at 15h 19m 23s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample - 2017.10.22 at 15h 20m 24s.xml">
+      <configuration name="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_pyunit_unIttest_demo_py - 2017.10.22 at 14h 47m 41s.xml">
+      <configuration name="Unittests in pyunit_unIttest_demo.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_pyunit_unIttest_demo_py - 2017.10.22 at 15h 20m 31s.xml">
+      <configuration name="Unittests in pyunit_unIttest_demo.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="433" y="65" width="1314" height="978" extended-state="0" />
+    <frame x="604" y="66" width="1336" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25279108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29265404" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48815167" sideWeight="0.23444976" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.579096" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5089021" sideWeight="0.7445141" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3221003" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953104" sideWeight="0.41845495" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48815167" sideWeight="0.76555026" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2950058" sideWeight="0.49799886" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -505,7 +541,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2950058" sideWeight="0.49799886" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -558,77 +593,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/cmdb/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/cmdb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/crawler_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/soft/python/Lib/socket.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="552" column="0" lean-forward="false" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/soft/python/Lib/httplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18981">
-          <caret line="1004" column="43" lean-forward="false" selection-start-line="1004" selection-start-column="34" selection-end-line="1004" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/request.py" />
-    <entry file="file://$PROJECT_DIR$/interface/https_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/requests_post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interface/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
@@ -829,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,14 +821,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test18_way2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test18_way1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test19_way2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test23_way1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test23_way3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test23_way4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/python/Lib/unittest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/p_test23_way2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Practice/p_test19.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="279">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/asset/pyunit_unittest_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/asset/pyunit_unittest_jenkins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>

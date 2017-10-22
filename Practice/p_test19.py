@@ -1,7 +1,7 @@
 #encoding=utf8
 def yinzi(x):
     a = []
-    for i in range(1,x):
+    for i in range(1,x/2+1):
         if (x%i==0):
             a.append(i)
         else:
@@ -17,7 +17,7 @@ def isWanShu(a,x):
         return False
 if __name__ == '__main__':
     c = []
-    for i in range(1,10000):
+    for i in range(1,100000):
       a  = yinzi(i)
       if(isWanShu(a,i)):
           c.append(i)
