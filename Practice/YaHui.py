@@ -9,7 +9,7 @@
 1 6 15 20 15 6 1
 1 7 21 35 35 21 7 1
 '''
-#传入一个值就可以得到其
+#传入一个值就可以得到其杨辉三角
 def yang_hui(n):
     a=[[0 for x in range(n)] for y in range(n)]
     #i是行
