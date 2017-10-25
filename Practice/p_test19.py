@@ -21,4 +21,4 @@ if __name__ == '__main__':
       a  = yinzi(i)
       if(isWanShu(a,i)):
           c.append(i)
-    print c
+    print(c)

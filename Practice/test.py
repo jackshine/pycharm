@@ -1,7 +1,12 @@
 #encoding=utf8
-#将一个列表的数据复制到另一个列表中。
-
+def triangles(max):
+    L = [1]
+    n = 0
+    while n<max:
+        yield L
+        L.append(0)
+        L = [L[i-1]+L[i] for i in range(len(L))]
+        n +=1
 if __name__ == '__main__':
-    n = 3
-    a=[[0 for x in range(n)] for y in range(n)]
-    print(a)
+    for i in triangles(10) :
+        print(i)
