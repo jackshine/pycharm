@@ -17,4 +17,4 @@ if __name__ =="__main__":
     num = 2
     for i in range(1,accout+1):
         sum += qiuhe(num,i)
-    print sum
+    print(sum)
