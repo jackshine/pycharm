@@ -7,4 +7,4 @@ d = {'x': 'A', 'y': 'B', 'z': 'C' }
 print([k + '=' + v for k, v in d.items()])
 
 L = ['Hello', 'World', 'IBM', 'Apple']
-print([s.lower() for s in L])`
+print([s.lower() for s in L])
