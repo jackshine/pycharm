@@ -18,6 +18,6 @@ def primes():
 # 打印1000以内的素数:
 for n in primes():
     if n < 1000:
-        print(n)
+        pass#print(n)
     else:
         break
