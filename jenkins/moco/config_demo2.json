@@ -1,0 +1,34 @@
+[{
+  "request":
+  {
+    "uri":"/posts/1",
+    "method":"get"
+  },
+  "response":
+  {
+    "file":"post1.json"
+  }
+},
+  {
+  "request":
+  {
+    "uri":"/posts/2",
+     "method":"get"
+  },
+  "response":
+  {
+    "file":"post2.json"
+  }
+},
+  {
+  "request":
+  {
+    "uri":"/posts/3",
+    "method":"get"
+  },
+  "response":
+  {
+    "file":"post3.json"
+  }
+}
+]

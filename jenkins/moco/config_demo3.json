@@ -43,19 +43,5 @@
       "template":"${req.queries['limit']}"
      }
   }
-},
-  {
-  "request":
-  {
-    "uri":"/posts",
-    "method":"post",
-    "file":{
-      "json":"create_post.json"
-    }
-  },
-  "response":
-  {
-    "json":{"success":"true"}
-  }
 }
 ]

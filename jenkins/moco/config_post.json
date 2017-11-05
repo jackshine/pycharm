@@ -1,0 +1,12 @@
+[{
+  "request":
+  {
+    "uri":"/posts"
+  },
+  "response":
+  {
+    "file":"all_posts.json"
+      }
+    ]
+  }
+}]
