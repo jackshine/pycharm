@@ -7,8 +7,7 @@ class test2(unittest.TestCase):
     def tearDown(self):
         print("end")
     def test_aa(self):
-        self.data = requests.post("http://127.0.0.1:16823/posts").json()
+        self.data = requests.post("http://127.0.0.1:16823/posts")
         print(self.data)
 if __name__ == "__main__":
-    a = test2()
-    a.test_aa()
+    unittest.main()

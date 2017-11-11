@@ -1,0 +1,61 @@
+[{
+  "request":
+  {
+    "uri":"/posts/1",
+    "method":"get"
+  },
+  "response":
+  {
+    "file":"post1.json"
+  }
+},
+  {
+  "request":
+  {
+    "uri":"/posts/2",
+     "method":"get"
+  },
+  "response":
+  {
+    "file":"post2.json"
+  }
+},
+  {
+  "request":
+  {
+    "uri":"/posts/3/comments",
+    "method":"get"
+  },
+  "response":
+  {
+    "file":"post3_comment.json"
+  }
+},
+  {
+  "request":
+  {
+    "uri":"/temp",
+    "method":"get"
+  },
+  "response":
+  {
+    "text":{
+      "template":"${req.queries['limit']}"
+     }
+  }
+},
+  {
+  "request":
+  {
+    "uri":"/posts",
+    "method":"post",
+    "file":{
+      "json":"create_post.json"
+    }
+  },
+  "response":
+  {
+    "json":{"success":"true"}
+  }
+}
+]

@@ -1,6 +1,12 @@
-#incoding=utf-8
+#encoding=utf-8
 import requests
-url='http://qrm.uclbrt.com/mobile/user/login'
-data={'areaCode': '86', 'account': '18023496351','passwd': 't+wp6q7iDmh2/REdbSaHP7oYwf7B0h14uxQas6g/2MyRV7i8Lm15WgcOSVPAY7sRQn3lpdobaSvLXrqciL8H/4gG0TYGoRjziQi++ZzpiLfVPmLaJdXA6B7sXOOUcT6/N3XjDKZVFvohU3uMTOil6okJpjz88DfusPpjjzyjJgJAazI2cPfJ74xt80z6CebIGlRWrWRJnHO5bZ0EK6GrrMmLYycSfGfgMrpoeUyuoOnoQ6cMFBqoP6ewvjsRgUjdX2Yg6bKgMMyyqoSznjIUl3SXWp05U8D4VQDm0Cl63mXBmb/075YY82nnE8CuO/nW8MPeqXS5H9o0XRVBoVKTVg=='}
-r = requests.post(url,data)
-print r.text
+data = {"areaCode":"86","account":"13480251015",
+        "passwd":'''PmB63By77hCrBpaq0oAIS03BOMZu9dFahAV3hu+U4wpgl+YhlGUoCIPKJ9WZsQJYHmdJTe6yYdq+
+5Tg+lEEXXMyS6xPO+KRvuLadi84InZzBznmwN96NZ3eH3FC7kjKNYp2c5Sp57P06cCMdPgzRFu0+
+S1UK4IRb+WMiyqkSFzdo/UU4qnxIb66i3oqGoGdrA8z/AmWBOFybxwUjPTEe6Xz5ypxU7vvFtI2i
+szwd53vbMT/12nibrtpNhbr6hZYdxMY5M91u5XUPaV+ilMtUP2hFKEjnOm0Hzr3A6yxrxEBnjzEw
+bEnSq106LDyX6RH05dnmMw38eM7FrZeLePs/YQ=='''}
+print(data)
+header = {'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencode;charset=uft-8'}
+r = requests.post("http://qrm.uclbrt.com/mobile/user/login",data=data)
+print(r.text)

@@ -1,4 +1,4 @@
-#incoding=utf-8
+#encoding=utf-8
 import time
 import hashlib
 import base64
@@ -18,7 +18,7 @@ def makeCard():
               'Authorization': authen}
     url = 'https://api.uclbrt.com:8058/?c=Qrcode&a=getLink&sig=' + sig
     r = requests.post(url, json=body, headers=header, verify=False)
-    print type(json.dumps(body))
+    print(type(json.dumps(body)))
     try:
         while True:
             r = requests.post(url, data=json.dumps(body), headers=header, verify=False)
