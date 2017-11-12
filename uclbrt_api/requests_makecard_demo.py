@@ -12,8 +12,8 @@ body = {'mobile':'13480251015','communityNo':'1316880361','buildNo':'001','floor
 def makeCard():
     s = datetime.datetime.now() + datetime.timedelta(hours=-6)
     batch = s.strftime("%Y%m%d%H%M%S")
-    sig = hashlib.md5(accountSid + authToken + batch).hexdigest().upper()
-    authen = base64.b64encode(accountSid + ':' + batch)
+    sig = hashlib.md5(bytes(accountSid + authToken + batch,encoding='utf-8')).hexdigest().upper()
+    authen = base64.b64encode(bytes(accountSid + ':' + batch,encoding='utf-8'))
     header = {'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencode;charset=uft-8',
               'Authorization': authen}
     url = 'https://api.uclbrt.com:8058/?c=Qrcode&a=getLink&sig=' + sig
