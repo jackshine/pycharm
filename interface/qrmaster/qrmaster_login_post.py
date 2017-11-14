@@ -9,4 +9,4 @@ bEnSq106LDyX6RH05dnmMw38eM7FrZeLePs/YQ=='''}
 print(data)
 header = {'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencode;charset=uft-8'}
 r = requests.post("http://qrm.uclbrt.com/mobile/user/login",data=data)
-print(r.text)
+print(r.content)
