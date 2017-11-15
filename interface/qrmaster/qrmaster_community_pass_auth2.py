@@ -13,13 +13,13 @@ cookies_b = {"mz_UCLBRTUID":"9cecb07d-4eb0-4551-a7d9-8f69fafcedda",
 		   "monitor_count":"244"
 		   }
 params = {
-    "id":(None,"546"),
-    "status":(None,"3"),
-    "agencyId":(None,"1"),
-    "representative":(None,"33323"),
-    "hotelSign":(None,"00000"),
-    "brandTypeId":(None,"1"),
-    "typeSignId":(None,"1"),
+    "id":"546",
+    "status":"3",
+    "agencyId":"1",
+    "representative":"33323",
+    "hotelSign":"00000",
+    "brandTypeId":"1",
+    "typeSignId":"1",
     "authorityNote":(None,"22244"),
 }
 req_b = requests.post("http://115.29.142.212:8021/Bpass/ComAuthority/companyStatus/id/546/userloginID/1623.html",files=params,cookies=cookies_b)
