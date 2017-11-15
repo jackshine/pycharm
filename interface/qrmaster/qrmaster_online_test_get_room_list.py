@@ -6,19 +6,26 @@ import urllib.request
 from bs4 import BeautifulSoup
 #广州-客栈 13326528030
 cookies = {
-    "mz_UCLBRTUID" : "9cecb07d-4eb0-4551-a7d9-8f69fafcedda",
-    "mz_UCLBRTUSSID":"Sngt0nC9nsceKMvIzfYIxVSUUxhrx00oftuIFSBYXsG0zwodl%2BCCqjVERuVsB4PFajaSaRkQXkP6x78tmNwKrYP%2F%2BwrrDM4HmrL2lJFd2DbBacEJKVvwl6VoTJfFl%2FP8iPi5dupO2aa5vbCFKbxPH3a3fXm6ubejxrt5lUP%2B%2Fan6gZCy8q6kWIfA5SuSyf5FCK58rmHE73nt5Ze7J8EkTJUO8sokzdvk3zmffks8turupGJ8HrQ3Lu%2BBYNI1of63FMtwaGetpj%2FKmx%2BrgqKQS7gfiTCvP53T3MDDOXWNW43x4A12P%2FeNCI0WeVG0yHUiHHM%2Fljry%2F6ia5iwCHoKAoQ%3D%3D",
-    "mz_UCLBRTUSSPS":"d84dd32310c823ca3fc65714de4687ff06417e7da9f847c203f7a9e8ed90cc60421b97644b1f4b6a30e16a9e5cdad1545eb724a33556e680f1e4e58067e6c813",
-    "mz_UCLBRTPSTM":"1510658647",
+    "mz_UCLBRTUID" : "0a2c9f6f-61e6-4860-b80b-6565969b6695",
+    "mz_UCLBRTUSSID":"ckdGuvD7RCuZi0PU9CQEG4w46BxB1K4j%2FWbBYLyQZORe7QtJXw7C1f4%2FObvLLLWkNsavh4u0rvzTqgsFJ0yj%2FesRvSG7b12VRwpyDae%2FhKTbUCVTBTPao0OlS%2BBlSTB5D59I07%2BlzWsvyqbBHAphFVDz4oJXz0jop3QoG7G6jkEMs7HhCrltoWMYaJq4Hn6NRMQ7Pz1nQkBJSnj88nsGcJd9n2yuvaJ4hxIayJiG1IDuHEZ1exzO8Ctf6X%2FYSf0TRZiKAT9x3B3WlEwyIKCXA7%2BOITkIXkrXhXtRwBXka99PUM9shrehJP6FyWQjz%2F7szipbIcE%2B826FL6gQo0jwiA%3D%3D",
+    "mz_UCLBRTUSSPS":"b425a3c2bc4f5045d71b99b6540fcece08abe89b5924e0250bb51737495fd5f62df07ba1ddbe987449f228a9e7cf6699aa2596159210af6b33e5b3097ff313f2",
+    "mz_UCLBRTPSTM":"1510414270",
     "mz_think_language":"zh_cn",
     "mz_room_view_style":"1",
-    "master_session_id":"jn7trpc6lulbsna7igb803e007",
+    "master_session_id":"1vlvsmllah845sep076qg0g693",
     "qrm_community_identity":"P1D3MQVxdpVJLzdY",
     "monitor_count":"70",
     "qrm_think_language":"zh_cn"}
 host = "http://115.29.142.212:8020"
 url = "/room.html"
-page = urllib.request.urlopen(host+url)
-html_doc = page.read()
+link = host+url
+print(link)
+#page = urllib.request.urlopen(link)
+req = requests.get(link,cookies=cookies)
+html_doc = req.text
 soup = BeautifulSoup(html_doc)
-print(soup.prettify())
+#print(soup.prettify())
+#print(soup.find_all('td',attrs={'class':'col-xs-3'}))
+info = soup.find_all('td',attrs={'data-value':True})
+print(info.name)
+
