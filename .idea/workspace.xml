@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_session_test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_add_room.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_add_room_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_app_get_room_list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_community_authenication.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_community_pass_auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_community_pass_auth2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_create_community.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_local_add_room.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_login_post.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_add_room.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_delete_room.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list2.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py" afterPath="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +70,9 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods_test_upper.coverage" NAME="Unittests for basic_demo.TestStringMethods.test_upper Coverage Results" MODIFIED="1503417623133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$requests_get_cookies_demo2.coverage" NAME="requests_get_cookies_demo2 Coverage Results" MODIFIED="1510414704897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
     <SUITE FILE_PATH="coverage/pycharm$file_demo.coverage" NAME="file_demo Coverage Results" MODIFIED="1504193397929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2.coverage" NAME="qrmaster_cookies_urllib2 Coverage Results" MODIFIED="1510845707831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$p_test29.coverage" NAME="p_test29 Coverage Results" MODIFIED="1508947059001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2_test.coverage" NAME="qrmaster_cookies_urllib2_test Coverage Results" MODIFIED="1510848337278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$feibonaqie4.coverage" NAME="feibonaqie4 Coverage Results" MODIFIED="1509030433115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_httplib_get.coverage" NAME="jenkins_httplib_get Coverage Results" MODIFIED="1508248407359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$request.coverage" NAME="request Coverage Results" MODIFIED="1507964144632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
@@ -62,6 +80,7 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_moco_demo2_test2_test_aa.coverage" NAME="Unittests for moco_demo2.test2.test_aa Coverage Results" MODIFIED="1509896551994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
     <SUITE FILE_PATH="coverage/pycharm$OperateFile.coverage" NAME="OperateFile Coverage Results" MODIFIED="1510502603774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/package/Model" />
     <SUITE FILE_PATH="coverage/pycharm$requests_api2.coverage" NAME="requests_api2 Coverage Results" MODIFIED="1510477103252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_login_post__1_.coverage" NAME="qrmaster_login_post (1) Coverage Results" MODIFIED="1510844257715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_urllib2_post.coverage" NAME="jenkins_urllib2_post Coverage Results" MODIFIED="1508340782760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$autumated_test.coverage" NAME="autumated_test Coverage Results" MODIFIED="1504429276329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/object" />
     <SUITE FILE_PATH="coverage/pycharm$recurion_sum.coverage" NAME="recurion_sum Coverage Results" MODIFIED="1508943352580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
@@ -102,6 +121,7 @@
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_create_community.coverage" NAME="qrmaster_create_community Coverage Results" MODIFIED="1510671729788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
     <SUITE FILE_PATH="coverage/pycharm$copy_demo.coverage" NAME="copy_demo Coverage Results" MODIFIED="1508426926987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
     <SUITE FILE_PATH="coverage/pycharm$p_test28.coverage" NAME="p_test28 Coverage Results" MODIFIED="1508946071583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2_test__1_.coverage" NAME="qrmaster_cookies_urllib2_test (1) Coverage Results" MODIFIED="1510849537512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login/garbage" />
     <SUITE FILE_PATH="coverage/pycharm$filter_sushu_demo.coverage" NAME="filter_sushu_demo Coverage Results" MODIFIED="1509288899631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$p_test23_way1.coverage" NAME="p_test23_way1 Coverage Results" MODIFIED="1508605367688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$simulate_mouse.coverage" NAME="simulate_mouse Coverage Results" MODIFIED="1503589827996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
@@ -119,6 +139,7 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase Coverage Results" MODIFIED="1508657005232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$Extends_demo.coverage" NAME="Extends_demo Coverage Results" MODIFIED="1504411877675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test19_way2.coverage" NAME="p_test19_way2 Coverage Results" MODIFIED="1508566206274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies.coverage" NAME="qrmaster_cookies Coverage Results" MODIFIED="1510848014963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$moco_get_all_interface_demo.coverage" NAME="moco_get_all_interface_demo Coverage Results" MODIFIED="1509886431994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
     <SUITE FILE_PATH="coverage/pycharm$Calculator_demo.coverage" NAME="Calculator_demo Coverage Results" MODIFIED="1509264791711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample Coverage Results" MODIFIED="1508656824045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
@@ -148,39 +169,40 @@
     <SUITE FILE_PATH="coverage/pycharm$private_attr_demo.coverage" NAME="private_attr_demo Coverage Results" MODIFIED="1504413413948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test23_way3.coverage" NAME="p_test23_way3 Coverage Results" MODIFIED="1508605919194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_jenkins_requests_get_JenkinsGetTestCase_test_get_all_job_names.coverage" NAME="Unittests for jenkins_requests_get.JenkinsGetTestCase.test_get_all_job_names Coverage Results" MODIFIED="1509634861739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_session_test.coverage" NAME="qrmaster_session_test Coverage Results" MODIFIED="1510849195544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$requests_api.coverage" NAME="requests_api Coverage Results" MODIFIED="1510475608518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$request_get.coverage" NAME="request_get Coverage Results" MODIFIED="1507983940106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="qrmaster_create_community.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/interface/qrmaster/community/qrmaster_create_community.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="249">
+                    <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="pycharm" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="qrmaster_community_authenication.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_community_authenication.py">
+      <file leaf-file-name="qrmaster_session_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/qrmaster_session_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qrmaster_community_pass_auth.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_community_pass_auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="111" lean-forward="false" selection-start-line="24" selection-start-column="111" selection-end-line="24" selection-end-column="111" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qrmaster_online_test_get_room_list.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="15" />
+            <state relative-caret-position="264">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="e#16#31#0" expanded="true" />
               </folding>
@@ -188,39 +210,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/index.html">
+      <file leaf-file-name="qrmaster_login_post.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_login_post.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="220">
+              <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrmaster_create_community.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_create_community.py">
+      <file leaf-file-name="qrmaster_cookies_urllib2_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="215">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#64#79#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bbb.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/bbb.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qrmaster_app_get_room_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_app_get_room_list.py">
+      <file leaf-file-name="qrmaster_cookies_urllib2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="189">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding>
+                <element signature="e#16#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -254,12 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jenkins/moco/config_demo3.json" />
-        <option value="$PROJECT_DIR$/jenkins/moco/moco_demo2.py" />
-        <option value="$PROJECT_DIR$/jenkins/moco/moco_post_demo.py" />
-        <option value="$PROJECT_DIR$/jenkins/moco/config.json" />
-        <option value="$PROJECT_DIR$/jenkins/moco/moco_post_demo2.py" />
-        <option value="$PROJECT_DIR$/interface/requests_demo/request_demo.py" />
         <option value="$PROJECT_DIR$/interface/requests_demo/requests_qrmaster_app_demo.py" />
         <option value="$PROJECT_DIR$/auto/auto.py" />
         <option value="$PROJECT_DIR$/interface/requests_demo/requests_qrmaster_app_demo3.py" />
@@ -305,6 +318,12 @@
         <option value="$PROJECT_DIR$/interface/qrmaster/qrmaster_community_authenication.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/qrmaster_community_pass_auth.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_login_post.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies_urllib2.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies_urllib2_test.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_session_test.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py" />
       </list>
     </option>
   </component>
@@ -315,10 +334,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="476" />
-    <option name="y" value="14" />
-    <option name="width" value="1291" />
-    <option name="height" value="969" />
+    <option name="x" value="696" />
+    <option name="y" value="33" />
+    <option name="width" value="1077" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -338,7 +357,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,11 +380,34 @@
               <item name="interface" type="462c0819:PsiDirectoryNode" />
               <item name="qrmaster" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="qrmaster" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="qrmaster" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="qrmaster" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="garbage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,19 +417,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\linyouwei\python\pycharm\interface\qrmaster" />
-      <recent name="D:\linyouwei\python\pycharm\import_test" />
-      <recent name="D:\linyouwei\python\pycharm\interface\unittest\test_case" />
-      <recent name="D:\linyouwei\python\pycharm\jenkins\moco" />
-      <recent name="D:\linyouwei\python\pycharm" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\interface\qrmaster\login" />
       <recent name="D:\linyouwei\python\pycharm\interface\qrmaster" />
       <recent name="D:\linyouwei\python\pycharm\import_test\demo" />
       <recent name="D:\linyouwei\python\pycharm\import_test\package" />
       <recent name="D:\linyouwei\python\pycharm\import_test\Operate" />
-      <recent name="D:\linyouwei\python\pycharm\import_test\Model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\interface\qrmaster\login\garbage" />
+      <recent name="D:\linyouwei\python\pycharm\interface\qrmaster" />
+      <recent name="D:\linyouwei\python\pycharm\import_test" />
+      <recent name="D:\linyouwei\python\pycharm\interface\unittest\test_case" />
+      <recent name="D:\linyouwei\python\pycharm\jenkins\moco" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,111 +444,111 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.qrmaster_online_test_get_room_list">
-    <configuration name="qrmaster_add_room" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.qrmaster_cookies_urllib2_test (1)">
+    <configuration name="qrmaster_cookies" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/login" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/qrmaster_add_room.py" />
+      <option name="SCRIPT_NAME" value="D:\linyouwei\python\pycharm\interface\qrmaster\login\garbage\qrmaster_cookies.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="qrmaster_community_authenication" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="qrmaster_cookies_urllib2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/login" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/qrmaster_community_authenication.py" />
+      <option name="SCRIPT_NAME" value="D:\linyouwei\python\pycharm\interface\qrmaster\login\garbage\qrmaster_cookies_urllib2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="qrmaster_create_community" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="qrmaster_cookies_urllib2_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/login/garbage" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/qrmaster_create_community.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="qrmaster_login_post" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="qrmaster_cookies_urllib2_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/login" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/qrmaster_login_post.py" />
+      <option name="SCRIPT_NAME" value="D:\linyouwei\python\pycharm\interface\qrmaster\login\garbage\qrmaster_cookies_urllib2_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="qrmaster_online_test_get_room_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="qrmaster_session_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/login" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_session_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_login_post" />
-      <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_add_room" />
-      <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_create_community" />
-      <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_community_authenication" />
-      <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_online_test_get_room_list" />
+      <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_cookies" />
+      <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_cookies_urllib2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_cookies_urllib2_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_session_test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_cookies_urllib2_test (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_online_test_get_room_list" />
-        <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_community_authenication" />
-        <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_create_community" />
-        <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_add_room" />
-        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_login_post" />
+        <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_cookies_urllib2_test (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_session_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_cookies_urllib2_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_cookies" />
+        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_cookies_urllib2" />
       </list>
     </recent_temporary>
   </component>
@@ -642,10 +683,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="476" y="14" width="1291" height="969" extended-state="0" />
+    <frame x="696" y="33" width="1077" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37774166" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36479843" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3794872" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
@@ -653,8 +694,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44552058" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36886227" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -755,48 +796,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/requests_demo/requests_qrmaster_app_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt_api/requests_getcard_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt_api/requests_makecard_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/requests_demo/requests_post_file_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/requests_demo/requests_get_cookies_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/requests_demo/requests_get_cookies_demo2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interface/requests_post.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -981,13 +980,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_login_post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_login_post.py" />
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -996,13 +989,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_add_room.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_add_room.py" />
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/123.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1013,52 +1000,67 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_app_get_room_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="51" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_create_community.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_community_authenication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_community_pass_auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="111" lean-forward="false" selection-start-line="24" selection-start-column="111" selection-end-line="24" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_app_get_room_list.py" />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_create_community.py" />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_community_authenication.py" />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_community_pass_auth.py" />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py" />
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="198">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/community/qrmaster_create_community.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_online_test_get_room_list.py">
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="15" />
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/qrmaster_session_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
             <element signature="e#16#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_login_post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#16#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#64#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
