@@ -25,7 +25,7 @@ req = requests.get(link,cookies=cookies)
 html_doc = req.text
 soup = BeautifulSoup(html_doc)
 #print(soup.prettify())
+
+#print(soup.prettify())
 #print(soup.find_all('td',attrs={'class':'col-xs-3'}))
-info = soup.find_all('td',attrs={'data-value':True})
-print(info.name)
 
