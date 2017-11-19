@@ -4,7 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/interface/unittest/test_case/unittest_baidu_test.py" line="22" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="" />
+    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/test/20171119102741.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/test/company_verify_page.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/test/demo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/test/page.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interface/qrmaster/test/res_last_page.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/qrmaster/community/geckodriver.log" afterPath="$PROJECT_DIR$/interface/qrmaster/community/geckodriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py" afterPath="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +97,7 @@
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_crawler_hash.coverage" NAME="qrmaster_crawler_hash Coverage Results" MODIFIED="1510986670730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$destroy_demo.coverage" NAME="destroy_demo Coverage Results" MODIFIED="1504411599710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_authenication.coverage" NAME="qrmaster_community_authenication Coverage Results" MODIFIED="1510674973882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_apply_verify.coverage" NAME="qrmaster_apply_verify Coverage Results" MODIFIED="1511107034285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk_demo.coverage" NAME="os_walk_demo Coverage Results" MODIFIED="1504406249477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$map_demo.coverage" NAME="map_demo Coverage Results" MODIFIED="1509285905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$requests_qrmaster_app_demo3.coverage" NAME="requests_qrmaster_app_demo3 Coverage Results" MODIFIED="1510408168714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
@@ -171,14 +180,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="qrmaster_bpass_verify.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qrmaster_bpass_verify.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_bpass_verify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="50" column="33" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              <folding>
-                <element signature="e#17#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-374">
+              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrmaster_apply_verify.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="community_html.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/community_html.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,7 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/import/a.py" />
         <option value="$PROJECT_DIR$/import/b.py" />
         <option value="$PROJECT_DIR$/import_test/foo.py" />
         <option value="$PROJECT_DIR$/interface/unittest/test_case/__init__.py" />
@@ -270,6 +296,7 @@
         <option value="$PROJECT_DIR$/interface/qrmaster/test/page.txt" />
         <option value="$PROJECT_DIR$/interface/qrmaster/test/test_compile.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_bpass_login.py" />
+        <option value="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py" />
       </list>
     </option>
   </component>
@@ -279,11 +306,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="417" />
-    <option name="y" value="7" />
-    <option name="width" value="1103" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="697" />
+    <option name="y" value="12" />
+    <option name="width" value="968" />
+    <option name="height" value="981" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -303,6 +330,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -352,7 +380,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,7 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.qrmaster_bpass_login">
+  <component name="RunManager" selected="Python.qrmaster_apply_verify">
     <configuration name="qrmaster" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -405,6 +432,24 @@
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\linyouwei\python\pycharm\interface\qrmaster\test\qrmaster_apply_verify.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="qrmaster_apply_verify" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -445,24 +490,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="qrmaster_community_pass (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/community" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/community/qrmaster_community_pass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="test_compile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -483,18 +510,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_community_bpass" />
-      <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_community_pass (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.qrmaster" />
-      <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_bpass_login" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_compile" />
+      <item index="1" class="java.lang.String" itemvalue="Python.qrmaster" />
+      <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_bpass_login" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_compile" />
+      <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_apply_verify" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_bpass_login" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_compile" />
-        <item index="2" class="java.lang.String" itemvalue="Python.qrmaster" />
-        <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_community_bpass" />
-        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_community_pass (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_apply_verify" />
+        <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_bpass_login" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_compile" />
+        <item index="3" class="java.lang.String" itemvalue="Python.qrmaster" />
+        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_community_bpass" />
       </list>
     </recent_temporary>
   </component>
@@ -629,21 +656,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="417" y="7" width="1103" height="788" extended-state="0" />
-    <editor active="true" />
+    <frame x="697" y="12" width="968" height="981" extended-state="1" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31057268" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3794872" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6410635" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3449862" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44155845" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30871493" sideWeight="0.49799886" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -654,6 +679,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30871493" sideWeight="0.49799886" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,14 +749,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/import_test/package/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_login_post.py" />
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/requests/api.py" />
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_add_room.py" />
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/qrmaster_app_get_room_list.py" />
@@ -829,9 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,9 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
           <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="416" column="42" lean-forward="true" selection-start-line="416" selection-start-column="42" selection-end-line="416" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,9 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="e#17#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="97" column="13" lean-forward="false" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,27 +942,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/page.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="426" column="64" lean-forward="true" selection-start-line="426" selection-start-column="64" selection-end-line="426" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/test_compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/page.txt" />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/test_compile.py" />
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/community/qrmaster_community_pass_auth2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-228">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,24 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-            <element signature="e#415#520#0" expanded="false" />
-            <element signature="e#538#735#0" expanded="false" />
-            <element signature="e#754#815#0" expanded="false" />
-            <element signature="e#1075#1277#0" expanded="false" />
-            <element signature="e#1307#1371#0" expanded="false" />
-            <element signature="e#1403#1793#0" expanded="false" />
-            <element signature="e#2152#2388#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,18 +963,36 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/demo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/demo.jpg" />
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/no_info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/community_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_bpass_verify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="50" column="33" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-374">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_apply_verify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

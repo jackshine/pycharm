@@ -70,18 +70,29 @@ def up_image(s):
     response = s.post(up_image_url,files=img_file).json()
     file_url = response['data']['filename']
     return file_url
-def change_commuity():
-    pass
+def change_commuity(s):
+    info = s.get(host+'/userCenter.html')
+    with open('./community_html.txt','wb') as fd:
+        fd.write(info.content)
+    main_info = BeautifulSoup(info.text)
+    com_list = main_info.find_all('ul',class_='dropdown-menu')
+    print(com_list)
+    a_list = com_list[-1].find_all('a')
+    no_list = []
+    for i in a_list:
+        no_list.append(i['data-value'])
+    print(no_list)
 if __name__ == "__main__":
     s = requests.session()
     html_doc = s.get(link).text
     hash = get_hash(html_doc)
     handle_hash(data,hash)
-    a = s.post(login_url, data=data)
+    a  = s.post(login_url, data=data)
     #create_community(s)
-    #请求认证集群
-    auth_req = s.get(auth_url)
-    apply_verity(s)
+    #切换到认证集群
+    change_commuity(s)
+
+
 
 
 
