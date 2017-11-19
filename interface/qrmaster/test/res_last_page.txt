@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="酒店和企业门禁管理系统，支持酒店员工管理,支持在线分配房卡，支持手机端操作，支持同时间对多家酒店或企业进行管理，让酒店和企业门禁管理快捷，安全，酒店管理更高效。">
+        <meta name="keywords" content="锁掌柜，畅联科技，云钥匙，二维码锁，酒店门锁，门禁管理">
+        <meta name="author" content="畅联科技 <admin@hotelbrt.com>">
+        <meta name="renderer" content="webkit">
+    
+    
+    
+    
+    <title>锁掌柜 - 企业认证</title>
+
+    <script type="text/javascript">
+    CssInitCallback = {};
+    CssInitCallback.init = function(styles) {
+        for (var i = 0; i < styles.linkId.length; i++) {
+            this.ping(i, styles);
+        };
+    }.bind(CssInitCallback);
+    CssInitCallback.ping = function(styleIndex, styles) {
+        var linkId = styles.linkId[styleIndex];
+        var link = document.getElementById(linkId);
+        var url = link.href;
+        var fallback = styles.fallbacks[styleIndex];
+        var http = new XMLHttpRequest();
+        http.onreadystatechange = function() {
+            if (http.readyState == 4) {
+                if (http.status != 200 && http.status != 304) {
+                    link.href = styles.local + fallback;
+                }
+            }
+        }.bind(styles);
+        http.open("head", url, true);
+        http.send();
+    }.bind(CssInitCallback);
+    </script>
+    
+        <!--Core CSS -->
+        <link rel="stylesheet" id="css-boostrap-id" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-boostraptheme-id" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" id="css-boostraptheme-id" type="text/css" href="/Public/uclbrt/css/custom-for-bootstrap.css">
+        
+        <link rel="stylesheet" type="text/css" href="/Public/src/Bpass/common.css">
+        <script type="text/javascript">
+        var baseStyle = {
+            local: "/Public/jslib/bootstrap/3.3.2/css/",
+            linkId: [
+                'css-boostrap-id', 'css-boostraptheme-id'
+            ],
+            fallbacks: [
+                'bootstrap.min.css', 'bootstrap-theme.min.css'
+            ]
+        };
+        window.addEventListener("load", CssInitCallback.init(baseStyle));
+        </script>
+    
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        window.html5 || document.write(unescape('%3Cscript src="/Public/jslib/html5shiv/3.7.2/html5shiv.min.js"%3E%3C/script%3E'))
+        </script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        window.respond || document.write(unescape('%3Cscript src="/Public/jslib/respond.js/1.4.2/respond.min.js"%3E%3C/script%3E'))
+        </script>
+        <![endif]-->
+    
+    <link rel="shortcut icon" href="/Public/uclbrt/image/favicon.png">
+    <!--some css or js stuff which sub html needed include in head-->
+    
+     <link rel="stylesheet" type="text/css" href="/Public/jslib/select2/4.0.0-rc.2/css/select2.min.css"/>
+
+</head>
+
+<body>
+    
+    <div id="doc" data-side-menu-id="sideMenuCompany" data-side-menu-toggle-id="collapseComAuthorityToggle">
+        <div id="doc-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:void(0);">
+                <img src="/Public/uclbrt/image/logo_blue.png">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/Bpass/Admin/index.html">账户管理</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="/Bpass/Admin/admin.html">changlian</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">changlian                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="/Bpass/Admin/adminInfo.html">个人中心</a>
+                        </li>
+                        <li>
+                            <a href="/Bpass/Admin/doLogout.html">退出</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">语言
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="javascript:void(0);">中文 Chinese</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">英文 English</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">帮助</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </div>
+        <div id="doc-center">
+            <div class="container">
+                <div class="col-xs-3-15">
+                    <ul class="side-menu">
+    <li class="side-menu-item menu-item-top">
+        <span>
+            <a href="javascript:void(0);" id="collapseAcountToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseAccount" aria-expanded="false">
+                <span class="glyphicon glyphicon-certificate"></span>账户管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseAccount">
+            <li>
+                <a href="/Bpass/Admin/index.html" id="sideMenuAdmin">系统管理员管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Agency/index.html" id="sideMenuAgency">代理商管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/User/index.html" id="sideMenuUser">前端用户管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Setting/notice.html" id="sideMenuApplyNotice">申请通知</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseQuestionToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseQuestion" aria-expanded="false">
+                <span class="glyphicon glyphicon-lock"></span>密保管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseQuestion">
+            <li>
+                <a href="/Bpass/Manage/question.html" id="sideMenuQuestion">密保问题</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseHotelToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseHotel" aria-expanded="false">
+                <span class="glyphicon glyphicon-home"></span>酒店管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseHotel">
+            <!--
+            <li>
+                <a href="/Bpass/Hotel/hotel.html" id="sideMenuHotel">酒店管理</a>
+            </li>
+            -->
+            <li>
+                <a href="/Bpass/HotelType/index.html" id="sideMenuHotelType">酒店类型管理</a>                
+            </li>
+            <li>
+                <a href="/Bpass/Hotel/typesign.html" id="sideMenuHotelTypeSign">酒店类型号管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Hotel/brandtype.html" id="sideMenuHotelBrandType">品牌号管理</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseCommunityToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseCommunity" aria-expanded="false">
+                <span class="glyphicon glyphicon-home"></span>集群管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseCommunity">
+            <li>
+                <a href="/Bpass/Community/index.html" id="sideMenuCommunity">集群列表</a>
+            </li>
+            <li>
+                <a href="/Bpass/Builder/index.html" id="sideMenuBuild">楼栋列表</a>
+            </li>
+            <li>
+                <a href="/Bpass/Floor/index.html" id="sideMenuFloor">楼层列表</a>
+            </li>
+            <li>
+                <a href="/Bpass/Room/index.html" id="sideMenuRoom">房间列表</a>
+            </li>
+            <li>
+                <a href="/Bpass/CommunityType/index.html" id="sideMenuCommunityType">类型列表</a>
+            </li>
+            <li>
+                <a href="/Bpass/CommunityRole/index.html"  id='sideMenuCommunityRole'>集群角色</a>
+            </li>
+        </ul>
+
+    </li>
+
+
+    <!--
+
+   <li class="side-menu-item menu-item-bottom">
+       <span>
+           <a href="javascript:void(0);" id="collapsePaymentToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="false">
+               <span class="glyphicon glyphicon-user"></span>支付方式</a>
+       </span>
+       <ul class="sub-menu collapse" id="collapsePayment">
+           <li>
+               <a href="/Bpass/Payment/payment.html" id="sideMenuPayment">支付方式</a>
+           </li>
+
+       </ul>
+   </li>
+
+   <li class="side-menu-item menu-item-bottom">
+       <span>
+           <a href="javascript:void(0);" id="collapseServiceToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseService" aria-expanded="false">
+               <span class="glyphicon glyphicon-user"></span>服务套餐</a>
+       </span>
+       <ul class="sub-menu collapse" id="collapseService">
+           <li>
+               <a href="/Bpass/Service/service.html" id="sideMenuService">套餐管理</a>
+           </li>
+       </ul>
+   </li>
+
+   <li class="side-menu-item menu-item-center">
+       <span>
+           <a href="javascript:void(0);" id="collapseOrderToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseOrder" aria-expanded="false">
+               <span class="glyphicon glyphicon-home"></span>订单管理</a>
+       </span>
+       <ul class="sub-menu collapse" id="collapseOrder">
+           <li>
+               <a href="/Bpass/Order/order.html" id="sideMenuOrder">订单管理</a>
+           </li>
+       </ul>
+   </li>
+
+   <li class="side-menu-item menu-item-bottom">
+       <span>
+           <a href="javascript:void(0);" id="collapseModuleToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseModule" aria-expanded="false">
+               <span class="glyphicon glyphicon-user"></span>模块管理</a>
+       </span>
+       <ul class="sub-menu collapse" id="collapseModule">
+           <li>
+               <a href="/Bpass/Module/module.html" id="sideMenuModule">模块管理</a>
+           </li>
+           <li>
+               <a href="/Bpass/Module/allot.html" id="sideMenuAllotModule">模块权限分配</a>
+           </li>
+       </ul>
+   </li>
+    --> 
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseComAuthorityToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseComAuthority" aria-expanded="false">
+                <span class="glyphicon glyphicon-check"></span>认证管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseComAuthority">
+            <li>
+                <a href="/Bpass/ComAuthority/company.html" id="sideMenuCompany">企业认证</a>
+            </li>
+            <li>
+                <a href="/Bpass/ComAuthority/person.html" id="sideMenuPerson">个人认证</a>
+            </li>
+        </ul>
+    </li>
+
+
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseModuleToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseCommercial" aria-expanded="false">
+                <span class="glyphicon glyphicon-picture"></span>广告管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseCommercial">
+            <li>
+                <a href="/Bpass/CommercialSpace/index.html" id="sideMenuCommercial">广告位管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Commercial/image.html" id="sideMenuImgCommercial">图片类型广告管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Commercial/cz.html" id="sideMenuCzCommercial">房卡页面广告管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Commercial/periodical.html" id="sideMenuPeriodicalCommercial">时效广告管理</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseModuleToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapsePackage" aria-expanded="false">
+                <span class="glyphicon glyphicon-file"></span>安装包管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapsePackage">
+            <li>
+                <a href="/Bpass/Package/index.html" id="sideMenuAnd">Android版本管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Package/type.html" id="sideMenuAndType">Android应用管理</a>
+            </li>
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseModuleToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseDevelop" aria-expanded="false">
+                <span class="glyphicon glyphicon-wrench"></span>开发者管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseDevelop">
+            <li>
+                <a href="/Bpass/AccessToken/index.html" id="sideMenuToken">Token管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/AccessToken/application.html" id="sideMenuApplication">应用信息管理</a>
+            </li>
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseModuleToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseBill" aria-expanded="false">
+                <span class="glyphicon glyphicon-wrench"></span>服务管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseBill">
+            <li>
+                <a href="/Bpass/Buy/product.html" id="sideMenuProduct">产品服务</a>
+            </li>
+            <li>
+                <a href="/Bpass/Buy/index.html" id="sideMenuBuy">交易管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Buy/invoice.html" id="sideMenuInvoice">发票管理</a>
+            </li>
+            <li>
+                <a href="/Bpass/Buy/service.html" id="sideMenuService">用户服务</a>
+            </li>
+            <!--
+            <li>
+                <a href="/Bpass/ServiceApply/index.html"   id="sideMenuApply">服务申请</a>
+            </li>
+            -->
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseModuleToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="false">
+                <span class="glyphicon glyphicon-wrench"></span>系统消息</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseMessage">
+            <li>
+                <a href="/Bpass/MessagePage/index.html" id="sideMenuMessage">系统消息推送</a>
+            </li>
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-bottom">
+        <span>
+            <a href="javascript:void(0);" id="collapseUserToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false">
+                <span class="glyphicon glyphicon-user"></span>个人中心</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseUser">
+            <li>
+                <a href="/Bpass/Admin/adminInfo.html" id="sideMenuAdminInfo">个人信息</a>
+            </li>
+            <li>
+                <a href="/Bpass/Admin/changePwd.html" id="sideMenuChangePassword">修改密码</a>
+            </li>
+            <li>
+                <a href="/Bpass/Admin/setQAnswer.html" id="sideMenuSetQAnswer">设置密保答案</a>
+            </li>
+
+        </ul>
+    </li>
+
+</ul>
+
+                </div>
+                <div class="col-xs-12-15">
+                    <nav class="navbar navbar-default navbar-custom-fitin">
+                        <div class="container-fluid">
+                            <p class="navbar-text custom-navber-text">商户信息查询</p>
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <form class="navbar-form navbar-left">
+                                        <div class="form-group">
+                                            <span>类型：</span>
+                                            <select name="type" id="searchType" class="form-control">
+                                                <option value="">全部</option>
+                                                <option value="1"   >酒店类</option><option value="2"   >家庭类</option><option value="3"   >公寓类</option><option value="4"   >办公类</option>                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <span>审核状态:</span> 
+                                            <select name="status" id="searchStatus" class="form-control">
+                                                <option value="">全部</option>
+                                                <option value="0" >未申请</option>
+                                                <option value="1" >待审核</option>
+                                                <option value="2" >认证成功</option>
+                                                <option value="3" >已分配</option>
+                                                <option value="4" >拒绝</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="searchName" class="form2-control"  name="name"  value=""  placeholder="请输入集群名称">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="searchNo" class="form2-control"  name="name"  value=""  placeholder="请输入完整的集群号">
+                                        </div>
+                                        <!--
+                                        <div class="form-group">
+                                            <input type="text" class="form2-control" name="hotelSign" value=""  placeholder="可输入标识号" maxlength="5">
+                                        </div>
+                                        -->
+                                        <button type="submit" id="search" class="btn btn-default btn-sm" status="100" >查询</button>
+                                    </form>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="well well-custom-has-navbar">
+                        <div class="well-custom-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover" id="questionTalbe">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>集群名称</th>
+                                            <th>类型</th>
+                                            <th>代理商</th>
+                                            <th>标识号</th>
+                                            <th>品牌号</th>
+                                            <th>类型号</th>
+                                            <th>状态</th>
+                                            <th width="130px">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>1</td>
+                                                <td>玫瑰花客栈-测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/555.html" title="玫瑰花客栈-测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/555/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>2</td>
+                                                <td>并发测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/556.html" title="并发测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/556/userloginID/2394.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>3</td>
+                                                <td>取电集群</td>
+                                                <td>酒店类</td>
+                                                <td>001Agency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/557.html" title="取电集群--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/557/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>4</td>
+                                                <td>共享版测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/558.html" title="共享版测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/558/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>5</td>
+                                                <td>认证客栈集群</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/559.html" title="认证客栈集群--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/559/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>6</td>
+                                                <td>认证客栈</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:green;'>未申请</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/560.html" title="认证客栈--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/560/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>7</td>
+                                                <td>凤凰集群</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/561.html" title="凤凰集群--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/561/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>8</td>
+                                                <td>同步</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/562.html" title="同步--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/562/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>9</td>
+                                                <td>权限设置</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/563.html" title="权限设置--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/563/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>10</td>
+                                                <td>同步测试用</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/564.html" title="同步测试用--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/564/userloginID/2394.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>11</td>
+                                                <td>Sing-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/565.html" title="Sing-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/565/userloginID/1291.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>12</td>
+                                                <td>客栈-133</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/566.html" title="客栈-133--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/566/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>13</td>
+                                                <td>上海-客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/567.html" title="上海-客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/567/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>14</td>
+                                                <td>广州-客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/568.html" title="广州-客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/568/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>15</td>
+                                                <td>深圳-客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/569.html" title="深圳-客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/569/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>16</td>
+                                                <td>挖</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:green;'>未申请</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/570.html" title="挖--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/570/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>17</td>
+                                                <td>美国钟点房</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/571.html" title="美国钟点房--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/571/userloginID/2402.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>18</td>
+                                                <td>测试创建集群</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:blue;'>待审核</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/572.html" title="测试创建集群--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/572/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>19</td>
+                                                <td>接口测试创建集群-有为</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span  style='color:green;'>认证成功</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/573.html" title="接口测试创建集群-有为--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/573/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>20</td>
+                                                <td>测试-有为集群</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:green;'>未申请</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/574.html" title="测试-有为集群--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/574/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>21</td>
+                                                <td>测试客栈-有为</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/575.html" title="测试客栈-有为--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/575/userloginID/2409.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>22</td>
+                                                <td>广东客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/576.html" title="广东客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/576/userloginID/2409.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>23</td>
+                                                <td>测试-北京客栈-有为</td>
+                                                <td>酒店类</td>
+                                                <td>defautlAgency</td>
+                                                <td>00000</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td><span>已分配</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/577.html" title="测试-北京客栈-有为--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/577/userloginID/2414.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>24</td>
+                                                <td>有为集群</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:blue;'>待审核</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/578.html" title="有为集群--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/578/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>25</td>
+                                                <td>唐顿客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:green;'>未申请</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/579.html" title="唐顿客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/579/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>26</td>
+                                                <td>东莞客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:green;'>未申请</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/580.html" title="东莞客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/580/userloginID/2409.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr><tr>
+                                                <td>27</td>
+                                                <td>瑞士-客栈-有为测试</td>
+                                                <td>酒店类</td>
+                                                <td></td>
+                                                <td>00000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span style='color:blue;'>待审核</span></td>
+                                                <td>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/581.html" title="瑞士-客栈-有为测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/581/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                </td>    
+                                            </tr>                                             <tr class="padtopx"><td colspan="5"><div> <a class="prev" href="/Bpass/ComAuthority/company/p/6.html"><<</a> <a class="num" href="/Bpass/ComAuthority/company/p/1.html">1</a><a class="num" href="/Bpass/ComAuthority/company/p/2.html">2</a><a class="num" href="/Bpass/ComAuthority/company/p/3.html">3</a><a class="num" href="/Bpass/ComAuthority/company/p/4.html">4</a><a class="num" href="/Bpass/ComAuthority/company/p/5.html">5</a><a class="num" href="/Bpass/ComAuthority/company/p/6.html">6</a><span class="current">7</span>  </div></td></tr>
+  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="doc-footer">
+            <footer class="custom-footer">
+    <div class="custom-footer-copyright">
+        <a target="_blank" href="http://www.uclbrt.com/Home/Work/hardware.html">产品介绍</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a target="_blank" href="http://www.uclbrt.com/Home/Contact/index.html">业务洽谈</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a target="_blank" href="http://www.uclbrt.com/Home/Join/index.html">诚征英才</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a target="_blank" href="http://www.uclbrt.com/Home/About/index.html">关于我们</a>
+        <p class="custom-footer-copy">© 2014－2019&nbsp;&nbsp;UCLBRT&nbsp;&nbsp;,Inc. All Rights Reserved.</p>
+    </div>
+</footer>
+
+        </div>
+    </div>
+    <!--end of doc--> 
+
+    
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        window.jQuery || document.write(unescape('%3Cscript src="/Public/jslib/jquery/1.11.2/jquery.min.js"%3E%3C/script%3E'))
+        </script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        $.fn.modal || document.write(unescape('%3Cscript src="/Public/jslib/bootstrap/3.3.2/js/bootstrap.min.js"%3E%3C/script%3E'))
+        </script>
+        
+        <script type="text/javascript" src="/Public/src/Bpass/dialogComm.js"></script>
+        <script type="text/javascript" src="/Public/jslib/layer/layer.min.js"></script>
+    
+    <!--some js stuff which sub html needed include in foot-->
+    
+    <script type="text/javascript" src="/Public/jslib/select2/4.0.0-rc.2/js/select2.min.js"></script>
+    <script type="text/javascript" src="/Public/uclbrt/js/jquery-plugin/tooltip.js"></script>
+    <script type="text/javascript" src="/Public/src/Bpass/common.js"></script>
+    <script type="text/javascript" src="/Public/src/Bpass/ComAuthority/status.js"></script>
+
+</body>
+
+</html>
