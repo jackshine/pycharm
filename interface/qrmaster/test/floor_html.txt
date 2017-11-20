@@ -18,7 +18,7 @@
         <!-- <meta name="viewport" content="width=device-width"> -->
     
     
-    <title>QRMaster - personal center</title>
+    <title>QRMaster - floor</title>
 
     
         <!--Core CSS -->
@@ -36,7 +36,6 @@
     <!--some css or js stuff which sub html needed include in head-->
     
     <link rel="stylesheet" type="text/css" href="/Public/dist/Home/common_control.css?rev=16bc89a699db9624fbba40519803318f">
-    <link rel="stylesheet" type="text/css" href="/Public/src/Home/UserCenterPage/index.css?rev=72adb7b316bef525cb2d7f649a26669c">
 
 </head>
 
@@ -84,8 +83,8 @@
     </div>
             <ul class="menu-horizontal" id="communitySwitch">
             <li class="dropdown">
-                <a data-toggle="dropdown" data-value="DB18Q4V6rgV7qvrX" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
-                     客栈-133&nbsp;<span class="caret"></span></a>
+                <a data-toggle="dropdown" data-value="b2P6Kd5eJrAOEv80" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
+                     测试-北京客栈-有为&nbsp;<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li>
                             <a href="javascript:void(0);" data-value="DB18Q4V6rgV7qvrX">客栈-133</a>
@@ -116,7 +115,7 @@
                         <a data-placement="right" title="Communities" data-url="/switchCommunity.html" href="javascript:void(0);" class="ulite-js-menu ulite-js-ripple-effect"><span class="glyphicon glyphicon-list"></span><span class="menu-vertical-text">Communities</span>
                         </a>
                     </li>
-                    <li id="damm-manage" class='[damm-manage]'><a data-placement="right" title="Manage" href="javascript:void(0);" class="ulite-js-menu ulite-js-ripple-effect"><span class="glyphicon glyphicon-phone"></span><span class="menu-vertical-text">Manage</span><span class="caret menu-vertical-right-glyphicon"></span></a>
+                    <li id="damm-manage" class='active'><a data-placement="right" title="Manage" href="javascript:void(0);" class="ulite-js-menu ulite-js-ripple-effect"><span class="glyphicon glyphicon-phone"></span><span class="menu-vertical-text">Manage</span><span class="caret menu-vertical-right-glyphicon"></span></a>
                         <ul class="menu-vertical menu-vertical-child">
                             <li id="damm-manage-reception" class='doc-aside-main-menu-second [damm-manage-reception]'><a data-placement="right" title="Issue" href="/reception.html" class="ulite-js-menu ulite-js-ripple-effect">Issue</a>
                                     <ul class="menu-vertical-hidden">
@@ -135,7 +134,7 @@
                                     <li><a class="ulite-js-menu ulite-js-ripple-effect" target="_blank" href="/Home/PublicPage/rfinstallM1.html">QR&M1 Plugins Update</a></li>
                                 </ul>                                    
                             </li> -->
-                            <li id="damm-manage-room" class='doc-aside-main-menu-second [damm-manage-room]'><a data-placement="right" title="Room" href="/room.html" class="ulite-js-menu ulite-js-ripple-effect">Room</a>
+                            <li id="damm-manage-room" class='doc-aside-main-menu-second active'><a data-placement="right" title="Room" href="/room.html" class="ulite-js-menu ulite-js-ripple-effect">Room</a>
                                     <ul class="menu-vertical-hidden">
                                         <li><a class="ulite-js-menu ulite-js-ripple-effect" href="/build.html">Building</a></li>
                                         <li><a class="ulite-js-menu ulite-js-ripple-effect" href="/floor.html">Floor</a></li>
@@ -182,9 +181,9 @@
 
                                 </li>                        </ul>
                     </li>                    
-                    <li id="damm-user" class='active'><a data-placement="right" title="User" href="javascript:void(0);" class="ulite-js-menu ulite-js-ripple-effect"><span class="glyphicon glyphicon-user"></span><span class="menu-vertical-text">User</span><span class="caret menu-vertical-right-glyphicon"></span></a>
+                    <li id="damm-user" class='[damm-user]'><a data-placement="right" title="User" href="javascript:void(0);" class="ulite-js-menu ulite-js-ripple-effect"><span class="glyphicon glyphicon-user"></span><span class="menu-vertical-text">User</span><span class="caret menu-vertical-right-glyphicon"></span></a>
                         <ul class="menu-vertical menu-vertical-child">
-                            <li id="damm-user-account" class='doc-aside-main-menu-second active'><a data-placement="right" title="Account" class="ulite-js-menu ulite-js-ripple-effect" href="/userCenter.html">Account</a>
+                            <li id="damm-user-account" class='doc-aside-main-menu-second [damm-user-account]'><a data-placement="right" title="Account" class="ulite-js-menu ulite-js-ripple-effect" href="/userCenter.html">Account</a>
                                 <ul class="menu-vertical-hidden">
                                     <li><a class="ulite-js-menu ulite-js-ripple-effect" href="/userCenter.html">Personal center</a></li>
                                     <li><a class="ulite-js-menu ulite-js-ripple-effect" href="/userSetting.html">Security</a></li>
@@ -210,177 +209,148 @@
             <div id="doc-center">
                 <div class="container-fluid">
                     <div id="doc-center-head" class="row">
-                        <span id="doc-center-head-title" class="typo-subhead">Personal center</span>
+                        <span id="doc-center-head-title" class="typo-body-1">Floor</span>
                         <div id="doc-center-head-menu" class="pull-right">
-                            <div id="doc-info-edit-toggle" class="btn-raised btn-primary ulite-js-btn ulite-js-ripple-effect" data-toggle-text="Cancel">Edit</div>
-                        </div>
-                    </div>
+                                <div class="btn-raised btn-primary ulite-js-btn ulite-js-ripple-effect" data-toggle="modal" data-target="#addFloors">Add</div>
+                            </div>                    </div>
                     <div id="doc-center-body">
-                        <div class="row">
-                            <div class="col-xs-12 ">
-                                <div class="row typo-body-1 vertical-margin fixed-content" id="doc-info-normal">
-                                    <div class="col-xs-2">
-                                        <img class="img-avatar shape-circle" src="/Public/src/Home/images/0_02.png" />
-                                    </div>
-                                    <div class="col-xs-5">
-                                        <div class="vertical-margin">Name：<span class="typo-text-black-light"></span></div>
-                                        <div class="vertical-margin">Gender：<span class="typo-text-black-light">Male</span></div>
-                                        <div class="vertical-margin">Self introduction：<span class="typo-text-black-light" style="display:inline-block;word-break: break-all;"></span></div>
-                                    </div>
-                                    <div class="col-xs-5">
-                                        <div class="vertical-margin">Mobile：<span class="typo-text-black-light">13326528030</span></div>
-                                        <div class="vertical-margin">Email：<span class="typo-text-black-light"></span></div>
-                                        <div class="vertical-margin">Telephone：<span class="typo-text-black-light"></span></div>
-                                        <div class="vertical-margin">Address：<span class="typo-text-black-light"></span></div>
-                                    </div>
-                                </div>
-                                <div class="row typo-body-1 vertical-margin hidden" id="doc-info-form">
-                                    <form id="infoForm" action="/Home/UserCenter/postUserInfo.html" method="post" enctype="multipart/form-data">
-                                        <div class="col-xs-12">
-                                            <div class="typo-subhead doc-info-title">Basic information</div>
-                                            <div class="form-horizontal fixed-content form-sm">
-                                                <div class="form-group">
-                                                    <label class="col-xs-2 control-label">Name：</label>
-                                                    <div class="col-xs-6">
-                                                        <input type="text" class="form-control" maxlength="20" name="name" id="requestName" placeholder="Enter name" value="">
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="help-block"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-xs-2 control-label">Gender：</label>
-                                                    <div class="col-xs-6">
-                                                        <label class="radio-inline">
-                                                            <input type="radio" name="gender" id="requestMale" value="1" checked="checked"> Male
-                                                        </label>
-                                                        <label class="radio-inline">
-                                                            <input type="radio" name="gender" id="requestFemale" value="0" > Female
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="help-block"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-xs-2 control-label">Change avatar：</label>
-                                                    <div class="fileUpload" id="showOrganizationNoContainer">
-                                                        <div class="col-xs-5 input-btn-group">
-                                                            <input type="text" class="form-control input-btn-group-input" id="uploadPicture" readonly placeholder="Click image to start uploading" value="/Public/src/Home/images/0_02.png">
-                                                            <input type="file" accept="image/*" class="hidden fileUploadInput">
-                                                        </div>
-                                                        <div id="organizationUpload" data-config="user" class="col-xs-1 btn-accent btn-raised ulite-js-btn ulite-js-btn-effect input-btn-group-btn fileUploadTrigger">Upload</div>
-                                                        <div class="col-xs-3">
-                                                            <div class="help-block"></div>
-                                                        </div>
-                                                        <div class="col-xs-12 vertical-padding">
-                                                            <div class="col-xs-offset-2 fileUploadProgress spinner spinner-single-color ulite-js-spinner is-active hidden"></div>
-                                                                                                                            <img class="col-xs-offset-2 img-certification fileUploadResult img-avatar" src="/Public/src/Home/images/0_02.png" />                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-xs-2 control-label">Self introduction：</label>
-                                                    <div class="col-xs-6">
-                                                        <textarea type="text" class="form-control" maxlength="200" name="introduce" id="requestDesc" row="6" style="height:130px;" placeholder="Enter self introduction"></textarea>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="help-block"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12">
-                                            <div class="typo-subhead doc-info-title">Contacts</div>
-                                            <div class="form-horizontal fixed-content form-sm">
-                                                <div class="form-group">
-                                                    <label class="col-xs-2 control-label">Telephone：</label>
-                                                    <div class="col-xs-6">
-                                                        <input type="text" class="form-control" id="requestTelephone" maxlength="20" name="telephone" placeholder="Enter telephone number" value="">
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="help-block"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-xs-2 control-label">Address：</label>
-                                                    <div class="col-xs-6">
-                                                        <textarea type="text" class="form-control" id="requestAddress" maxlength="20" name="address" placeholder="Enter address" row="3" style="height:60px;"></textarea>
-                                                    </div>
-                                                    <div class="col-xs-4">
-                                                        <div class="help-block"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="col-xs-6 col-xs-offset-2">
-                                                        <button class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect" id="requestSubmit">Submit</button>
-                                                        <div class="help-block inline-help-block"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="doc-info-title"></div>
-                                <div class="row typo-body-1 vertical-margin">
-                                    <div class="col-xs-1 center-block typo-text-black-deep typo-body-2">Password</div>
-                                    <div class="col-xs-7">We suggest you change your password regularly. Password must contains two of following: letters, numbers or symbols, password length must be over 6.</div>
-                                    <div class="col-xs-4 text-right">
-                                        <span class="text-success"><span class="glyphicon glyphicon-check"></span>Set</span>
-                                        |
-                                        <div class="btn-link" data-toggle="modal" data-target="#changePasswordModal">Setting</div>
-                                    </div>
-                                </div>
-                                <div class="doc-info-title"></div>
-                            </div>
-                        </div>
+                        <table class="table table-bordered table-center">
+                            <thead>
+                                <tr>
+                                    <th>Floor name</th>
+                                    <th>Building name</th>
+                                    <th>Building No.</th>
+                                    <th>Floor No.</th>
+                                    <th>Description</th>
+                                    <th>Operation</th>                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                        <td class="col-xs-2">楼层1</td>
+                                        <td class="col-xs-2">楼栋1</td>
+                                        <td class="col-xs-1">111</td>
+                                        <td class="col-xs-1">123</td>
+                                        <td class="col-xs-2">楼层1</td>
+                                        <td class="col-xs-3" data-num="123" data-desc="楼层1" data-name="楼层1" data-value="1478" data-build-name="楼栋1">
+                                                <div class="btn-link" data-toggle="modal" data-target="#editFloor">Edit</div>
+                                                <div class="btn-link" data-toggle="modal" data-target="#deleteFloor">Remove</div>
+                                            </td>                                    </tr><tr>
+                                        <td class="col-xs-2">楼层2</td>
+                                        <td class="col-xs-2">楼栋1</td>
+                                        <td class="col-xs-1">111</td>
+                                        <td class="col-xs-1">222</td>
+                                        <td class="col-xs-2">2</td>
+                                        <td class="col-xs-3" data-num="222" data-desc="2" data-name="楼层2" data-value="1477" data-build-name="楼栋1">
+                                                <div class="btn-link" data-toggle="modal" data-target="#editFloor">Edit</div>
+                                                <div class="btn-link" data-toggle="modal" data-target="#deleteFloor">Remove</div>
+                                            </td>                                    </tr>                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--end of doc-->
-    <div class="modal fade" data-backdrop="static" id="changePasswordModal">
+    <div class="modal fade" data-backdrop="static" id="addFloors">
         <div class="modal-dialog fixed-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Change login password</h4>
+                    <button type="button" class="close btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Add floor</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal form-sm" id="floorForm">
+                        <div class="form-group">
+                            <label class="col-xs-3 control-label">&nbsp;&nbsp;&nbsp;<span class="text-accent">*</span>Choose building:</label>
+                            <div class="col-xs-6">
+                                <select id="buildId" class="form-control">
+                                    <option value="623">楼栋1</option>                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <table id="newFloorTable" class="table table-bordered table-center">
+                                <thead>
+                                    <tr>
+                                        <th class=""><span class="text-accent">*</span>Floor name</th>
+                                        <th class=""><span class="text-accent">*</span>Floor No.(0-255)</th>
+                                        <th>Description</th>
+                                        <th>Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="form-new-floor">
+                                        <td>
+                                            <input type="text" class="form-control floorName" name="floorname" maxlength=20 placeholder="Floor name">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control floorNo" name="floorno" maxlength=3 placeholder="Floor No.">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control floorDesc" name="floorDesc" maxlength=255 placeholder="Enter description">
+                                        </td>
+                                        <td>
+                                            <div class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect" onclick="deleteCol(this)"><span class="glyphicon glyphicon-remove"></span></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td cellspacing="4">
+                                            <input id="myadd" type="button" value="Add" class="btn-accent btn-raised btn-sm ulite-js-btn ulite-js-ripple-effect" />
+                                            <button type="button" class="btn-raised btn-primary btn-sm ulite-js-btn ulite-js-ripple-effect" id="submitAddFloors">OK</button>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" data-backdrop="static" id="editFloor">
+        <div class="modal-dialog fixed-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Edit floor</h4>
                 </div>
                 <div class="modal-body">
                     <form class="form-horizontal form-sm">
                         <div class="form-group">
-                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>Old password:</label>
+                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>Floor name:</label>
                             <div class="col-xs-5">
-                                <input type="password" autocomplete="off" class="form-control" id="requestPassword" placeholder="Enter old password" value="">
+                                <input type="text" class="form-control" id="editRequestName" maxlength="20" placeholder="Enter floor name">
                             </div>
                             <div class="col-xs-4">
                                 <div class="help-block"></div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>New password:</label>
+                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>Building name:</label>
                             <div class="col-xs-5">
-                                <input type="password" autocomplete="off" class="form-control" id="requestNewPassword" placeholder="Enter new password" value="">
+                                <input type="text" class="form-control" id="editRequestBuilding" placeholder="Building name" disabled="disabled">
                             </div>
                             <div class="col-xs-4">
                                 <div class="help-block"></div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>Confirm password:</label>
+                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>Floor No.:</label>
                             <div class="col-xs-5">
-                                <input type="password" autocomplete="off" class="form-control" id="requestConfirmNew" placeholder="Enter new password" value="">
+                                <input type="text" class="form-control" id="editRequestNo" maxlength="3" placeholder="Enter floor number (0-255)">
                             </div>
                             <div class="col-xs-4">
                                 <div class="help-block"></div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-xs-3 control-label"><span class="text-accent">*</span>Valid code:</label>
-                            <div class="col-xs-3 input-btn-group">
-                                <input type="text" autocomplete="off" maxlength="4" class="form-control" id="requestVcode" placeholder="Enter image valid code" value="" >
+                            <label class="col-xs-3 control-label">Description:</label>
+                            <div class="col-xs-5">
+                                <textarea id="editRequestDesc" maxlength="255" class="form-control" rows="3" placeholder="Enter description"></textarea>
                             </div>
-                            <img id="imgcode" class="col-xs-2 input-btn-group-btn" onclick="javascript:refreshVcode();" src="/Home/Public/createpic.html">
                             <div class="col-xs-4">
                                 <div class="help-block"></div>
                             </div>
@@ -392,36 +362,38 @@
                         <div class="form-group">
                             <div class="col-xs-10 col-xs-offset-2">
                                 <div class="help-block inline-help-block inline-help-block-right"></div>
-                                <button type="button" class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect" id="submitChange">OK</button>
+                                <button type="button" class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect" id="submitEditFloor">OK</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-    <!-- 第一次同步询问对话框 -->    
-    <div class="modal fade" id="first_sync">
-        <div class="modal-dialog modal-sm">
+    </div>
+    <div class="modal fade" data-backdrop="static" id="deleteFloor">
+        <div class="modal-dialog fixed-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn close" data-dismiss="modal"><span>&times;</span></button>
-                    <h4 class="modal-title"></h4>
+                    <button type="button" class="btn close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Confirm</h4>
                 </div>
                 <div class="modal-body">
-                    <p>We has been created a qrmaster account for you automatically：<br/>Go to sync？</p>
+                    <div class="text-sm">Are you sure to remove floor&nbsp;<span id="deleteFloorLable" class="text-accent"></span>&nbsp;?</div>
                 </div>
                 <div class="modal-footer">
-                	<span id="first_sync_info"></span>
-                    <button id="first_sync_cancel" type="button" class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect">No</button>
-                    <button id="first_sync_ok" type="button" class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect">Yes</button>
+                    <div class="form-horizontal form-sm">
+                        <div class="form-group">
+                            <div class="col-xs-10 col-xs-offset-2">
+                                <div class="help-block inline-help-block inline-help-block-right"></div>
+                                <button type="button" class="btn-primary btn-raised ulite-js-btn ulite-js-ripple-effect" id="submitDeleteFloor">OK</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-    	var show_first_sync = '';
-    </script>
 
     
         <script type="text/javascript" src="/Public/jslib/jquery/1.11.2/jquery.min.js" ></script>
@@ -440,10 +412,9 @@
     
     <!--some js stuff which sub html needed include in foot-->
     
-    <script type="text/javascript" src="/Public/jslib/uploader/uploader.min.js" ></script>
     <script type="text/javascript" src="/Public/dist/Home/common_control.js?rev=6594906ae58e1a906ad17833611ca5fb" ></script>
-    <script type="text/javascript" src="/Public/uclbrt/js/jquery-plugin/jquery.md5.js"></script>
-    <script type="text/javascript" src="/Public/src/Home/UserCenterPage/index.js?rev=969e8effd926fc85974661402c910add"></script>
+    <script type="text/javascript" src="/Public/jslib/interact.js/1.2.6/interact.min.js"></script>
+    <script type="text/javascript" src="/Public/dist/Home/RoomPage/floor.js?rev=2e7e1c7e641648d97bdbf096aead09ef"></script>
 
 </body>
 

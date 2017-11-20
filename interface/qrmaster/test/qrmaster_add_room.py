@@ -7,12 +7,8 @@ import json
 host = 'http://115.29.142.212:8020'
 login_url = host +'/Home/Public/login'
 link = host+ '/login.html'
-create_url = host + '/Home/Community/create'
-auth_url = host +'/authentication.html'
-up_image_url = host + '/Home/File/upload'
-apply_verify_url = host + '/Home/CommunityCenter/postAuthenticationCompany'
 data = {
-    "mobile": "13480251015",
+    "mobile": "13326528030",
     "areaCode": "86",
     "password": "bbc69d27003568a7a94626ce4337bc9d"
 }
@@ -42,34 +38,75 @@ def handle_hash(data,hash):
     mobile_pwd = md5(data['password']+md5(data['mobile']))
     mobile_pwd_hash = mobile_pwd+hash
     data['hash'] = md5(mobile_pwd_hash)
-def create_community(s):
-    res = s.post(create_url,data=community_data)
-    print(res.text)
-#申请审核
-def apply_verity(s):
-    img_url = up_image(s)
-    print(host+img_url)
-    apply_data = {
-        "isforeign":"0",
-        "companyname":"畅联",
-        "address":"广州",
-        "representative":"555",
-        "telephone":"13480251015",
-        "fax":"",
-        "business":"444",
-        "bpath":img_url,
-        "areaCode":"86"
+def add_bulid(s):
+    #http://115.29.142.212:8020/Home/Room/addBuilding
+    build_data={
+        'name':'楼栋1',
+        'num':'111',
+        'desc':'描述',
+        'contact':'负责人',
+        'phone':'13480251015',
+        'areaCode':'86',
     }
-    response = s.post(apply_verify_url,data=apply_data).json()
-    print(response)
-#上传图片
-def up_image(s):
-    img_file = {
-        'config':(None,'comVerify'),
-        'file':open(r'./demo.png','rb')}
-    response = s.post(up_image_url,files=img_file).json()
-    file_url = response['data']['filename']
-    return file_url
+    res = s.post(host+'/Home/Room/addBuilding',data=build_data)
+    print(res.text)
+def add_floor(s):
+    #爬取楼栋号
+    floor_url = host + '/floor.html'
+    req = s.get(floor_url)
+    soup = BeautifulSoup(req.text)
+    with open('./floor_html.txt', 'wb') as fd:
+        fd.write(req.content)
+    floor_html = soup.find('option')
+    build_no = floor_html['value']
+    #请求楼层数据
+    floor_data = {
+        'build':build_no,
+        'floors[0][name]':'楼层1',
+        'floors[0][num]':'123',
+        'floors[0][desc]':'楼层1'
+    }
+    add_floor_url = host+'/Home/Room/addFloors'
+    req = s.post(add_floor_url,data=floor_data)
+    print('floor:'+req.text)
+def crawler_bulid(s):
+    # 爬取楼栋号
+    floor_url = host + '/floor.html'
+    req = s.get(floor_url)
+    soup = BeautifulSoup(req.text)
+    with open('./floor_html.txt', 'wb') as fd:
+        fd.write(req.content)
+    floor_html = soup.find('option')
+    build_no = floor_html['value']
+    # 请求楼层数据
+    return build_no
+#爬取楼层
+def crawler_floor(s):
+    # 爬取楼层号
+    floor_url = host + '/floor.html'
+    req = s.get(floor_url)
+    soup = BeautifulSoup(req.text)
+    floor_html = soup.find('div',id_='doc-center-body')
+    #floor_no = floor_html['value']
+    print(floor_html)
+    #print(floor_no)
+    #return floor_no
+def add_room(s):
+    build_no = crawler_bulid(s)
+    floor_no = crawler_floor(s)
+    add_room_url = host+'/Home/Room/addRooms'
+    room_data = {
+        'build':build_no,
+        'floor':floor_no,
+        'rooms[0][name]':'房间1',
+        'rooms[0][num]':'1',
+        'rooms[0][no]':'1',
+        'rooms[0][locktype]':'1',
+        'rooms[0][layout]':'{"translate": {"x": 0,"y": 0},"width": 80,"height": 80}'
+    }
+    req = s.post(add_room_url,room_data)
+    print('room:'+req.text)
+
 def change_commuity(s):
     info = s.get(host+'/userCenter.html')
     with open('./community_html.txt','wb') as fd:
@@ -93,7 +130,7 @@ def change_commuity(s):
     s.get(req_url,data=group_data)
     req_usecenter_url = host +'/userCenter.html'
     s.get(req_usecenter_url)
-    apply_verity(s)
+    add_room(s)
 if __name__ == "__main__":
     s = requests.session()
     html_doc = s.get(link).text
