@@ -30,6 +30,39 @@ def login(req):
         print(r)
         if r['status']==200:
             break
+def pass_group_verity(req):
+    query_verify_url = host + '/Bpass/ComAuthority/company.html'
+    group_data = {
+        'type':'',
+        'status':'',
+        'name':'瑞士-客栈-有为测试',
+        'no':''
+    }
+    query_group = req.get(query_verify_url,params=group_data)
+    with open('./query_verify_url.txt', 'wb') as fd:
+        fd.write(query_group.content)
+    soup = BeautifulSoup(query_group.text)
+    s_table = soup.find('table', id='questionTalbe')
+    a_list = s_table.find_all('a')
+    a_href = a_list[-1]['href']
+    reObj1 = re.compile('[0-9]+')
+    id = reObj1.findall(a_href)[0]
+    page_id = reObj1.findall(a_href)[1]
+    print(id,page_id)
+    #通过审核
+    verify_page_url = host + '/Bpass/ComAuthority/companyStatus/id/' + id + '/userloginID/' + page_id + '.html'
+    verify_data = {
+        "id": (None, id),
+        "status": (None, "3"),
+        "agencyId": (None, "1"),
+        "representative": (None, "33323"),
+        "hotelSign": (None, "00000"),
+        "brandTypeId": (None, "1"),
+        "typeSignId": (None, "1"),
+        "authorityNote": (None, "22244"),
+    }
+    v = req.post(verify_page_url, files=verify_data)
+    print(v.text)
 def pass_verity(req):
     #请求企业认证页面，获取最后一页的链接
     company_verify_url = host+'/Bpass/ComAuthority/company.html'
@@ -72,7 +105,7 @@ def pass_verity(req):
 if __name__ == "__main__":
     req = requests.session()
     login(req)
-    pass_verity(req)
+    pass_group_verity(req)
 
 
 
