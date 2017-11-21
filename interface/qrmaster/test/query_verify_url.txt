@@ -425,7 +425,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" id="searchName" class="form2-control"  name="name"  value="瑞士-客栈-有为测试"  placeholder="请输入集群名称">
+                                            <input type="text" id="searchName" class="form2-control"  name="name"  value="上海客栈-测试"  placeholder="请输入集群名称">
                                         </div>
                                         <div class="form-group">
                                             <input type="text" id="searchNo" class="form2-control"  name="name"  value=""  placeholder="请输入完整的集群号">
@@ -461,16 +461,16 @@
                                     <tbody>
                                         <tr>
                                                 <td>1</td>
-                                                <td>瑞士-客栈-有为测试</td>
+                                                <td>上海客栈-测试</td>
                                                 <td>酒店类</td>
-                                                <td>defautlAgency</td>
+                                                <td></td>
                                                 <td>00000</td>
-                                                <td>3</td>
-                                                <td>1</td>
+                                                <td></td>
+                                                <td></td>
                                                 <td><span style='color:blue;'>待审核</span></td>
                                                 <td>
-                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/581.html" title="瑞士-客栈-有为测试--详细信息">详情</a>
-                                                      <a href="/Bpass/ComAuthority/companyStatus/id/581/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm iframe" data-url="/Bpass/ComAuthority/showInfo/id/583.html" title="上海客栈-测试--详细信息">详情</a>
+                                                      <a href="/Bpass/ComAuthority/companyStatus/id/583/userloginID/1623.html" class="btn btn-primary btn-sm" title="审核">审核</a> 
                                                 </td>    
                                             </tr>                                             <tr class="padtopx"><td colspan="5"><div>    </div></td></tr>
   
