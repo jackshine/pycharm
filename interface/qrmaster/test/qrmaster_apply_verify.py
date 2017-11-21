@@ -30,7 +30,7 @@ def md5(str):
     return m.hexdigest()
 #抓取页面的hash值
 def get_hash(html_doc):
-    soup = BeautifulSoup(html_doc)
+    soup = BeautifulSoup(html_doc,"html.parser")
     # print(soup.prettify())
     info = soup.find_all("div", class_="card")
     for i in info:
@@ -52,7 +52,7 @@ def apply_verity(s):
     apply_data = {
         "isforeign":"0",
         "companyname":"畅联",
-        "address":"广州",
+        "address":"guangdong",
         "representative":"555",
         "telephone":"13480251015",
         "fax":"",
@@ -71,19 +71,20 @@ def up_image(s):
     file_url = response['data']['filename']
     return file_url
 def change_commuity(s):
+    #community_no = get_no(s)
     info = s.get(host+'/userCenter.html')
-    with open('./community_html.txt','wb') as fd:
+    with open('./userCenter.txt','wb') as fd:
         fd.write(info.content)
-    main_info = BeautifulSoup(info.text)
-    com_list = main_info.find_all('ul',class_='dropdown-menu')
-    print(com_list)
-    a_list = com_list[-1].find_all('a')
-    no_list = []
+    main_info = BeautifulSoup(info.text,"html.parser")
+    com_list = main_info.find('ul',id='communitySwitch')
+    #print(com_list.find('ul',class_='dropdown-menu'))
+    no_a = com_list.find('ul',class_='dropdown-menu')
+    a_list = no_a.find_all('a')
+    group_no = 0
     for i in a_list:
-        no_list.append(i['data-value'])
-    print(no_list)
-    #获取最后一个no，发送请求
-    group_no = no_list[-1]
+        if '瑞士-客栈-有为测试' in i.string:
+           group_no=i['data-value']
+    #获取no，发送请求
     group_data = {
         'no':group_no,
         'return':'/userCenter.html'

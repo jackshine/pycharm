@@ -84,12 +84,10 @@
     </div>
             <ul class="menu-horizontal" id="communitySwitch">
             <li class="dropdown">
-                <a data-toggle="dropdown" data-value="2EwNXzAmgDkoq67x" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
-                     不里客栈-测试&nbsp;<span class="caret"></span></a>
+                <a data-toggle="dropdown" data-value="OxdpqKVrglkrL2gZ" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
+                     LA客栈&nbsp;<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li>
-                            <a href="javascript:void(0);" data-value="2EwNXzAmgDkoq67x">不里客栈-测试</a>
-                        </li><li>
                             <a href="javascript:void(0);" data-value="OxdpqKVrglkrL2gZ">LA客栈</a>
                         </li><li>
                             <a href="javascript:void(0);" data-value="4GoWyZA0PvAOg8aD">玫瑰花客栈-测试</a>
@@ -104,6 +102,10 @@
                         </li><li>
                             <a href="javascript:void(0);" data-value="O0lzENApNakPyGqa">唐顿客栈-有为测试</a>
                         </li><li>
+                            <a href="javascript:void(0);" data-value="LbW02pANmE5R68qX">瑞士-客栈-有为测试</a>
+                        </li><li>
+                            <a href="javascript:void(0);" data-value="2EwNXzAmgDkoq67x">不里客栈-测试</a>
+                        </li><li>
                             <a href="javascript:void(0);" data-value="yG1YRd5YwlVx978D">德州客栈-测试</a>
                         </li><li>
                             <a href="javascript:void(0);" data-value="2nmPyqkqgXALj4KG">新加坡客栈-测试</a>
@@ -112,9 +114,9 @@
                         </li><li>
                             <a href="javascript:void(0);" data-value="zLNjbRVgDrk7ral2">糯米客栈-测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="LbW02pANmE5R68qX">瑞士-客栈-有为测试</a>
-                        </li><li>
                             <a href="javascript:void(0);" data-value="wJDj0pVjwok67Mve">看看客栈-测试</a>
+                        </li><li>
+                            <a href="javascript:void(0);" data-value="Ov6dW4AyDX51JDeR">广东集群-测试</a>
                         </li><li>
                             <a href="javascript:void(0);" data-value="O0lzENApEaVPyGqa">阳阳酒店-测试</a>
                         </li><li>
@@ -122,9 +124,9 @@
                         </li><li>
                             <a href="javascript:void(0);" data-value="DMygn4V9NzkJQZox">真真测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="4GoWyZA0DvAOg8aD">轩雨楼</a>
-                        </li><li>
                             <a href="javascript:void(0);" data-value="x7zjDYAL1yVlbMgE">权限设置</a>
+                        </li><li>
+                            <a href="javascript:void(0);" data-value="4GoWyZA0DvAOg8aD">轩雨楼</a>
                         </li><li>
                             <a href="javascript:void(0);" data-value="pg92jEkZr1kGYm0o">美国钟点房</a>
                         </li><li>
