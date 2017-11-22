@@ -6,7 +6,7 @@ import json
 import re
 #md5加密,返回二进制
 host_client = 'http://115.29.142.212:8020'
-login_url = host_client +'/Home/Public/login'
+login_client_url = host_client +'/Home/Public/login'
 link_client = host_client+ '/login.html'
 create_url = host_client + '/Home/Community/create'
 auth_url = host_client +'/authentication.html'
@@ -15,7 +15,7 @@ apply_verify_url = host_client + '/Home/CommunityCenter/postAuthenticationCompan
 
 #bpass
 host_bpass = "http://115.29.142.212:8021"
-login_url = host_bpass+'/Bpass/Public/doLogin'
+login_bpass_url = host_bpass+'/Bpass/Public/doLogin'
 link_bpass = host_bpass+'/Bpass/Public/login.html'
 bpass_data = {
     "username": "changlian",
@@ -53,7 +53,7 @@ def handle_hash(data,hash):
     mobile_pwd_hash = mobile_pwd+hash
     data['hash'] = md5(mobile_pwd_hash)
 def create_community(s):
-    res = s.post(create_url,data=community_data)
+    rep = s.post(create_url,data=community_data)
 #申请审核
 def apply_verity(s):
     img_url = up_image(s)
@@ -74,14 +74,15 @@ def apply_verity(s):
 def up_image(s):
     img_file = {
         'config':(None,'comVerify'),
-        'file':open(r'./demo.png','rb')}
+        'file':open(r'./verify.png','rb')}
     response = s.post(up_image_url,files=img_file).json()
     file_url = response['data']['filename']
     return file_url
 def change_commuity(s):
     info = s.get(host_client+'/userCenter.html')
-    main_info = BeautifulSoup(info.text,"html.parser")
-
+    with open('./userCenter.txt', 'wb') as fb:
+        fb.write(info.content)
+    main_info = BeautifulSoup(info.text, "html.parser")
     com_list = main_info.find('ul',id='communitySwitch')
     no_a = com_list.find('ul',class_='dropdown-menu')
     a_list = no_a.find_all('a')
@@ -94,15 +95,16 @@ def change_commuity(s):
         'no':group_no,
         'return':'/userCenter.html'
     }
+    print(group_data)
     req_url = host_client+'/Home/CommunityPage/entry.html'
     s.get(req_url,params=group_data)
     req_usecenter_url = host_client +'/userCenter.html'
     s.get(req_usecenter_url)
     #申请认证
     apply_verity(s)
-def login(req):
+def login_bpass(req):
     html_doc =req.get(link_bpass).text
-    soup = BeautifulSoup(html_doc)
+    soup = BeautifulSoup(html_doc, 'html.parser')
     img = soup.find("img",{"id":"imgcode"})
     img_path = host_bpass+img["src"]
     #req.get()得到一个response对象，对象存服务器返回的信息，
@@ -115,17 +117,17 @@ def login(req):
             fd.write(image)
         vcode = input("请输入验证码")
         bpass_data['vcode'] = vcode
-        r = req.post(login_url, data=bpass_data).json()
+        r = req.post(login_bpass_url, data=bpass_data).json()
         print(r)
         if r['status']==200:
             break
 def pass_group_verity(req,community_data):
     query_verify_url = host_bpass + '/Bpass/ComAuthority/company.html'
     group_data = {
-        'type':'',
-        'status':'',
+        'type': '',
+        'status': '',
         'name':community_data['cname'],
-        'no':''
+        'no': ''
     }
     print(group_data)
     query_group = req.get(query_verify_url,params=group_data)
@@ -158,14 +160,14 @@ if __name__ == "__main__":
     html_doc = s.get(link_client).text
     hash = get_hash(html_doc)
     handle_hash(data,hash)
-    s.post(login_url, data=data)
-    #创建集群
+    s.post(login_client_url, data=data)
+    # 创建集群
     create_community(s)
-    #切换到认证集群
+    # 切换到认证集群
     change_commuity(s)
-    #登录后台，通过审核
+    # 登录后台，通过审核
     req = requests.session()
-    login(req)
+    login_bpass(req)
     pass_group_verity(req,community_data)
 
 
