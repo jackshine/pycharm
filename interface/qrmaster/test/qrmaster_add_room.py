@@ -8,7 +8,7 @@ host = 'http://115.29.142.212:8020'
 login_url = host +'/Home/Public/login'
 link = host+ '/login.html'
 data = {
-    "mobile": "13326528030",
+    "mobile": "13480251015",
     "areaCode": "86",
     "password": "bbc69d27003568a7a94626ce4337bc9d"
 }
@@ -26,7 +26,7 @@ def md5(str):
     return m.hexdigest()
 #抓取页面的hash值
 def get_hash(html_doc):
-    soup = BeautifulSoup(html_doc)
+    soup = BeautifulSoup(html_doc, "html.parser")
     # print(soup.prettify())
     info = soup.find_all("div", class_="card")
     for i in info:
@@ -54,17 +54,17 @@ def add_floor(s):
     #爬取楼栋号
     floor_url = host + '/floor.html'
     req = s.get(floor_url)
-    soup = BeautifulSoup(req.text)
+    soup = BeautifulSoup(req.text, "html.parser")
     with open('./floor_html.txt', 'wb') as fd:
         fd.write(req.content)
     floor_html = soup.find('option')
     build_no = floor_html['value']
-    #请求楼层数据
+    # 请求楼层数据
     floor_data = {
         'build':build_no,
-        'floors[0][name]':'楼层1',
-        'floors[0][num]':'123',
-        'floors[0][desc]':'楼层1'
+        'floors[0][name]': '楼层1',
+        'floors[0][num]': '121',
+        'floors[0][desc]': '楼层1',
     }
     add_floor_url = host+'/Home/Room/addFloors'
     req = s.post(add_floor_url,data=floor_data)
@@ -73,7 +73,7 @@ def crawler_bulid(s):
     # 爬取楼栋号
     floor_url = host + '/floor.html'
     req = s.get(floor_url)
-    soup = BeautifulSoup(req.text)
+    soup = BeautifulSoup(req.text, "html.parser")
     with open('./floor_html.txt', 'wb') as fd:
         fd.write(req.content)
     floor_html = soup.find('option')
@@ -85,12 +85,12 @@ def crawler_floor(s):
     # 爬取楼层号
     floor_url = host + '/floor.html'
     req = s.get(floor_url)
-    soup = BeautifulSoup(req.text)
-    floor_html = soup.find('div',id_='doc-center-body')
-    #floor_no = floor_html['value']
+    soup = BeautifulSoup(req.text, "html.parser")
+    floor_html = soup.find('div', id_='doc-center-body')
+    floor_no = floor_html['value']
     print(floor_html)
     #print(floor_no)
-    #return floor_no
+    return floor_no
 def add_room(s):
     build_no = crawler_bulid(s)
     floor_no = crawler_floor(s)
@@ -109,28 +109,29 @@ def add_room(s):
 
 def change_commuity(s):
     info = s.get(host+'/userCenter.html')
-    with open('./community_html.txt','wb') as fd:
+    with open('./userCenter.txt','wb') as fd:
         fd.write(info.content)
-    main_info = BeautifulSoup(info.text)
-    com_list = main_info.find_all('ul',class_='dropdown-menu')
-    print(com_list)
-    a_list = com_list[-1].find_all('a')
-    no_list = []
+    main_info = BeautifulSoup(info.text,"html.parser")
+    com_list = main_info.find('ul',id='communitySwitch')
+    # print(com_list.find('ul',class_='dropdown-menu'))
+    no_a = com_list.find('ul',class_='dropdown-menu')
+    a_list = no_a.find_all('a')
+    group_no = 0
     for i in a_list:
-        no_list.append(i['data-value'])
-    print(no_list)
-    #获取最后一个no，发送请求
-    group_no = no_list[-1]
+        if '瑞士-客栈-有为测试' in i.string:
+           group_no=i['data-value']
+    #获取no，发送请求
     group_data = {
         'no':group_no,
         'return':'/userCenter.html'
     }
+    print(group_data)
     #/Home/CommunityPage/entry.html?no=LbW02pANmE5R68qX&return=/userCenter.html
-    req_url = host+'/Home/CommunityPage/entry.html?'+'no='+group_no+'&return=%2FuserCenter.html'
-    s.get(req_url,data=group_data)
+    req_url = host+'/Home/CommunityPage/entry.html'
+    s.get(req_url,params=group_data)
     req_usecenter_url = host +'/userCenter.html'
     s.get(req_usecenter_url)
-    add_room(s)
+    add_floor(s)
 if __name__ == "__main__":
     s = requests.session()
     html_doc = s.get(link).text

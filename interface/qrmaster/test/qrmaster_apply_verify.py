@@ -79,7 +79,9 @@ def change_commuity(s):
     com_list = main_info.find('ul',id='communitySwitch')
     #print(com_list.find('ul',class_='dropdown-menu'))
     no_a = com_list.find('ul',class_='dropdown-menu')
+    print(type(no_a))
     a_list = no_a.find_all('a')
+    print(type(a_list))
     group_no = 0
     for i in a_list:
         if '瑞士-客栈-有为测试' in i.string:

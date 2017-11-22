@@ -17,7 +17,7 @@ apply_verify_url = host_client + '/Home/CommunityCenter/postAuthenticationCompan
 host_bpass = "http://115.29.142.212:8021"
 login_url = host_bpass+'/Bpass/Public/doLogin'
 link_bpass = host_bpass+'/Bpass/Public/login.html'
-data = {
+bpass_data = {
     "username": "changlian",
     "password": "49dec5fb8af4eeef7c95e7f5c66c8ae6"
 }
@@ -80,9 +80,8 @@ def up_image(s):
     return file_url
 def change_commuity(s):
     info = s.get(host_client+'/userCenter.html')
-    with open('./userCenter.txt','wb') as fd:
-        fd.write(info.content)
     main_info = BeautifulSoup(info.text,"html.parser")
+
     com_list = main_info.find('ul',id='communitySwitch')
     no_a = com_list.find('ul',class_='dropdown-menu')
     a_list = no_a.find_all('a')
@@ -95,8 +94,8 @@ def change_commuity(s):
         'no':group_no,
         'return':'/userCenter.html'
     }
-    req_url = host_client+'/Home/CommunityPage/entry.html?'+'no='+group_no+'&return=%2FuserCenter.html'
-    s.get(req_url,data=group_data)
+    req_url = host_client+'/Home/CommunityPage/entry.html'
+    s.get(req_url,params=group_data)
     req_usecenter_url = host_client +'/userCenter.html'
     s.get(req_usecenter_url)
     #申请认证
@@ -104,7 +103,6 @@ def change_commuity(s):
 def login(req):
     html_doc =req.get(link_bpass).text
     soup = BeautifulSoup(html_doc)
-    #print(soup.prettify())
     img = soup.find("img",{"id":"imgcode"})
     img_path = host_bpass+img["src"]
     #req.get()得到一个response对象，对象存服务器返回的信息，
@@ -116,22 +114,21 @@ def login(req):
         with open('demo.jpg','wb') as fd:
             fd.write(image)
         vcode = input("请输入验证码")
-        data['vcode'] = vcode
-        r = req.post(login_url, data=data).json()
+        bpass_data['vcode'] = vcode
+        r = req.post(login_url, data=bpass_data).json()
         print(r)
         if r['status']==200:
             break
-def pass_group_verity(req):
+def pass_group_verity(req,community_data):
     query_verify_url = host_bpass + '/Bpass/ComAuthority/company.html'
     group_data = {
         'type':'',
         'status':'',
-        'name':'瑞士-客栈-有为测试',
+        'name':community_data['cname'],
         'no':''
     }
+    print(group_data)
     query_group = req.get(query_verify_url,params=group_data)
-    with open('./query_verify_url.txt', 'wb') as fd:
-        fd.write(query_group.content)
     soup = BeautifulSoup(query_group.text)
     s_table = soup.find('table', id='questionTalbe')
     a_list = s_table.find_all('a')
@@ -154,45 +151,6 @@ def pass_group_verity(req):
     }
     v = req.post(verify_page_url, files=verify_data)
     print(v.text)
-def pass_verity(req):
-    #请求企业认证页面，获取最后一页的链接
-    company_verify_url = host_bpass+'/Bpass/ComAuthority/company.html'
-    response = req.get(company_verify_url)
-    with open('./company_verify_page.txt','wb') as fd:
-        fd.write(response.content)
-    soup = BeautifulSoup(response.text)
-    page_list = soup.find_all('a',class_='num')
-    #得到最后一页的链接
-    page_list_url = page_list[-1]['href']
-    #请求最后一页的链接，获取最后一个集群的链接
-    res_last_page = req.get(host_bpass+page_list_url)
-    with open('./res_last_page.txt','wb') as fd:
-        fd.write(res_last_page.content)
-    soup = BeautifulSoup(res_last_page.text)
-    last_community_list = soup.find_all('a',class_='btn btn-primary btn-sm')
-    last_community = last_community_list[-1]['href']
-    print(last_community)
-    reObj1 = re.compile('[0-9]+')
-    #得到集群的id
-    id = reObj1.findall(last_community)[0]
-    page_id = reObj1.findall(last_community)[1]
-
-    #拼接审核页面，通过审核
-    #http://115.29.142.212:8021/Bpass/ComAuthority/companyStatus/id/581/userloginID/1623.html
-    verify_page_url = host_bpass+'/Bpass/ComAuthority/companyStatus/id/'+id+'/userloginID/'+page_id+'.html'
-    print(verify_page_url)
-    verify_data ={
-        "id":(None,id),
-        "status":(None,"3"),
-        "agencyId":(None,"1"),
-        "representative":(None,"33323"),
-        "hotelSign":(None,"00000"),
-        "brandTypeId":(None,"1"),
-        "typeSignId":(None,"1"),
-        "authorityNote":(None,"22244"),
-    }
-    v = req.post(verify_page_url,files=verify_data)
-    print(v.text)
 if __name__ == "__main__":
     s = requests.session()
     cname = input("输入创建集群的名字：")
@@ -200,14 +158,15 @@ if __name__ == "__main__":
     html_doc = s.get(link_client).text
     hash = get_hash(html_doc)
     handle_hash(data,hash)
-    a  = s.post(login_url, data=data)
+    s.post(login_url, data=data)
+    #创建集群
     create_community(s)
     #切换到认证集群
     change_commuity(s)
     #登录后台，通过审核
     req = requests.session()
     login(req)
-    pass_group_verity(req)
+    pass_group_verity(req,community_data)
 
 
 
