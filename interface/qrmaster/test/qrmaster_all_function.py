@@ -55,6 +55,8 @@ def handle_hash(data,hash):
 def create_community(s):
     rep = s.post(create_url,data=community_data)
 #申请审核
+
+
 def apply_verity(s):
     img_url = up_image(s)
     print(host_client+img_url)
@@ -70,6 +72,8 @@ def apply_verity(s):
         "areaCode":"86"
     }
     response = s.post(apply_verify_url,data=apply_data).json()
+
+
 #上传图片
 def up_image(s):
     img_file = {
@@ -78,6 +82,8 @@ def up_image(s):
     response = s.post(up_image_url,files=img_file).json()
     file_url = response['data']['filename']
     return file_url
+
+
 def change_commuity(s):
     info = s.get(host_client+'/userCenter.html')
     with open('./userCenter.txt', 'wb') as fb:
@@ -100,17 +106,49 @@ def change_commuity(s):
     s.get(req_url,params=group_data)
     req_usecenter_url = host_client +'/userCenter.html'
     s.get(req_usecenter_url)
-    #申请认证
-    apply_verity(s)
+    return s
+
+
+def detele_all_room(s):
+    # 爬取所有的room_id
+    room_id_list = get_all_room_id(s)
+    print(room_id_list)
+    # 请求删除房间接口
+    detele_room_url = host_client + '/Home/Room/deleteRoom'
+    count = 0
+    for i in room_id_list:
+        data = {
+             'room':i
+        }
+        count += 1
+        if count==10:
+            print(count)
+            detele_all_room(s)
+        info = s.post(detele_room_url, data=data)
+
+def get_all_room_id(s):
+    req_url = host_client + '/room.html'
+    data = s.get(req_url)
+    soup = BeautifulSoup(data.text, "html.parser")
+    table_soup = soup.find('table', id='roomTable')
+    # print(table_soup)
+    td_id_list = table_soup.find_all('td', class_='col-xs-3')
+    room_id_list = []
+    for i in td_id_list:
+        room_id_list.append(i['data-value'])
+        print(i['data-value'])
+    return room_id_list
+
+
 def login_bpass(req):
     html_doc =req.get(link_bpass).text
     soup = BeautifulSoup(html_doc, 'html.parser')
     img = soup.find("img",{"id":"imgcode"})
     img_path = host_bpass+img["src"]
-    #req.get()得到一个response对象，对象存服务器返回的信息，
-    #返回的页面会存在.content和.text对象。
-    #.content返回的是字节码
-    #.text存的是Beautifulsoup根据猜测的编码方式将content内容编码成字符串。
+    # req.get()得到一个response对象，对象存服务器返回的信息，
+    # 返回的页面会存在.content和.text对象。
+    # .content返回的是字节码
+    # .text存的是Beautifulsoup根据猜测的编码方式将content内容编码成字符串。
     while True:
         image = req.get(img_path,stream=True).content
         with open('demo.jpg','wb') as fd:
@@ -121,6 +159,8 @@ def login_bpass(req):
         print(r)
         if r['status']==200:
             break
+
+
 def pass_group_verity(req,community_data):
     query_verify_url = host_bpass + '/Bpass/ComAuthority/company.html'
     group_data = {
@@ -155,20 +195,24 @@ def pass_group_verity(req,community_data):
     print(v.text)
 if __name__ == "__main__":
     s = requests.session()
-    cname = input("输入创建集群的名字：")
+    cname = input("输入集群的名字：")
     community_data['cname'] = cname
     html_doc = s.get(link_client).text
     hash = get_hash(html_doc)
     handle_hash(data,hash)
     s.post(login_client_url, data=data)
-    # 创建集群
-    create_community(s)
+    # # 创建集群
+    # create_community(s)
     # 切换到认证集群
-    change_commuity(s)
+    s = change_commuity(s)
+    #申请认证
+    # apply_verity(s)
+    # 删除所有房间
+    detele_all_room(s)
     # 登录后台，通过审核
-    req = requests.session()
-    login_bpass(req)
-    pass_group_verity(req,community_data)
+    # req = requests.session()
+    # login_bpass(req)
+    # pass_group_verity(req,community_data)
 
 
 
