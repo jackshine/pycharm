@@ -126,6 +126,27 @@ def detele_all_room(s):
             detele_all_room(s)
         info = s.post(detele_room_url, data=data)
 
+
+def update_room_type(s):
+    room_no_list = get_all_room_id(s)
+    req_url = host_client + '/Home/Room/saveRoom'
+    get_all_room_info(s)
+
+def get_all_room_info(s):
+    # 房间id:'room' 房间名：'name'房间号:'no' 锁编号：'num' 锁类型'locktype'
+    req_url = host_client + '/room.html'
+    data = s.get(req_url)
+    soup = BeautifulSoup(data.text, "html.parser")
+    table_soup = soup.find('table', id='roomTable')
+    # 玫瑰花客栈-测试
+    td_soup =table_soup.tbody.tr.td
+    list_data = []
+    data = {}
+    for i in range(14):
+        td_soup = td_soup.next_sibling
+        print(td_soup)
+
+
 def get_all_room_id(s):
     req_url = host_client + '/room.html'
     data = s.get(req_url)
@@ -208,7 +229,8 @@ if __name__ == "__main__":
     #申请认证
     # apply_verity(s)
     # 删除所有房间
-    detele_all_room(s)
+    # detele_all_room(s)
+    update_room_type(s)
     # 登录后台，通过审核
     # req = requests.session()
     # login_bpass(req)
