@@ -111,20 +111,19 @@ def change_commuity(s):
 
 def detele_all_room(s):
     # 爬取所有的room_id
-    room_id_list = get_all_room_id(s)
-    print(room_id_list)
+    room_info = get_all_room_info(s)
     # 请求删除房间接口
     detele_room_url = host_client + '/Home/Room/deleteRoom'
     count = 0
-    for i in room_id_list:
+    for i in room_info:
         data = {
-             'room':i
+             'room':i['room']
         }
         count += 1
         if count==10:
             print(count)
             detele_all_room(s)
-        info = s.post(detele_room_url, data=data)
+        s.post(detele_room_url, data=data)
 
 
 def update_room_type(s):
@@ -169,20 +168,6 @@ def get_all_room_info(s):
         td_soup = tr_soup.td
     print(list_data)
     return list_data
-
-
-def get_all_room_id(s):
-    req_url = host_client + '/room.html'
-    data = s.get(req_url)
-    soup = BeautifulSoup(data.text, "html.parser")
-    table_soup = soup.find('table', id='roomTable')
-    # print(table_soup)
-    td_id_list = table_soup.find_all('td', class_='col-xs-3')
-    room_id_list = []
-    for i in td_id_list:
-        room_id_list.append(i['data-value'])
-        print(i['data-value'])
-    return room_id_list
 
 
 def login_bpass(req):
@@ -253,8 +238,8 @@ if __name__ == "__main__":
     #申请认证
     # apply_verity(s)
     # 删除所有房间
-    # detele_all_room(s)
-    update_room_type(s)
+    detele_all_room(s)
+    # update_room_type(s)
     # 登录后台，通过审核
     # req = requests.session()
     # login_bpass(req)
