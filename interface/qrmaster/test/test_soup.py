@@ -1,8 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
-soup = BeautifulSoup(open('./company_verify_html.html','r',encoding='utf-8'),'html.parser')
+soup = BeautifulSoup(open('./table.html','r',encoding='utf-8'),'html.parser')
 #print(soup.find('table',id='questionTalbe'))
-s_table = soup.find('table',id='questionTalbe')
-a_list = s_table.find_all('a')
-a_href = a_list[-1]['href']
-print(a_href)
+table = soup.find('table',id='roomTable')
+#print(table.tbody.tr.next_sibling.next_sibling)
+tr_list = table.tbody.find_all('tr')
+num = 0
+for i in tr_list:
+    num += 1
+print(num)

@@ -128,9 +128,12 @@ def detele_all_room(s):
 
 
 def update_room_type(s):
-    room_no_list = get_all_room_id(s)
     req_url = host_client + '/Home/Room/saveRoom'
-    get_all_room_info(s)
+    room_data = get_all_room_info(s)
+    for i in range(room_data.__len__()):
+        for single_room in room_data:
+            single_room['locktype']='1'
+            s.post(req_url,data=single_room)
 
 def get_all_room_info(s):
     # 房间id:'room' 房间名：'name'房间号:'no' 锁编号：'num' 锁类型'locktype'
@@ -139,12 +142,33 @@ def get_all_room_info(s):
     soup = BeautifulSoup(data.text, "html.parser")
     table_soup = soup.find('table', id='roomTable')
     # 玫瑰花客栈-测试
-    td_soup =table_soup.tbody.tr.td
+    tr_list = table_soup.tbody.find_all('tr')
+    #计算tr的数量，得到有多少个房间
+    num = 0
+    for i in tr_list:
+        num += 1
+    tr_soup = table_soup.tbody.tr
+    td_soup = tr_soup.td
     list_data = []
-    data = {}
-    for i in range(14):
-        td_soup = td_soup.next_sibling
-        print(td_soup)
+    count = 0
+    while True:
+        data = {}
+        for i in range(16):
+            td_soup = td_soup.next_sibling
+        data_room = {}
+        data_room['room']=td_soup['data-value']
+        data_room['name']=td_soup['data-name']
+        data_room['no']=td_soup['data-no']
+        data_room['num']=td_soup['data-num']
+        data_room['locktype']=td_soup['data-locktype']
+        list_data.append(data_room)
+        count += 1
+        if count == num:
+            break
+        tr_soup = tr_soup.next_sibling
+        td_soup = tr_soup.td
+    print(list_data)
+    return list_data
 
 
 def get_all_room_id(s):
