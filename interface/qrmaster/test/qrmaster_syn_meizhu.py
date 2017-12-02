@@ -81,17 +81,7 @@ def change_commuity(s):
 
 #同步美住客栈
 def syn_community(s):
-    s.get(host_client+'/sync.html')
-    s.get(host_client+'/syncAccount.html')
-    sync_switch_url = host_client + '/Home/Sync/switchAccount'
-    data = {
-        'meizhu':'13326528030',
-        'password':'111111b',
-        'areaCode':'86'
-    }
-    s.post(sync_switch_url,data=data)
-    s.get(host_client+'/syncAccount.html')
-    s.get(host_client+'/syncCommunity.html')
+    s = syn_login_meizhu(s)
     resp_data = s.post(host_client + '/Home/Sync/getHotel').json()
     com_data = resp_data['data'][-1]
     params = {
@@ -102,11 +92,51 @@ def syn_community(s):
         "communityname": com_data["name"]
     }
     data = {
-        "hotels": str([params])
+        "hotels": '['+json.dumps(params, ensure_ascii=False)+']'
     }
-    print(data)
+    # print(data)
     syn_url = host_client + '/Home/Sync/syncCommunity'
     s.post(syn_url,data=data)
+
+    # 同步房间
+    hotel_data = {
+        'hotelId': com_data["hotelentity_id"],
+        'communityId': com_data["communityid"],
+    }
+    res = s.post(host_client + '/Home/Sync/getRoom', data=hotel_data).json()
+    # print(res)
+    room_dict = {}
+    room_list = []
+    room_str = ''
+    for room in res['data'][0]['room']:
+        room_dict['id']= room['id']
+        room_dict['name']=room['name']
+        room_list.append(room_dict)
+        room_str=room_str+json.dumps(room_dict)+','
+    add_room_data = {
+        'hotelId': com_data["hotelentity_id"],
+        'communityId':  com_data["communityid"],
+        'builderName': '楼栋1',
+        'builderNum': '1',
+        'floorName': '楼层1',
+        'floorNum': '1',
+        'roomsAdd': '['+room_str[0:room_str.__len__()-1]+']',
+    }
+    print(add_room_data)
+    response = s.post(host_client+'/Home/Sync/syncRoomAdd', data=add_room_data)
+    print(response.text)
+
+
+def syn_login_meizhu(s):
+    sync_switch_url = host_client + '/Home/Sync/switchAccount'
+    data = {
+        'meizhu': '13326528030',
+        'password': '111111b',
+        'areaCode': '86'
+    }
+    s.post(sync_switch_url, data=data)
+    return s
+
 if __name__ == "__main__":
     s = requests.session()
     html_doc = s.get(link_client).text
