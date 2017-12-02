@@ -21,6 +21,7 @@
     <SUITE FILE_PATH="coverage/pycharm$reduce_demo2.coverage" NAME="reduce_demo2 Coverage Results" MODIFIED="1509280916435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1510502951423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/demo" />
     <SUITE FILE_PATH="coverage/pycharm$feibonaqie2.coverage" NAME="feibonaqie2 Coverage Results" MODIFIED="1509029910799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
+    <SUITE FILE_PATH="coverage/pycharm$meizhu_login.coverage" NAME="meizhu_login Coverage Results" MODIFIED="1512206648174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu/login" />
     <SUITE FILE_PATH="coverage/pycharm$p_test18_way1.coverage" NAME="p_test18_way1 Coverage Results" MODIFIED="1508569529326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods.coverage" NAME="Unittests for basic_demo.TestStringMethods Coverage Results" MODIFIED="1503417202207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_post.coverage" NAME="jenkins_build_post Coverage Results" MODIFIED="1508340794768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
@@ -129,6 +130,7 @@
     <SUITE FILE_PATH="coverage/pycharm$test_demo8.coverage" NAME="test_demo8 Coverage Results" MODIFIED="1508430934703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_bpass.coverage" NAME="qrmaster_community_bpass Coverage Results" MODIFIED="1511022594953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_requests_post__1_.coverage" NAME="jenkins_build_requests_post (1) Coverage Results" MODIFIED="1508342446711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$meizhu_all_function.coverage" NAME="meizhu_all_function Coverage Results" MODIFIED="1512207034692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_in_unittest__demo_py.coverage" NAME="Unittests in unittest__demo.py Coverage Results" MODIFIED="1510479129021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_online_test_get_room_list.coverage" NAME="qrmaster_online_test_get_room_list Coverage Results" MODIFIED="1510978514352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/room" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase Coverage Results" MODIFIED="1508657005232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
@@ -189,11 +191,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meizhu_login_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interface/meizhu/login/meizhu_login_test.py">
+      <file leaf-file-name="meizhu_all_function.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interface/meizhu/meizhu_all_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -252,8 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/import_test/package/Model/__init__.py" />
-        <option value="$PROJECT_DIR$/import_test/package/__init__.py" />
         <option value="$PROJECT_DIR$/import_test/package/Operate/__init__.py" />
         <option value="$PROJECT_DIR$/import_test/package/Operate/foo.py" />
         <option value="$PROJECT_DIR$/import_test/package/Operate/OperateExcel.py" />
@@ -303,6 +303,8 @@
         <option value="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_all_function.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py" />
         <option value="$PROJECT_DIR$/interface/meizhu/login/meizhu_login_test.py" />
+        <option value="$PROJECT_DIR$/interface/meizhu/login/meizhu_login.py" />
+        <option value="$PROJECT_DIR$/interface/meizhu/meizhu_all_function.py" />
       </list>
     </option>
   </component>
@@ -313,7 +315,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
+    <option name="x" value="544" />
+    <option name="y" value="10" />
     <option name="width" value="1040" />
     <option name="height" value="788" />
   </component>
@@ -360,13 +363,6 @@
               <item name="interface" type="462c0819:PsiDirectoryNode" />
               <item name="meizhu" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="meizhu" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -382,11 +378,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\interface\meizhu" />
       <recent name="D:\linyouwei\python\pycharm\interface\qrmaster\test" />
       <recent name="D:\linyouwei\python\pycharm\interface\qrmaster\login\garbage" />
       <recent name="D:\linyouwei\python\pycharm\interface\qrmaster" />
       <recent name="D:\linyouwei\python\pycharm\import_test" />
-      <recent name="D:\linyouwei\python\pycharm\interface\unittest\test_case" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\linyouwei\python\pycharm\interface\qrmaster\test" />
@@ -408,7 +404,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.meizhu_login_test">
+  <component name="RunManager" selected="Python.meizhu_all_function">
+    <configuration name="meizhu_all_function" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/meizhu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/meizhu/meizhu_all_function.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="meizhu_login" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/meizhu/login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\linyouwei\python\pycharm\interface\meizhu\meizhu_all_function.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="meizhu_login_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -463,56 +495,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test_range" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/test/test_range.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test_soup" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/qrmaster/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/qrmaster/test/test_soup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_all_function" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_range" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_soup" />
-      <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu" />
-      <item index="4" class="java.lang.String" itemvalue="Python.meizhu_login_test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu" />
+      <item index="2" class="java.lang.String" itemvalue="Python.meizhu_login_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.meizhu_login" />
+      <item index="4" class="java.lang.String" itemvalue="Python.meizhu_all_function" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.meizhu_login_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu" />
-        <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_all_function" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_soup" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_range" />
+        <item index="0" class="java.lang.String" itemvalue="Python.meizhu_all_function" />
+        <item index="1" class="java.lang.String" itemvalue="Python.meizhu_login" />
+        <item index="2" class="java.lang.String" itemvalue="Python.meizhu_login_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu" />
+        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_all_function" />
       </list>
     </recent_temporary>
   </component>
@@ -647,9 +643,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="330" y="0" width="1040" height="788" extended-state="0" />
+    <frame x="544" y="10" width="1040" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3046875" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3046875" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47710487" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
@@ -721,11 +718,6 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/interface/meizhu/login/meizhu_login_test.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_add_room.py</url>
           <line>108</line>
           <option name="timeStamp" value="40" />
@@ -745,13 +737,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/requests_api2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/requests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1043,6 +1028,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interface/meizhu/login/meizhu_login_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -1051,10 +1044,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/meizhu/login/meizhu_login_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/meizhu/meizhu_all_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
           <folding />
         </state>
       </provider>
