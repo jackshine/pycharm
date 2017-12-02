@@ -194,8 +194,8 @@
       <file leaf-file-name="meizhu_all_function.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interface/meizhu/meizhu_all_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="177">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -314,9 +314,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="544" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="360" />
+    <option name="y" value="14" />
     <option name="width" value="1040" />
     <option name="height" value="788" />
   </component>
@@ -643,7 +643,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="544" y="10" width="1040" height="788" extended-state="0" />
+    <frame x="360" y="14" width="1040" height="788" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3046875" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
@@ -1046,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/meizhu/meizhu_all_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="177">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding />
         </state>
       </provider>
