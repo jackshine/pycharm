@@ -114,59 +114,68 @@ def detele_all_room(s):
     room_info = get_all_room_info(s)
     # 请求删除房间接口
     detele_room_url = host_client + '/Home/Room/deleteRoom'
-    count = 0
     for i in room_info:
         data = {
              'room':i['room']
         }
-        count += 1
-        if count==10:
-            print(count)
-            detele_all_room(s)
         s.post(detele_room_url, data=data)
 
 
 def update_room_type(s):
     req_url = host_client + '/Home/Room/saveRoom'
     room_data = get_all_room_info(s)
+    for i in room_data:
+        print(i)
     for i in range(room_data.__len__()):
         for single_room in room_data:
             single_room['locktype']='1'
             s.post(req_url,data=single_room)
 
 def get_all_room_info(s):
-    # 房间id:'room' 房间名：'name'房间号:'no' 锁编号：'num' 锁类型'locktype'
-    req_url = host_client + '/room.html'
-    data = s.get(req_url)
-    soup = BeautifulSoup(data.text, "html.parser")
-    table_soup = soup.find('table', id='roomTable')
-    # 玫瑰花客栈-测试
-    tr_list = table_soup.tbody.find_all('tr')
-    #计算tr的数量，得到有多少个房间
-    num = 0
-    for i in tr_list:
-        num += 1
-    tr_soup = table_soup.tbody.tr
-    td_soup = tr_soup.td
+    # 得到每个房间页面的请求链接
+    req_index_url = host_client + '/room.html'
+    room_html = s.get(req_index_url)
+    soup = BeautifulSoup(room_html.text, "html.parser")
+    div_tag = soup.find('div', id='doc-center-page')
+    # print(table.tbody.tr.next_sibling.next_sibling)
+    page_url = div_tag.find_all('a')
+    page_url = page_url[:-page_url.__len__():-1]
+    page_url_list = []
+    for  i in page_url:
+        page_url_list.append(i['href'])
+    page_url_list.append('room_1.html')
     list_data = []
-    count = 0
-    while True:
-        data = {}
-        for i in range(16):
-            td_soup = td_soup.next_sibling
-        data_room = {}
-        data_room['room']=td_soup['data-value']
-        data_room['name']=td_soup['data-name']
-        data_room['no']=td_soup['data-no']
-        data_room['num']=td_soup['data-num']
-        data_room['locktype']=td_soup['data-locktype']
-        list_data.append(data_room)
-        count += 1
-        if count == num:
-            break
-        tr_soup = tr_soup.next_sibling
+    for url in page_url_list:
+        # 房间id:'room' 房间名：'name'房间号:'no' 锁编号：'num' 锁类型'locktype'
+        req_url = host_client + '/'+ url
+        data = s.get(req_url)
+        soup = BeautifulSoup(data.text, "html.parser")
+        table_soup = soup.find('table', id='roomTable')
+        # 玫瑰花客栈-测试
+        tr_list = table_soup.tbody.find_all('tr')
+        #计算tr的数量，得到有多少个房间
+        num = 0
+        for i in tr_list:
+            num += 1
+        tr_soup = table_soup.tbody.tr
         td_soup = tr_soup.td
-    print(list_data)
+        count = 0
+        while True:
+            data = {}
+            for i in range(16):
+                td_soup = td_soup.next_sibling
+            data_room = {}
+            data_room['room']=td_soup['data-value']
+            data_room['name']=td_soup['data-name']
+            data_room['no']=td_soup['data-no']
+            data_room['num']=td_soup['data-num']
+            data_room['locktype']=td_soup['data-locktype']
+            list_data.append(data_room)
+            count += 1
+            if count == num:
+                break
+            tr_soup = tr_soup.next_sibling
+            td_soup = tr_soup.td
     return list_data
 
 
@@ -226,6 +235,7 @@ def pass_group_verity(req,community_data):
 if __name__ == "__main__":
     s = requests.session()
     cname = input("输入集群的名字：")
+    # 春日客栈-测试 玫瑰花客栈-测试
     community_data['cname'] = cname
     html_doc = s.get(link_client).text
     hash = get_hash(html_doc)
