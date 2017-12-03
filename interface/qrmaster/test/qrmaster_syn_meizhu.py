@@ -4,6 +4,7 @@ import hashlib
 from bs4 import BeautifulSoup
 import json
 import re
+import time
 
 # 锁掌柜
 qrm_client = 'http://115.29.142.212:8020'
@@ -82,6 +83,7 @@ def mz_login_bpass(b):
 def mz_bpass_pass_hotel(b, h_name):
     info = b.get(mz_bpass + "/index.php/Home/HotelApply/index.html")
     soup = BeautifulSoup(info.text, 'html.parser')
+
     td_list = soup.find('td', text=h_name).parent.find_all('td')
     h_info = json.loads(td_list[-1].button['data-json'], encoding='utf-8')
     mz_bpass_apply_data = {
@@ -190,11 +192,12 @@ def syn_community(s):
     s = syn_login_meizhu(s)
     resp_data = s.post(qrm_client + '/Home/Sync/getHotel').json()
     com_data = resp_data['data'][-1]
+    # 此时得到的com_data 中的communityid是为0
     params = {
-        "hotelid": int(com_data["hotelentity_id"]),
+        "hotelid": com_data["hotelentity_id"],
         "hotelname": com_data["name"],
         "communityid": com_data["communityid"],
-        "universaltime_id": int(com_data["universaltime_id"]),
+        "universaltime_id": com_data["universaltime_id"],
         "communityname": com_data["name"]
     }
     data = {
@@ -202,13 +205,19 @@ def syn_community(s):
     }
     syn_url = qrm_client + '/Home/Sync/syncCommunity'
     s.post(syn_url, data=data)
+    # 重复请求getHotel 得到community_no
+    resp_data = s.post(qrm_client + '/Home/Sync/getHotel').json()
+    com_data = resp_data['data'][-1]
+    com_data['communityid'] = com_data['communityid']
 
     # 同步房间
     hotel_data = {
         'hotelId': com_data["hotelentity_id"],
         'communityId': com_data["communityid"],
     }
+    print(hotel_data)
     res = s.post(qrm_client + '/Home/Sync/getRoom', data=hotel_data).json()
+    print(res)
     room_dict = {}
     room_list = []
     room_str = ''
@@ -226,6 +235,7 @@ def syn_community(s):
         'floorNum': '1',
         'roomsAdd': '[' + room_str[0:room_str.__len__() - 1] + ']',
     }
+    print(add_room_data)
     s.post(qrm_client + '/Home/Sync/syncRoomAdd', data=add_room_data)
 
 
@@ -299,9 +309,10 @@ def syn_login_meizhu(s):
 
 # 锁掌柜bpass
 def qrm_bpass_login(s):
-    html_doc = s.get(qrm_bpass+'/Bpass/Public/login.htm').text
+    html_doc = s.get(qrm_bpass+'/Bpass/Public/login.html').text
     soup = BeautifulSoup(html_doc, 'html.parser')
     img = soup.find("img", {"id": "imgcode"})
+    print(img)
     img_path = qrm_bpass + img["src"]
     # req.get()得到一个response对象，对象存服务器返回的信息，
     # 返回的页面会存在.content和.text对象。
@@ -309,7 +320,7 @@ def qrm_bpass_login(s):
     # .text存的是Beautifulsoup根据猜测的编码方式将content内容编码成字符串。
     while True:
         image = s.get(img_path, stream=True).content
-        with open('qrm_vcode.jpg', 'wb') as fd:
+        with open('./qrm_vcode.jpg', 'wb') as fd:
             fd.write(image)
         vcode = input("请输入验证码")
         qrm_bpass_data['vcode'] = vcode
@@ -318,24 +329,23 @@ def qrm_bpass_login(s):
             break
 
 #锁掌柜通过认证
-def pass_group_verity(req, community_data):
+def pass_group_verity(req, qrm_community_data):
             query_verify_url = qrm_bpass + '/Bpass/ComAuthority/company.html'
             group_data = {
                 'type': '',
                 'status': '',
-                'name': community_data['cname'],
+                'name': qrm_community_data['cname'],
                 'no': ''
             }
             print(group_data)
             query_group = req.get(query_verify_url, params=group_data)
-            soup = BeautifulSoup(query_group.text)
+            soup = BeautifulSoup(query_group.text, 'html.parser')
             s_table = soup.find('table', id='questionTalbe')
             a_list = s_table.find_all('a')
             a_href = a_list[-1]['href']
             reObj1 = re.compile('[0-9]+')
             id = reObj1.findall(a_href)[0]
             page_id = reObj1.findall(a_href)[1]
-            print(id, page_id)
             # 通过审核
             verify_page_url = qrm_bpass + '/Bpass/ComAuthority/companyStatus/id/' + id + '/userloginID/' + page_id + '.html'
             verify_data = {
@@ -355,22 +365,22 @@ if __name__ == "__main__":
     # 1、美住：登陆美住客栈
     h_name = input('输入客栈名称')
     # 河源客栈-有为测试
-    # mz_hotel_data['hotel'] = h_name.strip()
+    mz_hotel_data['hotel'] = h_name.strip()
     mz_client_s = requests.session()
-    # mz_client_s.get(mz_client + '/Home/BookPage/index.html')
-    # mz_client_s.post( mz_client + '/Home/Public/login', data=mz_login_data)
+    mz_client_s.get(mz_client + '/Home/BookPage/index.html')
+    mz_client_s.post( mz_client + '/Home/Public/login', data=mz_login_data)
     #
-    # # 2、美住：创建美住客栈
-    # mz_add_hotel(mz_client_s)
-
-    # 3、登陆bpass
+    # # # 2、美住：创建美住客栈
+    mz_add_hotel(mz_client_s)
+    #
+    # # 3、登陆bpass
     mz_bpass_s = requests.session()
     mz_bpass_s = mz_login_bpass(mz_bpass_s)
-
-    # 4、美住客栈通过审核
+    # #
+    # # # 4、美住客栈通过审核
     mz_bpass_pass_hotel(mz_bpass_s, h_name)
-
-    # 5、美住新建房间
+    #
+    # # 5、美住新建房间
     mz_add_room(mz_client_s)
 
 
@@ -396,6 +406,7 @@ if __name__ == "__main__":
     qrm_bpass_s = requests.session()
     qrm_bpass_login(qrm_bpass_s)
     pass_group_verity(qrm_bpass_s, qrm_community_data)
+
 
 
 
