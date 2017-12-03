@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="酒店和企业门禁管理系统，支持酒店员工管理,支持在线分配房卡，支持手机端操作，支持同时间对多家酒店或企业进行管理，让酒店和企业门禁管理快捷，安全，酒店管理更高效。">
+        <meta name="keywords" content="锁掌柜，畅联科技，云钥匙，二维码锁，酒店门锁，门禁管理">
+        <meta name="author" content="畅联科技 <admin@hotelbrt.com>">
+        <meta name="renderer" content="webkit">
+    
+    
+    
+    
+    <title>美住 - 客栈申请</title>
+
+    <script type="text/javascript">
+        CssInitCallback = {};
+        CssInitCallback.init = function (styles) {
+            for (var i = 0; i < styles.linkId.length; i++) {
+                this.ping(i, styles);
+            }
+            ;
+        }.bind(CssInitCallback);
+        CssInitCallback.ping = function (styleIndex, styles) {
+            var linkId = styles.linkId[styleIndex];
+            var link = document.getElementById(linkId);
+            var url = link.href;
+            var fallback = styles.fallbacks[styleIndex];
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function () {
+                if (http.readyState == 4) {
+                    if (http.status != 200 && http.status != 304) {
+                        link.href = styles.local + fallback;
+                    }
+                }
+            }.bind(styles);
+            http.open("head", url, true);
+            http.send();
+        }.bind(CssInitCallback);
+    </script>
+    
+        <!--Core CSS -->
+        <link rel="stylesheet" id="css-boostrap-id" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-boostraptheme-id" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" id="css-boostraptheme-id" type="text/css" href="/Public/uclbrt/css/custom-for-bootstrap.css">
+
+        <link rel="stylesheet" type="text/css" href="/Public/src/meizhu/common.css">
+        <script type="text/javascript">
+            var baseStyle = {
+                local: "/Public/jslib/bootstrap/3.3.2/css/",
+                linkId: [
+                    'css-boostrap-id', 'css-boostraptheme-id'
+                ],
+                fallbacks: [
+                    'bootstrap.min.css', 'bootstrap-theme.min.css'
+                ]
+            };
+            window.addEventListener("load", CssInitCallback.init(baseStyle));
+        </script>
+    
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        window.html5 || document.write(unescape('%3Cscript src="/Public/jslib/html5shiv/3.7.2/html5shiv.min.js"%3E%3C/script%3E'))
+        </script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        window.respond || document.write(unescape('%3Cscript src="/Public/jslib/respond.js/1.4.2/respond.min.js"%3E%3C/script%3E'))
+        </script>
+        <![endif]-->
+    
+    <link rel="shortcut icon" href="/Public/uclbrt/image/favicon.png">
+    <!--some css or js stuff which sub html needed include in head-->
+    
+    <link rel="stylesheet" href="/Public/src/meizhu/HotelApply/index.css"/>
+
+</head>
+
+<body>
+
+    <div id="doc" data-side-menu-id="sideMenuApply" data-side-menu-toggle-id="collapseHotelToggle">
+        <div id="doc-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:void(0);">
+                <img src="/Public/uclbrt/image/logo_blue.png">
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/index.php/Home/Admin/index.html">账户管理</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">changlian                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="/index.php/Home/Public/logout.html">退出</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">帮助</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </div>
+        <div id="doc-center">
+            <div class="container">
+                <div class="col-xs-3-15">
+                    <ul class="side-menu">
+    <li class="side-menu-item menu-item-top">
+        <span>
+            <a href="javascript:void(0);" id="collapseAcountToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseAccount" aria-expanded="false">
+                <span class="glyphicon glyphicon-user"></span>账户管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseAccount">
+            <li>
+                <a href="/index.php/Home/Admin/index.html" id="sideMenuAdmin">管理员管理</a>
+            </li>
+            <li><a href="/index.php/Home/Admin/password.html"  id='sideMenuPassword' >修改密码</a></li>
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseHotelToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseHotel" aria-expanded="false">
+                <span class="glyphicon glyphicon-home"></span>客栈管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseHotel">
+            <li>
+                <a href="/index.php/Home/HotelApply/index.html" id="sideMenuApply">客栈申请</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Hotel/index.html" id="sideMenuHotel">客栈列表</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Account/main.html" id="sideMenuMainAccount">主账号管理</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Account/index.html" id="sideMenuAccount">用户管理</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Hotel/charityHotel.html" id="charityMenuHotel">客栈义卖统计</a>
+            </li>
+            <!-- 
+			<li>
+                <a href="/index.php/Home/Account/shiyong.html" id="sideMenuShiyongAccount">试用账号管理</a>
+            </li>
+             -->
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseBookToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseBooking" aria-expanded="false">
+                <span class="glyphicon glyphicon-book"></span>微预定</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseBooking">
+            <li>
+                <a href="/index.php/Home/Booking/index.html" id="sideMenuBookingIndex">使用管理</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Booking/auth.html" id="sideMenuBookingAuth">认证管理</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Booking/pay.html" id="sideMenuBookingPay">支付管理</a>
+            </li>
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseAppToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseApp" aria-expanded="false">
+                <span class="glyphicon glyphicon-phone"></span>手机APP</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseApp">
+            <li>
+                <a href="/index.php/Home/App/index.html" id="sideMenuAppIndex">使用管理</a>
+            </li>
+        </ul>
+    </li>
+    <li class="side-menu-item menu-item-center">
+        <span>
+            <a href="javascript:void(0);" id="collapseDealerToggle" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseDealer" aria-expanded="false">
+                <span class="glyphicon glyphicon-lock"></span>经销商管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseDealer">
+            <li>
+                <a href="/index.php/Home/Dealer/index.html" id="sideMenuDealerApply">经销商申请</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Dealer/hotel.html" id="sideMenuDealerHotel">客栈申请</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Dealer/account.html" id="sideMenuDealerAccount">经销商列表</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span>
+            <a href="javascript:void(0);" id="collapsePromoSetting" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapsePromo" aria-expanded="false">
+                <span class="glyphicon glyphicon-thumbs-up"></span>活动推广</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapsePromo">
+            <li>
+                <a href="/index.php/Home/Hotel/promotion.html" id="sideMenuHotelRest">酒店剩余</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span>
+            <a href="javascript:void(0);" id="collapseHotelSetting" class="sub-menu-toggle" data-toggle="collapse" data-target="#collapseSet" aria-expanded="false">
+                <span class="glyphicon glyphicon-certificate"></span>信息设置</a>
+        </span>
+        <ul class="sub-menu collapse" id="collapseSet">
+            <li>
+                <a href="/index.php/Home/Setting/notice.html" id="sideMenuApplyNotice">申请通知</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Setting/printQrcode.html" id="sideMenuApplyPrint">打印设置</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Setting/channel.html" id="sideMenuHotelChannel">默认分销渠道</a>
+            </li>
+            <li>
+                <a href="/index.php/Home/Setting/pay.html" id="sideMenuHotelPay">默认支付方式</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span>
+            <a href="javascript:void(0);" id="serverPromoSetting" class="sub-menu-toggle" data-toggle="collapse" data-target="#serverPromo" aria-expanded="false">
+                <span class="glyphicon glyphicon-wrench"></span>服务管理</a>
+        </span>
+        <ul class="sub-menu collapse" id="serverPromo">
+            <li>
+                <a href="/index.php/Home/InterfaceServer/index.html" id="sideMenuServer">接口服务</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+                </div>
+                <div class="col-xs-12-15">
+                    <nav class="navbar navbar-default navbar-custom-fitin">
+                        <div class="container-fluid">
+                            <p class="navbar-text custom-navber-text">客栈申请列表</p>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-default navbar-custom-fitin nav-padding">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse">
+                                <form id="searchForm" action="" method="post" >
+                                    <div class="form-group">
+                                        <!--  <label class="col-xs-1 control-label">客栈名称</label> -->
+                                        <div class="col-xs-3">
+                                            <input type="text" value="" class="form2-control col-xs-6"  placeholder="客栈名称、手机号"  name="k"  />
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <input href="javascript:void(0);" class="btn btn-default btn-sm  glyphicon glyphicon-search"  value='查找' type='submit' ></input>
+                                        </div>
+                                        <input type="hidden"  value=1 name='p'id='p'/> <input type="hidden"  value=Home name='m' id='m' /><input type='hidden' value='HotelApply' name='c' id='c'><input type='hidden' value='index' name='a' id='a'>                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </nav> 
+                    <div class="well well-custom-has-navbar">
+                        <div class="well-custom-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover" id="questionTalbe">
+                                    <thead>
+                                        <tr>
+                                            <th>客栈名称</th>
+                                            <th class="col-xs-2">所在城市</th>
+                                            <th>区号</th>
+                                            <th>联系方式</th>
+                                            <th>申请人</th>
+                                            <th>申请时间</th>
+                                            <th>申请状态</th>
+                                            <th class="col-xs-3">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                            <td>佛山客栈-有为测试</td>
+                                            <td>北京</td>
+                                            <td>86</td>
+                                            <td>13326528030</td>
+                                            <td>linyw</td>
+                                            <td>2017-12-03</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"133","hotelname":"\u4f5b\u5c71\u5ba2\u6808-\u6709\u4e3a\u6d4b\u8bd5","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"13326528030","username":"linyw","status":"0","dealerlogin_id":"0","createtime":"2017-12-03 10:11:29","updatetime":"2017-12-03 10:11:29","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"133","hotelname":"\u4f5b\u5c71\u5ba2\u6808-\u6709\u4e3a\u6d4b\u8bd5","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"13326528030","username":"linyw","status":"0","dealerlogin_id":"0","createtime":"2017-12-03 10:11:29","updatetime":"2017-12-03 10:11:29","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"133","hotelname":"\u4f5b\u5c71\u5ba2\u6808-\u6709\u4e3a\u6d4b\u8bd5","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"13326528030","username":"linyw","status":"0","dealerlogin_id":"0","createtime":"2017-12-03 10:11:29","updatetime":"2017-12-03 10:11:29","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"133","hotelname":"\u4f5b\u5c71\u5ba2\u6808-\u6709\u4e3a\u6d4b\u8bd5","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"13326528030","username":"linyw","status":"0","dealerlogin_id":"0","createtime":"2017-12-03 10:11:29","updatetime":"2017-12-03 10:11:29","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>as</td>
+                                            <td>太原</td>
+                                            <td>86</td>
+                                            <td>18802094078</td>
+                                            <td>luoyc</td>
+                                            <td>2017-12-01</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"123","hotelname":"as","cityname":"\u592a\u539f","city_id":"140100","district_id":"140101","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 01:19:50","updatetime":"2017-12-01 01:19:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u5c0f\u5e97\u533a"}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"123","hotelname":"as","cityname":"\u592a\u539f","city_id":"140100","district_id":"140101","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 01:19:50","updatetime":"2017-12-01 01:19:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u5c0f\u5e97\u533a"}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"123","hotelname":"as","cityname":"\u592a\u539f","city_id":"140100","district_id":"140101","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 01:19:50","updatetime":"2017-12-01 01:19:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u5c0f\u5e97\u533a"}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"123","hotelname":"as","cityname":"\u592a\u539f","city_id":"140100","district_id":"140101","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 01:19:50","updatetime":"2017-12-01 01:19:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u5c0f\u5e97\u533a"}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>测试-有为</td>
+                                            <td>辽源</td>
+                                            <td>86</td>
+                                            <td>13480251015</td>
+                                            <td>林有为</td>
+                                            <td>2017-12-01</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"121","hotelname":"\u6d4b\u8bd5-\u6709\u4e3a","cityname":"\u8fbd\u6e90","city_id":"220400","district_id":"220401","areacode":"86","mobile":"13480251015","username":"\u6797\u6709\u4e3a","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:33:03","updatetime":"2017-12-01 00:33:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u9f99\u5c71\u533a"}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"121","hotelname":"\u6d4b\u8bd5-\u6709\u4e3a","cityname":"\u8fbd\u6e90","city_id":"220400","district_id":"220401","areacode":"86","mobile":"13480251015","username":"\u6797\u6709\u4e3a","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:33:03","updatetime":"2017-12-01 00:33:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u9f99\u5c71\u533a"}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"121","hotelname":"\u6d4b\u8bd5-\u6709\u4e3a","cityname":"\u8fbd\u6e90","city_id":"220400","district_id":"220401","areacode":"86","mobile":"13480251015","username":"\u6797\u6709\u4e3a","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:33:03","updatetime":"2017-12-01 00:33:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u9f99\u5c71\u533a"}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"121","hotelname":"\u6d4b\u8bd5-\u6709\u4e3a","cityname":"\u8fbd\u6e90","city_id":"220400","district_id":"220401","areacode":"86","mobile":"13480251015","username":"\u6797\u6709\u4e3a","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:33:03","updatetime":"2017-12-01 00:33:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u9f99\u5c71\u533a"}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>阿叔</td>
+                                            <td>北京</td>
+                                            <td>86</td>
+                                            <td>18802094078</td>
+                                            <td>luoyc</td>
+                                            <td>2017-12-01</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"120","hotelname":"\u963f\u53d4","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:23:03","updatetime":"2017-12-01 00:23:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"120","hotelname":"\u963f\u53d4","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:23:03","updatetime":"2017-12-01 00:23:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"120","hotelname":"\u963f\u53d4","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:23:03","updatetime":"2017-12-01 00:23:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"120","hotelname":"\u963f\u53d4","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:23:03","updatetime":"2017-12-01 00:23:03","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>添加客栈</td>
+                                            <td>北京</td>
+                                            <td>86</td>
+                                            <td>18802094078</td>
+                                            <td>luoyc</td>
+                                            <td>2017-12-01</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"119","hotelname":"\u6dfb\u52a0\u5ba2\u6808","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:22:38","updatetime":"2017-12-01 00:22:38","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"119","hotelname":"\u6dfb\u52a0\u5ba2\u6808","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:22:38","updatetime":"2017-12-01 00:22:38","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"119","hotelname":"\u6dfb\u52a0\u5ba2\u6808","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:22:38","updatetime":"2017-12-01 00:22:38","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"119","hotelname":"\u6dfb\u52a0\u5ba2\u6808","cityname":"\u5317\u4eac","city_id":"110100","district_id":"110104","areacode":"86","mobile":"18802094078","username":"luoyc","status":"0","dealerlogin_id":"0","createtime":"2017-12-01 00:22:38","updatetime":"2017-12-01 00:22:38","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":"\u4e30\u53f0\u533a"}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>风采楼</td>
+                                            <td>韶关市浈江区风采路</td>
+                                            <td>86</td>
+                                            <td>18520945457</td>
+                                            <td>肖康</td>
+                                            <td>2016-08-16</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"71","hotelname":"\u98ce\u91c7\u697c","cityname":"\u97f6\u5173\u5e02\u6d48\u6c5f\u533a\u98ce\u91c7\u8def","city_id":"0","district_id":"0","areacode":"86","mobile":"18520945457","username":"\u8096\u5eb7","status":"0","dealerlogin_id":"0","createtime":"2016-08-16 14:10:33","updatetime":"2016-08-16 14:10:33","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"71","hotelname":"\u98ce\u91c7\u697c","cityname":"\u97f6\u5173\u5e02\u6d48\u6c5f\u533a\u98ce\u91c7\u8def","city_id":"0","district_id":"0","areacode":"86","mobile":"18520945457","username":"\u8096\u5eb7","status":"0","dealerlogin_id":"0","createtime":"2016-08-16 14:10:33","updatetime":"2016-08-16 14:10:33","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"71","hotelname":"\u98ce\u91c7\u697c","cityname":"\u97f6\u5173\u5e02\u6d48\u6c5f\u533a\u98ce\u91c7\u8def","city_id":"0","district_id":"0","areacode":"86","mobile":"18520945457","username":"\u8096\u5eb7","status":"0","dealerlogin_id":"0","createtime":"2016-08-16 14:10:33","updatetime":"2016-08-16 14:10:33","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"71","hotelname":"\u98ce\u91c7\u697c","cityname":"\u97f6\u5173\u5e02\u6d48\u6c5f\u533a\u98ce\u91c7\u8def","city_id":"0","district_id":"0","areacode":"86","mobile":"18520945457","username":"\u8096\u5eb7","status":"0","dealerlogin_id":"0","createtime":"2016-08-16 14:10:33","updatetime":"2016-08-16 14:10:33","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>惠东碧桂园荭大酒店</td>
+                                            <td>广东省惠东碧桂园十里银滩</td>
+                                            <td>86</td>
+                                            <td>13399310061</td>
+                                            <td>李万学</td>
+                                            <td>2016-08-15</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"70","hotelname":"\u60e0\u4e1c\u78a7\u6842\u56ed\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u78a7\u6842\u56ed\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13399310061","username":"\u674e\u4e07\u5b66","status":"0","dealerlogin_id":"0","createtime":"2016-08-15 17:05:51","updatetime":"2016-08-15 17:05:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"70","hotelname":"\u60e0\u4e1c\u78a7\u6842\u56ed\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u78a7\u6842\u56ed\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13399310061","username":"\u674e\u4e07\u5b66","status":"0","dealerlogin_id":"0","createtime":"2016-08-15 17:05:51","updatetime":"2016-08-15 17:05:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"70","hotelname":"\u60e0\u4e1c\u78a7\u6842\u56ed\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u78a7\u6842\u56ed\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13399310061","username":"\u674e\u4e07\u5b66","status":"0","dealerlogin_id":"0","createtime":"2016-08-15 17:05:51","updatetime":"2016-08-15 17:05:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"70","hotelname":"\u60e0\u4e1c\u78a7\u6842\u56ed\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u78a7\u6842\u56ed\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13399310061","username":"\u674e\u4e07\u5b66","status":"0","dealerlogin_id":"0","createtime":"2016-08-15 17:05:51","updatetime":"2016-08-15 17:05:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>惠州十里银滩</td>
+                                            <td>惠州海头埔</td>
+                                            <td>86</td>
+                                            <td>15622865500</td>
+                                            <td>钟小姐</td>
+                                            <td>2016-08-14</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"69","hotelname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","cityname":"\u60e0\u5dde\u6d77\u5934\u57d4","city_id":"0","district_id":"0","areacode":"86","mobile":"15622865500","username":"\u949f\u5c0f\u59d0","status":"0","dealerlogin_id":"0","createtime":"2016-08-14 18:24:43","updatetime":"2016-08-14 18:24:43","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"69","hotelname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","cityname":"\u60e0\u5dde\u6d77\u5934\u57d4","city_id":"0","district_id":"0","areacode":"86","mobile":"15622865500","username":"\u949f\u5c0f\u59d0","status":"0","dealerlogin_id":"0","createtime":"2016-08-14 18:24:43","updatetime":"2016-08-14 18:24:43","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"69","hotelname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","cityname":"\u60e0\u5dde\u6d77\u5934\u57d4","city_id":"0","district_id":"0","areacode":"86","mobile":"15622865500","username":"\u949f\u5c0f\u59d0","status":"0","dealerlogin_id":"0","createtime":"2016-08-14 18:24:43","updatetime":"2016-08-14 18:24:43","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"69","hotelname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","cityname":"\u60e0\u5dde\u6d77\u5934\u57d4","city_id":"0","district_id":"0","areacode":"86","mobile":"15622865500","username":"\u949f\u5c0f\u59d0","status":"0","dealerlogin_id":"0","createtime":"2016-08-14 18:24:43","updatetime":"2016-08-14 18:24:43","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>快乐e站</td>
+                                            <td>宝安45区</td>
+                                            <td>86</td>
+                                            <td>18617060006</td>
+                                            <td>曹操</td>
+                                            <td>2016-08-11</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"68","hotelname":"\u5feb\u4e50e\u7ad9","cityname":"\u5b9d\u5b8945\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"18617060006","username":"\u66f9\u64cd","status":"0","dealerlogin_id":"0","createtime":"2016-08-11 06:12:17","updatetime":"2016-08-11 06:12:17","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"68","hotelname":"\u5feb\u4e50e\u7ad9","cityname":"\u5b9d\u5b8945\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"18617060006","username":"\u66f9\u64cd","status":"0","dealerlogin_id":"0","createtime":"2016-08-11 06:12:17","updatetime":"2016-08-11 06:12:17","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"68","hotelname":"\u5feb\u4e50e\u7ad9","cityname":"\u5b9d\u5b8945\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"18617060006","username":"\u66f9\u64cd","status":"0","dealerlogin_id":"0","createtime":"2016-08-11 06:12:17","updatetime":"2016-08-11 06:12:17","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"68","hotelname":"\u5feb\u4e50e\u7ad9","cityname":"\u5b9d\u5b8945\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"18617060006","username":"\u66f9\u64cd","status":"0","dealerlogin_id":"0","createtime":"2016-08-11 06:12:17","updatetime":"2016-08-11 06:12:17","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>海逸湾荭大酒店</td>
+                                            <td>广东省惠东县十里银滩海逸湾</td>
+                                            <td>86</td>
+                                            <td>13802213141</td>
+                                            <td>徐飞</td>
+                                            <td>2016-08-10</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"67","hotelname":"\u6d77\u9038\u6e7e\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u53bf\u5341\u91cc\u94f6\u6ee9\u6d77\u9038\u6e7e","city_id":"0","district_id":"0","areacode":"86","mobile":"13802213141","username":"\u5f90\u98de","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 22:17:57","updatetime":"2016-08-10 22:17:57","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"67","hotelname":"\u6d77\u9038\u6e7e\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u53bf\u5341\u91cc\u94f6\u6ee9\u6d77\u9038\u6e7e","city_id":"0","district_id":"0","areacode":"86","mobile":"13802213141","username":"\u5f90\u98de","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 22:17:57","updatetime":"2016-08-10 22:17:57","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"67","hotelname":"\u6d77\u9038\u6e7e\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u53bf\u5341\u91cc\u94f6\u6ee9\u6d77\u9038\u6e7e","city_id":"0","district_id":"0","areacode":"86","mobile":"13802213141","username":"\u5f90\u98de","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 22:17:57","updatetime":"2016-08-10 22:17:57","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"67","hotelname":"\u6d77\u9038\u6e7e\u836d\u5927\u9152\u5e97","cityname":"\u5e7f\u4e1c\u7701\u60e0\u4e1c\u53bf\u5341\u91cc\u94f6\u6ee9\u6d77\u9038\u6e7e","city_id":"0","district_id":"0","areacode":"86","mobile":"13802213141","username":"\u5f90\u98de","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 22:17:57","updatetime":"2016-08-10 22:17:57","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>海悦湾</td>
+                                            <td>海悦湾20-3-905</td>
+                                            <td>86</td>
+                                            <td>13971654586</td>
+                                            <td>刘雅玲</td>
+                                            <td>2016-08-10</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"66","hotelname":"\u6d77\u60a6\u6e7e","cityname":"\u6d77\u60a6\u6e7e20-3-905","city_id":"0","district_id":"0","areacode":"86","mobile":"13971654586","username":"\u5218\u96c5\u73b2","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 19:12:40","updatetime":"2016-08-10 19:12:40","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"66","hotelname":"\u6d77\u60a6\u6e7e","cityname":"\u6d77\u60a6\u6e7e20-3-905","city_id":"0","district_id":"0","areacode":"86","mobile":"13971654586","username":"\u5218\u96c5\u73b2","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 19:12:40","updatetime":"2016-08-10 19:12:40","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"66","hotelname":"\u6d77\u60a6\u6e7e","cityname":"\u6d77\u60a6\u6e7e20-3-905","city_id":"0","district_id":"0","areacode":"86","mobile":"13971654586","username":"\u5218\u96c5\u73b2","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 19:12:40","updatetime":"2016-08-10 19:12:40","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"66","hotelname":"\u6d77\u60a6\u6e7e","cityname":"\u6d77\u60a6\u6e7e20-3-905","city_id":"0","district_id":"0","areacode":"86","mobile":"13971654586","username":"\u5218\u96c5\u73b2","status":"0","dealerlogin_id":"0","createtime":"2016-08-10 19:12:40","updatetime":"2016-08-10 19:12:40","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>sdf</td>
+                                            <td>sf</td>
+                                            <td>86</td>
+                                            <td>18098974615</td>
+                                            <td>sf</td>
+                                            <td>2016-08-08</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"65","hotelname":"sdf","cityname":"sf","city_id":"0","district_id":"0","areacode":"86","mobile":"18098974615","username":"sf","status":"0","dealerlogin_id":"0","createtime":"2016-08-08 16:27:52","updatetime":"2016-08-08 16:27:52","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"65","hotelname":"sdf","cityname":"sf","city_id":"0","district_id":"0","areacode":"86","mobile":"18098974615","username":"sf","status":"0","dealerlogin_id":"0","createtime":"2016-08-08 16:27:52","updatetime":"2016-08-08 16:27:52","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"65","hotelname":"sdf","cityname":"sf","city_id":"0","district_id":"0","areacode":"86","mobile":"18098974615","username":"sf","status":"0","dealerlogin_id":"0","createtime":"2016-08-08 16:27:52","updatetime":"2016-08-08 16:27:52","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"65","hotelname":"sdf","cityname":"sf","city_id":"0","district_id":"0","areacode":"86","mobile":"18098974615","username":"sf","status":"0","dealerlogin_id":"0","createtime":"2016-08-08 16:27:52","updatetime":"2016-08-08 16:27:52","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>荭大酒店</td>
+                                            <td>海悦湾20-3-805</td>
+                                            <td>86</td>
+                                            <td>18171978887</td>
+                                            <td>梁建华</td>
+                                            <td>2016-08-05</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"63","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u60a6\u6e7e20-3-805","city_id":"0","district_id":"0","areacode":"86","mobile":"18171978887","username":"\u6881\u5efa\u534e","status":"0","dealerlogin_id":"0","createtime":"2016-08-05 16:01:49","updatetime":"2016-08-05 16:01:49","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"63","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u60a6\u6e7e20-3-805","city_id":"0","district_id":"0","areacode":"86","mobile":"18171978887","username":"\u6881\u5efa\u534e","status":"0","dealerlogin_id":"0","createtime":"2016-08-05 16:01:49","updatetime":"2016-08-05 16:01:49","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"63","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u60a6\u6e7e20-3-805","city_id":"0","district_id":"0","areacode":"86","mobile":"18171978887","username":"\u6881\u5efa\u534e","status":"0","dealerlogin_id":"0","createtime":"2016-08-05 16:01:49","updatetime":"2016-08-05 16:01:49","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"63","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u60a6\u6e7e20-3-805","city_id":"0","district_id":"0","areacode":"86","mobile":"18171978887","username":"\u6881\u5efa\u534e","status":"0","dealerlogin_id":"0","createtime":"2016-08-05 16:01:49","updatetime":"2016-08-05 16:01:49","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>香格里拉</td>
+                                            <td>上海</td>
+                                            <td>86</td>
+                                            <td>13986519053</td>
+                                            <td>刘豹</td>
+                                            <td>2016-08-02</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"57","hotelname":"\u9999\u683c\u91cc\u62c9","cityname":"\u4e0a\u6d77","city_id":"0","district_id":"0","areacode":"86","mobile":"13986519053","username":"\u5218\u8c79","status":"0","dealerlogin_id":"0","createtime":"2016-08-02 11:44:50","updatetime":"2016-08-02 11:44:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"57","hotelname":"\u9999\u683c\u91cc\u62c9","cityname":"\u4e0a\u6d77","city_id":"0","district_id":"0","areacode":"86","mobile":"13986519053","username":"\u5218\u8c79","status":"0","dealerlogin_id":"0","createtime":"2016-08-02 11:44:50","updatetime":"2016-08-02 11:44:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"57","hotelname":"\u9999\u683c\u91cc\u62c9","cityname":"\u4e0a\u6d77","city_id":"0","district_id":"0","areacode":"86","mobile":"13986519053","username":"\u5218\u8c79","status":"0","dealerlogin_id":"0","createtime":"2016-08-02 11:44:50","updatetime":"2016-08-02 11:44:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"57","hotelname":"\u9999\u683c\u91cc\u62c9","cityname":"\u4e0a\u6d77","city_id":"0","district_id":"0","areacode":"86","mobile":"13986519053","username":"\u5218\u8c79","status":"0","dealerlogin_id":"0","createtime":"2016-08-02 11:44:50","updatetime":"2016-08-02 11:44:50","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>温馨家园</td>
+                                            <td>西安</td>
+                                            <td>86</td>
+                                            <td>13606698785</td>
+                                            <td>周丽斌</td>
+                                            <td>2016-08-01</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"56","hotelname":"\u6e29\u99a8\u5bb6\u56ed","cityname":"\u897f\u5b89","city_id":"0","district_id":"0","areacode":"86","mobile":"13606698785","username":"\u5468\u4e3d\u658c","status":"0","dealerlogin_id":"0","createtime":"2016-08-01 23:10:14","updatetime":"2016-08-01 23:10:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"56","hotelname":"\u6e29\u99a8\u5bb6\u56ed","cityname":"\u897f\u5b89","city_id":"0","district_id":"0","areacode":"86","mobile":"13606698785","username":"\u5468\u4e3d\u658c","status":"0","dealerlogin_id":"0","createtime":"2016-08-01 23:10:14","updatetime":"2016-08-01 23:10:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"56","hotelname":"\u6e29\u99a8\u5bb6\u56ed","cityname":"\u897f\u5b89","city_id":"0","district_id":"0","areacode":"86","mobile":"13606698785","username":"\u5468\u4e3d\u658c","status":"0","dealerlogin_id":"0","createtime":"2016-08-01 23:10:14","updatetime":"2016-08-01 23:10:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"56","hotelname":"\u6e29\u99a8\u5bb6\u56ed","cityname":"\u897f\u5b89","city_id":"0","district_id":"0","areacode":"86","mobile":"13606698785","username":"\u5468\u4e3d\u658c","status":"0","dealerlogin_id":"0","createtime":"2016-08-01 23:10:14","updatetime":"2016-08-01 23:10:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>地王大厦</td>
+                                            <td>深圳市福田区</td>
+                                            <td>86</td>
+                                            <td>15766264244</td>
+                                            <td>辉</td>
+                                            <td>2016-07-29</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"53","hotelname":"\u5730\u738b\u5927\u53a6","cityname":"\u6df1\u5733\u5e02\u798f\u7530\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"15766264244","username":"\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-29 15:39:14","updatetime":"2016-07-29 15:39:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"53","hotelname":"\u5730\u738b\u5927\u53a6","cityname":"\u6df1\u5733\u5e02\u798f\u7530\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"15766264244","username":"\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-29 15:39:14","updatetime":"2016-07-29 15:39:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"53","hotelname":"\u5730\u738b\u5927\u53a6","cityname":"\u6df1\u5733\u5e02\u798f\u7530\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"15766264244","username":"\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-29 15:39:14","updatetime":"2016-07-29 15:39:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"53","hotelname":"\u5730\u738b\u5927\u53a6","cityname":"\u6df1\u5733\u5e02\u798f\u7530\u533a","city_id":"0","district_id":"0","areacode":"86","mobile":"15766264244","username":"\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-29 15:39:14","updatetime":"2016-07-29 15:39:14","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>荭大酒店</td>
+                                            <td>惠州十里银滩</td>
+                                            <td>86</td>
+                                            <td>13510436085</td>
+                                            <td>关光明</td>
+                                            <td>2016-07-24</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"52","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13510436085","username":"\u5173\u5149\u660e","status":"0","dealerlogin_id":"0","createtime":"2016-07-24 07:27:02","updatetime":"2016-07-24 07:27:02","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"52","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13510436085","username":"\u5173\u5149\u660e","status":"0","dealerlogin_id":"0","createtime":"2016-07-24 07:27:02","updatetime":"2016-07-24 07:27:02","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"52","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13510436085","username":"\u5173\u5149\u660e","status":"0","dealerlogin_id":"0","createtime":"2016-07-24 07:27:02","updatetime":"2016-07-24 07:27:02","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"52","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u60e0\u5dde\u5341\u91cc\u94f6\u6ee9","city_id":"0","district_id":"0","areacode":"86","mobile":"13510436085","username":"\u5173\u5149\u660e","status":"0","dealerlogin_id":"0","createtime":"2016-07-24 07:27:02","updatetime":"2016-07-24 07:27:02","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>荭大酒店</td>
+                                            <td>海逸湾7楼单元2905</td>
+                                            <td>86</td>
+                                            <td>13622365368</td>
+                                            <td>汤铭辉</td>
+                                            <td>2016-07-22</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"51","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u697c\u5355\u51432905","city_id":"0","district_id":"0","areacode":"86","mobile":"13622365368","username":"\u6c64\u94ed\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:35:51","updatetime":"2016-07-22 12:35:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"51","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u697c\u5355\u51432905","city_id":"0","district_id":"0","areacode":"86","mobile":"13622365368","username":"\u6c64\u94ed\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:35:51","updatetime":"2016-07-22 12:35:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"51","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u697c\u5355\u51432905","city_id":"0","district_id":"0","areacode":"86","mobile":"13622365368","username":"\u6c64\u94ed\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:35:51","updatetime":"2016-07-22 12:35:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"51","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u697c\u5355\u51432905","city_id":"0","district_id":"0","areacode":"86","mobile":"13622365368","username":"\u6c64\u94ed\u8f89","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:35:51","updatetime":"2016-07-22 12:35:51","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>荭大酒店</td>
+                                            <td>海逸湾7号2单元2105</td>
+                                            <td>86</td>
+                                            <td>18924667665</td>
+                                            <td>黎柳琴</td>
+                                            <td>2016-07-22</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"50","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u53f72\u5355\u51432105","city_id":"0","district_id":"0","areacode":"86","mobile":"18924667665","username":"\u9ece\u67f3\u7434","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:28:18","updatetime":"2016-07-22 12:28:18","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"50","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u53f72\u5355\u51432105","city_id":"0","district_id":"0","areacode":"86","mobile":"18924667665","username":"\u9ece\u67f3\u7434","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:28:18","updatetime":"2016-07-22 12:28:18","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"50","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u53f72\u5355\u51432105","city_id":"0","district_id":"0","areacode":"86","mobile":"18924667665","username":"\u9ece\u67f3\u7434","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:28:18","updatetime":"2016-07-22 12:28:18","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"50","hotelname":"\u836d\u5927\u9152\u5e97","cityname":"\u6d77\u9038\u6e7e7\u53f72\u5355\u51432105","city_id":"0","district_id":"0","areacode":"86","mobile":"18924667665","username":"\u9ece\u67f3\u7434","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 12:28:18","updatetime":"2016-07-22 12:28:18","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr><tr>
+                                            <td>时光概念酒店</td>
+                                            <td>云南省曲靖宣威西宁街道环城北路236号</td>
+                                            <td>86</td>
+                                            <td>15912065655</td>
+                                            <td>15912065655</td>
+                                            <td>2016-07-22</td>
+                                            <td><span style="">未处理</span></td>
+                                            <td>
+                                        <button class="btn btn-default  btn-sm edit" data-toggle="modal" data-json='{"id":"49","hotelname":"\u65f6\u5149\u6982\u5ff5\u9152\u5e97","cityname":"\u4e91\u5357\u7701\u66f2\u9756\u5ba3\u5a01\u897f\u5b81\u8857\u9053\u73af\u57ce\u5317\u8def236\u53f7","city_id":"0","district_id":"0","areacode":"86","mobile":"15912065655","username":"15912065655","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 11:48:55","updatetime":"2016-07-22 11:48:55","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">开通</button>
+                                            <button class="btn btn-success  btn-sm shiyong" data-toggle="modal" data-json='{"id":"49","hotelname":"\u65f6\u5149\u6982\u5ff5\u9152\u5e97","cityname":"\u4e91\u5357\u7701\u66f2\u9756\u5ba3\u5a01\u897f\u5b81\u8857\u9053\u73af\u57ce\u5317\u8def236\u53f7","city_id":"0","district_id":"0","areacode":"86","mobile":"15912065655","username":"15912065655","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 11:48:55","updatetime":"2016-07-22 11:48:55","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">试用</button>
+                                            <button class="btn btn-success  btn-sm test" data-toggle="modal" data-json='{"id":"49","hotelname":"\u65f6\u5149\u6982\u5ff5\u9152\u5e97","cityname":"\u4e91\u5357\u7701\u66f2\u9756\u5ba3\u5a01\u897f\u5b81\u8857\u9053\u73af\u57ce\u5317\u8def236\u53f7","city_id":"0","district_id":"0","areacode":"86","mobile":"15912065655","username":"15912065655","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 11:48:55","updatetime":"2016-07-22 11:48:55","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#editModel">测试</button>
+                                            <button class="btn btn-danger  btn-sm confuse" data-toggle="modal" data-json='{"id":"49","hotelname":"\u65f6\u5149\u6982\u5ff5\u9152\u5e97","cityname":"\u4e91\u5357\u7701\u66f2\u9756\u5ba3\u5a01\u897f\u5b81\u8857\u9053\u73af\u57ce\u5317\u8def236\u53f7","city_id":"0","district_id":"0","areacode":"86","mobile":"15912065655","username":"15912065655","status":"0","dealerlogin_id":"0","createtime":"2016-07-22 11:48:55","updatetime":"2016-07-22 11:48:55","from":"","universaltime_id":"5","country_id":"100","communityno":"0","community_id":"0","enddate":"0000-00-00","districtName":""}' data-target="#statusModel">拒绝</button>
+                                            
+                                        </td>
+                                        </tr>                                    <tr class="padtopx"><td colspan="6"><div>  <span class="current">1</span><a class="num" href="/index.php/Home/HotelApply/index/p/2.html">2</a><a class="num" href="/index.php/Home/HotelApply/index/p/3.html">3</a><a class="num" href="/index.php/Home/HotelApply/index/p/4.html">4</a><a class="num" href="/index.php/Home/HotelApply/index/p/5.html">5</a><a class="num" href="/index.php/Home/HotelApply/index/p/6.html">6</a> <a class="next" href="/index.php/Home/HotelApply/index/p/2.html">>></a> </div></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="doc-footer">
+            
+        </div>
+    </div>
+    <div class="modal fade" id="editModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">客栈申请审核</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-container">
+                        <div class="custom-form-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="requestEditHotel" class="col-xs-3 control-label"><span style="color:red">*</span>客栈名称：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestEditHotel">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requestEditAccount" class="col-xs-3 control-label"><span style="color:red">*</span>客栈时区</label>
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="addHotelRequestUniversalTime" disabled="disabled">
+                                            <option value="1"  data-areacode="61">(UTC/GMT+10)澳大利亚/Australia</option><option value="2"  data-areacode="55">(UTC/GMT-3)巴西/Brazil</option><option value="3"  data-areacode="359">(UTC/GMT+2)保加利亚/Bulgaria</option><option value="4"  data-areacode="1">(UTC/GMT-8)加拿大/Canada</option><option value="5"  data-areacode="86">(UTC/GMT+8)中国/China</option><option value="6"  data-areacode="852">(UTC/GMT+8)香港/China-Hong Kong</option><option value="7"  data-areacode="886">(UTC/GMT+8)台湾/China-Taiwan</option><option value="8"  data-areacode="56">(UTC/GMT-4)智利/Chile</option><option value="9"  data-areacode="420">(UTC/GMT+1)捷克/Czech</option><option value="10"  data-areacode="9714">(UTC/GMT+4)迪拜/Dubai</option><option value="11"  data-areacode="33">(UTC/GMT+1)法国/France</option><option value="12"  data-areacode="49">(UTC/GMT+1)德国/Germany</option><option value="13"  data-areacode="30">(UTC/GMT+2)希腊/Greece</option><option value="14"  data-areacode="36">(UTC/GMT+1)匈牙利/Hungary</option><option value="15"  data-areacode="39">(UTC/GMT+1)意大利/Italy</option><option value="16"  data-areacode="98">(UTC/GMT+3)伊朗/Iran</option><option value="17"  data-areacode="972">(UTC/GMT+2)以色列/Israel</option><option value="18"  data-areacode="91">(UTC/GMT+5)印度/India</option><option value="19"  data-areacode="82">(UTC/GMT+9)韩国/Korea</option><option value="20"  data-areacode="60">(UTC/GMT+8)马来西亚/Malaysia</option><option value="21"  data-areacode="52">(UTC/GMT-6)墨西哥/Mexico</option><option value="22"  data-areacode="31">(UTC/GMT+1)荷兰/Netherlands</option><option value="23"  data-areacode="64">(UTC/GMT+12)新西兰/New Zealand</option><option value="24"  data-areacode="351">(UTC/GMT)葡萄牙/Portugal</option><option value="25"  data-areacode="63">(UTC/GMT+8)菲律宾/Philippines</option><option value="26"  data-areacode="40">(UTC/GMT+2)罗马尼亚/Romania</option><option value="27"  data-areacode="7">(UTC/GMT+3)俄罗斯/Russia</option><option value="28"  data-areacode="966">(UTC/GMT+3)沙特/Saudi Arabia</option><option value="29"  data-areacode="65">(UTC/GMT+8)新加坡/Singapore</option><option value="30"  data-areacode="34">(UTC/GMT+1)西班牙/Spain</option><option value="31"  data-areacode="66">(UTC/GMT+7)泰国/Thailand</option><option value="32"  data-areacode="90">(UTC/GMT+2)土耳其/Turkey</option><option value="33"  data-areacode="44">(UTC/GMT)英国/United Kingdom</option><option value="34"  data-areacode="1">(UTC/GMT-8)美国/United States</option><option value="35"  data-areacode="62">(UTC/GMT+7)印尼/Indonesia</option><option value="36"  data-areacode="673">(UTC/GMT+8)文莱/Brunei</option><option value="37"  data-areacode="81">(UTC/GMT+9)日本/Japan</option><option value="38"  data-areacode="95">(UTC/GMT+6:30)缅甸/Myanmar[Burma]</option><option value="39"  data-areacode="7">(UTC/GMT+6)哈萨克斯坦/Kazakhstan</option><option value="40"  data-areacode="88">(UTC/GMT+8)虚拟国家</option>                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requestEditCity" class="col-xs-3 control-label"><span style="color:red">*</span>所在城市：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestEditCity" style="cursor: pointer;"  readonly="readonly">
+                                        <input type="hidden"  id="requestEditCityId"  value=""   />
+                                        <div id="provinceList"  class="com_suggest" style="display:none;">
+                                            <!-- 获取所有省份 -->
+                                            <ul>
+                                                <li>请选择所在城市: <a  class="closeCity" style="float: right;" href="javascript:void(0)">关闭</a></li>
+                                                <li   class="province">
+                                                    <a href="javascript:void(0);"  data-provinceId ="110000">北京</a><a href="javascript:void(0);"  data-provinceId ="120000">天津</a><a href="javascript:void(0);"  data-provinceId ="130000">河北</a><a href="javascript:void(0);"  data-provinceId ="140000">山西</a><a href="javascript:void(0);"  data-provinceId ="150000">内蒙古</a><a href="javascript:void(0);"  data-provinceId ="210000">辽宁</a><a href="javascript:void(0);"  data-provinceId ="220000">吉林</a><a href="javascript:void(0);"  data-provinceId ="230000">黑龙江</a><a href="javascript:void(0);"  data-provinceId ="310000">上海</a><a href="javascript:void(0);"  data-provinceId ="320000">江苏</a><a href="javascript:void(0);"  data-provinceId ="330000">浙江</a><a href="javascript:void(0);"  data-provinceId ="340000">安徽</a><a href="javascript:void(0);"  data-provinceId ="350000">福建</a><a href="javascript:void(0);"  data-provinceId ="360000">江西</a><a href="javascript:void(0);"  data-provinceId ="370000">山东</a><a href="javascript:void(0);"  data-provinceId ="410000">河南</a><a href="javascript:void(0);"  data-provinceId ="420000">湖北</a><a href="javascript:void(0);"  data-provinceId ="430000">湖南</a><a href="javascript:void(0);"  data-provinceId ="440000">广东</a><a href="javascript:void(0);"  data-provinceId ="450000">广西</a><a href="javascript:void(0);"  data-provinceId ="460000">海南</a><a href="javascript:void(0);"  data-provinceId ="500000">重庆</a><a href="javascript:void(0);"  data-provinceId ="510000">四川</a><a href="javascript:void(0);"  data-provinceId ="520000">贵州</a><a href="javascript:void(0);"  data-provinceId ="530000">云南</a><a href="javascript:void(0);"  data-provinceId ="540000">西藏</a><a href="javascript:void(0);"  data-provinceId ="610000">陕西</a><a href="javascript:void(0);"  data-provinceId ="620000">甘肃</a><a href="javascript:void(0);"  data-provinceId ="630000">青海</a><a href="javascript:void(0);"  data-provinceId ="640000">宁夏</a><a href="javascript:void(0);"  data-provinceId ="650000">新疆</a><a href="javascript:void(0);"  data-provinceId ="710000">台湾</a><a href="javascript:void(0);"  data-provinceId ="810000">香港</a><a href="javascript:void(0);"  data-provinceId ="820000">澳门</a><a href="javascript:void(0);"  data-provinceId ="1100000">北部地区</a><a href="javascript:void(0);"  data-provinceId ="1200000">堪培拉</a><a href="javascript:void(0);"  data-provinceId ="1300000">昆士兰</a><a href="javascript:void(0);"  data-provinceId ="1400000">南澳大利亚</a><a href="javascript:void(0);"  data-provinceId ="1500000">塔斯马尼亚</a><a href="javascript:void(0);"  data-provinceId ="1600000">维多利亚</a><a href="javascript:void(0);"  data-provinceId ="1700000">西澳大利亚</a><a href="javascript:void(0);"  data-provinceId ="1800000">新南威尔士</a><a href="javascript:void(0);"  data-provinceId ="1900000">巴西</a><a href="javascript:void(0);"  data-provinceId ="2000000">保加利亚</a><a href="javascript:void(0);"  data-provinceId ="2100000">加拿大</a><a href="javascript:void(0);"  data-provinceId ="2200000">智利</a><a href="javascript:void(0);"  data-provinceId ="2300000">捷克</a><a href="javascript:void(0);"  data-provinceId ="2400000">迪拜</a><a href="javascript:void(0);"  data-provinceId ="2500000">法国</a><a href="javascript:void(0);"  data-provinceId ="2600000">德国</a><a href="javascript:void(0);"  data-provinceId ="2700000">希腊</a><a href="javascript:void(0);"  data-provinceId ="2800000">匈牙利</a><a href="javascript:void(0);"  data-provinceId ="2900000">意大利</a><a href="javascript:void(0);"  data-provinceId ="3000000">伊朗</a><a href="javascript:void(0);"  data-provinceId ="3100000">以色列</a><a href="javascript:void(0);"  data-provinceId ="3200000">印度</a><a href="javascript:void(0);"  data-provinceId ="3300000">首尔</a><a href="javascript:void(0);"  data-provinceId ="3400000">釜山</a><a href="javascript:void(0);"  data-provinceId ="3500000">大邱</a><a href="javascript:void(0);"  data-provinceId ="3600000">仁川</a><a href="javascript:void(0);"  data-provinceId ="3700000">光州</a><a href="javascript:void(0);"  data-provinceId ="3800000">大田</a><a href="javascript:void(0);"  data-provinceId ="3900000">蔚山</a><a href="javascript:void(0);"  data-provinceId ="4000000">济州特别自治道</a><a href="javascript:void(0);"  data-provinceId ="4100000">江原道</a><a href="javascript:void(0);"  data-provinceId ="4200000">庆尚北道</a><a href="javascript:void(0);"  data-provinceId ="4300000">庆尚南道</a><a href="javascript:void(0);"  data-provinceId ="4400000">忠清北道</a><a href="javascript:void(0);"  data-provinceId ="4500000">忠清南道</a><a href="javascript:void(0);"  data-provinceId ="4600000">全罗北道</a><a href="javascript:void(0);"  data-provinceId ="4700000">全罗南道</a><a href="javascript:void(0);"  data-provinceId ="4800000">京畿道</a><a href="javascript:void(0);"  data-provinceId ="4900000">槟榔屿</a><a href="javascript:void(0);"  data-provinceId ="5000000">玻璃市</a><a href="javascript:void(0);"  data-provinceId ="5100000">丁加奴</a><a href="javascript:void(0);"  data-provinceId ="5200000">吉打</a><a href="javascript:void(0);"  data-provinceId ="5300000">吉兰丹</a><a href="javascript:void(0);"  data-provinceId ="5400000">吉隆坡</a><a href="javascript:void(0);"  data-provinceId ="5500000">马六甲</a><a href="javascript:void(0);"  data-provinceId ="5600000">纳闽</a><a href="javascript:void(0);"  data-provinceId ="5700000">彭亨</a><a href="javascript:void(0);"  data-provinceId ="5800000">霹雳</a><a href="javascript:void(0);"  data-provinceId ="5900000">柔佛</a><a href="javascript:void(0);"  data-provinceId ="6000000">森美兰</a><a href="javascript:void(0);"  data-provinceId ="6100000">沙巴</a><a href="javascript:void(0);"  data-provinceId ="6200000">沙捞越</a><a href="javascript:void(0);"  data-provinceId ="6300000">雪兰莪</a><a href="javascript:void(0);"  data-provinceId ="6400000">墨西哥</a><a href="javascript:void(0);"  data-provinceId ="6500000">荷兰</a><a href="javascript:void(0);"  data-provinceId ="6600000">新西兰</a><a href="javascript:void(0);"  data-provinceId ="6700000">葡萄牙</a><a href="javascript:void(0);"  data-provinceId ="6800000">菲律宾</a><a href="javascript:void(0);"  data-provinceId ="6900000">罗马尼亚</a><a href="javascript:void(0);"  data-provinceId ="7000000">俄罗斯</a><a href="javascript:void(0);"  data-provinceId ="7100000">沙特</a><a href="javascript:void(0);"  data-provinceId ="7200000">新加坡</a><a href="javascript:void(0);"  data-provinceId ="7300000">西班牙</a><a href="javascript:void(0);"  data-provinceId ="7400000">泰国</a><a href="javascript:void(0);"  data-provinceId ="7500000">土耳其</a><a href="javascript:void(0);"  data-provinceId ="7600000">北爱尔兰</a><a href="javascript:void(0);"  data-provinceId ="7700000">苏格兰</a><a href="javascript:void(0);"  data-provinceId ="7800000">威尔士</a><a href="javascript:void(0);"  data-provinceId ="7900000">英格兰</a><a href="javascript:void(0);"  data-provinceId ="8000000">阿肯色</a><a href="javascript:void(0);"  data-provinceId ="8100000">阿拉巴马</a><a href="javascript:void(0);"  data-provinceId ="8200000">阿拉斯加</a><a href="javascript:void(0);"  data-provinceId ="8300000">爱达荷</a><a href="javascript:void(0);"  data-provinceId ="8400000">爱荷华</a><a href="javascript:void(0);"  data-provinceId ="8500000">北达科他</a><a href="javascript:void(0);"  data-provinceId ="8600000">北卡罗来纳</a><a href="javascript:void(0);"  data-provinceId ="8700000">宾夕法尼亚</a><a href="javascript:void(0);"  data-provinceId ="8800000">德克萨斯</a><a href="javascript:void(0);"  data-provinceId ="8900000">俄亥俄</a><a href="javascript:void(0);"  data-provinceId ="9000000">俄克拉荷马</a><a href="javascript:void(0);"  data-provinceId ="9100000">俄勒冈</a><a href="javascript:void(0);"  data-provinceId ="9200000">佛罗里达</a><a href="javascript:void(0);"  data-provinceId ="9300000">佛蒙特</a><a href="javascript:void(0);"  data-provinceId ="9400000">哥伦比亚特区</a><a href="javascript:void(0);"  data-provinceId ="9500000">华盛顿</a><a href="javascript:void(0);"  data-provinceId ="9600000">怀俄明</a><a href="javascript:void(0);"  data-provinceId ="9700000">加利福尼亚</a><a href="javascript:void(0);"  data-provinceId ="9800000">堪萨斯</a><a href="javascript:void(0);"  data-provinceId ="9900000">康涅狄格</a><a href="javascript:void(0);"  data-provinceId ="10000000">科罗拉多</a><a href="javascript:void(0);"  data-provinceId ="10100000">肯塔基</a><a href="javascript:void(0);"  data-provinceId ="10200000">路易斯安那</a><a href="javascript:void(0);"  data-provinceId ="10300000">罗德岛</a><a href="javascript:void(0);"  data-provinceId ="10400000">马里兰</a><a href="javascript:void(0);"  data-provinceId ="10500000">马萨诸塞</a><a href="javascript:void(0);"  data-provinceId ="10600000">蒙大拿</a><a href="javascript:void(0);"  data-provinceId ="10700000">密苏里</a><a href="javascript:void(0);"  data-provinceId ="10800000">密西西比</a><a href="javascript:void(0);"  data-provinceId ="10900000">密歇根</a><a href="javascript:void(0);"  data-provinceId ="11000000">缅因</a><a href="javascript:void(0);"  data-provinceId ="11100000">明尼苏达</a><a href="javascript:void(0);"  data-provinceId ="11200000">南达科他</a><a href="javascript:void(0);"  data-provinceId ="11300000">南卡罗来纳</a><a href="javascript:void(0);"  data-provinceId ="11400000">内布拉斯加</a><a href="javascript:void(0);"  data-provinceId ="11500000">内华达</a><a href="javascript:void(0);"  data-provinceId ="11600000">纽约</a><a href="javascript:void(0);"  data-provinceId ="11700000">特拉华</a><a href="javascript:void(0);"  data-provinceId ="11800000">田纳西</a><a href="javascript:void(0);"  data-provinceId ="11900000">威斯康星</a><a href="javascript:void(0);"  data-provinceId ="12000000">维吉尼亚</a><a href="javascript:void(0);"  data-provinceId ="12100000">西佛吉尼亚</a><a href="javascript:void(0);"  data-provinceId ="12200000">夏威夷</a><a href="javascript:void(0);"  data-provinceId ="12300000">新罕布什尔</a><a href="javascript:void(0);"  data-provinceId ="12400000">新墨西哥</a><a href="javascript:void(0);"  data-provinceId ="12500000">新泽西</a><a href="javascript:void(0);"  data-provinceId ="12600000">亚利桑那</a><a href="javascript:void(0);"  data-provinceId ="12700000">伊利诺斯</a><a href="javascript:void(0);"  data-provinceId ="12800000">印第安那</a><a href="javascript:void(0);"  data-provinceId ="12900000">犹他</a><a href="javascript:void(0);"  data-provinceId ="13000000">佐治亚</a><a href="javascript:void(0);"  data-provinceId ="14000000">印尼</a><a href="javascript:void(0);"  data-provinceId ="15000000">文莱</a><a href="javascript:void(0);"  data-provinceId ="16000000">日本</a><a href="javascript:void(0);"  data-provinceId ="17000000">缅甸</a><a href="javascript:void(0);"  data-provinceId ="18000000">哈萨克斯坦</a><a href="javascript:void(0);"  data-provinceId ="19000000">阿根廷</a>                                                </li>
+                                                <li  id="cityList"   class="citys " style="display:none;">
+
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requestEditDistrict" class="col-xs-3 control-label"><span style="color:red">*</span>所属区域：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestEditDistrict"  style="cursor: pointer;"  readonly="readonly">
+                                        <input type="hidden" id="requestEditDistrictId"  value=""   />
+                                        <div id="areaListDiv" class="com_suggest"  style="display: none;">
+                                            <!-- 获取所有省份 -->
+                                            <ul>
+                                                <li>请选择所在区域: <a  class="closeDistrict" style="float: right;" href="javascript:void(0)">关闭</a></li>
+                                                <li  id="areaList">
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requestEditAreacode" class="col-xs-3 control-label"><span style="color:red">*</span>区号：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestEditAreacode">
+                                        <input type="hidden" id="requestEditUniversalTime">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requestEditAccount" class="col-xs-3 control-label"><span style="color:red">*</span>主账号：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestEditAccount">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="requestEditUserName" class="col-xs-3 control-label"><span style="color:red">*</span>主账号名称：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestEditUserName">
+                                    </div>
+                                </div>                                
+                                <div class="form-group" id="kaitongDate">
+                                    <label for="requestKaitongDate" class="col-xs-3 control-label"><span style="color:red">*</span>开通年限：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestKaitongDate" value="1" placeholder="默认1年">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="shiyongDate">
+                                    <label for="requestShiyongDate" class="col-xs-3 control-label"><span style="color:red">*</span>试用天数：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestShiyongDate" value="7" placeholder="默认7天">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="testDate">
+                                    <label for="requestTestDate" class="col-xs-3 control-label"><span style="color:red">*</span>测试年限：</label>
+                                    <div class="col-xs-6">
+                                        <input type="text" class="form-control" id="requestTestDate" value="1" placeholder="默认1年">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden"  id="requestId" value="" />
+                    <button type="button" class="btn btn-default" id="requestCannel" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary"  data-value="" id="requestEdit">确认开通</button>
+                    <button type="button" class="btn btn-success" data-value="" id="requestShiyong">确认试用</button>
+                    <button type="button" class="btn btn-success" data-value="" id="requestTest">确认测试</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="statusModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="requestCannel" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">确定状态</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>您确定要<span class="text-danger">将你选择的客栈更改为拒绝？</span></h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-value="" id="requestConfuse">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end of doc-->
+
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        window.jQuery || document.write(unescape('%3Cscript src="/Public/jslib/jquery/1.11.2/jquery.min.js"%3E%3C/script%3E'))
+    </script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        $.fn.modal || document.write(unescape('%3Cscript src="/Public/jslib/bootstrap/3.3.2/js/bootstrap.min.js"%3E%3C/script%3E'))
+    </script>
+    <!--
+    <script type="text/javascript" src="/Public/src/Bpass/dialogComm.js"></script>
+    <script type="text/javascript" src="/Public/jslib/layer/layer.min.js"></script>
+    -->
+
+<!--some js stuff which sub html needed include in foot-->
+
+    <script type="text/javascript" src="/Public/src/meizhu/common.js"></script>    
+    <script type="text/javascript" src="/Public/uclbrt/js/jquery-plugin/tooltip.js"></script>
+    <script type="text/javascript" src="/Public/src/meizhu/HotelApply/index.js?117"></script>
+
+</body>
+
+</html>

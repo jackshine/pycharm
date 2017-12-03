@@ -74,7 +74,7 @@
             <li class="dropdown">
                 <a data-toggle="dropdown" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
                     <span class="glyphicon glyphicon-user"></span>&nbsp;
-                    134****1015&nbsp;<span class="caret"></span>
+                    133****8030&nbsp;<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
                     <li><a href="/logout.html">Exit</a></li>
@@ -84,59 +84,35 @@
     </div>
             <ul class="menu-horizontal" id="communitySwitch">
             <li class="dropdown">
-                <a data-toggle="dropdown" data-value="4GoWyZA0PvAOg8aD" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
-                     玫瑰花客栈-测试&nbsp;<span class="caret"></span></a>
+                <a data-toggle="dropdown" data-value="DB18Q4V6rgV7qvrX" class="typo-button btn ulite-js-btn ulite-js-ripple-effect" href="javascript:void(0);">
+                     客栈-133&nbsp;<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li>
-                            <a href="javascript:void(0);" data-value="4GoWyZA0PvAOg8aD">玫瑰花客栈-测试</a>
+                            <a href="javascript:void(0);" data-value="DB18Q4V6rgV7qvrX">客栈-133</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="jL0v2gARm85PXaQr">取电集群</a>
+                            <a href="javascript:void(0);" data-value="2EwNXzAmpD5oq67x">茂名客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="Z8lW04k70D5pYDEb">共享版测试</a>
+                            <a href="javascript:void(0);" data-value="yG1YRd5Yxlkx978D">湛江客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="leDz7p5b9KkjJwv3">测试创建集群</a>
+                            <a href="javascript:void(0);" data-value="2nmPyqkqpXVLj4KG">清远客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="mOlGLDkKMZAezJpN">有为集群</a>
+                            <a href="javascript:void(0);" data-value="DMygn4V96zkJQZox">咸阳客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="O0lzENApNakPyGqa">唐顿客栈-有为测试</a>
+                            <a href="javascript:void(0);" data-value="yrJGOek373k2Wx1o">南昌客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="LbW02pANmE5R68qX">瑞士-客栈-有为测试</a>
+                            <a href="javascript:void(0);" data-value="b2P6Kd5eJrAOEv80">测试-北京客栈-有为</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="Ov6dW4AyDX51JDeR">广东集群-测试</a>
+                            <a href="javascript:void(0);" data-value="RN0XxgVB9qAGdzML">测试-有为集群</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="4vx3dqknpmAmMYwZ">上海客栈-测试</a>
+                            <a href="javascript:void(0);" data-value="dbGoWQVW0xkO7lX9">接口测试创建集群-有为</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="qX60My529Dk2D8a4">长沙客栈-有为测试</a>
+                            <a href="javascript:void(0);" data-value="zLNjbRVggrV7ral2">深圳-客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="OxdpqKVrglkrL2gZ">LA客栈</a>
+                            <a href="javascript:void(0);" data-value="P1D3MQVxdpVJLzdY">广州-客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="2EwNXzAmgDkoq67x">不里客栈-测试</a>
+                            <a href="javascript:void(0);" data-value="jevw7MAdKq5WEdP3">上海-客栈-有为测试</a>
                         </li><li>
-                            <a href="javascript:void(0);" data-value="P1D3MQVxYpkJLzdY">春日客栈-测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="zLNjbRVgDrk7ral2">糯米客栈-测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="wJDj0pVjwok67Mve">看看客栈-测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="O0lzENApEaVPyGqa">阳阳酒店-测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="Yl2pPzkEYakK3Nx6">和风客栈-有为测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="DMygn4V9NzkJQZox">真真测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="2nmPyqkqgXALj4KG">新加坡客栈-测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="yG1YRd5YwlVx978D">德州客栈-测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="pdlvG2VOXXk748nJ">云南客栈-有为测试</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="x7zjDYAL1yVlbMgE">权限设置</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="4GoWyZA0DvAOg8aD">轩雨楼</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="pg92jEkZr1kGYm0o">美国钟点房</a>
-                        </li><li>
-                            <a href="javascript:void(0);" data-value="LbW02pANrEAR68qX">钟点房测试</a>
+                            <a href="javascript:void(0);" data-value="pzqo4OAXMvV07Bay">南海客栈-有为测试</a>
                         </li>                </ul>
             </li>
         </ul></div>
@@ -323,7 +299,7 @@
                             <div class="col-xs-12 ">
                                 <div class="row typo-body-1 vertical-margin fixed-content" id="doc-info-normal">
                                     <div class="col-xs-2">
-                                        <img class="img-avatar shape-circle" src="/Public/src/Home/images/0_03.png" />
+                                        <img class="img-avatar shape-circle" src="/Public/src/Home/images/0_02.png" />
                                     </div>
                                     <div class="col-xs-5">
                                         <div class="vertical-margin">Name：<span class="typo-text-black-light"></span></div>
@@ -331,7 +307,7 @@
                                         <div class="vertical-margin">Self introduction：<span class="typo-text-black-light" style="display:inline-block;word-break: break-all;"></span></div>
                                     </div>
                                     <div class="col-xs-5">
-                                        <div class="vertical-margin">Mobile：<span class="typo-text-black-light">13480251015</span></div>
+                                        <div class="vertical-margin">Mobile：<span class="typo-text-black-light">13326528030</span></div>
                                         <div class="vertical-margin">Email：<span class="typo-text-black-light"></span></div>
                                         <div class="vertical-margin">Telephone：<span class="typo-text-black-light"></span></div>
                                         <div class="vertical-margin">Address：<span class="typo-text-black-light"></span></div>
@@ -369,7 +345,7 @@
                                                     <label class="col-xs-2 control-label">Change avatar：</label>
                                                     <div class="fileUpload" id="showOrganizationNoContainer">
                                                         <div class="col-xs-5 input-btn-group">
-                                                            <input type="text" class="form-control input-btn-group-input" id="uploadPicture" readonly placeholder="Click image to start uploading" value="/Public/src/Home/images/0_03.png">
+                                                            <input type="text" class="form-control input-btn-group-input" id="uploadPicture" readonly placeholder="Click image to start uploading" value="/Public/src/Home/images/0_02.png">
                                                             <input type="file" accept="image/*" class="hidden fileUploadInput">
                                                         </div>
                                                         <div id="organizationUpload" data-config="user" class="col-xs-1 btn-accent btn-raised ulite-js-btn ulite-js-btn-effect input-btn-group-btn fileUploadTrigger">Upload</div>
@@ -378,7 +354,7 @@
                                                         </div>
                                                         <div class="col-xs-12 vertical-padding">
                                                             <div class="col-xs-offset-2 fileUploadProgress spinner spinner-single-color ulite-js-spinner is-active hidden"></div>
-                                                                                                                            <img class="col-xs-offset-2 img-certification fileUploadResult img-avatar" src="/Public/src/Home/images/0_03.png" />                                                        </div>
+                                                                                                                            <img class="col-xs-offset-2 img-certification fileUploadResult img-avatar" src="/Public/src/Home/images/0_02.png" />                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
