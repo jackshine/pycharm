@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/qrmaster/test/mz_vcode.png" afterPath="$PROJECT_DIR$/interface/qrmaster/test/mz_vcode.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py" afterPath="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -188,8 +186,8 @@
       <file leaf-file-name="qrmaster_syn_meizhu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="211" column="0" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="145" column="15" lean-forward="false" selection-start-line="145" selection-start-column="15" selection-end-line="145" selection-end-column="15" />
               <folding>
                 <element signature="e#17#32#0" expanded="true" />
               </folding>
@@ -237,8 +235,8 @@
       <find>get_all_room_info</find>
       <find>qrm_client_s</find>
       <find>communityId</find>
-      <find>com_data</find>
       <find>room_str</find>
+      <find>com_data</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -312,8 +310,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="737" />
-    <option name="y" value="34" />
+    <option name="x" value="553" />
+    <option name="y" value="11" />
     <option name="width" value="1286" />
     <option name="height" value="969" />
   </component>
@@ -653,9 +651,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="737" y="34" width="1286" height="969" extended-state="0" />
+    <frame x="553" y="11" width="1286" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22675367" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37030995" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45841393" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
@@ -664,7 +663,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41437125" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36526945" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -864,20 +863,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_add_room.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="112" column="18" lean-forward="true" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
-          <folding>
-            <element signature="e#570#631#0" expanded="false" />
-            <element signature="e#674#860#0" expanded="false" />
-            <element signature="e#911#1113#0" expanded="false" />
-            <element signature="e#1138#1446#0" expanded="false" />
-            <element signature="e#1471#2046#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/123.png" />
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/index.html" />
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/bs4/element.py">
@@ -1030,10 +1015,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_add_room.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="112" column="18" lean-forward="true" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
+          <folding>
+            <element signature="e#570#631#0" expanded="false" />
+            <element signature="e#674#860#0" expanded="false" />
+            <element signature="e#911#1113#0" expanded="false" />
+            <element signature="e#1138#1446#0" expanded="false" />
+            <element signature="e#1471#2046#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="211" column="0" lean-forward="true" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state relative-caret-position="199">
+          <caret line="145" column="15" lean-forward="false" selection-start-line="145" selection-start-column="15" selection-end-line="145" selection-end-column="15" />
           <folding>
             <element signature="e#17#32#0" expanded="true" />
           </folding>

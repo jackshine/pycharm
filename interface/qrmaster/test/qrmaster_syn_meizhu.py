@@ -307,6 +307,7 @@ def syn_login_meizhu(s):
     s.post(sync_switch_url, data=data)
     return s
 
+
 # 锁掌柜bpass
 def qrm_bpass_login(s):
     html_doc = s.get(qrm_bpass+'/Bpass/Public/login.html').text
@@ -327,6 +328,7 @@ def qrm_bpass_login(s):
         r = s.post(qrm_bpass_login_url, data=qrm_bpass_data).json()
         if r['status'] == 200:
             break
+
 
 #锁掌柜通过认证
 def pass_group_verity(req, qrm_community_data):
@@ -370,17 +372,17 @@ if __name__ == "__main__":
     mz_client_s.get(mz_client + '/Home/BookPage/index.html')
     mz_client_s.post( mz_client + '/Home/Public/login', data=mz_login_data)
     #
-    # # # 2、美住：创建美住客栈
+    #  2、美住：创建美住客栈
     mz_add_hotel(mz_client_s)
     #
-    # # 3、登陆bpass
+    #  3、登陆bpass
     mz_bpass_s = requests.session()
     mz_bpass_s = mz_login_bpass(mz_bpass_s)
-    # #
-    # # # 4、美住客栈通过审核
+    #
+    # 4、美住客栈通过审核
     mz_bpass_pass_hotel(mz_bpass_s, h_name)
     #
-    # # 5、美住新建房间
+    # 5、美住新建房间
     mz_add_room(mz_client_s)
 
 
