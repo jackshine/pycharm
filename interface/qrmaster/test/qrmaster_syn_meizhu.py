@@ -65,7 +65,7 @@ def mz_login_bpass(b):
     while True:
         # 获取验证码
         vcode_img = b.get(vcode_src)
-        with open('vcode.png', 'wb') as fb:
+        with open('mz_vcode.png', 'wb') as fb:
             fb.write(vcode_img.content)
         vcode = input("输入验证码")
         bpass_login_data = {
@@ -309,7 +309,7 @@ def qrm_bpass_login(s):
     # .text存的是Beautifulsoup根据猜测的编码方式将content内容编码成字符串。
     while True:
         image = s.get(img_path, stream=True).content
-        with open('demo.jpg', 'wb') as fd:
+        with open('qrm_vcode.jpg', 'wb') as fd:
             fd.write(image)
         vcode = input("请输入验证码")
         qrm_bpass_data['vcode'] = vcode
@@ -354,20 +354,21 @@ def pass_group_verity(req, community_data):
 if __name__ == "__main__":
     # 1、美住：登陆美住客栈
     h_name = input('输入客栈名称')
-    mz_hotel_data['hotel'] = h_name.strip()
+    # 河源客栈-有为测试
+    # mz_hotel_data['hotel'] = h_name.strip()
     mz_client_s = requests.session()
-    mz_client_s.get(mz_client + '/Home/BookPage/index.html')
-    mz_client_s.post( mz_client + '/Home/Public/login', data=mz_login_data)
-
-    # 2、美住：创建美住客栈
-    mz_add_hotel(mz_client_s)
+    # mz_client_s.get(mz_client + '/Home/BookPage/index.html')
+    # mz_client_s.post( mz_client + '/Home/Public/login', data=mz_login_data)
+    #
+    # # 2、美住：创建美住客栈
+    # mz_add_hotel(mz_client_s)
 
     # 3、登陆bpass
-    mz_bpass = requests.session()
-    mz_bpass = mz_login_bpass(mz_bpass)
+    mz_bpass_s = requests.session()
+    mz_bpass_s = mz_login_bpass(mz_bpass_s)
 
     # 4、美住客栈通过审核
-    mz_bpass_pass_hotel(mz_bpass, h_name)
+    mz_bpass_pass_hotel(mz_bpass_s, h_name)
 
     # 5、美住新建房间
     mz_add_room(mz_client_s)
