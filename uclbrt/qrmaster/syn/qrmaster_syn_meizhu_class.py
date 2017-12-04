@@ -1,10 +1,7 @@
 # encoding=utf-8
 import requests
-import hashlib
-from bs4 import BeautifulSoup
-import json
-import re
-import qrm_login_hash
+import qrmaster
+import meizhu
 # 锁掌柜
 qrm_client = 'http://115.29.142.212:8020'
 
