@@ -1,7 +1,7 @@
 # encoding=utf-8
 from bs4 import BeautifulSoup
 import json
-class meizhu_class:
+class MeizhuClass:
     mz_client = ''
     mz_bpass = ''
 

@@ -2,7 +2,7 @@
 import requests
 import hashlib
 from bs4 import BeautifulSoup
-class get_Hash:
+class HashClass:
     def __init__(self):
         pass
     def md5(str):
@@ -20,8 +20,8 @@ class get_Hash:
     # 处理从网页得到的hash值
     def handle_hash(self, data, hash):
         # hash 规则为 MD5（密码+md5(mobile)）+$("#login-container").data("hash"))
-        mobile_pwd = get_Hash.md5(data['password'] + get_Hash.md5(data['mobile']))
+        mobile_pwd = HashClass.md5(data['password'] + HashClass.md5(data['mobile']))
         mobile_pwd_hash = mobile_pwd + hash
-        data['hash'] = get_Hash.md5(mobile_pwd_hash)
+        data['hash'] = HashClass.md5(mobile_pwd_hash)
         return data
 
