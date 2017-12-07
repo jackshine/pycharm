@@ -185,7 +185,6 @@ class QrmasterClass:
         html_doc = s.get(self.qrm_bpass+'/Bpass/Public/login.html').text
         soup = BeautifulSoup(html_doc, 'html.parser')
         img = soup.find("img", {"id": "imgcode"})
-        print(img)
         img_path = self.qrm_bpass + img["src"]
         # req.get()得到一个response对象，对象存服务器返回的信息，
         # 返回的页面会存在.content和.text对象。

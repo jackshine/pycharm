@@ -11,10 +11,12 @@ class MeizhuClass:
 
 
     def mz_add_hotel(self, mz_client_s,mz_hotel_data):
-        mz_client_s.post(self.mz_client + '/Home/Hotel/addHotel', data=mz_hotel_data)
+        s = mz_client_s.post(self.mz_client + '/Home/Hotel/addHotel', data=mz_hotel_data)
+        print(s.text)
 
 
-    def mz_login_bpass(self,b):
+
+    def mz_login_bpass(self,b,bpass_login_data):
         login_html = b.get(self.mz_bpass + '/index.php/Home/Public/login.html')
         soup = BeautifulSoup(login_html.text, "html.parser")
         vcode_src = self.mz_bpass + soup.find('img', id='imgcode')['src']
@@ -23,12 +25,8 @@ class MeizhuClass:
             vcode_img = b.get(vcode_src)
             with open('mz_vcode.png', 'wb') as fb:
                 fb.write(vcode_img.content)
-            vcode = input("输入验证码")
-            bpass_login_data = {
-                'username': 'changlian',
-                'password': 'bbc69d27003568a7a94626ce4337bc9d',
-                'vcode': vcode,
-            }
+            vcode = input("请输入验证码：")
+            bpass_login_data['vcode'] = vcode,
             info = b.post(self.mz_bpass + '/Home/Public/checkLogin', data=bpass_login_data)
             if info.status_code == 200:
                 break
@@ -55,21 +53,13 @@ class MeizhuClass:
         b.post(self.mz_bpass + '/Home/HotelApply/handle', data=mz_bpass_apply_data)
 
     # 美住添加房间
-    def mz_add_room(self, s):
+    def mz_add_room(self, s,mz_room_data):
         info = s.get(self.mz_client + '/Home/RoomPage/index.html')
         soup = BeautifulSoup(info.text, 'html.parser')
         # 找到最后一个客栈的hotel_id
         hotel_id = soup.find('tbody', id='roomTypeHotelList').find_all('tr')[-1]['data-id']
-        mz_room_data = {
-            'room': '1,2,3,4,5',
-            'hotel': hotel_id,
-            'name': '单人间',
-            'price': '100'
-        }
+        mz_room_data['hotel'] = hotel_id
         s.post(self.mz_client+'/Home/Room/addRoom',data=mz_room_data)
-        params = {
-            'hotel':hotel_id
-        }
 
 
 

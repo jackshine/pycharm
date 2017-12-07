@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/excel.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/excel.xlsx" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/excel.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_vcode.png" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_vcode.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,6 +55,7 @@
     <SUITE FILE_PATH="coverage/pycharm$p_test27_1.coverage" NAME="p_test27_1 Coverage Results" MODIFIED="1509114632448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$exception_demo.coverage" NAME="exception_demo Coverage Results" MODIFIED="1504408276521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test18_way2.coverage" NAME="p_test18_way2 Coverage Results" MODIFIED="1509031079282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$DataClass.coverage" NAME="DataClass Coverage Results" MODIFIED="1512664031108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_add_room.coverage" NAME="qrmaster_add_room Coverage Results" MODIFIED="1511368266182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$Multiplication_table2.coverage" NAME="Multiplication_table2 Coverage Results" MODIFIED="1509033136848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Decorator_demo.coverage" NAME="Decorator_demo Coverage Results" MODIFIED="1509373620633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
@@ -150,6 +157,7 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4 Coverage Results" MODIFIED="1508675603788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1510502945660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/demo" />
     <SUITE FILE_PATH="coverage/pycharm$requests_cancelcard_demo.coverage" NAME="requests_cancelcard_demo Coverage Results" MODIFIED="1508249954265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu_excel.coverage" NAME="qrmaster_syn_meizhu_excel Coverage Results" MODIFIED="1512665420670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$module.coverage" NAME="module Coverage Results" MODIFIED="1503797432910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test50.coverage" NAME="p_test50 Coverage Results" MODIFIED="1509118063248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$os_demo.coverage" NAME="os_demo Coverage Results" MODIFIED="1504359804718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -160,7 +168,7 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods_test_isupper.coverage" NAME="Unittests for basic_demo.TestStringMethods.test_isupper Coverage Results" MODIFIED="1503417320112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$Testsunit.coverage" NAME="Testsunit Coverage Results" MODIFIED="1510497132678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
     <SUITE FILE_PATH="coverage/pycharm$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1511968582095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
-    <SUITE FILE_PATH="coverage/pycharm$test_excel.coverage" NAME="test_excel Coverage Results" MODIFIED="1512571426893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+    <SUITE FILE_PATH="coverage/pycharm$test_excel.coverage" NAME="test_excel Coverage Results" MODIFIED="1512659528318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_get.coverage" NAME="jenkins_build_get Coverage Results" MODIFIED="1508342401412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_1_div_1.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_1_div_1 Coverage Results" MODIFIED="1508675646748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$p_test19.coverage" NAME="p_test19 Coverage Results" MODIFIED="1508515108240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
@@ -182,42 +190,33 @@
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_pass__1_.coverage" NAME="qrmaster_community_pass (1) Coverage Results" MODIFIED="1511017360316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
     <SUITE FILE_PATH="coverage/pycharm$request_get.coverage" NAME="request_get Coverage Results" MODIFIED="1507983940106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="qrmaster_syn_meizhu_class.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="167">
+                    <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+                    <folding>
+                      <element signature="e#17#32#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="pycharm" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="qrmaster_syn_meizhu_txt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_txt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qrmaster_syn_meizhu_excel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_excel.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -229,10 +228,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>佛山</find>
-      <find>ate</find>
-      <find>username</find>
-      <find>universaltime_id</find>
       <find>佛山客栈-有为测试</find>
       <find>change_commuity</find>
       <find>cname</find>
@@ -259,6 +254,10 @@
       <find>room_str</find>
       <find>com_data</find>
       <find>self</find>
+      <find>params</find>
+      <find>mz_hotel_data</find>
+      <find>sheet</find>
+      <find>qrm_client_accout</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -271,8 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_login_post.py" />
-        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies_urllib2.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies_urllib2_test.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py" />
@@ -312,16 +309,18 @@
         <option value="$PROJECT_DIR$/interface/qrmaster/test/qrmaster_syn_meizhu.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/room/qrmaster_app_get_room_list.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/student.py" />
-        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
-        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_login_hash.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_client_data" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_login_account" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_txt.py" />
-        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
       </list>
     </option>
   </component>
@@ -332,10 +331,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="569" />
-    <option name="y" value="31" />
-    <option name="width" value="1267" />
-    <option name="height" value="898" />
+    <option name="x" value="565" />
+    <option name="y" value="24" />
+    <option name="width" value="1260" />
+    <option name="height" value="968" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -355,8 +354,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -449,8 +448,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_excel">
-    <configuration name="qrm_login_hash" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.qrmaster_syn_meizhu_excel">
+    <configuration name="DataClass" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -463,25 +462,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_login_hash.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="qrmaster" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -500,6 +481,24 @@
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="qrmaster_syn_meizhu_excel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -543,17 +542,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_class" />
-      <item index="2" class="java.lang.String" itemvalue="Python.qrmaster" />
-      <item index="3" class="java.lang.String" itemvalue="Python.qrm_login_hash" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test_excel" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_excel" />
+      <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_excel" />
+      <item index="4" class="java.lang.String" itemvalue="Python.DataClass" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_excel" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_class" />
-        <item index="3" class="java.lang.String" itemvalue="Python.qrm_login_hash" />
-        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster" />
+        <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_excel" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DataClass" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_excel" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_class" />
       </list>
     </recent_temporary>
   </component>
@@ -688,19 +687,18 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="569" y="31" width="1267" height="898" extended-state="1" />
-    <editor active="true" />
+    <frame x="565" y="24" width="1260" height="968" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29991716" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27333334" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45778835" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45683452" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36387435" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -802,7 +800,7 @@
           <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="58" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -811,14 +809,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/soft/Python3.5.0/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="181" column="13" lean-forward="false" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interface/meizhu/apply.txt" />
     <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-272345125/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,13 +926,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_client_account.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_login_account.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_txt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -951,92 +968,70 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_login_hash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_client_account.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_login_account.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        <state relative-caret-position="277">
+          <caret line="60" column="27" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
           <folding>
             <element signature="e#17#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_login_hash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="183" column="8" lean-forward="false" selection-start-line="183" selection-start-column="8" selection-end-line="183" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="202">
+          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_txt.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="334">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="167">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="349">
+          <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -69,12 +69,12 @@ def mz_login_bpass(b):
         with open('mz_vcode.png', 'wb') as fb:
             fb.write(vcode_img.content)
         vcode = input("输入验证码")
-        bpass_login_data = {
+        mz_bpass_login = {
             'username': 'changlian',
             'password': 'bbc69d27003568a7a94626ce4337bc9d',
             'vcode': vcode,
         }
-        info = b.post(mz_bpass + '/Home/Public/checkLogin', data=bpass_login_data)
+        info = b.post(mz_bpass + '/Home/Public/checkLogin', data=mz_bpass_login)
         if info.status_code == 200:
             break
     return b
