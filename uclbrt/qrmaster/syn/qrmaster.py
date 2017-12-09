@@ -63,8 +63,8 @@ class QrmasterClass:
 
 
     # 同步美住客栈
-    def syn_community(self, s):
-        s = self.syn_login_meizhu(s)
+    def syn_community(self, s, mz_login_account):
+        s = QrmasterClass.syn_login_meizhu(self, s, mz_login_account)
         resp_data = s.post(self.qrm_client + '/Home/Sync/getHotel').json()
         com_data = resp_data['data'][-1]
         # 此时得到的com_data 中的communityid是为0
@@ -169,14 +169,13 @@ class QrmasterClass:
         return list_data
 
     # 在锁掌柜登陆美住账号
-    def syn_login_meizhu(self, s):
+    def syn_login_meizhu(self, s, mz_login_account):
+        meizhu = mz_login_account['mobile']
+        mz_login_account.pop('mobile')
+        mz_login_account['meizhu'] = meizhu
+        print(mz_login_account)
         sync_switch_url = self.qrm_client + '/Home/Sync/switchAccount'
-        data = {
-            'meizhu': '13326528030',
-            'password': '111111b',
-            'areaCode': '86'
-        }
-        s.post(sync_switch_url, data=data)
+        s.post(sync_switch_url, data=mz_login_account)
         return s
 
 

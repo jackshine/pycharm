@@ -12,7 +12,6 @@ class MeizhuClass:
 
     def mz_add_hotel(self, mz_client_s,mz_hotel_data):
         s = mz_client_s.post(self.mz_client + '/Home/Hotel/addHotel', data=mz_hotel_data)
-        print(s.text)
 
 
 
@@ -54,12 +53,57 @@ class MeizhuClass:
 
     # 美住添加房间
     def mz_add_room(self, s,mz_room_data):
-        info = s.get(self.mz_client + '/Home/RoomPage/index.html')
-        soup = BeautifulSoup(info.text, 'html.parser')
-        # 找到最后一个客栈的hotel_id
-        hotel_id = soup.find('tbody', id='roomTypeHotelList').find_all('tr')[-1]['data-id']
+        # 找到最后一个开通客栈的hotel_id
+        hotel_id = MeizhuClass.mz_get_hotel_id(self, s)
         mz_room_data['hotel'] = hotel_id
         s.post(self.mz_client+'/Home/Room/addRoom',data=mz_room_data)
+        return hotel_id
 
+
+    # 获取美住的roomid
+    def mz_room_id(self, s, hotel_id):
+        info = s.get(self.mz_client + '/Home/RoomPage/index.html?'+'hotel='+hotel_id)
+        soup = BeautifulSoup(info.text, 'html.parser')
+        tbody_tag = soup.find('tbody', id="roomTypeList")
+        room_div_list = tbody_tag.tr.td.next_sibling.next_sibling.find_all('div')
+        room_id_list = []
+        for i in room_div_list:
+            room_id_list.append(i['data-value'])
+        print(room_id_list)
+        return room_id_list
+
+    def handle_hotel_id(self,tr_tag):
+        hotel_id = tr_tag['data-id']
+        if (hotel_id == ''):
+            hotel_id = MeizhuClass.handle_hotel_id(self,tr_tag.previous_sibling)
+        else:
+            hotel_id = tr_tag['data-id']
+        return hotel_id
+
+    # 获取美住的最后一个已开通的hotelid
+    def mz_get_hotel_id(self,s):
+        info = s.get(self.mz_client + '/Home/RoomPage/index.html')
+        with open('./index.html','wb') as fb:
+            fb.write(info.content)
+        soup = BeautifulSoup(info.text, 'html.parser')
+        # 找到最后一个客栈的hotel_id
+        tr_tag = soup.find('tbody', id='roomTypeHotelList').find_all('tr')[-1]
+        hotel_id = tr_tag['data-id']
+        if (hotel_id == ''):
+            tr_tag = tr_tag.previous_sibling.previous_sibling
+            hotel_id = MeizhuClass.handle_hotel_id(self, tr_tag)
+        else:
+            hotel_id = tr_tag['data-id']
+        return hotel_id
+
+
+    #同步房间
+    def mz_syn_room(self, s, hotel_id, room_id_list):
+        data= {
+            'hotel':hotel_id,
+        }
+        for i in room_id_list:
+            data['roomId'] = i
+            s.post(self.mz_client + '/Home/Room/synRoom',data=data)
 
 

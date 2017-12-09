@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/excel.xlsx" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/excel.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_vcode.png" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_vcode.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" afterPath="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" />
-    </list>
+    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +35,7 @@
     <SUITE FILE_PATH="coverage/pycharm$httplib_demo.coverage" NAME="httplib_demo Coverage Results" MODIFIED="1507960391240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$student.coverage" NAME="student Coverage Results" MODIFIED="1512398790522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$jiujiuchengfa.coverage" NAME="jiujiuchengfa Coverage Results" MODIFIED="1509031128661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster.coverage" NAME="qrmaster Coverage Results" MODIFIED="1512486790116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster.coverage" NAME="qrmaster Coverage Results" MODIFIED="1512799596356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$element_location.coverage" NAME="element_location Coverage Results" MODIFIED="1503587340293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$requests_makecard_demo.coverage" NAME="requests_makecard_demo Coverage Results" MODIFIED="1510478659257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
     <SUITE FILE_PATH="coverage/pycharm$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1508565761124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
@@ -115,11 +104,12 @@
     <SUITE FILE_PATH="coverage/pycharm$http_demo.coverage" NAME="http_demo Coverage Results" MODIFIED="1507960189476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk.coverage" NAME="os_walk Coverage Results" MODIFIED="1504405524923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_jenkins_requests_get_JenkinsGetTestCase.coverage" NAME="Unittests for jenkins_requests_get.JenkinsGetTestCase Coverage Results" MODIFIED="1509632659031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
-    <SUITE FILE_PATH="coverage/pycharm$test_soup.coverage" NAME="test_soup Coverage Results" MODIFIED="1512273908667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu" />
+    <SUITE FILE_PATH="coverage/pycharm$test_soup.coverage" NAME="test_soup Coverage Results" MODIFIED="1512798441901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$test_key.coverage" NAME="test_key Coverage Results" MODIFIED="1508253816045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
     <SUITE FILE_PATH="coverage/pycharm$requests_get_cookies_demo.coverage" NAME="requests_get_cookies_demo Coverage Results" MODIFIED="1510415022542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
     <SUITE FILE_PATH="coverage/pycharm$requests_header_demo.coverage" NAME="requests_header_demo Coverage Results" MODIFIED="1507984069413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$rsa_demo.coverage" NAME="rsa_demo Coverage Results" MODIFIED="1508340117777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rsa" />
+    <SUITE FILE_PATH="coverage/pycharm$meizhu.coverage" NAME="meizhu Coverage Results" MODIFIED="1512795522752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$class_demo.coverage" NAME="class_demo Coverage Results" MODIFIED="1504409116208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$List_Comprehensions_demo.coverage" NAME="List_Comprehensions_demo Coverage Results" MODIFIED="1509023020644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/List Comprehensions" />
     <SUITE FILE_PATH="coverage/pycharm$httplib_get.coverage" NAME="httplib_get Coverage Results" MODIFIED="1508046306444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/httplib" />
@@ -157,7 +147,7 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4 Coverage Results" MODIFIED="1508675603788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1510502945660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/demo" />
     <SUITE FILE_PATH="coverage/pycharm$requests_cancelcard_demo.coverage" NAME="requests_cancelcard_demo Coverage Results" MODIFIED="1508249954265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu_excel.coverage" NAME="qrmaster_syn_meizhu_excel Coverage Results" MODIFIED="1512665420670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu_excel.coverage" NAME="qrmaster_syn_meizhu_excel Coverage Results" MODIFIED="1512800960466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$module.coverage" NAME="module Coverage Results" MODIFIED="1503797432910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test50.coverage" NAME="p_test50 Coverage Results" MODIFIED="1509118063248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$os_demo.coverage" NAME="os_demo Coverage Results" MODIFIED="1504359804718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -190,33 +180,11 @@
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_pass__1_.coverage" NAME="qrmaster_community_pass (1) Coverage Results" MODIFIED="1511017360316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
     <SUITE FILE_PATH="coverage/pycharm$request_get.coverage" NAME="request_get Coverage Results" MODIFIED="1507983940106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="qrmaster_syn_meizhu_class.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="167">
-                    <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-                    <folding>
-                      <element signature="e#17#32#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="pycharm" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,17 +196,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>佛山客栈-有为测试</find>
-      <find>change_commuity</find>
-      <find>cname</find>
-      <find>login_client_url</find>
-      <find>link_client</find>
-      <find>create_url</find>
-      <find>auth_url</find>
       <find>apply_verify_url</find>
       <find>login_url</find>
       <find>login_data</find>
-      <find>data</find>
       <find>apply_verity</find>
       <find>qrm_client_up_image_url</find>
       <find>qrm_client</find>
@@ -258,6 +218,14 @@
       <find>mz_hotel_data</find>
       <find>sheet</find>
       <find>qrm_client_accout</find>
+      <find>data</find>
+      <find>398</find>
+      <find>唐山</find>
+      <find>roomTypeHotelList</find>
+      <find>390</find>
+      <find>测试-有为</find>
+      <find>mz_login_data</find>
+      <find>/Home/Sync/switchAccount</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -270,9 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies.py" />
-        <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_cookies_urllib2_test.py" />
-        <option value="$PROJECT_DIR$/interface/qrmaster/login/garbage/qrmaster_cookies_urllib2_test.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/login/qrmaster_session_test.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/room/qrmaster_online_test_get_room_list.py" />
         <option value="$PROJECT_DIR$/interface/qrmaster/login/test.py" />
@@ -317,9 +282,12 @@
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_txt.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" />
-        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
-        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/index.html" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/room.html" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_soup.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
+        <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
         <option value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py" />
       </list>
     </option>
@@ -330,11 +298,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="565" />
-    <option name="y" value="24" />
-    <option name="width" value="1260" />
-    <option name="height" value="968" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="576" />
+    <option name="width" value="1249" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -462,12 +429,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py" />
+      <option name="SCRIPT_NAME" value="D:\linyouwei\python\pycharm\uclbrt\qrmaster\syn\dataclass.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="qrmaster_syn_meizhu_class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="meizhu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -480,7 +447,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="qrmaster" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -503,7 +488,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_soup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -516,43 +501,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test_excel" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_excel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uclbrt/qrmaster/syn/test_soup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_class" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_excel" />
-      <item index="3" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_excel" />
-      <item index="4" class="java.lang.String" itemvalue="Python.DataClass" />
+      <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_excel" />
+      <item index="1" class="java.lang.String" itemvalue="Python.DataClass" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_soup" />
+      <item index="3" class="java.lang.String" itemvalue="Python.meizhu" />
+      <item index="4" class="java.lang.String" itemvalue="Python.qrmaster" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_excel" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DataClass" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test_excel" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.qrmaster_syn_meizhu_class" />
+        <item index="1" class="java.lang.String" itemvalue="Python.qrmaster" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_soup" />
+        <item index="3" class="java.lang.String" itemvalue="Python.meizhu" />
+        <item index="4" class="java.lang.String" itemvalue="Python.DataClass" />
       </list>
     </recent_temporary>
   </component>
@@ -687,18 +654,18 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="565" y="24" width="1260" height="968" extended-state="1" />
+    <frame x="576" y="0" width="1249" height="777" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27333334" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23357664" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45683452" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.529595" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44548288" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -794,13 +761,23 @@
           <line>1</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test_soup.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint suspend="NONE" type="python-exception">
           <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="60" />
+      <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -809,16 +786,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/meizhu/apply.txt" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-272345125/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-734">
-          <caret line="339" column="4" lean-forward="false" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/meizhu/test_soup.py" />
-    <entry file="file://$PROJECT_DIR$/interface/meizhu/apply.html" />
     <entry file="file://$PROJECT_DIR$/interface/meizhu/vcode.png" />
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/requests/sessions.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -922,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_txt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -959,22 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_vcode.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="60" column="27" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-          <folding>
-            <element signature="e#17#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,28 +929,498 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-272345125/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="339" column="4" lean-forward="false" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/dataclass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="1749" column="57" lean-forward="false" selection-start-line="1749" selection-start-column="57" selection-end-line="1749" selection-end-column="57" />
+          <folding>
+            <marker date="1512797194834" expanded="true" signature="234902:235015" ph="..." />
+            <marker date="1512797194834" expanded="true" signature="234929:234996" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="1779" column="26" lean-forward="true" selection-start-line="1779" selection-start-column="26" selection-end-line="1779" selection-end-column="26" />
+          <folding>
+            <marker date="1512800986408" expanded="true" signature="168834:169248" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:169290" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:170535" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:170568" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:170595" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:170618" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:170637" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="168834:170689" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="169379:170499" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="169513:169684" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="169746:169850" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="169912:170016" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170078:170182" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170244:170348" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170410:170457" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170846:172189" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170890:172178" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170930:172163" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="170973:171203" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="171100:171107" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="171244:171575" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171309:171552" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171358:171524" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171458:171493" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171618:172144" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171676:172121" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171725:172094" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="171793:172063" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172280:178498" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172324:178487" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172364:178472" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172407:172834" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="172534:172541" ph="×" />
+            <marker date="1512800986408" expanded="false" signature="172610:172631" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="172754:172781" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172875:177753" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172940:177730" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="172989:173475" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="173120:173295" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="173346:173444" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="173524:176702" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="173655:176671" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="173746:176636" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="176751:177198" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="176915:177167" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="176984:177023" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177093:177132" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177247:177702" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177419:177671" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177488:177527" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177597:177636" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177796:178453" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177854:178430" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177903:178403" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="177971:178372" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="178590:186741" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="178634:186730" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="178674:186715" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="178717:178945" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="178844:178851" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="178986:186132" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="179045:186109" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="179094:179584" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="179225:179404" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="179455:179553" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="179634:182808" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="179765:182777" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="182857:183308" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183025:183277" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183094:183133" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183203:183242" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183357:183816" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183533:183785" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183602:183641" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183711:183750" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="183865:184415" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="184029:184235" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="184286:184384" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="184467:185015" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="184631:184835" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="184886:184984" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="185064:186080" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="185228:185900" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="185312:185865" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="185951:186049" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186175:186696" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186233:186673" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186282:186646" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186350:186615" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186830:187999" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186879:187988" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186919:187973" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="186962:187190" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="187089:187096" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="187231:187393" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="187255:187261" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="187303:187309" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="187316:187322" ph=" " />
+            <marker date="1512800986408" expanded="true" signature="187436:187954" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="187494:187931" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="187543:187904" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188130:190829" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188170:190814" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188213:188441" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="188340:188347" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="188482:190236" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188541:190213" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188590:189073" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188719:188893" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="188944:189042" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="189122:189629" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="189251:189424" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="189475:189598" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="189540:189556" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="189702:189912" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="189954:190185" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190021:190154" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190279:190795" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190337:190772" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190386:190745" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190454:190714" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190926:193675" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="190970:193664" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191010:193649" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191053:191281" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="191180:191187" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="191322:193072" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191381:193049" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191430:191912" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191559:191732" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191783:191881" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="191961:192467" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="192090:192262" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="192313:192436" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="192378:192394" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="192540:192749" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="192791:193021" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="192858:192990" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193115:193630" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193173:193607" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193222:193580" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193290:193549" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193776:195377" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193820:195366" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193860:195351" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="193903:194276" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="194030:194037" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="194317:195104" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194367:195081" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194415:195051" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194464:194610" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194544:194576" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194665:195023" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194696:194995" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="194752:194904" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195147:195332" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195205:195309" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195454:196243" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195498:196232" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195538:196217" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195581:195769" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="195670:195677" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="195810:195945" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="195988:196198" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="196337:204631" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="196381:204620" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="196442:203035" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="196485:196713" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="196612:196619" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="196754:202276" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="196813:202253" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="196862:197074" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="197123:197553" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="197266:197522" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="197602:198292" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="197680:198261" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="197840:198226" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="197898:198113" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="197943:197949" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="198023:198029" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="198030:198036" ph=" " />
+            <marker date="1512800986408" expanded="true" signature="198341:202225" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="198482:202194" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="198577:200289" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="202319:203016" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="202377:202993" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="202450:202966" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="202518:202935" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203108:204605" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203151:203379" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="203278:203285" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="203420:204018" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203479:203995" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203528:203967" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203684:203936" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203753:203792" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="203862:203901" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204061:204586" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204119:204563" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204168:204536" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204236:204505" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204726:205847" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204775:205836" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204815:205821" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="204858:205089" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="204985:204992" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="205130:205237" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="205280:205802" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="205338:205779" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="205387:205752" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="205455:205721" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="205938:215880" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="205982:215869" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="206040:214284" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="206083:206312" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="206210:206217" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="206412:213679" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="206461:207244" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="206590:207064" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="206651:206814" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="206875:207029" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="207115:207213" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="207293:213104" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="207422:212924" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="207489:212599" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="207566:212388" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="207695:207701" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="207763:207779" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="207780:212381" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="212680:212889" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="212975:213073" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213153:213651" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213282:213471" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213522:213620" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213745:214265" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213803:214242" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213852:214215" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="213920:214184" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="214357:215854" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="214400:214628" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="214527:214534" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="214669:215267" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="214728:215244" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="214777:215216" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="214933:215185" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215002:215041" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215111:215150" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215310:215835" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215368:215812" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215417:215785" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215485:215754" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="215975:217096" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216024:217085" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216064:217070" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216107:216338" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="216234:216241" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="216379:216486" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216529:217051" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216587:217028" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216636:217001" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="216704:216970" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217175:220651" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217219:220640" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217259:220625" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217302:217494" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="217391:217398" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="217535:220304" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217594:220281" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217643:217824" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="217881:217897" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="217898:220253" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="218036:220222" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="218138:219916" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="220079:220187" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="220347:220606" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="220748:224517" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="220792:224506" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="220832:224491" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="220875:221104" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="221002:221009" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="221145:223906" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="221204:223883" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="221253:221692" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="221382:221512" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="221563:221661" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="221741:222180" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="221882:222090" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="222229:222665" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="222367:222575" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="222714:223150" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="222852:223060" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="223200:223413" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="223480:223855" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="223654:223824" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="223750:223789" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="223949:224472" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224007:224449" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224056:224422" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224124:224391" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224612:228259" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224656:228248" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224696:228233" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="224739:224967" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="224866:224873" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="225008:227647" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="225067:227624" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="225116:225605" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="225245:225425" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="225476:225574" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="225654:226034" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="225795:226003" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="226083:226460" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="226221:226429" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="226509:226886" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="226647:226855" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="226935:227149" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227216:227596" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227391:227565" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227491:227530" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227690:228214" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227748:228191" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227797:228164" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="227865:228133" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="228356:229494" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="228405:229483" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="228445:229468" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="228488:228716" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="228615:228622" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="228757:228880" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="228781:228787" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="228829:228835" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="228844:228850" ph=" " />
+            <marker date="1512800986408" expanded="true" signature="228923:229449" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="228981:229426" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229030:229399" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229098:229368" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229565:230255" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229615:230244" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229655:230229" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229698:229777" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229818:229879" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="229922:230210" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230350:233224" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230394:233213" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230434:233198" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230477:230705" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="230604:230611" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="230746:232613" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230805:232590" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230854:231293" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="230983:231113" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="231164:231262" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="231342:231858" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="231471:231653" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="231704:231827" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="231769:231785" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="231907:232120" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232187:232562" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232361:232531" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232457:232496" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232656:233179" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232714:233156" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232763:233129" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="232831:233098" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="233320:236252" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="233404:236226" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="233447:233675" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="233574:233581" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="233716:235640" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="233775:235617" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="233824:234313" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="233953:234133" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="234184:234282" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="234362:234879" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="234491:234674" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="234725:234848" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="234790:234806" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="234928:235142" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235209:235589" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235384:235558" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235484:235523" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235683:236207" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235741:236184" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235790:236157" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="235858:236126" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="236350:237488" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="236399:237477" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="236439:237462" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="236482:236710" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="236609:236616" ph="×" />
+            <marker date="1512800986408" expanded="true" signature="236751:236874" ph="..." />
+            <marker date="1512800986408" expanded="false" signature="236775:236781" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="236823:236829" ph=" " />
+            <marker date="1512800986408" expanded="false" signature="236838:236844" ph=" " />
+            <marker date="1512800986408" expanded="true" signature="236917:237443" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="236975:237420" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="237024:237393" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="237092:237362" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="237555:237809" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="237878:238016" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="238087:238228" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="238298:238440" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="238517:238757" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="238828:239016" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="239087:239275" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="239327:240080" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="240132:240709" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="241051:241350" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="241218:241331" ph="..." />
+            <marker date="1512800986408" expanded="true" signature="241245:241312" ph="{...}" />
+            <marker date="1512800986408" expanded="true" signature="242605:243205" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/test_soup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="183" column="8" lean-forward="false" selection-start-line="183" selection-start-column="8" selection-end-line="183" selection-end-column="8" />
+        <state relative-caret-position="148">
+          <caret line="174" column="29" lean-forward="true" selection-start-line="174" selection-start-column="29" selection-end-line="174" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="49" />
+        <state relative-caret-position="91">
+          <caret line="299" column="4" lean-forward="false" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/DataClass.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/meizhu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="93" column="37" lean-forward="false" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <folding>
+            <element signature="e#17#46#0" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/mz_vcode.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrm_vcode.jpg">
@@ -1015,23 +1428,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="151">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="e#17#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_excel.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/qrmaster/syn/qrmaster_syn_meizhu_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="59" column="75" lean-forward="true" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
