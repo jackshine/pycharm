@@ -40,7 +40,7 @@ def checkResult(b,text):
         if b.find_element_by_id("login-tip").text==unicode(text,'utf-8'):
             print "error"
     except:
-        print "Right"
+        print("Right")
 def login_test(dict,user_list):
      #获得句柄
     b = getHandler()

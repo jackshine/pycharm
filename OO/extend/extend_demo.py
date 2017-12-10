@@ -10,7 +10,14 @@ class Dog(Animal):
         print('Eating meating..')
 class Cat(Animal):
     pass
+#
+# dog = Dog()
+# dog.run()
+# print(isinstance(dog,Animal))
+class Tortoise(Animal):
+    def run(self):
+        print('Tortoise is running ...')
+def run_twice(animal):
+    animal.run()
 
-dog = Dog()
-dog.run()
-print(isinstance(dog,Animal))
+run_twice(Tortoise())

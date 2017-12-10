@@ -11,7 +11,8 @@ class Student(object):
         else:
             raise ValueError('非男非女')
 obj = Student('lin','女')
-obj.set_gender('123')
-print(obj.get_gender())
+# obj.set_gender('123')
+#print(obj.get_gender())
+print(obj.__dict__)
 
 

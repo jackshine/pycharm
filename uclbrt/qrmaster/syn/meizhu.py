@@ -69,7 +69,6 @@ class MeizhuClass:
         room_id_list = []
         for i in room_div_list:
             room_id_list.append(i['data-value'])
-        print(room_id_list)
         return room_id_list
 
     def handle_hotel_id(self,tr_tag):
