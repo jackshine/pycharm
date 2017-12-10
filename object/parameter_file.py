@@ -3,9 +3,6 @@ from selenium import webdriver
 from  usedata_otherWay import getInfo,get_userinfo
 from log_module import Loginfo
 import time
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
 account_name = '13480251015'
 account_pwd = "111111a"
 list_Ele = []
