@@ -7,7 +7,6 @@ def get_userinfo(path):
         for i in result:
             r = i.split('=')
             user_info[r[0]] = r[1]
-        print(result)
     return user_info
 if __name__== '__main__':
     info = get_userinfo('./userinfo.txt')

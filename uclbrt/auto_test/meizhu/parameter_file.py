@@ -72,5 +72,5 @@ if __name__ == "__main__":
     dict = get_webinfo("./webinfo.txt")
     print(dict)
     #user_list = [{'uname':account_name,'pwd':account_pwd}]
-    userinfo = get_userinfo('./userinfo.txt')
-    login_test(dict,userinfo)
+    user_list = get_userinfo('./userinfo.txt')
+    login_test(dict,user_list)

@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/userdata.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/webdata.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/webinfo.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/case.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/meizhu_account - 副本.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/meizhu_account.xls" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/meizhu_account.xlsx" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/meizhu_account.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/object/parameter_file.py" afterPath="$PROJECT_DIR$/object/parameter_file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/meizhu_login.py" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/meizhu_login.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter.py" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/test.py" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/test.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/webinfo.txt" afterPath="$PROJECT_DIR$/test/webinfowebinfo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py" afterPath="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -224,8 +211,8 @@
             <file leaf-file-name="parameter_file.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="93">
-                    <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="29" />
+                  <state relative-caret-position="434">
+                    <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
                     <folding>
                       <element signature="e#14#44#0" expanded="true" />
                     </folding>
@@ -237,18 +224,16 @@
         </state>
       </content>
     </window>
-    <window id="1">
+    <window id="4">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/test.py">
+            <file leaf-file-name="parameter.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="66">
-                    <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                    <folding>
-                      <element signature="e#0#34#0" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="230">
+                    <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -406,8 +391,8 @@
         <option value="$PROJECT_DIR$/uclbrt/auto_test/meizhu/userinfo.txt'" />
         <option value="$PROJECT_DIR$/uclbrt/auto_test/meizhu/userinfo.txt" />
         <option value="$PROJECT_DIR$/uclbrt/auto_test/meizhu/userdata.py" />
-        <option value="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py" />
         <option value="$PROJECT_DIR$/uclbrt/auto_test/meizhu/webinfo.txt" />
+        <option value="$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py" />
       </list>
     </option>
   </component>
@@ -418,7 +403,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="148" />
+    <option name="x" value="25" />
+    <option name="y" value="7" />
     <option name="width" value="1367" />
     <option name="height" value="892" />
   </component>
@@ -757,7 +743,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="148" y="0" width="1367" height="892" extended-state="1" />
+    <frame x="25" y="7" width="1367" height="892" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -765,7 +751,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.2554859" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42348284" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42348284" sideWeight="0.7445141" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.41136363" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18362662" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1073,16 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/openpyxl/workbook/workbook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1223,21 +1199,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter.py">
+    <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="29" />
+        <state relative-caret-position="434">
+          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
             <element signature="e#14#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uclbrt/auto_test/meizhu/parameter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
