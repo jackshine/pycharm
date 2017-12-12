@@ -1,7 +1,5 @@
 #coding=utf-8
 from selenium import webdriver
-from  usedata_otherWay import getInfo,get_userinfo
-from log_module import Loginfo
 import time
 account_name = '13480251015'
 account_pwd = "111111a"
@@ -13,7 +11,7 @@ def openUrl(b,url):
     b.get(url)
 def findEle(b,dict):
     #找到元素
-    print dict['name_id']
+    print(dict['name_id'])
     name_Ele = b.find_element_by_id(dict['name_id'])
     pwd_Ele = b.find_element_by_id(dict['pwd_id'])
     login_Ele = b.find_element_by_id(dict['login_id'])
@@ -59,9 +57,9 @@ def login_test(dict,user_list):
     list = findEle(b,dict)
     #插入登录信息
     for arg in user_list:
-        print '123'
-        print list
-        print arg
+        print('123')
+        print(list)
+        print(arg)
         sendInfo(list,arg)
         result = checkResult(b, dict['errorid'],arg,log)
         if result:
@@ -74,8 +72,8 @@ def login_test(dict,user_list):
     log.log_close()
 if __name__ == "__main__":
     print("aaa")
-    dict = getInfo(r"D:\linyouwei\python\pycharm\object\webinfo.txt")
-    print dict
+    dict = getInfo(r"./webinfo.txt")
+    print(dict)
     #user_list = [{'uname':account_name,'pwd':account_pwd}]
     userinfo = get_userinfo(r'D:\linyouwei\python\pycharm\object\userinfo.txt')
     login_test(dict,userinfo)
