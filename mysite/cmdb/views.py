@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from cmdb import models
 # Create your views here.
-def index(request):
+def login(request):
     # return HttpResponse("hello world!")
     if request.method == "POST":
         username = request.POST.get("username",None)
