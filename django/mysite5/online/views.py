@@ -50,4 +50,8 @@ def login(req):
 def index(req):
     username = req.COOKIES.get('username','')
     return render_to_response('index.html',{'username':username})
+def logout(req):
+    response =  HttpResponse('退出')
+    response.delete_cookie('username')
+    return response
 
