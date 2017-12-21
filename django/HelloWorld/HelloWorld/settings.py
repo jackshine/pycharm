@@ -55,7 +55,7 @@ ROOT_URLCONF = 'HelloWorld.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'D:\linyouwei\python\pycharm\django\HelloWorld\HelloWorld\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,7 +67,7 @@ TEMPLATES = [
         },
     },
 ]
-
+print(TEMPLATES)
 WSGI_APPLICATION = 'HelloWorld.wsgi.application'
 
 
