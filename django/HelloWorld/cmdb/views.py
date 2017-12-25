@@ -17,7 +17,6 @@ def hours_ahead(request,offset):
     return HttpResponse(html)
 # 表单
 def search_form(request):
-    print(os.path.join(BASE_DIR)+'/HelloWorld/templates')
     return render_to_response('search_form.html')
 def search(request):
     if 'q' in request.GET:

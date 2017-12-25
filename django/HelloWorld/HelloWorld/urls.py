@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from cmdb import views
-
+from cmdb import views,search2
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     # url(r'^time/$', views.current_datetime),
     # url(r'^time/plus/(\d{1,2})/$',views.hours_ahead),
-    url(r'^search_form/$',views.search_form),
-    url(r'^search$',views.search),
+    url(r'^search_form/$', views.search_form),
+    url(r'^search/$', views.search),
+    url(r'^search-post$', search2.search_post),
 ]
