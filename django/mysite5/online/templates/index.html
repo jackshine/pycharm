@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
   <link rel="stylesheet" href="/static/assets/css/admin.css">
   <link rel="stylesheet" href="/static/bootstrap/3.3.2/css/bootstrap.css">
+    <style>
+    #addCommunity{
+        display:none;
+    }
+</style>
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -78,7 +83,7 @@
       <div class="am-cf am-padding">
         <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">集群列表</strong> </div>
       </div>
-      <div  class="am-g am-padding" align="right"><a href="regist.html" ><button type="button" class="btn btn-primary">新建集群</button></a></div>
+      <div  class="am-g am-padding" align="right"><a href="javascript:show()" ><button type="button" class="btn btn-primary" id="addCommunityTrigger">新建集群</button></a></div>
       <div class="am-g">
         <div class="am-u-sm-12">
           <table class="am-table am-table-bd am-table-striped admin-content-table">
@@ -104,7 +109,8 @@
             </tbody>
           </table>
         </div>
-         <div class="modal fade" data-backdrop="static" id="addCommunity">
+      </div>
+        <div id="addCommunity">
         <div class="modal-dialog fixed-modal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -237,16 +243,13 @@
             </div>
         </div>
     </div>
-      </div>
     </div>
-
     <footer class="admin-content-footer">
       <hr>
       <p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
     </footer>
   </div>
   <!-- content end -->
-
 </div>
 
 <a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
@@ -262,5 +265,11 @@
 <!--<![endif]-->
 <script src="/static/assets/js/amazeui.min.js"></script>
 <script src="/static/assets/js/app.js"></script>
+<script type="text/javascript">
+    var show_div = document.getElementById('addCommunity');
+    function show() {
+        show_div.style.display = "block";
+    }
+</script>
 </body>
 </html>
