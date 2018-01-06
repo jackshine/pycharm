@@ -69,5 +69,5 @@ def resetPwd(req):
 def logout(req):
     response =  HttpResponse('退出')
     response.delete_cookie('username')
-    return response
+    return HttpResponseRedirect('/online/login.html')
 
