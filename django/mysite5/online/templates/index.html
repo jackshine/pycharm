@@ -114,7 +114,7 @@
         <div class="modal-dialog fixed-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close btn ulite-js-btn ulite-js-ripple-effect" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    <button type="button" class="close btn ulite-js-btn ulite-js-ripple-effect" data-dismiss="modal" aria-label="Close" id="closeCommunityPage" onclick="hide()"><span aria-hidden="true">&times;</span>
                     </button>
                     <h4 class="modal-title">新增集群</h4>
                 </div>
@@ -179,47 +179,8 @@
                                 <div class="dropdown areaCode" style="">
     <a data-toggle="dropdown" class="btn-transparent btn-lg" tabindex="-1" href="javascript:void(0);">+<span id="areaCodeValue" class="areaCodeValue" value='[value]'>86</span>&nbsp;|</a>
     <ul class="dropdown-menu dropdown-menu-up">
-        <li><a href="javascript:void(0);" data-value="54"><span class="pull-right">+54</span>阿根廷/Argentina</a></li>
-        <li><a href="javascript:void(0);" data-value="61"><span class="pull-right">+61</span>澳大利亚/Australia</a></li>
-        <li><a href="javascript:void(0);" data-value="55"><span class="pull-right">+55</span>巴西/Brazil</a></li>
-        <li><a href="javascript:void(0);" data-value="673"><span class="pull-right">+673</span>文莱/Brunei</a></li>
-        <li><a href="javascript:void(0);" data-value="359"><span class="pull-right">+359</span>保加利亚/Bulgaria</a></li>
-        <li><a href="javascript:void(0);" data-value="1"><span class="pull-right">+1</span>加拿大/Canada</a></li>
         <li><a href="javascript:void(0);" data-value="86"><span class="pull-right">+86</span>中国/China</a></li>
         <li><a href="javascript:void(0);" data-value="852"><span class="pull-right">+852</span>香港/China-Hong Kong</a></li>
-        <li><a href="javascript:void(0);" data-value="886"><span class="pull-right">+886</span>台湾/China-Taiwan</a></li>
-        <li><a href="javascript:void(0);" data-value="56"><span class="pull-right">+56</span>智利/Chile</a></li>
-        <li><a href="javascript:void(0);" data-value="420"><span class="pull-right">+420</span>捷克/Czech</a></li>
-        <li><a href="javascript:void(0);" data-value="9714"><span class="pull-right">+9714</span>迪拜/Dubai</a></li>
-        <li><a href="javascript:void(0);" data-value="33"><span class="pull-right">+33</span>法国/France</a></li>
-        <li><a href="javascript:void(0);" data-value="49"><span class="pull-right">+49</span>德国/Germany</a></li>
-        <li><a href="javascript:void(0);" data-value="30"><span class="pull-right">+30</span>希腊/Greece</a></li>
-        <li><a href="javascript:void(0);" data-value="36"><span class="pull-right">+36</span>匈牙利/Hungary</a></li>
-        <li><a href="javascript:void(0);" data-value="39"><span class="pull-right">+39</span>意大利/Italy</a></li>
-        <li><a href="javascript:void(0);" data-value="98"><span class="pull-right">+98</span>伊朗/Iran</a></li>
-        <li><a href="javascript:void(0);" data-value="972"><span class="pull-right">+972</span>以色列/Israel</a></li>
-        <li><a href="javascript:void(0);" data-value="91"><span class="pull-right">+91</span>印度/India</a></li>
-        <li><a href="javascript:void(0);" data-value="62"><span class="pull-right">+62</span>印尼/Indonesia</a></li>
-        <li><a href="javascript:void(0);" data-value="81"><span class="pull-right">+81</span>日本/Japan</a></li>
-        <li><a href="javascript:void(0);" data-value="7"><span class="pull-right">+7</span>哈萨克斯坦/Kazakhstan</a></li>
-        <li><a href="javascript:void(0);" data-value="82"><span class="pull-right">+82</span>韩国/Korea</a></li>
-        <li><a href="javascript:void(0);" data-value="60"><span class="pull-right">+60</span>马来西亚/Malaysia</a></li>
-        <li><a href="javascript:void(0);" data-value="52"><span class="pull-right">+52</span>墨西哥/Mexico</a></li>
-        <li><a href="javascript:void(0);" data-value="95"><span class="pull-right">+95</span>缅甸/Myanmar[Burma]</a></li>
-        <li><a href="javascript:void(0);" data-value="31"><span class="pull-right">+31</span>荷兰/Netherlands</a></li>
-        <li><a href="javascript:void(0);" data-value="64"><span class="pull-right">+64</span>新西兰/New Zealand</a></li>
-        <li><a href="javascript:void(0);" data-value="351"><span class="pull-right">+351</span>葡萄牙/Portugal</a></li>
-        <li><a href="javascript:void(0);" data-value="63"><span class="pull-right">+63</span>菲律宾/Philippines</a></li>
-        <li><a href="javascript:void(0);" data-value="40"><span class="pull-right">+40</span>罗马尼亚/Romania</a></li>
-        <li><a href="javascript:void(0);" data-value="7"><span class="pull-right">+7</span>俄罗斯/Russia</a></li>
-        <li><a href="javascript:void(0);" data-value="966"><span class="pull-right">+966</span>沙特/Saudi Arabia</a></li>
-        <li><a href="javascript:void(0);" data-value="65"><span class="pull-right">+65</span>新加坡/Singapore</a></li>
-        <li><a href="javascript:void(0);" data-value="34"><span class="pull-right">+34</span>西班牙/Spain</a></li>
-        <li><a href="javascript:void(0);" data-value="66"><span class="pull-right">+66</span>泰国/Thailand</a></li>
-        <li><a href="javascript:void(0);" data-value="90"><span class="pull-right">+90</span>土耳其/Turkey</a></li>
-        <li><a href="javascript:void(0);" data-value="44"><span class="pull-right">+44</span>英国/United Kingdom</a></li>
-        <li><a href="javascript:void(0);" data-value="1"><span class="pull-right">+1</span>美国/United States</a></li>
-        <li><a href="javascript:void(0);" data-value="855"><span class="pull-right">+855</span>柬埔寨/Cambodia</a></li>
     </ul>
 </div>
                                 <input type="text" class="form-control" id="addRequestTelephone" maxlength="11" placeholder="请输入手机号码">
@@ -269,6 +230,10 @@
     var show_div = document.getElementById('addCommunity');
     function show() {
         show_div.style.display = "block";
+    }
+    var hide_div = document.getElementsById('addCommunity')
+    function  hide() {
+        show_div.style.display = "none";
     }
 </script>
 </body>
