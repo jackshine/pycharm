@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'mysite5.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'blogDB.db'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lockmanage',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 

@@ -6,7 +6,7 @@ from django.http.response import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
-from register_login.models import User
+from .models import User
 
 #用户信息form类
 class UserForm(forms.Form):

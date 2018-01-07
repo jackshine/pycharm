@@ -8,25 +8,24 @@ from django.template import RequestContext
 from django.http import HttpResponse,HttpResponseRedirect
 from .models import User
 class UserForm(forms.Form):
-    username = forms.CharField(label='用户名',max_length=100)
+    mobile = forms.CharField(label='手机号',max_length=100)
     password = forms.CharField(label='密码', widget=forms.PasswordInput())
 
 def register(req):
     if req.method =='POST':
         # print(req.POST)
+        data  = req.POST
+        print(data['password'])
+        print(data['mobile'])
         # uf = UserForm(req.POST)
-        # print('/n')
         # print(uf)
-        # print('/nb')
-        # if uf.is_valid():
-        #     username = uf.cleaned_data['username']
-        #     password = uf.cleaned_data['password']
-        #     User.objects.create(username=username,password=password)
-        return render_to_response('login.html')
+        # mobile = uf.cleaned_data['mobile']
+        # password = uf.cleaned_data['password']
+        User.objects.create(mobile=data['mobile'],password=data['password'])
+        return HttpResponseRedirect('login.html')
     else:
-        uf = UserForm
-        return render_to_response('register.html')
-    context_instance = RequestContext(req)
+        return render_to_response('register.html' )
+
 
 def login(req):
     if req.method == 'POST':
@@ -43,7 +42,7 @@ def login(req):
         #         return  HttpResponseRedirect('/online/login/')
         return HttpResponseRedirect('/online/index.html')
     else:
-        uf = UserForm
+        uf = User
         return render_to_response('login.html', {'uf': uf},)
         context_instance = RequestContext(req)
 
