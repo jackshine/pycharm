@@ -3,28 +3,22 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render,render_to_response
-from django import forms
 from django.template import RequestContext
 from django.http import HttpResponse,HttpResponseRedirect
 from .models import User
-class UserForm(forms.Form):
-    mobile = forms.CharField(label='手机号',max_length=100)
-    password = forms.CharField(label='密码', widget=forms.PasswordInput())
+from  .forms import UserForm
 
 def register(req):
     if req.method =='POST':
-        # print(req.POST)
-        data  = req.POST
-        print(data['password'])
-        print(data['mobile'])
-        # uf = UserForm(req.POST)
-        # print(uf)
-        # mobile = uf.cleaned_data['mobile']
-        # password = uf.cleaned_data['password']
-        User.objects.create(mobile=data['mobile'],password=data['password'])
-        return HttpResponseRedirect('login.html')
+        uf = UserForm(req.POST)
+        if(uf.is_valid()):
+            mobile = uf.cleaned_data['mobile']
+            password = uf.cleaned_data['password']
+            User.objects.create(mobile=mobile, password=password)
+            return HttpResponseRedirect('login.html')
     else:
-        return render_to_response('register.html' )
+        uf = UserForm()
+        return render_to_response('register.html',{'uf': uf} )
 
 
 def login(req):
