@@ -36,14 +36,15 @@
   <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
     <br>
     <br>
-    <form method="post" class="am-form" action="../resetPwd/">
-      <label for="email">新密码:</label>
-      <input type="password" name="" id="email" value="">
+    <form method="post" class="am-form" action="">
+      <label for="new_password">新密码:</label>
+      <input type="password" name="" id="new_password" value="">
       <br>
-      <label for="password">确认密码:</label>
-      <input type="password" name="" id="password" value="">
+      <label for="comfirm_password">确认密码:</label>
+      <input type="password" name="" id="comfirm_password" value="">
       <br>
       <br />
+      <input type="hidden" name="user_id" id="{{user_id}}" value="">
       <div class="am-cf">
         <input type="submit" name="" value="确定" class="am-btn am-btn-primary am-btn-sm am-fl"/>
       </div>
