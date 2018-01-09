@@ -67,7 +67,17 @@ def forgetPwd(req):
 def resetPwd(req):
     if req.method=='POST':
         #如果输入的新密码和确认密码相等，则跳转到login页面
-        return HttpResponseRedirect('login.html')
+        data = req.POST
+        print(data)
+        new_password =data['new_password']
+        comfirm_password = data['comfirm_password']
+        user_id = data['user_id']
+        if(new_password==comfirm_password):
+            pwd = hashlib.md5(new_password.encode("utf-8")).hexdigest()
+            User.objects.filter(id=int(user_id)).update(password=pwd )
+            return HttpResponseRedirect('login.html')
+        else:
+            return render_to_response('resetPwd.html')
     else:
         user_id = req.GET['user_id']
         print(user_id)
