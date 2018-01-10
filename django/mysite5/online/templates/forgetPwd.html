@@ -11,6 +11,7 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
   <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
+  <script src="\static\jquery\1.11.2\jquery.min.js"></script>
   <style>
     .header {
       text-align: center;
@@ -23,7 +24,30 @@
     .header p {
       font-size: 14px;
     }
+
   </style>
+  <script>
+    $(function () {
+        $('#btnLogin').click(function(){
+             mobile =  $('#mobile').val();
+             password =  $('#password').val();
+             vcode = $('#vcode').val();
+              $.post('/online/forgetPwd',{
+              },function (data) {
+                  if(data.msg == 'ok'){
+                      location.href = '/online/reset.html'
+                  }else if (data.msg === 'fail_mobile'){
+                      $('#errorMsg').show().text('手机号不存在')
+                  }else if (data.msg === 'fail_verify'){}
+                      $('#errorMsg').show().text('验证码错误')
+              })
+            }
+        )
+        $('#change').click(function () {
+                $('#imgvcode').attr('src', $('#imgvcode').attr('src') + 1)
+            });
+    })
+  </script>
 </head>
 <body>
 <div class="header">
@@ -36,16 +60,17 @@
   <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
     <br>
     <br>
-    <form method="post" class="am-form" action="" >
-      <label for="mobile">手机号:</label>
-      <input type="text" name="mobile" id="mobile" value="">
+    <form method="post" class="am-form" action="">
+    <label for="mobile">手机号:</label>
+    <input type="text" name="mobile" id="mobile" value="">
       <br>
       <label for="verifyCode">验证码:</label>
-      <input type="text" name="verifyCode" id="verifyCode" value="">
-      <br>
+      <input type="text" name="vcode" id="verifyCode" value="" class="nowrap">
+      <img src="/online/verify_code/?1" id="imgvcode"/> <span id="change">看不清，换一个</span><br/>
       <br />
+      <div id="errorMsg"></div>
       <div class="am-cf">
-        <input type="submit" name="" value="确定" class="am-btn am-btn-primary am-btn-sm am-fl" />
+        <input id="btnLogin"type="button" name="" value="确定" class="am-btn am-btn-primary am-btn-sm am-fl" />
       </div>
     </form>
     <hr>

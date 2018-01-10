@@ -8,4 +8,5 @@ urlpatterns =[
     url(r'^logout*', views.logout),
     url(r'^forgetPwd*', views.forgetPwd),
     url(r'^resetPwd*', views.resetPwd),
+    url(r'^verify_code*', views.verify_code),
 ]
