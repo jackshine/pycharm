@@ -58,24 +58,25 @@ def index(req):
         return render_to_response('index.html')
 
 def forgetPwd(req):
-    if req.method=='POST':
-        #判断手机号和验证码是否正确，
+    if req.method == 'POST':
+        # 判断手机号和验证码是否正确，
         mobile = req.POST.get('mobile')
         vcode = req.POST.get('vcode').upper()
         vcode_session = req.session.get('verifyCode').upper()
         print(mobile,vcode,vcode_session)
         #检查数据库是否有该手机号码，查到后，并传id 到resetPwd页面
         user = User.objects.filter(mobile=mobile)
-        user_id = user[0].id
         # user = User.objects.get(mobile=data['mobile'])
         # # 如果输入的手机号和验证码正确，则跳转到重置密码页面
         if user:
+            user_id = user[0].id
             if vcode == vcode_session:
-                return HttpResponseRedirect('resetPwd.html?' + 'user_id=' + str(user_id))
+                # return HttpResponseRedirect('resetPwd.html?' + 'user_id=' + str(user_id))
+                return JsonResponse({'msg': 'ok','user_id':user_id})
             else:
-                return render_to_response('forgetPwd.html', {'msg': 'fail_verify'})
+                return JsonResponse({'msg': 'fail_verify'})
         else:
-            return render_to_response('forgetPwd.html',{'msg': 'fail_mobile'})
+            return JsonResponse({'msg': 'fail_mobile'})
     else:
         return render_to_response('forgetPwd.html')
 
@@ -141,7 +142,6 @@ def verify_code(request):
     draw.text((75, 2), rand_str[3], font=font, fill=fontcolor)
     # 9，用完画笔，释放画笔
     del draw
-    print(rand_str)
     # 10，存入session，用于做进一步验证
     request.session['verifyCode'] = rand_str
     # 11，内存文件操作

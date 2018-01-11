@@ -24,6 +24,10 @@
     .header p {
       font-size: 14px;
     }
+    #errorMsg{
+      color: red;
+    }
+
 
   </style>
   <script>
@@ -31,22 +35,29 @@
         $('#btnLogin').click(function(){
              mobile =  $('#mobile').val();
              password =  $('#password').val();
-             vcode = $('#vcode').val();
+             vcode = $('#verifyCode').val();
               $.post('/online/forgetPwd',{
+                  'mobile':mobile,
+                  'password':password,
+                  'vcode':vcode,
               },function (data) {
                   if(data.msg == 'ok'){
-                      location.href = '/online/reset.html'
+                      location.href = '/online/resetPwd.html?'+ 'user_id=' +data.user_id
                   }else if (data.msg === 'fail_mobile'){
                       $('#errorMsg').show().text('手机号不存在')
-                  }else if (data.msg === 'fail_verify'){}
+                  }else if (data.msg === 'fail_verify'){
                       $('#errorMsg').show().text('验证码错误')
+                  }
               })
             }
         )
         $('#change').click(function () {
-                $('#imgvcode').attr('src', $('#imgvcode').attr('src') + 1)
+                $('#imgvcode').attr('src', $('#imgvcode').attr('src') + Math.random())
             });
     })
+//    function reloadcode(){
+//        document.getElementById("imgvcode").src = "/online/verify_code/"+Math.random();
+//    }
   </script>
 </head>
 <body>
@@ -66,9 +77,9 @@
       <br>
       <label for="verifyCode">验证码:</label>
       <input type="text" name="vcode" id="verifyCode" value="" class="nowrap">
-      <img src="/online/verify_code/?1" id="imgvcode"/> <span id="change">看不清，换一个</span><br/>
+      <img src="/online/verify_code" id="imgvcode" onclick="this.src='/online/verify_code'+Math.random()"/> <span id="change">看不清，换一个</span><br/>
       <br />
-      <div id="errorMsg"></div>
+      <div id="errorMsg" ></div>
       <div class="am-cf">
         <input id="btnLogin"type="button" name="" value="确定" class="am-btn am-btn-primary am-btn-sm am-fl" />
       </div>
