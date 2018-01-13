@@ -40,6 +40,7 @@ def login(req):
             user = User.objects.filter(mobile__exact = mobile,password__exact = password)
             print(user)
             if user:
+                req.session['mobile'] = mobile
                 response = HttpResponseRedirect('/online/index/')
                 response.set_cookie('mobile',mobile,3600)
                 return response
@@ -55,7 +56,12 @@ def index(req):
         username = req.COOKIES.get('username','')
         return render_to_response('login.html')
     else:
-        return render_to_response('index.html')
+        mobile = req.session.get('mobile')
+        if mobile == None:
+            return HttpResponseRedirect('/online/login/')
+        else:
+            req.session['mobile'] = mobile
+            return render_to_response('index.html')
 
 def forgetPwd(req):
     if req.method == 'POST':
@@ -71,6 +77,7 @@ def forgetPwd(req):
         if user:
             user_id = user[0].id
             if vcode == vcode_session:
+                req.session['forget_page_session'] = mobile
                 # return HttpResponseRedirect('resetPwd.html?' + 'user_id=' + str(user_id))
                 return JsonResponse({'msg': 'ok','user_id':user_id})
             else:
@@ -95,13 +102,19 @@ def resetPwd(req):
         else:
             return render_to_response('resetPwd.html')
     else:
-        user_id = req.GET['user_id']
+        mobile = req.session.get('forget_page_session')
+        user_id = req.GET.get('user_id',0)
         print(user_id)
-        return render_to_response('resetPwd.html',{'user_id': user_id})
+        if mobile == None or user_id == 0:
+            return HttpResponseRedirect('/online/forgetPwd/')
+        else:
+
+            return render_to_response('resetPwd.html',{'user_id': user_id})
         # return render_to_response('resetPwd.html')
 def logout(req):
     response =  HttpResponse('退出')
     response.delete_cookie('mobile')
+    del req.session['mobile']
     return HttpResponseRedirect('/online/login.html')
 
 
