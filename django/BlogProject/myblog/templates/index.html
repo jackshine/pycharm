@@ -29,7 +29,7 @@
                dailyname = $('#id_dailyname').val();
                console.log(daily);
                console.log(userid);
-               $.post('/mybog/publish',{
+               $.post('/myblog/publish/',{
                    'daily':daily,
                    'userid':userid,
                    'dailyname':dailyname
@@ -52,6 +52,7 @@
 <hr>
 <div>
     <form action="" method="post">
+        {% csrf_token %}
         {{uf.as_p}}
         <input type="hidden" id="id_userid"name="userid"value="{{userid}}">
         <input type="button" id="btn_ing_publish"  value="发布">

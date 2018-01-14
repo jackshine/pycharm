@@ -1,5 +1,5 @@
 import datetime
-print(type(datetime.datetime.now()))
-a = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-b = datetime.datetime.strftime(a,'%Y-%m-%d %H:%M:%S')
-print(type(b))
+
+d1 = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+d4 = datetime.datetime.strptime(d1,'%Y-%m-%d %H:%M:%S')
+print(type(d4))

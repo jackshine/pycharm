@@ -20,8 +20,9 @@ def blog_publish(req):
             daily = uf.cleaned_data['daily']
             userid = uf.cleaned_data['userid']
             dailyname = uf.cleaned_data['dailyname']
-            now_time = datetime.datetime.time()
-            Daily.objects.create(daily=daily, userid=userid,dailyname=dailyname)
+            now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            time = datetime.datetime.strptime(now_time, '%Y-%m-%d %H:%M:%S')
+            Daily.objects.create(daily=daily, userid=userid,dailyname=dailyname,postingdate=time)
             render_to_response('index.html',{'uf':uf})
     else:
         return render_to_response('123')
