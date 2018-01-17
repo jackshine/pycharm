@@ -8,6 +8,8 @@ import datetime
 from django.http import JsonResponse
 import json
 from django.core import serializers
+from .MyEncoder import MyEncoder
+from .DateEncoder import DateEncoder
 
 def index(req):
     if req.method == "POST":
@@ -27,12 +29,22 @@ def blog_publish(req):
             userid = req.POST.get('userid')
             now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             time = datetime.datetime.strptime(now_time, '%Y-%m-%d %H:%M:%S')
+            # 逆序，查找最后一条userid=userid的数据
+
             Daily.objects.create(daily=daily, userid=userid,dailyname=dailyname,postingdate=time)
-            dailyList = Daily.objects.filter(dailyid__exact=1)
-            if dailyList:
-                dailyList = serializers.serialize("json",dailyList)
-                # return JsonResponse({"dailyList":dailyList})
-                return HttpResponse(dailyList,content_type="application/json")
+            # dailyList = Daily.objects.all().filter(userid=userid).order_by('-dailyid')[0]
+            # print(dailyList.dailyname)
+            # print(type(dailyList))
+            # dailyList = Daily.objects.filter(dailyid__exact=count)
+            # if dailyList:
+            #     dailyList = serializers.serialize("json",dailyList)
+            #     # return JsonResponse({"dailyList":dailyList})
+            #     return HttpResponse(dailyList,content_type="application/json")
+            dailyList = Daily.objects.all().filter(userid=userid).order_by('-dailyid')[0]
+            dailyList = dailyList.to_dict()
+            print(json.dumps(dailyList, cls=DateEncoder))
+            return HttpResponse(json.dumps(dailyList,cls=DateEncoder), content_type="application/json")
+
     else:
         return render_to_response('123')
 

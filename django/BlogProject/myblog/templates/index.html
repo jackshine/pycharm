@@ -32,12 +32,9 @@
                    'userid':userid,
                    'dailyname':dailyname
                },function (data) {
-                   alert(data[0])
-                   var dataList = data[0].fields;
-                   alert(dataList)
                    $("#myDailyList").append("<div class='am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center'>"
-                       +"<h1><a href=''>"+dataList.dailyname+"</a></h1>"
-                       +"<p>"+dataList.daily+"</p>"
+                       +"<h1><a href=''>"+data.dailyname+"</a></h1>"
+                       +"<p>"+data.daily+"</p>"
                        +"</div>"
                    );
                 }
@@ -83,6 +80,7 @@
             <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center">
                 <h1><a href="">{{field.dailyname}} </a></h1>
                <p>{{field.daily}}</p>
+                <a onclick="delBlog({{field.dailyname}})"></a>
             </div>
          {%endfor %}
     </div>

@@ -47,6 +47,15 @@ class Daily(models.Model):
     keyword = models.CharField('关键字', max_length=20, null=True)
     tab = models.CharField('标签', max_length=20, null=True)
 
+    # def toJSON(self):
+    #     import json
+    #     return json.dumps(dict([(attr,getattr(self,attr)) for attr in [f.name for f in self._meta.fields]]))
+    def to_dict(self):
+        data = {}
+        for f in self._meta.concrete_fields:
+            data[f.name] = f.value_from_object(self)
+        return data
+
 class PhotoInfo(models.Model):
     photoid = models.AutoField(primary_key=True)
     userid = models.IntegerField()
