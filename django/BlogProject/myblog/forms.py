@@ -1,6 +1,7 @@
 from django import forms
-from django.forms import fields
-from .models import *
+
+from pycharm.django.BlogProject.myblog.model.models import *
+
 
 class DailyForm(forms.ModelForm):
     class Meta:

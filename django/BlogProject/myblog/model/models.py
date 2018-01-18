@@ -1,5 +1,5 @@
 from django.db import models
-
+import json
 # Create your models here.
 class UserInfo(models.Model):
     userid = models.AutoField(primary_key=True)
@@ -47,10 +47,14 @@ class Daily(models.Model):
     keyword = models.CharField('关键字', max_length=20, null=True)
     tab = models.CharField('标签', max_length=20, null=True)
 
+    def to_json(self):
+        return json.dumps({'daily':self.daily ,'dailyname':self.dailyname})
+
     # def toJSON(self):
     #     import json
     #     return json.dumps(dict([(attr,getattr(self,attr)) for attr in [f.name for f in self._meta.fields]]))
     def to_dict(self):
+        print(vars(self))
         data = {}
         for f in self._meta.concrete_fields:
             data[f.name] = f.value_from_object(self)

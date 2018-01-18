@@ -1,15 +1,11 @@
-from django.shortcuts import render
-
 # Create your views here.
-from django.shortcuts import render,render_to_response,HttpResponse
-from .forms import DailyForm
-from .models import Daily
 import datetime
-from django.http import JsonResponse
-import json
-from django.core import serializers
-from .MyEncoder import MyEncoder
-from .DateEncoder import DateEncoder
+
+from django.shortcuts import render_to_response,HttpResponse
+
+from .model.models  import Daily
+from .forms import DailyForm
+
 
 def index(req):
     if req.method == "POST":
@@ -32,7 +28,7 @@ def blog_publish(req):
             # 逆序，查找最后一条userid=userid的数据
 
             Daily.objects.create(daily=daily, userid=userid,dailyname=dailyname,postingdate=time)
-            # dailyList = Daily.objects.all().filter(userid=userid).order_by('-dailyid')[0]
+            # dailyList = Daily.objects.all().filter(userid=userid)
             # print(dailyList.dailyname)
             # print(type(dailyList))
             # dailyList = Daily.objects.filter(dailyid__exact=count)
@@ -41,9 +37,8 @@ def blog_publish(req):
             #     # return JsonResponse({"dailyList":dailyList})
             #     return HttpResponse(dailyList,content_type="application/json")
             dailyList = Daily.objects.all().filter(userid=userid).order_by('-dailyid')[0]
-            dailyList = dailyList.to_dict()
-            print(json.dumps(dailyList, cls=DateEncoder))
-            return HttpResponse(json.dumps(dailyList,cls=DateEncoder), content_type="application/json")
+            dailyList = dailyList.to_json()
+            return HttpResponse(dailyList, content_type="application/json")
 
     else:
         return render_to_response('123')
