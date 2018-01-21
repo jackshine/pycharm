@@ -1,20 +1,39 @@
 # Create your views here.
 import datetime
 
-from django.shortcuts import render_to_response,HttpResponse
-
-from .model.models  import Daily
-from .forms import DailyForm
-
+from django.shortcuts import render_to_response, HttpResponse,HttpResponseRedirect
+from .models import *
+from .forms import *
+from django.db.models import Q
+import hashlib
 
 def index(req):
     if req.method == "POST":
         return render_to_response('index.html')
     else:
-        #查找到useid =1 评论 展示到首页上
         uf = DailyForm()
-        dailyList = Daily.objects.filter(userid__exact=1)
+        dailyList = Daily.objects.all()
         return render_to_response('index.html',{'uf':uf,'userid':1,'dailyList':dailyList})
+
+def login(req):
+    if req.method == 'POST':
+        uf = UserInfoForm(req.POST)
+        if uf.is_valid():
+            mobile = uf.cleaned_data['mobile']
+            password = uf.cleaned_data['password']
+            password = hashlib.md5(password.encode("utf-8")).hexdigest()
+            user = UserInfo.objects.filter(mobile__exact = mobile,password__exact = password)
+            print(user)
+            if user:
+                req.session['mobile'] = mobile
+                response = HttpResponseRedirect('/online/index/')
+                response.set_cookie('mobile',mobile,3600)
+                return response
+            else:
+                return  HttpResponseRedirect('/online/login/')
+    else:
+        uf = UserInfoForm()
+        return render_to_response('login.html', {'uf':uf },)
 
 def blog_publish(req):
     if req.method == "POST":
@@ -42,5 +61,25 @@ def blog_publish(req):
 
     else:
         return render_to_response('123')
+
+
+def deleteDaily(req):
+    print(req.GET)
+    dailyid = req.GET.get('dailyid')
+    print(dailyid)
+    Daily.objects.all().filter(dailyid=dailyid).delete()
+    return HttpResponseRedirect('/myblog/index/')
+
+def searchDaily(req):
+    searchVal = req.GET.get('searchVal')
+    print(searchVal)
+    uf = DailyForm()
+    dailyList = Daily.objects.all().filter(Q(dailyname=searchVal)|Q(daily=searchVal))
+    return render_to_response('index.html', {'uf':uf, 'dailyList': dailyList})
+
+def showDaily(req):
+    dailyid = req.GET.get('dailyid')
+    daily = Daily.objects.get(dailyid = dailyid)
+    return render_to_response('blog.html', {'daily':daily})
 
 

@@ -48,11 +48,8 @@ class Daily(models.Model):
     tab = models.CharField('标签', max_length=20, null=True)
 
     def to_json(self):
-        return json.dumps({'daily':self.daily ,'dailyname':self.dailyname})
+        return json.dumps({'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid})
 
-    # def toJSON(self):
-    #     import json
-    #     return json.dumps(dict([(attr,getattr(self,attr)) for attr in [f.name for f in self._meta.fields]]))
     def to_dict(self):
         print(vars(self))
         data = {}

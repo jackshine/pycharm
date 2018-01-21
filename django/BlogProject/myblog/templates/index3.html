@@ -22,9 +22,29 @@
   <link rel="stylesheet" href="/static/assets/css/app.css">
     <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <script>
-        function loginBlog() {
-            window.location.href='/myblog/login/'
-        }
+       $(function () {
+           $("#btn_ing_publish").click(function () {
+               daily =  $('#id_daily').val();
+               userid = $('#id_userid').val();
+               dailyname = $('#id_dailyname').val();
+               $.post('/myblog/publish/',{
+                   'daily':daily,
+                   'userid':userid,
+                   'dailyname':dailyname
+               },function (data) {
+                   $("#myDailyList").append("<div class='am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center'>"
+                       +"<h1><a href=''>"+data.dailyname+"</a></h1>"
+                       +"<p>"+data.daily+"</p>"
+//                     +"<a href='/myblog/deleteDaily?id=1'>删除</a>"
+//                     +"<a href='/myblog/deleteDaily?id='"+data.dailyid+"'>删除</a>"
+                       +"<a href='/myblog/deleteDaily/?dailyid="+data.dailyid+"'>删除</a>"
+                       +"</div>"
+                   );
+                }
+               )
+           })
+       })
+
     </script>
 </head>
 
@@ -32,30 +52,32 @@
 <header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
 </header>
 <hr>
-
+<div>
+    <form action="" method="post">
+        {{uf.as_p}}
+        <input type="hidden" id="id_userid"name="userid"value="{{userid}}">
+        <input type="button" id="btn_ing_publish"  value="发布">
+    </form>
+</div>
 <nav class="am-g am-g-fixed blog-fixed blog-nav">
 <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
   <div class="am-collapse am-topbar-collapse" id="blog-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li ><a href="../index">首页</a></li>
+      <li ><a href="lw-index.html">我的消息</a></li>
+      <li><a href="lw-img.html">图片库</a></li>
+      <li><a href="lw-article-fullwidth.html">我的评论</a></li>
     </ul>
-
-    <form method="get" action="/myblog/searchDaily/" class="am-topbar-form  am-form-inline" role="search">
+    <form method="get" action="/myblog/searchDaily/" class="am-topbar-form am-topbar-right am-form-inline" role="search">
       <div class="am-form-group">
           <input type="text" class="am-form-field am-input-sm" placeholder="搜索"  name="searchVal">
           <input type="submit"  id="searchDaily" value="搜索">
       </div>
     </form>
-      <div id ="login_area"class="am-topbar-right">
-          <span>
-              <a href="#" onclick="loginBlog();return false">登陆</a>
-              <a href="#" onclick="registerBlog();return false">登陆</a>
-          </span>
-      </div>
   </div>
 </nav>
 <hr>
+
 
 <div class="am-g am-g-fixed blog-fixed" id="dataListDiv">
     <div class="am-u-md-8 am-u-sm-12" id ="myDailyList">
@@ -63,7 +85,7 @@
             <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center">
                 <h1><a href="/myblog/daily/?dailyid={{field.dailyid}}">{{field.dailyname}} </a></h1>
                <p>{{field.daily}}</p>
-                <p>{{field.userid}} 发布于 {{field.postingdate|date:"Y-m-d H:i:s"}}</p>
+                <a href="/myblog/deleteDaily/?dailyid={{field.dailyid}}">删除</a>
             </div>
          {%endfor %}
     </div>
