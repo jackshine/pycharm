@@ -19,4 +19,5 @@ from django.conf.urls import url,include
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^myblog/',include('myblog.urls')),
+    url(r'',include('comments.urls')),
 ]

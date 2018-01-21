@@ -7,7 +7,7 @@ class UserInfo(models.Model):
     nickname = models.CharField('昵称',max_length=20)
     blogname = models.CharField('博客名',max_length=30)
     blogsign = models.CharField('博客个性签名',max_length=50, null=True)
-    password = models.CharField('密码',max_length=20)
+    password = models.CharField('密码',max_length=32)
     lastlogin = models.DateTimeField('最后登录时间', auto_now=True, null=True)
     name = models.CharField(max_length=16, null=True)
     gender_choices = (
@@ -75,14 +75,7 @@ class PhotoAlbum(models.Model):
     createtime = models.DateTimeField('建立时间', auto_now_add=True)
     keyword = models.CharField('关键字', max_length=20, null=True)
 
-class Comment(models.Model):
-    commentid = models.AutoField(primary_key=True)
-    userid = models.IntegerField()
-    pdid = models.IntegerField()
-    comment = models.CharField('评论内容', max_length=200)
-    commenttime = models.DateTimeField('评论时间', auto_now_add=True)
-    flag = models.IntegerField()
-    nickname = models.CharField('昵称', max_length=50, null=True)
+
 
 class Message(models.Model):
     messageid = models.AutoField(primary_key=True)

@@ -4,6 +4,7 @@ import datetime
 from django.shortcuts import render_to_response, HttpResponse,HttpResponseRedirect
 from .models import *
 from .forms import *
+from ..comments.forms import *
 from django.db.models import Q
 import hashlib
 
@@ -13,7 +14,7 @@ def index(req):
     else:
         uf = DailyForm()
         dailyList = Daily.objects.all()
-        return render_to_response('index.html',{'uf':uf,'userid':1,'dailyList':dailyList})
+        return render_to_response('index.html',{'uf': uf, 'userid' : 1, 'dailyList': dailyList})
 
 def login(req):
     if req.method == 'POST':
@@ -21,8 +22,10 @@ def login(req):
         if uf.is_valid():
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
+            print(username, password)
             password = hashlib.md5(password.encode("utf-8")).hexdigest()
-            user = UserInfo.objects.filter(username__exact = username,password__exact = password)
+            print(password)
+            user = UserInfo.objects.filter(username__exact = username)
             print(user)
             if user:
                 req.session['username'] = username
@@ -52,6 +55,13 @@ def register(req):
         else:
             uf = UserInfoRegisterForm()
             return render_to_response('register.html', {'uf': uf})
+
+
+def logout(req):
+    response = HttpResponse('退出')
+    response.delete_cookie('username')
+    del req.session['username']
+    return HttpResponseRedirect('/myblog/login.html')
 
 def blog_publish(req):
     if req.method == "POST":
@@ -98,6 +108,12 @@ def searchDaily(req):
 def showDaily(req):
     dailyid = req.GET.get('dailyid')
     daily = Daily.objects.get(dailyid = dailyid)
-    return render_to_response('blog.html', {'daily':daily})
+    #
+    comment_list = daily.comment_set.all()
+    context = {
+        'daily':daily,
+        'comment_list':comment_list
+    }
+    return render_to_response('detail.html',context=context)
 
 
