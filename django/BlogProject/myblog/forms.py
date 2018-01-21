@@ -7,7 +7,13 @@ class DailyForm(forms.ModelForm):
         model = Daily
         fields = ['dailyname','daily']
 
-class UserInfoForm(forms.ModelForm):
+class UserInfoLoginForm(forms.ModelForm):
     class Meta:
         model = UserInfo
-        fields = ['userid','username','blogname','password','sex']
+        fields = ['username','password']
+
+
+class UserInfoRegisterForm(forms.ModelForm):
+    class Meta:
+        model = UserInfo
+        fields = ['username','password','blogname','sex']

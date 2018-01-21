@@ -17,23 +17,41 @@ def index(req):
 
 def login(req):
     if req.method == 'POST':
-        uf = UserInfoForm(req.POST)
+        uf = UserInfoLoginForm(req.POST)
         if uf.is_valid():
-            mobile = uf.cleaned_data['mobile']
+            username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
             password = hashlib.md5(password.encode("utf-8")).hexdigest()
-            user = UserInfo.objects.filter(mobile__exact = mobile,password__exact = password)
+            user = UserInfo.objects.filter(username__exact = username,password__exact = password)
             print(user)
             if user:
-                req.session['mobile'] = mobile
-                response = HttpResponseRedirect('/online/index/')
-                response.set_cookie('mobile',mobile,3600)
+                req.session['username'] = username
+                response = HttpResponseRedirect('/myblog/index/')
+                response.set_cookie('username',username,3600)
                 return response
             else:
-                return  HttpResponseRedirect('/online/login/')
+                return  HttpResponseRedirect('/myblog/login/')
     else:
-        uf = UserInfoForm()
+        uf = UserInfoLoginForm()
         return render_to_response('login.html', {'uf':uf },)
+
+def register(req):
+        if req.method == 'POST':
+            uf = UserInfoRegisterForm(req.POST)
+            if (uf.is_valid()):
+                username = uf.cleaned_data['username']
+                password = uf.cleaned_data['password']
+                blogname = uf.cleaned_data['blogname']
+                sex = uf.cleaned_data['sex']
+                regtime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                time = datetime.datetime.strptime(regtime, '%Y-%m-%d %H:%M:%S')
+                password = hashlib.md5(password.encode("utf-8")).hexdigest()
+                print(time)
+                UserInfo.objects.create(username=username, password=password,blogname=blogname,sex=sex,regtime=time)
+                return HttpResponseRedirect('login.html')
+        else:
+            uf = UserInfoRegisterForm()
+            return render_to_response('register.html', {'uf': uf})
 
 def blog_publish(req):
     if req.method == "POST":
