@@ -49,13 +49,15 @@ class Daily(models.Model):
 
     def to_json(self):
         return json.dumps({'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid})
-
     def to_dict(self):
-        print(vars(self))
-        data = {}
-        for f in self._meta.concrete_fields:
-            data[f.name] = f.value_from_object(self)
-        return data
+        return {'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid}
+
+    # def to_dict(self):
+    #     print(vars(self))
+    #     data = {}
+    #     for f in self._meta.concrete_fields:
+    #         data[f.name] = f.value_from_object(self)
+    #     return data
 
 class PhotoInfo(models.Model):
     photoid = models.AutoField(primary_key=True)

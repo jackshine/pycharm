@@ -28,6 +28,26 @@
          function registerBlog() {
             window.location.href='/myblog/register/'
         }
+        $(function () {
+           $("#btn_searchDaily").click(function () {
+               searchVal = $('#searchVal').val();
+               $.post('/myblog/searchDaily/',{
+                   'searchVal':searchVal
+               },function (data) {
+                   $('#search_data').html('')
+                    console.log(data);
+                    html_val = '';
+                    $.each(data,function (index,items) {
+                          html_val += "<div class=\"am-g am-g-fixed blog-fixed\" id=\"dataListDiv\"><div class=\"am-u-md-8 am-u-sm-12\" id =\"myDailyList\"><h1><a href='/myblog/daily/?dailyid="+items.dailyid+"'>"+items.dailyname+"</a></h1><p>"+items.daily+"</p></div></div>"
+                    })
+                   console.log(html_val);
+                    $("#dataListDiv").hide();
+                   $("#search_data").append(html_val);
+
+                }
+               )
+           })
+       })
     </script>
 </head>
 
@@ -44,10 +64,10 @@
       <li ><a href="../index">首页</a></li>
     </ul>
 
-    <form method="get" action="/myblog/searchDaily/" class="am-topbar-form  am-form-inline" role="search">
+    <form method="get" action="" class="am-topbar-form  am-form-inline" role="search">
       <div class="am-form-group">
-          <input type="text" class="am-form-field am-input-sm" placeholder="搜索"  name="searchVal">
-          <input type="submit"  id="searchDaily" value="搜索">
+          <input type="text" class="am-form-field am-input-sm" placeholder="搜索"  name="searchVal" id="searchVal">
+          <input type="button"  id="btn_searchDaily" value="搜索" >
       </div>
     </form>
       <div id ="login_area"class="am-topbar-right">
@@ -59,7 +79,7 @@
   </div>
 </nav>
 <hr>
-
+<!--模板的形式-->
 <div class="am-g am-g-fixed blog-fixed" id="dataListDiv">
     <div class="am-u-md-8 am-u-sm-12" id ="myDailyList">
         {% for field in dailyList %}
@@ -71,6 +91,10 @@
          {%endfor %}
     </div>
 </div>
+<div id="search_data"></div>
+
+
+
 
  <footer class="blog-footer"></footer>
 

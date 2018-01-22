@@ -4,7 +4,6 @@ import datetime
 from django.shortcuts import render_to_response, HttpResponse,HttpResponseRedirect
 from .models import *
 from .forms import *
-from ..comments.forms import *
 from django.db.models import Q
 import hashlib
 
@@ -98,12 +97,18 @@ def deleteDaily(req):
     Daily.objects.all().filter(dailyid=dailyid).delete()
     return HttpResponseRedirect('/myblog/index/')
 
+
 def searchDaily(req):
-    searchVal = req.GET.get('searchVal')
-    print(searchVal)
+    searchVal = req.POST.get('searchVal')
     uf = DailyForm()
     dailyList = Daily.objects.all().filter(Q(dailyname=searchVal)|Q(daily=searchVal))
-    return render_to_response('index.html', {'uf':uf, 'dailyList': dailyList})
+    print(dailyList)
+    list = []
+    for i in dailyList:
+        list.append(i.to_dict())
+    print(list)
+    return HttpResponse(json.dumps(list), content_type="application/json")
+
 
 def showDaily(req):
     dailyid = req.GET.get('dailyid')
