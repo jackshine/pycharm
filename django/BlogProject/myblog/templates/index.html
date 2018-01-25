@@ -45,16 +45,15 @@
 //                    $("#dataListDiv").hide();
 //                   $("#search_data").append(html_val);
 //                   方法二
-                   $("#dataListDiv").hide()
-                   var row = $("#div_search").clone();
-                   $('#search_data').html('')
+                   $("#dataListDiv").hide();
+                   $('#search_data').empty();
                    $.each(data,function(i,n){
+                       var row = $($("#js_template").clone().html());
                        row.find("a").text(n.dailyname)
                        row.find("a").attr('href',"/myblog/daily/?dailyid="+n.dailyid)
                        row.find("p:eq(0)").text(n.daily);
                        row.find("p:eq(1)").text(n.userid);
                        row.appendTo("#search_data");
-                       row = $("#div_search").clone();
                        })
                 }
                )
@@ -103,16 +102,19 @@
          {%endfor %}
     </div>
 </div>
+
 <div class="am-g am-g-fixed blog-fixed" id="search">
     <div class="am-u-md-8 am-u-sm-12" id ="search_data">
+    </div>
+</div>
+
+ <script type="text/html" id="js_template">
             <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center" id="div_search" >
                 <h1><a href=""> </a></h1>
                <p></p>
                 <p></p>
             </div>
-    </div>
-</div>
-
+            </script>
 
  <footer class="blog-footer"></footer>
 

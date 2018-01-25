@@ -2,8 +2,9 @@
 import datetime
 
 from django.shortcuts import render_to_response, HttpResponse,HttpResponseRedirect
-from .models import *
 from .forms import *
+from comments.forms import *
+from comments.models import *
 from django.db.models import Q
 import hashlib
 
@@ -113,10 +114,11 @@ def searchDaily(req):
 def showDaily(req):
     dailyid = req.GET.get('dailyid')
     daily = Daily.objects.get(dailyid = dailyid)
-    #
-    comment_list = daily.comment_set.all()
+    form  = CommentForm()
+    comment_list = Comment.objects.filter(pdid = dailyid)
     context = {
         'daily':daily,
+        'form':form,
         'comment_list':comment_list
     }
     return render_to_response('detail.html',context=context)

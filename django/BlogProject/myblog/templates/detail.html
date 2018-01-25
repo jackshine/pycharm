@@ -122,10 +122,35 @@
       <li class="am-pagination-next"><a href="">下一页 &raquo;</a></li>
     </ul>
   </div>
-
-
-
 </div>
+<form action="{% url 'comments:daily_comment' daily.dailyid %}" method="post" class="comment-form">
+  <!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+      <!--<label for="{{ form.userid.id_for_label }}">名字：</label>-->
+      <!--{{ form.userid }}-->
+    <!--</div>-->
+    <!--<div class="col-md-12">-->
+      <!--<label for="{{ form.text.id_for_label }}">评论：</label>-->
+      <!--{{ form.comment }}-->
+      <!--<button type="submit" class="comment-btn">发表</button>-->
+    <!--</div>-->
+  <!--</div>    &lt;!&ndash; row &ndash;&gt;-->
+  {{form.as_p}}
+  <button type="submit" class="comment-btn">发表</button>
+</form>
+<ul class="comment-list list-unstyled">
+  {% for comment in comment_list %}
+  <li class="comment-item">
+    <span class="nickname">{{ comment.userid }}</span>
+    <time class="submit-date">{{ comment.commenttime }}</time>
+    <div class="text">
+      {{ comment.comment }}
+    </div>
+  </li>
+  {% empty %}
+  暂无评论
+  {% endfor %}
+</ul>
 
 </footer>
 
