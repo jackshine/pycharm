@@ -7,13 +7,13 @@ from myblog.models import Daily
 
 def daily_comment(req,daily_id):
     daily = get_object_or_404(Daily,dailyid=daily_id)
-    comment_list = Comment.objects.filter(pdid=daily_id)
+    comment_list = Comment.objects.filter(dailyid=daily_id)
     print(daily_id)
     if req.method == "POST":
         form = CommentForm(req.POST)
         print(form)
         comment = form.save(commit=False)
-        comment.pdid = daily_id
+        comment.dailyid = daily_id
         comment.save()
         form_a = CommentForm()
         context = {

@@ -115,7 +115,7 @@ def showDaily(req):
     dailyid = req.GET.get('dailyid')
     daily = Daily.objects.get(dailyid = dailyid)
     form  = CommentForm()
-    comment_list = Comment.objects.filter(pdid = dailyid)
+    comment_list = Comment.objects.filter(dailyid = dailyid)
     context = {
         'daily':daily,
         'form':form,
