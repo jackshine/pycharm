@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BLOG</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="/static/assets/i/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/static/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="/static/assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileImage" content="/static/assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="/static/assets/css/app.css">
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        function loginBlog() {
+            window.location.href = '/myblog/login/'
+        }
+        function registerBlog() {
+            window.location.href = '/myblog/register/'
+        }
+        $(function () {
+            $("#btn_searchDaily").click(function () {
+                searchVal = $('#searchVal').val();
+                $.post('/myblog/searchDaily/', {
+                            'searchVal': searchVal
+                        }, function (data) {
+//                   方法一
+//                   $('#search_data').html('')
+//                    console.log(data);
+//                    html_val = '';
+//                    $.each(data,function (index,items) {
+//                          html_val += "<div class=\"am-g am-g-fixed blog-fixed\" id=\"dataListDiv\"><div class=\"am-u-md-8 am-u-sm-12\" id =\"myDailyList\"><h1><a href='/myblog/daily/?dailyid="+items.dailyid+"'>"+items.dailyname+"</a></h1><p>"+items.daily+"</p></div></div>"
+//                    })
+//                   console.log(html_val);
+//                    $("#dataListDiv").hide();
+//                   $("#search_data").append(html_val);
+//                   方法二
+                            $("#dataListDiv").hide();
+                            $('#search_data').empty();
+                            $.each(data, function (i, n) {
+                                var row = $($("#js_template").clone().html());
+                                row.find("a").text(n.dailyname)
+                                row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.dailyid)
+                                row.find("p:eq(0)").text(n.daily);
+                                row.find("p:eq(1)").text(n.userid);
+                                row.appendTo("#search_data");
+                            })
+                        }
+                )
+            })
+        })
+    </script>
+</head>
+
+<body id="blog">
+<header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
+</header>
+<hr>
+
+<nav class="am-g am-g-fixed blog-fixed blogdailyList-nav">
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button"
+            data-am-collapse="{target: '#blog-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="blog-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li><a href="../index">首页</a></li>
+        </ul>
+    </div>
+</nav>
+<hr>
+<div>
+    <form action="" method="post">
+        {{ uf.as_p }}
+        <input type="submit" id="btn_ing_publish" value="发布">
+    </form>
+</div>
+
+
+<script type="text/html" id="js_template">
+    <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center" id="div_search">
+        <h1><a href=""> </a></h1>
+        <p></p>
+        <p></p>
+    </div>
+</script>
+
+<footer class="blog-footer"></footer>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/static/assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="/static/assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="/static/assets/js/amazeui.min.js"></script>
+<!-- <script src="assets/js/app.js"></script> -->
+</body>
+</html>

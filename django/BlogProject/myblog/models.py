@@ -37,20 +37,20 @@ class AdminInfo(models.Model):
     tel = models.CharField('联系电话', max_length=20, null=True)
     regtime = models.DateTimeField('注册时间', auto_now_add=True)
 
-class Daily(models.Model):
-    dailyid = models.AutoField(primary_key=True)
-    userid = models.IntegerField()
-    dailyname = models.CharField('日志名', max_length=20)
-    daily  = models.TextField('日志内容',max_length=100)
-    postingdate = models.DateTimeField('发布时间', auto_now_add=True)
-    modifytime =  models.DateTimeField('修改时间', auto_now=True, null=True)
-    keyword = models.CharField('关键字', max_length=20, null=True)
-    tab = models.CharField('标签', max_length=20, null=True)
-
-    def to_json(self):
-        return json.dumps({'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid})
-    def to_dict(self):
-        return {'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid}
+# class Daily(models.Model):
+#     dailyid = models.AutoField(primary_key=True)
+#     userid = models.IntegerField()
+#     dailyname = models.CharField('日志名', max_length=20)
+#     daily  = models.TextField('日志内容',max_length=100)
+#     postingdate = models.DateTimeField('发布时间', auto_now_add=True)
+#     modifytime =  models.DateTimeField('修改时间', auto_now=True, null=True)
+#     keyword = models.CharField('关键字', max_length=20, null=True)
+#     tab = models.CharField('标签', max_length=20, null=True)
+#
+#     def to_json(self):
+#         return json.dumps({'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid})
+#     def to_dict(self):
+#         return {'daily':self.daily ,'dailyname':self.dailyname,'dailyid':self.dailyid}
 
     # def to_dict(self):
     #     print(vars(self))
@@ -58,6 +58,23 @@ class Daily(models.Model):
     #     for f in self._meta.concrete_fields:
     #         data[f.name] = f.value_from_object(self)
     #     return data
+
+class Daily(models.Model):
+    title = models.CharField(max_length=70)
+    body = models.TextField()
+    created_time = models.DateTimeField()
+    modified_time = models.DateTimeField()
+    excerpt = models.CharField(max_length=200, blank=True)
+    category = models.ForeignKey(Category)
+    tags = models.ManyToManyField(Tag, blank=True)
+    author = models.ForeignKey(User)
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+
+class Tag(models.Model):
+    name = models.CharField(max_length=100)
 
 class PhotoInfo(models.Model):
     photoid = models.AutoField(primary_key=True)
