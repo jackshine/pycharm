@@ -1,7 +1,7 @@
 # Create your views here.
 import datetime
 
-from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedirect,get_object_or_404
 from .forms import *
 from  comments.forms import CommentForm
 from  comments.models import Comment
@@ -31,6 +31,12 @@ def archives(req, year, month):
     print(dailyList)
     return render_to_response('index.html', {'dailyList': dailyList})
 
+
+def showCategory(req,id):
+    print(id)
+    cate = get_object_or_404(Category, id=id)
+    dailyList = Daily.objects.filter(category = cate)
+    return render_to_response('index.html',{'dailyList': dailyList})
 
 def login(req):
     if req.method == 'POST':

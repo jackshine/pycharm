@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^searchDaily/*', views.searchDaily),
     url(r'^daily/*', views.showDaily),
     url(r'^myblog*', views.myblog),
-    url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.archives, name='archives')
+    url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.archives, name='archives'),
+    url(r'^category/(\d+)/$', views.showCategory, name='category')
 ]

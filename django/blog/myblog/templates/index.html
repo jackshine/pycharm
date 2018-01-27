@@ -172,7 +172,20 @@
                         <a href= "{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a>
                     </li>
                     {% empty %}
-                    暂无文章！
+                    暂无归档！
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="am-g am-g-fixed">
+            <h3 class="">分类</h3>
+            {% get_categories as category_list %}
+            <ul>
+                {% for category in category_list %}
+                    <li>
+                        <a href= "{% url 'myblog:category' category.id %}">{{category.name}}</a>
+                    </li>
+                    {% empty %}
+                    暂无分类！
                 {% endfor %}
             </ul>
         </div>
