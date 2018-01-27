@@ -5,6 +5,7 @@ from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedir
 from .forms import *
 from  comments.forms import CommentForm
 from  comments.models import Comment
+import re
 
 from django.db.models import Q
 import hashlib
@@ -24,9 +25,9 @@ def index(req):
 
 def archives(req, year, month):
     print(year,month)
-    dailyList = Daily.objects.filter(created_time__year=year,
-                                     created_time__month=month
-                                     ).order_by('-created_time')
+    if re.match(r'\d+', year) and re.match(r'\d+', month):
+        ym_date = year + '-' + (month if int(month) > 9 else ('0' + month))
+        dailyList = Daily.objects.filter( created_time__startswith=ym_date).order_by('-created_time')
     print(dailyList)
     return render_to_response('index.html', {'dailyList': dailyList})
 

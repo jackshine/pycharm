@@ -10,7 +10,7 @@ class UserInfo(models.Model):
         (1, "女"),
     )
     sex = models.IntegerField('性别',choices=gender_choices,default=0)
-    regtime = models.DateTimeField('注册时间',)
+    regtime = models.DateTimeField('注册时间' )
     delflag_choices = (
         (0, "普通用户"),
         (1, "高级用户"),
