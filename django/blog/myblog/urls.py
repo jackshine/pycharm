@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from . import views
+app_name = 'myblog'
 urlpatterns = [
     url(r'^index*', views.index),
     url(r'^login*', views.login),
@@ -10,4 +11,5 @@ urlpatterns = [
     url(r'^searchDaily/*', views.searchDaily),
     url(r'^daily/*', views.showDaily),
     url(r'^myblog*', views.myblog),
+    url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.archives, name='archives')
 ]

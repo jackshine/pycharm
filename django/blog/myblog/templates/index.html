@@ -169,7 +169,7 @@
             <ul>
                 {% for daily in date_list %}
                     <li>
-                        <a href="">{{ daily.year }}年{{ daily.month }}月</a>
+                        <a href= "{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a>
                     </li>
                     {% empty %}
                     暂无文章！
