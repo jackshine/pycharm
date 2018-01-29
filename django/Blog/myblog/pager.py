@@ -1,5 +1,5 @@
 class Pagination(object):
-    def __init__(self, totalCount, currentPage, perPageItemNum=10, maxPageNum=7):
+    def __init__(self, totalCount, currentPage, perPageItemNum=5, maxPageNum=7):
         # 数据总个数
         self.total_count = totalCount
         # 当前页
@@ -56,28 +56,28 @@ class Pagination(object):
     def page_str(self):
         page_list = []
 
-        first = "<li><a href='/myblog/index2.html?p=1'>首页</a></li>"
+        first = "<li><a href='/myblog/index/?p=1'>首页</a></li>"
         page_list.append(first)
 
         if self.current_page == 1:
             prev = "<li><a href='#'>上一页</a></li>"
         else:
-            prev = "<li><a href='/myblog/index2.html?p=%s'>上一页</a></li>" % (self.current_page - 1,)
+            prev = "<li><a href='/myblog/index?p=%s'>上一页</a></li>" % (self.current_page - 1,)
         page_list.append(prev)
         for i in self.pager_num_range():
             if i == self.current_page:
-                temp = "<li class='active'><a href='/myblog/index2.html?p=%s'>%s</a></li>" % (i, i)
+                temp = "<li class='active'><a href='/myblog/index.html?p=%s'>%s</a></li>" % (i, i)
             else:
-                temp = "<li><a href='/myblog/index2.html?p=%s'>%s</a></li>" % (i, i)
+                temp = "<li><a href='/myblog/index.html?p=%s'>%s</a></li>" % (i, i)
             page_list.append(temp)
 
         if self.current_page == self.num_pages:
             nex = "<li><a href='#'>下一页</a></li>"
         else:
-            nex = "<li><a href='/myblog/index2.html?p=%s'>下一页</a></li>" % (self.current_page + 1,)
+            nex = "<li><a href='/myblog/index.html?p=%s'>下一页</a></li>" % (self.current_page + 1,)
         page_list.append(nex)
 
-        last = "<li><a href='/myblog/index2.html?p=%s'>尾页</a></li>" % (self.num_pages,)
+        last = "<li><a href='/myblog/index.html?p=%s'>尾页</a></li>" % (self.num_pages,)
         page_list.append(last)
 
         return ''.join(page_list)
