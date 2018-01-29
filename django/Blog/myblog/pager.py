@@ -1,5 +1,5 @@
 class Pagination(object):
-    def __init__(self, totalCount, currentPage, perPageItemNum=5, maxPageNum=7):
+    def __init__(self, totalCount, currentPage, perPageItemNum=5, maxPageNum=5):
         # 数据总个数
         self.total_count = totalCount
         # 当前页
@@ -72,12 +72,11 @@ class Pagination(object):
             page_list.append(temp)
 
         if self.current_page == self.num_pages:
-            nex = "<li><a href='#'>下一页</a></li>"
+            nex = "<li><a href='/myblog/index.html?p=%s'>下一页</a></li>"
         else:
             nex = "<li><a href='/myblog/index.html?p=%s'>下一页</a></li>" % (self.current_page + 1,)
         page_list.append(nex)
 
         last = "<li><a href='/myblog/index.html?p=%s'>尾页</a></li>" % (self.num_pages,)
         page_list.append(last)
-
         return ''.join(page_list)
