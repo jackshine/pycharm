@@ -22,26 +22,23 @@
 
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="am-active"><a href="#">首页</a></li>
-      <li><a href="#">项目</a></li>
-      <li class="am-dropdown" data-am-dropdown>
-        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          下拉 <span class="am-icon-caret-down"></span>
-        </a>
-        <ul class="am-dropdown-content">
-          <li class="am-dropdown-header">标题</li>
-          <li><a href="#">1. 去月球</a></li>
-          <li class="am-active"><a href="#">2. 去火星</a></li>
-          <li><a href="#">3. 还是回地球</a></li>
-          <li class="am-disabled"><a href="#">4. 下地狱</a></li>
-          <li class="am-divider"></li>
-          <li><a href="#">5. 桥头一回首</a></li>
-        </ul>
-      </li>
+      <li class="am-active"><a href="#">上传头像</a></li>
+      <li class="am-active"><a href="#">账户设置</a></li>
+      <li class="am-active"><a href="#">基本资料</a></li>
     </ul>
 
   </div>
 </header>
+<div class="am-form-group">
+  <form method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" name="img">
+<button type="submit">上传</button>
+</form>
+<div>
+  {% for img in imgs %}
+<img src='{{ img.img.url }}' />
+{% endfor %}
 <form class="am-form">
   <fieldset>
     <legend>个人信息</legend>
@@ -50,11 +47,7 @@
       <label for="doc-ipt-email-1">邮件</label>
       <input type="email" class="" id="doc-ipt-email-1" placeholder="输入电子邮件">
     </div>
-    <div class="am-form-group">
-      <label for="doc-ipt-file-1">头像</label>
-      <input type="file" id="doc-ipt-file-1">
-      <p class="am-form-help">请选择要上传的文件...</p>
-    </div>
+
 
     <div class="am-form-group am-form-file">
       <label for="doc-ipt-file-2">Amaze UI 文件上传域</label>
@@ -138,7 +131,7 @@
     <p><button type="submit" class="am-btn am-btn-default">提交</button></p>
   </fieldset>
 </form>
-
+</div>
 
 <!--[if lt IE 9]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>

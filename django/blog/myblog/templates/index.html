@@ -26,15 +26,17 @@
         function loginBlog() {
             window.location.href = '/myblog/login/'
         }
+
         function registerBlog() {
             window.location.href = '/myblog/register/'
         }
+
         $(function () {
             $("#btn_searchDaily").click(function () {
                 searchVal = $('#searchVal').val();
                 $.post('/myblog/searchDaily/', {
-                            'searchVal': searchVal
-                        }, function (data) {
+                        'searchVal': searchVal
+                    }, function (data) {
 //                   方法一
 //                   $('#search_data').html('')
 //                    console.log(data);
@@ -46,21 +48,47 @@
 //                    $("#dataListDiv").hide();
 //                   $("#search_data").append(html_val);
 //                   方法二
-                            $("#dataListDiv").hide();
-                            $('#search_data').empty();
-                            $.each(data, function (i, n) {
-                                var row = $($("#js_template").clone().html());
-                                row.find("a").text(n.dailyname)
-                                row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.dailyid)
-                                row.find("p:eq(0)").text(n.daily);
-                                row.find("p:eq(1)").text(n.userid);
-                                row.appendTo("#search_data");
-                            })
-                        }
+                        $("#dataListDiv").hide();
+                        $('#search_data').empty();
+                        $.each(data, function (i, n) {
+                            var row = $($("#js_template").clone().html());
+                            row.find("a").text(n.dailyname)
+                            row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.dailyid)
+                            row.find("p:eq(0)").text(n.daily);
+                            row.find("p:eq(1)").text(n.userid);
+                            row.appendTo("#search_data");
+                        })
+                    }
                 )
             })
         })
+        $(document).ready(function () {
+            el = "#paging"
+            var length = $(el+" li").length;
+            console.log(length)
+            for (var j = 0; j <= length; j++) {
+                if (j == 0 || j == 1 || j==2|| j == length||j==length-1) {
+                    $(el + " li:nth-child(" + j + ")").css("width", "50px");
+                } else {
+                    $(el + " li:nth-child(" + j + ")").css("width", "30px");
+                }
+            }
+        });
     </script>
+    <style>
+        #paging li {
+            float: left;
+            list-style: none;
+        }
+        /*
+        li:nth-child(1), li:nth-child(2) {
+        width: 50px
+        }
+        li:nth-child(3), li:nth-child(4), li:nth-child(5), li:nth-child(6), li:nth-child(7) {
+        width: 30px
+        }
+        */
+    </style>
 </head>
 
 <body id="blog">
@@ -87,79 +115,58 @@
 
         <div class="am-topbar-right">
             {% if username %}
-                <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
-                    <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle"
-                            data-am-dropdown-toggle>{{ username }} <span class="am-icon-caret-down"></span></button>
-                    <ul class="am-dropdown-content">
-                        <li><a href="/myblog/myblog">发布</a></li>
-                        <li><a href="/myblog/logout">退出</a></li>
-                    </ul>
-                </div>
+            <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+                <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle"
+                        data-am-dropdown-toggle>{{ username }} <span class="am-icon-caret-down"></span></button>
+                <ul class="am-dropdown-content">
+                    <li><a href="/myblog/myblog">发布</a></li>
+                    <li><a href="/myblog/logout">退出</a></li>
+                    <li><a href="/myblog/showUserInfo">设置</a></li>
+                </ul>
+            </div>
             {% else %}
-                <div class="am-topbar-right">
-                    <a href="/myblog/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">注册</a>
-                </div>
-                <div class="am-topbar-right">
-                    <a href="/myblog/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
-                </div>
+            <div class="am-topbar-right">
+                <a href="/myblog/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">注册</a>
+            </div>
+            <div class="am-topbar-right">
+                <a href="/myblog/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
+            </div>
             {% endif %}
+        </div>
     </div>
 </header>
-
-{#<nav class="am-g am-g-fixed blog-fixed blogdailyList-nav">#}
-{#    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button"#}
-{#            data-am-collapse="{target: '#blog-collapse'}"><span class="am-sr-only">导航切换</span> <span#}
-{#            class="am-icon-bars"></span></button>#}
-{##}
-{#    <div class="am-collapse am-topbar-collapse" id="blog-collapse">#}
-{#        <ul class="am-nav am-nav-pills am-topbar-nav">#}
-{#            <li><a href="../index">首页</a></li>#}
-{#        </ul>#}
-{#        <form method="get" action="" class="am-topbar-form  am-form-inline" role="search">#}
-{#            <div class="am-form-group">#}
-{#                <input type="text" class="am-form-field am-input-sm" placeholder="搜索" name="searchVal" id="searchVal">#}
-{#                <input type="button" id="btn_searchDaily" value="搜索">#}
-{#            </div>#}
-{#        </form>#}
-{#        {% if username %}#}
-{#            <div class="am-topbar-right">#}
-{#          <span>#}
-{#            <a href="/myblog/myblog">{{ username }}</a>#}
-{#          </span>#}
-{#            </div>#}
-{#        {% else %}#}
-{#            <div  class="am-topbar-right">#}
-{#          <span>#}
-{#              <a href="#" onclick="loginBlog();return false">登陆</a>#}
-{#              <a href="#" onclick="registerBlog();return false">注册</a>#}
-{#          </span>#}
-{#            </div>#}
-{#        {% endif %}#}
-{##}
-{#    </div>#}
-{#</nav>#}
 <!--模板的形式-->
 <div class="am-g am-g-fixed" id="dataListDiv">
-    <div class="am-u-md-8 am-u-sm-12" id="myDailyList">
+    <div class="am-u-md-9 am-u-sm-12" id="myDailyList">
         {% for field in dailyList %}
-            <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 ">
-                <h1><a href="/myblog/daily/?dailyid={{ field.id }}">{{ field.title }} </a></h1>
-                <p>{{ field.body }}</p>
-                <p>{{ field.author_id }} 发布于 {{ field.created_time|date:"Y-m-d H:i:s"}}</p>
-            </div>
+        <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 ">
+            <h1><a href="/myblog/daily/?dailyid={{ field.id }}">{{ field.title }} </a></h1>
+            <p>{{ field.body }}</p>
+            <p>{{ field.author_id }} 发布于 {{ field.created_time|date:"Y-m-d H:i:s"}}</p>
+        </div>
         {% endfor %}
+        <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 ">
+            <ul id="">
+                {% for row in dataList %}
+                <li>{{ row.name }}-{{ row.age }}</li>
+                {% endfor %}
+            </ul>
+            <ul class="pagination pagination-sm" id="paging">
+                {{ page_obj.page_str|safe }}
+            </ul>
+        </div>
     </div>
-    <div class="am-u-md-4 am-u-sm-12">
+    <div class="am-u-md-3 am-u-sm-12">
         <div class="am-g am-g-fixed">
             <h3 class="">最新文章</h3>
             {% get_recent_dailys as recent_daily_list %}
             <ul>
                 {% for daily in recent_daily_list %}
-                    <li>
-                        <a href="/myblog/daily/?dailyid={{ daily.id }}">{{ daily.title }}</a>
-                    </li>
-                    {% empty %}
-                    暂无文章！
+                <li>
+                    <a href="/myblog/daily/?dailyid={{ daily.id }}">{{ daily.title }}</a>
+                </li>
+                {% empty %}
+                暂无文章！
                 {% endfor %}
             </ul>
         </div>
@@ -168,11 +175,11 @@
             {% archives as date_list %}
             <ul>
                 {% for daily in date_list %}
-                    <li>
-                        <a href= "{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a>
-                    </li>
-                    {% empty %}
-                    暂无归档！
+                <li>
+                    <a href="{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a>
+                </li>
+                {% empty %}
+                暂无归档！
                 {% endfor %}
             </ul>
         </div>
@@ -181,11 +188,11 @@
             {% get_categories as category_list %}
             <ul>
                 {% for category in category_list %}
-                    <li>
-                        <a href= "{% url 'myblog:category' category.id %}">{{category.name}}</a>
-                    </li>
-                    {% empty %}
-                    暂无分类！
+                <li>
+                    <a href="{% url 'myblog:category' category.id %}">{{category.name}}</a>
+                </li>
+                {% empty %}
+                暂无分类！
                 {% endfor %}
             </ul>
         </div>

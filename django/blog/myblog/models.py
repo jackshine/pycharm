@@ -36,6 +36,11 @@ class Daily(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
     author = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
 
+class UserDetails(models.Model):
+    userId = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
+    img = models.FileField(upload_to='avatar/')
+
+
 
 
 
