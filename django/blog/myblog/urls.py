@@ -24,6 +24,7 @@ urlpatterns = [
     # url(r'^showUserInfo*', views.showUserInfo),
     # url(r'^setUserInfo*', views.uploadImg),
     url(r'^showImg', views.showImg),
-    url(r'^upload', views.upload),
+    url(r'^uploadImg', views.uploadImg),
+    url(r'^update_img*', views.update_img),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

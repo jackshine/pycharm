@@ -1,17 +1,17 @@
 # Create your views here.
 import datetime
 
-from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedirect,get_object_or_404,render
+from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedirect, get_object_or_404, render
 from .forms import *
 from  comments.forms import CommentForm
 from  comments.models import Comment
 from django.views.generic import ListView
 import re
-from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
-
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from django.db.models import Q
 import hashlib
+import os
 
 
 class IndexView(ListView):
@@ -19,6 +19,7 @@ class IndexView(ListView):
     template_name = 'index.html'
     context_object_name = 'dailyList'
     paginate_by = 3
+
 
 # def index(req):
 #     if req.method == "POST":
@@ -30,11 +31,12 @@ class IndexView(ListView):
 #         if req.session.has_key('username'):
 #             username = req.session['username']
 #         return render_to_response('index.html', {'uf': uf, 'userid': 1, 'dailyList': dailyList, 'username': username})
-#模拟测试网页数据
+# 模拟测试网页数据
 USER_LIST = []
-for i in range(1,999):
-    temp = {"name":"root"+str(i),"age":i}
+for i in range(1, 999):
+    temp = {"name": "root" + str(i), "age": i}
     USER_LIST.append(temp)
+
 
 def index(req):
     from .pager import Pagination
@@ -42,7 +44,9 @@ def index(req):
     page_obj = Pagination(50, current_page)
     dailyList = Daily.objects.all()[page_obj.start():page_obj.end()]
     print(dailyList)
-    return render_to_response( 'index.html',{'dailyList':dailyList,'page_obj':page_obj,'username':req.session['username']})
+    return render_to_response('index.html',
+                              {'dailyList': dailyList, 'page_obj': page_obj, 'username': req.session['username']})
+
 
 def index1(request):
     # 全部数据:USER_LIST,=>得出共有多少条数据
@@ -77,6 +81,7 @@ def index1(request):
 
     return render_to_response('index1.html', {'posts': posts})
 
+
 def index2(request):
     from .pager import Pagination
     current_page = request.GET.get('p')
@@ -84,6 +89,7 @@ def index2(request):
 
     data_list = USER_LIST[page_obj.start():page_obj.end()]
     return render(request, 'index2.html', {'data': data_list, 'page_obj': page_obj})
+
 
 class CustomPaginator(Paginator):
     def __init__(self, current_page, per_pager_num, *args, **kwargs):
@@ -119,8 +125,8 @@ class ArchivesView(IndexView):
         month = self.kwargs.get('month')
         if re.match(r'\d+', year) and re.match(r'\d+', month):
             ym_date = year + '-' + (month if int(month) > 9 else ('0' + month))
-        return super(ArchivesView, self).get_queryset().filter( created_time__startswith=ym_date).order_by('-created_time')
-
+        return super(ArchivesView, self).get_queryset().filter(created_time__startswith=ym_date).order_by(
+            '-created_time')
 
 
 # def archives(req, year, month):
@@ -134,8 +140,9 @@ class ArchivesView(IndexView):
 
 class CategoryView(IndexView):
     def get_queryset(self):
-        cate = get_object_or_404(Category,id=self.kwargs.get('id'))
-        return super(CategoryView,self).get_queryset().filter(category=cate)
+        cate = get_object_or_404(Category, id=self.kwargs.get('id'))
+        return super(CategoryView, self).get_queryset().filter(category=cate)
+
 
 # def showCategory(req,id):
 #     cate = get_object_or_404(Category, id=id)
@@ -264,11 +271,13 @@ def myblog(req):
         uf = DailyForm()
         return render_to_response('myblog.html', {'username': req.session['username'], 'uf': uf})
 
+
 def showUserInfo(req):
     if req.method == "POST":
-        return  render_to_response("userInfo.html")
+        return render_to_response("userInfo.html")
     else:
         return render_to_response("userInfo.html")
+
 
 def setUserInfo(req):
     if req.method == "POST":
@@ -276,11 +285,40 @@ def setUserInfo(req):
     else:
         return render_to_response("setUserInfo.html")
 
-def upload(req):
+        # def upload(req):
+        #     if req.method == 'POST':
+        #         print(req.POST.get('x1'))
+        #         # # userInfo = daily = UserInfo.objects.get(userid=1)
+        #         # # new_img = UserDetails(
+        #         # #     img = req.FILES.get('img'),
+        #         # #     userId=userInfo
+        #         # # )
+        #         # new_img.save()
+        #         return render_to_response('uploadImg.html')
+        #     else:
+        #         return render_to_response("uploadImg.html")
+
+        #
+        # if req.method == 'POST':
+        #        x1 = req.POST.get('x1')
+        #        x2 = req.POST.get('x2')
+        #        y1 = req.POST.get('y1')
+        #        y2 = req.POST.get('y1')
+        #        box = (x1, y1, x2, y2)
+        #        userInfo = daily = UserInfo.objects.get(userid=1)
+        #        new_img = UserDetails(
+        #            img=req.FILES.get('img'),
+        #            userId=userInfo
+        #        )
+        #        # region = img.crop(box)
+        #        # region.save("bb.jpg")
+
+
+def uploadImg(req):
     if req.method == 'POST':
         userInfo = daily = UserInfo.objects.get(userid=1)
         new_img = UserDetails(
-            img = req.FILES.get('img'),
+            img=req.FILES.get('img'),
             userId=userInfo
         )
         new_img.save()
@@ -288,12 +326,39 @@ def upload(req):
     else:
         return render_to_response("uploadImg.html")
 
-def showImg(req):
 
+def update_img(req):
+    if req.method == 'POST':
+        x1 = int(req.POST.get('x1'))
+        x2 = int(req.POST.get('x2'))
+        y1 = int(req.POST.get('y1'))
+        y2 = int(req.POST.get('y1'))
+        box = (x1, y1, x2, y2)
+        print(box)
+        userInfo = UserInfo.objects.get(userid=1)
+        details = UserDetails.objects.get(userId=userInfo)
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        print(BASE_DIR)
+        print(type(details.img))
+        # path = os.path.join(BASE_DIR, '/media/upload/1234.png').replace('\\', '/')
+        path = os.path.join(r'D:\linyouwei\python\pycharm\django\Blog\media\upload\1234.png').replace('\\', '/')
+        print(path)
+        from PIL import Image
+        box = (x1,y1,x2,y2)
+        img = Image.open(path)
+        region = img.crop(box)
+        new_img = UserDetails(
+            img=region,
+            userId=userInfo
+        )
+        region.save('1234.png')
+        return HttpResponseRedirect('showImg.html')
+    else:
+        return render_to_response("uploadImgTest.html")
+
+
+def showImg(req):
     imgs = UserDetails.objects.all()
     for i in imgs:
         print(i.img)
-    content = {
-        'imgs':imgs,
-    }
-    return render_to_response('showImg.html',content)
+    return render_to_response('showImg.html', {'imgs': imgs})
