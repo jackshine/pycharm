@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Blog </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
+     <link rel="stylesheet" href="/static/Jcrop-0.9.12/css/jquery.Jcrop.css">
+    <script src="/static/Jcrop-0.9.12/js/jquery.Jcrop.js"></script>
+    <link rel="stylesheet" href="/static/Jcrop-0.9.12/demos/demo_files/main.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/Jcrop-0.9.12/demos/demo_files/demos.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/Jcrop-0.9.12/css/jquery.Jcrop.css" type="text/css"/>
+
+     <script type="text/javascript">
+        jQuery(function ($) {
+
+            var jcrop_api;
+
+            $('#target').Jcrop({
+                onChange: showCoords,
+                onSelect: showCoords,
+                onRelease: clearCoords
+            }, function () {
+                jcrop_api = this;
+            });
+
+            $('#coords').on('change', 'input', function (e) {
+                var x1 = $('#x1').val(),
+                    x2 = $('#x2').val(),
+                    y1 = $('#y1').val(),
+                    y2 = $('#y2').val();
+                console.log(x1)
+                jcrop_api.setSelect([x1, y1, x2, y2]);
+
+            });
+
+        });
+
+        // Simple event handler, called from onChange and onSelect
+        // event handlers, as per the Jcrop invocation above
+        function showCoords(c) {
+            
+//            $('#x1').val(c.x);
+//            $('#y1').val(c.y);
+//            $('#x2').val(c.x2);
+//            $('#y2').val(c.y2);
+//            $('#w').val(c.w);
+//            $('#h').val(c.h);
+//            $.post('/myblog/upload', {
+//                    'x1':c.x,
+//                    'x2':c.x2,
+//                    'y1':c.y,
+//                    'y2':c.y2
+//            }, function (data) {
+//
+//                })
+        };
+
+        function clearCoords() {
+              var x1 = $('#x1').val(),
+                    x2 = $('#x2').val(),
+                    y1 = $('#y1').val(),
+                    y2 = $('#y2').val();
+            $.post('/myblog/update_img', {
+                'x1': x1,
+                'x2': x2,
+                'y1': y1,
+                'y2': y2,
+            }, function (data) {
+
+            })
+        };
+    </script>
+</head>
+<body>
+<header class="am-topbar">
+  <h1 class="am-topbar-brand">
+    <a href="#">Amaze UI</a>
+  </h1>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+</header>
+<!--<img src="/static/Jcrop-0.9.12/demos/demo_files/sago.jpg"/>-->
+{% for img in imgs %}
+<img src='{{ img.img.url }}'  id="target" alt="[Jcrop Example]"/>
+{% endfor %}
+
+                <form id="coords"
+                      class="coords"
+                      onsubmit="return false;"
+                      action="http://example.com/post.php">
+
+                    <div class="inline-labels">
+                        <label>X1 <input type="text" size="4" id="x1" name="x1"/></label>
+                        <label>Y1 <input type="text" size="4" id="y1" name="y1"/></label>
+                        <label>X2 <input type="text" size="4" id="x2" name="x2"/></label>
+                        <label>Y2 <input type="text" size="4" id="y2" name="y2"/></label>
+                        <label>W <input type="text" size="4" id="w" name="w"/></label>
+                        <label>H <input type="text" size="4" id="h" name="h"/></label>
+                    </div>
+                </form>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="/static/assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/static/assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/static/assets/js/amazeui.min.js"></script>
+
+</body>
+</html>
