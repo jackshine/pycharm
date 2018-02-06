@@ -38,9 +38,8 @@ class Daily(models.Model):
 
 class UserDetails(models.Model):
     userId = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
-    img = models.FileField(upload_to='upload/')
-    def toString():
-        retur
+    # img = models.FileField(upload_to='upload/')
+    img = models.CharField(max_length=100)
 
 
 

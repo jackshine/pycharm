@@ -13,8 +13,7 @@ from django.db.models import Q
 import hashlib
 import os
 
-
-
+import random
 
 
 class IndexView(ListView):
@@ -317,37 +316,68 @@ def setUserInfo(req):
         #        # region.save("bb.jpg")
 
 
+# def uploadImg(req):
+#     if req.method == 'POST':
+#         img = req.POST.get('photo')
+#         import re
+#         import base64
+#         imgTobinary = base64.b64decode(re.split(',',img)[1])
+#         from django.conf import settings
+#         path = settings.MEDIA_URL+ '/upload/abdd.png'
+#         with open(path,'wb') as f:
+#             f.write(imgTobinary)
+#         return render_to_response("uploadImg.html")
+#     else:
+#         return render_to_response("uploadImg.html")
+
+
 def uploadImg(req):
     if req.method == 'POST':
-        userInfo = daily = UserInfo.objects.get(userid=1)
-        imgFile = req.FILES.get('img')
+        img = req.POST.get('photo')
+        import re
+        import base64
+        from django.conf import settings
+        binaryImg = base64.b64decode(re.split(',', img)[1])
+        userInfo = UserInfo.objects.get(userid=1)
+        now_time = datetime.datetime.now().strftime('%Y%m%d')
+        # 随机生成16位十六进制数字,生成文件名
+        path = 'upload/'  + getRandomNum() + '.png'
+        print(path)
         new_img = UserDetails(
-            img=imgFile,
+            img=path,
             userId=userInfo
         )
         new_img.save()
-        response = {
-            'error': 0,
-            'url': 'media/upload/' + imgFile.name
-            # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
-        }
-        return HttpResponse(json.dumps(response), content_type="application/json")
+        img_path = settings.MEDIA_URL + path
+        with open(img_path, 'wb') as f:
+            f.write(binaryImg)
+        return render_to_response("uploadImg.html")
     else:
         return render_to_response("uploadImg.html")
 
+
+def getRandomNum():
+    random_list = [i for i in range(0, 10)] + [chr(i) for i in range(97, 122)]
+    # 对应从“a”到“z”的ASCII码 [chr(i) for i in range(97,122)
+    random_str = ''
+    for i in range(16):
+        random_str = random_str + str(random_list[random.randint(1, 16)])
+    return random_str
+
+
 def upload_file(request):
     # 拿到文件，保存在指定路径
-    print(request.FILES) # {'imgFile': [<InMemoryUploadedFile: QQ图片20170523192846.jpg (image/jpeg)>]}
+    print(request.FILES)  # {'imgFile': [<InMemoryUploadedFile: QQ图片20170523192846.jpg (image/jpeg)>]}
     imgFile = request.FILES.get('img')  # 拿到文件对象，imgFile.name, 拿到文件名
     print(imgFile.name)
 
-    with open('media/upload/'+imgFile.name,'wb')as f:   # with open 无法创建文件夹，需要自己创建
+    with open('media/upload/' + imgFile.name, 'wb')as f:  # with open 无法创建文件夹，需要自己创建
         for chunk in imgFile.chunks():
             f.write(chunk)
     # 返回json响应
     response = {
         'error': 0,
-        'url': 'media/upload/'+imgFile.name
+        'url': 'media/upload/' + imgFile.name
         # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
     }
     return HttpResponse(json.dumps(response))
@@ -359,7 +389,7 @@ def uploadandcut(req):
         y1 = int(req.POST.get('y1'))
         cw = int(req.POST.get('cw'))
         ch = int(req.POST.get('ch'))
-        box = (x1, y1, x1+cw, y1+ch)
+        box = (x1, y1, x1 + cw, y1 + ch)
         print(box)
         userInfo = UserInfo.objects.get(userid=1)
         details = UserDetails.objects.get(userId=userInfo)
@@ -375,9 +405,9 @@ def uploadandcut(req):
 
         from django.conf import settings
         from django.conf.urls.static import static
-        print(static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT))
+        print(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
         new_img = UserDetails(
-            img= img,
+            img=img,
             userId=userInfo
         )
         UserDetails.save(new_img)

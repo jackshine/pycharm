@@ -15,6 +15,7 @@ for i in range(account):
 	for j in range(12):
 		sa.append(random.choice(seed))
 		salt = ''.join(sa)
-	table.cell(row=i+1, column=1).value = salt
-	rb.save('./random.xlsx')
+	# table.cell(row=i+1, column=1).value = salt
+	# rb.save('./random.xlsx')
+	print(salt)
 
