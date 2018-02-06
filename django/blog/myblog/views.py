@@ -14,6 +14,9 @@ import hashlib
 import os
 
 
+
+
+
 class IndexView(ListView):
     model = Daily
     template_name = 'index.html'
@@ -317,41 +320,67 @@ def setUserInfo(req):
 def uploadImg(req):
     if req.method == 'POST':
         userInfo = daily = UserInfo.objects.get(userid=1)
+        imgFile = req.FILES.get('img')
         new_img = UserDetails(
-            img=req.FILES.get('img'),
+            img=imgFile,
             userId=userInfo
         )
         new_img.save()
-        return HttpResponseRedirect('showImg.html')
+        response = {
+            'error': 0,
+            'url': 'media/upload/' + imgFile.name
+            # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
+        }
+        return HttpResponse(json.dumps(response), content_type="application/json")
     else:
         return render_to_response("uploadImg.html")
 
+def upload_file(request):
+    # 拿到文件，保存在指定路径
+    print(request.FILES) # {'imgFile': [<InMemoryUploadedFile: QQ图片20170523192846.jpg (image/jpeg)>]}
+    imgFile = request.FILES.get('img')  # 拿到文件对象，imgFile.name, 拿到文件名
+    print(imgFile.name)
 
-def update_img(req):
+    with open('media/upload/'+imgFile.name,'wb')as f:   # with open 无法创建文件夹，需要自己创建
+        for chunk in imgFile.chunks():
+            f.write(chunk)
+    # 返回json响应
+    response = {
+        'error': 0,
+        'url': 'media/upload/'+imgFile.name
+        # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
+    }
+    return HttpResponse(json.dumps(response))
+
+
+def uploadandcut(req):
     if req.method == 'POST':
         x1 = int(req.POST.get('x1'))
-        x2 = int(req.POST.get('x2'))
         y1 = int(req.POST.get('y1'))
-        y2 = int(req.POST.get('y1'))
-        box = (x1, y1, x2, y2)
+        cw = int(req.POST.get('cw'))
+        ch = int(req.POST.get('ch'))
+        box = (x1, y1, x1+cw, y1+ch)
         print(box)
         userInfo = UserInfo.objects.get(userid=1)
         details = UserDetails.objects.get(userId=userInfo)
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        print(BASE_DIR)
-        print(type(details.img))
         # path = os.path.join(BASE_DIR, '/media/upload/1234.png').replace('\\', '/')
-        path = os.path.join(r'D:\linyouwei\python\pycharm\django\Blog\media\upload\1234.png').replace('\\', '/')
-        print(path)
-        from PIL import Image
-        box = (x1,y1,x2,y2)
-        img = Image.open(path)
-        region = img.crop(box)
+        # path = os.path.join(r'D:\linyouwei\python\pycharm\django\Blog\media\upload\1234.png').replace('\\', '/')
+        # print(path)
+        # from PIL import Image
+        # img = details.img.open(path)
+        img = req.FILES.get('img')
+        print(type(img))
+        img = img.crop(box)
+
+        from django.conf import settings
+        from django.conf.urls.static import static
+        print(static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT))
         new_img = UserDetails(
-            img=region,
+            img= img,
             userId=userInfo
         )
-        region.save('1234.png')
+        UserDetails.save(new_img)
         return HttpResponseRedirect('showImg.html')
     else:
         return render_to_response("uploadImgTest.html")

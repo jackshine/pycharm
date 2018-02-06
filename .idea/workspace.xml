@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/showImgTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/test/uploadImgTest.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImgTest.html" afterPath="" />
+    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="jenkins">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/static/img/1234.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/1234.png" afterPath="$PROJECT_DIR$/django/Blog/1234.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/test/bb.jpg" afterPath="$PROJECT_DIR$/django/Blog/myblog/test/bb.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/tutorial2.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/tutorial2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/test/showImg.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/test/showImg.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/blog/myblog/models.py" afterPath="$PROJECT_DIR$/django/blog/myblog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/blog/myblog/test/test2.py" afterPath="$PROJECT_DIR$/django/blog/myblog/test/test2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/test/replace_path.py" afterPath="$PROJECT_DIR$/django/Blog/myblog/test/replace_path.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/test/test_cut.py" afterPath="$PROJECT_DIR$/django/Blog/myblog/test/test_cut.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/blog/myblog/urls.py" afterPath="$PROJECT_DIR$/django/blog/myblog/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/blog/myblog/views.py" afterPath="$PROJECT_DIR$/django/blog/myblog/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImgdemo.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/test/uploadImgdemo.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -119,6 +118,7 @@
     <SUITE FILE_PATH="coverage/pycharm$destroy_demo.coverage" NAME="destroy_demo Coverage Results" MODIFIED="1504411599710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$test_beautiful_soup.coverage" NAME="test_beautiful_soup Coverage Results" MODIFIED="1511794340886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_authenication.coverage" NAME="qrmaster_community_authenication Coverage Results" MODIFIED="1510674973882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
+    <SUITE FILE_PATH="coverage/pycharm$replace_path.coverage" NAME="replace_path Coverage Results" MODIFIED="1517756456301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_apply_verify.coverage" NAME="qrmaster_apply_verify Coverage Results" MODIFIED="1511277828856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk_demo.coverage" NAME="os_walk_demo Coverage Results" MODIFIED="1504406249477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$map_demo.coverage" NAME="map_demo Coverage Results" MODIFIED="1509285905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
@@ -170,6 +170,7 @@
     <SUITE FILE_PATH="coverage/pycharm$Extends_demo.coverage" NAME="Extends_demo Coverage Results" MODIFIED="1504411877675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test19_way2.coverage" NAME="p_test19_way2 Coverage Results" MODIFIED="1508566206274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies.coverage" NAME="qrmaster_cookies Coverage Results" MODIFIED="1510848014963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
+    <SUITE FILE_PATH="coverage/pycharm$test_cut.coverage" NAME="test_cut Coverage Results" MODIFIED="1517759400731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
     <SUITE FILE_PATH="coverage/pycharm$moco_get_all_interface_demo.coverage" NAME="moco_get_all_interface_demo Coverage Results" MODIFIED="1509886431994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
     <SUITE FILE_PATH="coverage/pycharm$Calculator_demo.coverage" NAME="Calculator_demo Coverage Results" MODIFIED="1509264791711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample Coverage Results" MODIFIED="1508656824045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
@@ -216,12 +217,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showImg.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showImg.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            <state relative-caret-position="1760">
+              <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploadImg.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="76" column="46" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5852">
+              <caret line="334" column="9" lean-forward="false" selection-start-line="334" selection-start-column="9" selection-end-line="334" selection-end-column="9" />
+              <folding>
+                <element signature="e#1532#2546#0" expanded="false" />
+                <element signature="e#2874#3871#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -232,18 +278,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="HTML4 File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jquery.min.js</find>
-      <find>blog_publish</find>
-      <find>Daily</find>
-      <find>hashlib</find>
-      <find>userid</find>
       <find>blog.html</find>
       <find>blog</find>
       <find>Category</find>
@@ -268,7 +309,12 @@
       <find>file_upload</find>
       <find>showCoords</find>
       <find>x1</find>
+      <find>change</find>
+      <find>img</find>
       <find>target</find>
+      <find>file-choose</find>
+      <find>update_img</find>
+      <find>avatar</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -281,9 +327,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django/mysite5/online/templates/forgetPwd.html" />
-        <option value="$PROJECT_DIR$/django/mysite5/online/templates/login.html" />
-        <option value="$PROJECT_DIR$/django/mysite5/online/templates/resetPwd.html" />
         <option value="$PROJECT_DIR$/django/mysite5/online/views.py" />
         <option value="$PROJECT_DIR$/django/Blog/online/models.py" />
         <option value="$PROJECT_DIR$/django/Blog/myapp/CommentForm.py" />
@@ -325,13 +368,16 @@
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImgdemo.html" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImgTT.html" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImgTest.html" />
-        <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/showImgTest.html" />
-        <option value="$PROJECT_DIR$/django/Blog/myblog/urls.py" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/models.py" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/test/test2.py" />
-        <option value="$PROJECT_DIR$/django/Blog/myblog/views.py" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/test/replace_path.py" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/templates/test/showImg.html" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/test/test_cut.py" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/urls.py" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/views.py" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" />
       </list>
     </option>
   </component>
@@ -349,10 +395,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="463" />
-    <option name="y" value="7" />
-    <option name="width" value="1530" />
-    <option name="height" value="935" />
+    <option name="x" value="106" />
+    <option name="y" value="14" />
+    <option name="width" value="1765" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -372,8 +418,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -443,6 +487,15 @@
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="Jcrop-0.9.12" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -502,6 +555,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,11 +583,11 @@
       <recent name="D:\linyouwei\python\pycharm\uclbrt\auto_test\meizhu" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\static\img" />
+      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\test" />
+      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\templates\test" />
       <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\templates" />
       <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\static" />
-      <recent name="D:\linyouwei\python\pycharm\django\BlogProject\comments" />
-      <recent name="D:\linyouwei\python\pycharm\django\BlogProject\myblog\templates" />
-      <recent name="D:\linyouwei\python\pycharm\django\mysite5\online\static\assets\i" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -547,7 +602,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test2">
+  <component name="RunManager" selected="Python.test_cut">
     <configuration name="List_Comprehensions_demo" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -566,38 +621,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="handle_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="replace_path" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django/Blog/myblog/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/python/handle_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="reg_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web/js" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/js/reg_demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django/Blog/myblog/test/replace_path.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -638,6 +675,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="test_cut" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django/Blog/myblog/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django/Blog/myblog/test/test_cut.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -658,19 +713,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.List_Comprehensions_demo" />
-      <item index="1" class="java.lang.String" itemvalue="Python.reg_demo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.handle_file" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.tests" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tests" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.replace_path" />
+      <item index="5" class="java.lang.String" itemvalue="Python.test_cut" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tests" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.handle_file" />
-        <item index="4" class="java.lang.String" itemvalue="Python.reg_demo" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_cut" />
+        <item index="1" class="java.lang.String" itemvalue="Python.replace_path" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tests" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -805,10 +860,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="463" y="7" width="1530" height="935" extended-state="0" />
-    <editor active="true" />
+    <frame x="106" y="14" width="1765" height="1036" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15986395" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20293255" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.529595" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31026253" sideWeight="0.5042553" order="11" side_tool="true" content_ui="tabs" />
@@ -817,7 +871,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.016638935" sideWeight="0.48798078" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35765123" sideWeight="0.60935146" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27715355" sideWeight="0.7405446" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36246786" sideWeight="0.7405446" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -829,7 +883,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16040955" sideWeight="0.49574468" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16075388" sideWeight="0.49574468" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -942,7 +996,7 @@
           <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="88" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -951,48 +1005,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/comments/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/comments/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/comments/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/BlogProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/myblog/templates/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-968">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/myblog/templates/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/BlogProject/BlogProject/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1060,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1111">
           <caret line="80" column="30" lean-forward="false" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,13 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1194,27 +1196,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/blog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test/uploadImgTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test/uploadImgdemo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2398">
           <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,15 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="113" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,15 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,7 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2618">
           <caret line="119" column="37" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,7 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,19 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="333" column="36" lean-forward="true" selection-start-line="333" selection-start-column="36" selection-end-line="333" selection-end-column="36" />
-          <folding>
-            <element signature="e#26#41#0" expanded="true" />
-            <element signature="e#1529#2543#0" expanded="false" />
-            <element signature="e#2871#3868#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,32 +1242,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-411">
           <caret line="1056" column="8" lean-forward="false" selection-start-line="1056" selection-start-column="8" selection-end-line="1056" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/replace_path.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-946">
-          <caret line="23" column="77" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="77" />
-          <folding />
+        <state relative-caret-position="22">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test/uploadImgTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="56" column="37" lean-forward="false" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="-103">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test/showImg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="208" column="0" lean-forward="true" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/bb.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/1234.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/test_cut.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/blog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/static/img/default.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5852">
+          <caret line="334" column="9" lean-forward="false" selection-start-line="334" selection-start-column="9" selection-end-line="334" selection-end-column="9" />
+          <folding>
+            <element signature="e#1532#2546#0" expanded="false" />
+            <element signature="e#2874#3871#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="1760">
+          <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="76" column="46" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
           <folding />
         </state>
       </provider>

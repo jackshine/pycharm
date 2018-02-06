@@ -9,31 +9,132 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
     <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
-    <script src="/static/assets/js/jquery.min.js"></script>
-
     <link rel="stylesheet" href="/static/Jcrop-0.9.12/css/jquery.Jcrop.css">
     <script src="/static/Jcrop-0.9.12/js/jquery.Jcrop.js"></script>
     <link rel="stylesheet" href="/static/Jcrop-0.9.12/demos/demo_files/main.css" type="text/css"/>
     <link rel="stylesheet" href="/static/Jcrop-0.9.12/demos/demo_files/demos.css" type="text/css"/>
     <link rel="stylesheet" href="/static/Jcrop-0.9.12/css/jquery.Jcrop.css" type="text/css"/>
+
 </head>
 <body>
-<header class="am-topbar">
+<form>
+    <div class="custom-avatar">
+        <label for="avatar">头像：</label>
+        <img src='/static/img/default.png' id="avatar" alt="[Jcrop Example]" class="sol"/>
+        <input type="file" id="file-choose" class="sol">
+        <p>
+            <button>提交</button>
+        </p>
+    </div>
+</form>
 
-    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
-            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
-            class="am-icon-bars"></span></button>
+<!--form表单提交图片-->
+<!--<div class="am-form-group">-->
+<!--<form method="POST" enctype="multipart/form-data">-->
+<!--<input type="file" name="img">-->
+<!--<button type="submit">上传</button>-->
+<!--</form>-->
+<!--</div>-->
+<script>
+    //头像预览
+    var fileChoose = document.getElementById("file-choose");
 
-</header>
+    fileChoose.onchange = function () {
+        var file = this.files[0]; //files[0] 通过DOM对象拿到文件对象；如果是使用jQuery: $(this)[0].files[0], 要通过$(this)[0] 索引，先从JQ对象集合中拿到DOM对象
+        var reader = new FileReader(); //实例化FileReader
+        reader.readAsDataURL(file); //将文件对象转化为路径对象
 
-                <div class="am-form-group">
-                    <form method="POST" enctype="multipart/form-data">
-                        <input type="file" name="img">
-                        <button type="submit">上传</button>
-                    </form>
-                    </div>
+        reader.onload = function () { //FileReader.onload 属性
+            var imgEle = document.getElementById("avatar");
+            imgEle.src = this.result //这里的this指reader对象
+        }
+    }
+</script>
+<script>
+    //上传图片，这里选择通过Ajax提交
+    var form = document.getElementsByTagName('form')[0];
+    form.onsubmit = function (e) {
+        e.preventDefault(); //阻止默认提交
+        var fileObject = document.getElementById("file-choose").files[0]; //拿到图片文件对象
 
+        //实例化FormData对象，添加数据 data.append(key, value)
+        var data = new FormData();
+        data.append('img', fileObject);
+
+        //XMLHttpRequest对象发送Ajax请求
+        $.ajax({
+            url: '/myblog/upload_file',
+            type: 'POST',
+            data: data,
+            processData: false, //不进行转码或预处理
+            contentType: false, //不进行"application/x-www-form-urlencoded"的默认编码处理
+            success: function (response) {
+                obj = $.parseJSON( response )
+                path = obj.url;
+                $("#avatar").attr('src',path);
+            }
+        })
+    }
+</script>
+<script type="text/javascript">
+    jQuery(function ($) {
+
+        var jcrop_api;
+
+        $('#avatar').Jcrop({
+            onChange: showCoords,
+            onSelect: showCoords,
+            onRelease: clearCoords
+        }, function () {
+            jcrop_api = this;
+        });
+
+        $('#coords').on('change', 'input', function (e) {
+            var x1 = $('#x1').val(),
+                x2 = $('#x2').val(),
+                y1 = $('#y1').val(),
+                y2 = $('#y2').val();
+            console.log(x1)
+            jcrop_api.setSelect([x1, y1, x2, y2]);
+
+        });
+
+    });
+    $('#coords').on('cropend', function (e, s, c) {
+//          d[ge]('crop-x').value = c.x;
+//          d[ge]('crop-y').value = c.y;
+//          d[ge]('crop-w').value = c.w;
+//          d[ge]('crop-h').value = c.h;
+        alert("x : " + parseInt(c.x) + ", y : " + parseInt(c.y) + ", w : " + parseInt(c.w) + ", h : " + parseInt(c.h));
+    });
+    // Simple event handler, called from onChange and onSelect
+    // event handlers, as per the Jcrop invocation above
+    function showCoords(c) {
+        $("#p1").text(c.x + "   " + c.y + "   " + c.w + "   " + c.h);
+        $("#x1").val(c.x);
+        $("#y1").val(c.y);
+        $("#cw").val(c.w);
+        $("#ch").val(c.h);
+
+    }
+
+    function clearCoords() {
+        var x1 = $('#x1').val(),
+            x2 = $('#x2').val(),
+            y1 = $('#y1').val(),
+            y2 = $('#y2').val();
+        $.post('/myblog/update_img', {
+            'x1': x1,
+            'x2': x2,
+            'y1': y1,
+            'y2': y2,
+        }, function (data) {
+
+        })
+    };
+</script>
 </body>
 </html>
