@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <select id="one" onchange="func(this.value)">
+        <option value="">--请选择--</option>
+        <option value="0">浙江省</option>
+        <option value="1">广东省</option>
+        <option value="2">福建省</option>
+    </select>
+    <select id="two" onchange="func(this.value)">
+        <option value="">--请选择--</option>
+    </select>
+    <select id="three">
+        <option value="">--请选择--</option>
+    </select>
+</body>
+<script>
+    var two = document.getElementById('two');
+    city = [];//申明
+
+　　//定义二级数据
+    city[0] = ['杭州市'];
+    city[1] = ['广州市'];
+    city[2] = ['厦门市'];
+    //定义三级数据
+    // city[0][0] = ['上城区','萧山区']
+    // city[1][0] = ['荔湾区','越秀区']
+    function func(m){
+        two.length = 1;
+
+　　　//遍历生产option选项
+        for (var i = 0; i < city[m].length; i++) {
+
+　　　　//创建一个option 把数据存储在option 
+            var op = new Option(city[m][i],i);
+
+　　　　//把带有数据的option 添加到第二个select
+            two.add(op);
+        };
+    }
+</script>
+</body>
+</html>

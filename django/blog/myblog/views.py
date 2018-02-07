@@ -8,12 +8,12 @@ from  comments.models import Comment
 from django.views.generic import ListView
 import re
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
 from django.db.models import Q
 import hashlib
 import os
-
+from django.conf import settings
 import random
+import base64
 
 
 class IndexView(ListView):
@@ -128,7 +128,7 @@ class ArchivesView(IndexView):
         if re.match(r'\d+', year) and re.match(r'\d+', month):
             ym_date = year + '-' + (month if int(month) > 9 else ('0' + month))
         return super(ArchivesView, self).get_queryset().filter(created_time__startswith=ym_date).order_by(
-            '-created_time')
+                '-created_time')
 
 
 # def archives(req, year, month):
@@ -334,18 +334,18 @@ def setUserInfo(req):
 def uploadImg(req):
     if req.method == 'POST':
         img = req.POST.get('photo')
-        import re
-        import base64
-        from django.conf import settings
         binaryImg = base64.b64decode(re.split(',', img)[1])
         userInfo = UserInfo.objects.get(userid=1)
         now_time = datetime.datetime.now().strftime('%Y%m%d')
+        # 创建当前日期的文件夹
+        date_path = settings.MEDIA_URL + '/upload'
+        mkdir(date_path)
         # 随机生成16位十六进制数字,生成文件名
-        path = 'upload/'  + getRandomNum() + '.png'
+        path = 'upload/' + date_path + '/' + getRandomNum() + '.png'
         print(path)
         new_img = UserDetails(
-            img=path,
-            userId=userInfo
+                img=path,
+                userId=userInfo
         )
         new_img.save()
         img_path = settings.MEDIA_URL + path
@@ -354,6 +354,32 @@ def uploadImg(req):
         return render_to_response("uploadImg.html")
     else:
         return render_to_response("uploadImg.html")
+
+
+def mkdir(path):
+    # 引入模块
+
+    # 去除首位空格
+    path = path.strip()
+    # 去除尾部 \ 符号
+    path = path.rstrip("\\")
+
+    # 判断路径是否存在
+    # 存在     True
+    # 不存在   False
+    isExists = os.path.exists(path)
+
+    # 判断结果
+    if not isExists:
+        # 如果不存在则创建目录
+        print(path + ' 创建成功')
+        # 创建目录操作函数
+        os.makedirs(path)
+        return True
+    else:
+        # 如果目录存在则不创建，并提示目录已存在
+        print(path + ' 目录已存在')
+        return False
 
 
 def getRandomNum():
@@ -407,8 +433,8 @@ def uploadandcut(req):
         from django.conf.urls.static import static
         print(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
         new_img = UserDetails(
-            img=img,
-            userId=userInfo
+                img=img,
+                userId=userInfo
         )
         UserDetails.save(new_img)
         return HttpResponseRedirect('showImg.html')
