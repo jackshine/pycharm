@@ -22,12 +22,12 @@ urlpatterns = [
     # url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', views.archives, name='archives'),
     #[0-9]表示这部分必须是数字，+表示至少1个数字
     url(r'^category/(?P<id>[0-9]+)/$', views.CategoryView.as_view(), name='category'),
-    # url(r'^showUserInfo*', views.showUserInfo),
-    # url(r'^setUserInfo*', views.uploadImg),
+    url(r'^userInfo', views.userInfo),
+    url(r'^setUserInfo', views.setUserInfo),
     url(r'^showImg', views.showImg),
-    url(r'^uploadImg', views.uploadImg),
+    url(r'^set/uploadImg', views.uploadImg),
+    url(r'^set/profile', views.setProfile),
     url(r'^upload_file', views.upload_file),
-    url(r'^uploadandcut*', views.uploadandcut),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 
 ]

@@ -49,7 +49,7 @@
                 <div class="img-preview">
                 </div>
             </div>
-            <button class="btn btn-primary" onclick="crop()">裁剪图片</button>
+            <button class="btn btn-primary" onclick="crop()" id="cut_photo">裁剪图片</button>
             <div>
                 <br/>
                 <p>
@@ -116,6 +116,12 @@
             $.post('/myblog/uploadImg', {
                 'photo':photo
             }, function (data) {
+                var status =  $.parseJSON( data ).success;
+                console.log(status)
+                if(status==200) {
+                    $("#cut_photo").hide()
+                    initCropper($('#photo'),$('#input'));
+                }
 
             })
         }

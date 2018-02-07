@@ -274,11 +274,19 @@ def myblog(req):
         return render_to_response('myblog.html', {'username': req.session['username'], 'uf': uf})
 
 
-def showUserInfo(req):
+def userInfo(req):
     if req.method == "POST":
         return render_to_response("userInfo.html")
     else:
-        return render_to_response("userInfo.html")
+        #根据用户的id，查询其图片
+        detail = UserDetails.objects.filter(userId_id=1)[0]
+        print(detail)
+        url = ''
+        if detail:
+            url = detail.img
+        else:
+            url = '/static/img/default.png'
+        return render_to_response("userInfo.html",{'url':url})
 
 
 def setUserInfo(req):
@@ -338,7 +346,7 @@ def uploadImg(req):
         userInfo = UserInfo.objects.get(userid=1)
         now_time = datetime.datetime.now().strftime('%Y%m%d')
         # 创建当前日期的文件夹
-        date_path = settings.MEDIA_URL + '/upload/'+now_time
+        date_path = settings.MEDIA_URL + 'upload/'+now_time
         mkdir(date_path)
         # 随机生成16位十六进制数字,生成文件名
         path =  date_path + '/' + getRandomNum() + '.png'
@@ -350,9 +358,17 @@ def uploadImg(req):
         new_img.save()
         with open(path, 'wb') as f:
             f.write(binaryImg)
-        return render_to_response("uploadImg.html")
+        return HttpResponse(json.dumps({'success':200}))
     else:
         return render_to_response("uploadImg.html")
+
+
+def setProfile(req):
+    # ajax  ProfileSubmit
+    if req.method == 'POST':
+        return render_to_response()
+    else:
+        return render_to_response('setUserInfo.html',{'status':2})
 
 
 def mkdir(path):
