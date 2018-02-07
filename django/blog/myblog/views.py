@@ -338,18 +338,17 @@ def uploadImg(req):
         userInfo = UserInfo.objects.get(userid=1)
         now_time = datetime.datetime.now().strftime('%Y%m%d')
         # 创建当前日期的文件夹
-        date_path = settings.MEDIA_URL + '/upload'
+        date_path = settings.MEDIA_URL + '/upload/'+now_time
         mkdir(date_path)
         # 随机生成16位十六进制数字,生成文件名
-        path = 'upload/' + date_path + '/' + getRandomNum() + '.png'
+        path =  date_path + '/' + getRandomNum() + '.png'
         print(path)
         new_img = UserDetails(
                 img=path,
                 userId=userInfo
         )
         new_img.save()
-        img_path = settings.MEDIA_URL + path
-        with open(img_path, 'wb') as f:
+        with open(path, 'wb') as f:
             f.write(binaryImg)
         return render_to_response("uploadImg.html")
     else:
