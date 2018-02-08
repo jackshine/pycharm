@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="jenkins">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python_basic/OO/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python_basic/OO/test_mkdir.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python_basic/OO/util/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python_basic/OO/util/mkdir.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/index1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/tutorial2.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python_basic/OO/test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python_basic/OO/test/test_mkdir.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/12991e5e4fe3g84b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/24gcfa51799235gd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/3f1g4b7bdcg47317.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/6f8ge46d3462f2be.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/7aac3ddf1ga98b35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/8d1d519a395g634a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/8d77afga387b57cd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/9175daf28gad5445.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/9dcfd1g79b3b1eda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/a9536ceda21gecg3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/ce6e2b915333cgd5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/dbgfa849993c196c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/e7g21e6dd95f483a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django/Blog/media/upload/20180207/eec6c318e2ab59c5.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/userInfo.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/userInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/blog/myblog/urls.py" afterPath="$PROJECT_DIR$/django/blog/myblog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/blog/myblog/views.py" afterPath="$PROJECT_DIR$/django/blog/myblog/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/django/Blog/myblog/templates/showImgTest.html" afterPath="$PROJECT_DIR$/django/Blog/myblog/templates/test/showImgTest.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,62 +29,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pycharm$b.coverage" NAME="b Coverage Results" MODIFIED="1510498913871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import" />
     <SUITE FILE_PATH="coverage/pycharm$simulate_mouse_one.coverage" NAME="simulate_mouse_one Coverage Results" MODIFIED="1503590680835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
-    <SUITE FILE_PATH="coverage/pycharm$long_module.coverage" NAME="long_module Coverage Results" MODIFIED="1504415156416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pycharm$https_demo.coverage" NAME="https_demo Coverage Results" MODIFIED="1507958408033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
-    <SUITE FILE_PATH="coverage/pycharm$encode_demo.coverage" NAME="encode_demo Coverage Results" MODIFIED="1510474158595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/encode_demo" />
-    <SUITE FILE_PATH="coverage/pycharm$reduce_demo2.coverage" NAME="reduce_demo2 Coverage Results" MODIFIED="1509280916435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1510502951423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/demo" />
     <SUITE FILE_PATH="coverage/pycharm$feibonaqie2.coverage" NAME="feibonaqie2 Coverage Results" MODIFIED="1509029910799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
-    <SUITE FILE_PATH="coverage/pycharm$meizhu_login.coverage" NAME="meizhu_login Coverage Results" MODIFIED="1512206648174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu/login" />
-    <SUITE FILE_PATH="coverage/pycharm$p_test18_way1.coverage" NAME="p_test18_way1 Coverage Results" MODIFIED="1508569529326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods.coverage" NAME="Unittests for basic_demo.TestStringMethods Coverage Results" MODIFIED="1503417202207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_post.coverage" NAME="jenkins_build_post Coverage Results" MODIFIED="1508340794768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_demo.coverage" NAME="jenkins_build_demo Coverage Results" MODIFIED="1508340862312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
-    <SUITE FILE_PATH="coverage/pycharm$test_compile.coverage" NAME="test_compile Coverage Results" MODIFIED="1511079820599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$p_test23_way2.coverage" NAME="p_test23_way2 Coverage Results" MODIFIED="1508606044682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$duck_type.coverage" NAME="duck_type Coverage Results" MODIFIED="1512875401260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/extend" />
-    <SUITE FILE_PATH="coverage/pycharm$multiprocessing.coverage" NAME="multiprocessing Coverage Results" MODIFIED="1512896020883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocessing" />
     <SUITE FILE_PATH="coverage/pycharm$test_demo7.coverage" NAME="test_demo7 Coverage Results" MODIFIED="1508424347498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_jenkins_requests_get_py.coverage" NAME="Unittests in jenkins_requests_get.py Coverage Results" MODIFIED="1509633110428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
     <SUITE FILE_PATH="coverage/pycharm$alert_click__1_.coverage" NAME="alert_click (1) Coverage Results" MODIFIED="1503733669390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_post__1_.coverage" NAME="jenkins_build_post (1) Coverage Results" MODIFIED="1508342288300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
-    <SUITE FILE_PATH="coverage/pycharm$feibonaqie3.coverage" NAME="feibonaqie3 Coverage Results" MODIFIED="1509030382479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_all_function.coverage" NAME="qrmaster_all_function Coverage Results" MODIFIED="1512185177047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$p_test51.coverage" NAME="p_test51 Coverage Results" MODIFIED="1509118360703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$httplib_demo.coverage" NAME="httplib_demo Coverage Results" MODIFIED="1507960391240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$student.coverage" NAME="student Coverage Results" MODIFIED="1512398790522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$jiujiuchengfa.coverage" NAME="jiujiuchengfa Coverage Results" MODIFIED="1509031128661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster.coverage" NAME="qrmaster Coverage Results" MODIFIED="1512799596356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$manage.coverage" NAME="manage Coverage Results" MODIFIED="1513394312927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite" />
     <SUITE FILE_PATH="coverage/pycharm$element_location.coverage" NAME="element_location Coverage Results" MODIFIED="1503587340293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1517675425178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
-    <SUITE FILE_PATH="coverage/pycharm$requests_makecard_demo.coverage" NAME="requests_makecard_demo Coverage Results" MODIFIED="1510478659257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
     <SUITE FILE_PATH="coverage/pycharm$class_demo1.coverage" NAME="class_demo1 Coverage Results" MODIFIED="1512803084993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/class_and_instance" />
-    <SUITE FILE_PATH="coverage/pycharm$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1508565761124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$open_file.coverage" NAME="open_file Coverage Results" MODIFIED="1512877367526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
     <SUITE FILE_PATH="coverage/pycharm$requests_post_file_demo.coverage" NAME="requests_post_file_demo Coverage Results" MODIFIED="1510413583194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
-    <SUITE FILE_PATH="coverage/pycharm$OperateExcel__1_.coverage" NAME="OperateExcel (1) Coverage Results" MODIFIED="1510502363292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/package/Operate" />
     <SUITE FILE_PATH="coverage/pycharm$p_test27_1.coverage" NAME="p_test27_1 Coverage Results" MODIFIED="1509114632448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$exception_demo.coverage" NAME="exception_demo Coverage Results" MODIFIED="1504408276521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test18_way2.coverage" NAME="p_test18_way2 Coverage Results" MODIFIED="1509031079282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$DataClass.coverage" NAME="DataClass Coverage Results" MODIFIED="1512664031108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
-    <SUITE FILE_PATH="coverage/pycharm$class_demo2.coverage" NAME="class_demo2 Coverage Results" MODIFIED="1512803290247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/class_and_instance" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_add_room.coverage" NAME="qrmaster_add_room Coverage Results" MODIFIED="1511368266182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$Multiplication_table2.coverage" NAME="Multiplication_table2 Coverage Results" MODIFIED="1509033136848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$Decorator_demo.coverage" NAME="Decorator_demo Coverage Results" MODIFIED="1509373620633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$chinese_dict.coverage" NAME="chinese_dict Coverage Results" MODIFIED="1512890126461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
     <SUITE FILE_PATH="coverage/pycharm$p_test23_way4.coverage" NAME="p_test23_way4 Coverage Results" MODIFIED="1508654323653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$pickle_demo.coverage" NAME="pickle_demo Coverage Results" MODIFIED="1512888610703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
-    <SUITE FILE_PATH="coverage/pycharm$jenkins_build.coverage" NAME="jenkins_build Coverage Results" MODIFIED="1508166645299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$get_demo.coverage" NAME="get_demo Coverage Results" MODIFIED="1507903513099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods_test_upper.coverage" NAME="Unittests for basic_demo.TestStringMethods.test_upper Coverage Results" MODIFIED="1503417623133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$requests_get_cookies_demo2.coverage" NAME="requests_get_cookies_demo2 Coverage Results" MODIFIED="1510414704897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_create.coverage" NAME="qrmaster_create Coverage Results" MODIFIED="1511012418323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
     <SUITE FILE_PATH="coverage/pycharm$file_demo.coverage" NAME="file_demo Coverage Results" MODIFIED="1504193397929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2.coverage" NAME="qrmaster_cookies_urllib2 Coverage Results" MODIFIED="1510845707831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
-    <SUITE FILE_PATH="coverage/pycharm$p_test29.coverage" NAME="p_test29 Coverage Results" MODIFIED="1508947059001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2_test.coverage" NAME="qrmaster_cookies_urllib2_test Coverage Results" MODIFIED="1510848337278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_get_hash_test.coverage" NAME="qrmaster_get_hash_test Coverage Results" MODIFIED="1510991562247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$feibonaqie4.coverage" NAME="feibonaqie4 Coverage Results" MODIFIED="1509030433115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
@@ -92,47 +68,28 @@
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_qrmaster_app_get_room_list_TokenClass_test_list.coverage" NAME="Unittests for qrmaster_app_get_room_list.TokenClass.test_list Coverage Results" MODIFIED="1510411926637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_moco_demo2_test2_test_aa.coverage" NAME="Unittests for moco_demo2.test2.test_aa Coverage Results" MODIFIED="1509896551994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
     <SUITE FILE_PATH="coverage/pycharm$OperateFile.coverage" NAME="OperateFile Coverage Results" MODIFIED="1510502603774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/package/Model" />
-    <SUITE FILE_PATH="coverage/pycharm$requests_api2.coverage" NAME="requests_api2 Coverage Results" MODIFIED="1510477103252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_login_post__1_.coverage" NAME="qrmaster_login_post (1) Coverage Results" MODIFIED="1510844257715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_urllib2_post.coverage" NAME="jenkins_urllib2_post Coverage Results" MODIFIED="1508340782760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$autumated_test.coverage" NAME="autumated_test Coverage Results" MODIFIED="1504429276329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/object" />
-    <SUITE FILE_PATH="coverage/pycharm$recurion_sum.coverage" NAME="recurion_sum Coverage Results" MODIFIED="1508943352580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
-    <SUITE FILE_PATH="coverage/pycharm$reduce_demo.coverage" NAME="reduce_demo Coverage Results" MODIFIED="1509279496856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_unittest_youdao_translate_test_BaiduTest_test_baidu.coverage" NAME="Unittests for unittest_youdao_translate_test.BaiduTest.test_baidu Coverage Results" MODIFIED="1510492093646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
-    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_requests_post.coverage" NAME="jenkins_build_requests_post Coverage Results" MODIFIED="1508341586003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_unittest_baidu_test_BaiduTest_test_baidu.coverage" NAME="Unittests for unittest_baidu_test.BaiduTest.test_baidu Coverage Results" MODIFIED="1510490334869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
     <SUITE FILE_PATH="coverage/pycharm$p_test27_3.coverage" NAME="p_test27_3 Coverage Results" MODIFIED="1509376931918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$requests_getcard_demo.coverage" NAME="requests_getcard_demo Coverage Results" MODIFIED="1510475737642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_moco_demo2_py.coverage" NAME="Unittests in moco_post_demo2.py Coverage Results" MODIFIED="1509980715194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
-    <SUITE FILE_PATH="coverage/pycharm$pyunit_unittest_jenkins.coverage" NAME="pyunit_unittest_jenkins Coverage Results" MODIFIED="1508679421799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
-    <SUITE FILE_PATH="coverage/pycharm$p2_fac.coverage" NAME="p2_fac Coverage Results" MODIFIED="1508943618399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
-    <SUITE FILE_PATH="coverage/pycharm$qrm_login_hash.coverage" NAME="qrm_login_hash Coverage Results" MODIFIED="1512488515741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu_class.coverage" NAME="qrmaster_syn_meizhu_class Coverage Results" MODIFIED="1512488676155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_unittest_baidu_test_py.coverage" NAME="Unittests in unittest_baidu_test.py Coverage Results" MODIFIED="1510490056675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
-    <SUITE FILE_PATH="coverage/pycharm$main.coverage" NAME="main Coverage Results" MODIFIED="1510500414808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test" />
-    <SUITE FILE_PATH="coverage/pycharm$extend_demo.coverage" NAME="extend_demo Coverage Results" MODIFIED="1512873036034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/extend" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_qrmaster_app_get_room_list_TokenClass.coverage" NAME="Unittests for qrmaster_app_get_room_list.TokenClass Coverage Results" MODIFIED="1510409846418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_pyunit_unIttest_demo_py.coverage" NAME="Unittests in pyunit_unIttest_demo.py Coverage Results" MODIFIED="1508656831747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
-    <SUITE FILE_PATH="coverage/pycharm$requests_get_demo.coverage" NAME="requests_get_demo Coverage Results" MODIFIED="1510413223642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
-    <SUITE FILE_PATH="coverage/pycharm$33.coverage" NAME="33 Coverage Results" MODIFIED="1511192640318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$class_demo4.coverage" NAME="class_demo4 Coverage Results" MODIFIED="1512889450056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/class_and_instance" />
     <SUITE FILE_PATH="coverage/pycharm$open_image.coverage" NAME="open_image Coverage Results" MODIFIED="1512877311228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
     <SUITE FILE_PATH="coverage/pycharm$random_demo.coverage" NAME="random_demo Coverage Results" MODIFIED="1517934391841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt" />
-    <SUITE FILE_PATH="coverage/pycharm$OperateExcel.coverage" NAME="OperateExcel Coverage Results" MODIFIED="1510501437212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/Operate" />
     <SUITE FILE_PATH="coverage/pycharm$requests_json_demo.coverage" NAME="requests_json_demo Coverage Results" MODIFIED="1510412618445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
     <SUITE FILE_PATH="coverage/pycharm$MD5.coverage" NAME="MD5 Coverage Results" MODIFIED="1510990118767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_crawler_hash.coverage" NAME="qrmaster_crawler_hash Coverage Results" MODIFIED="1510986670730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$test_time.coverage" NAME="test_time Coverage Results" MODIFIED="1517934877107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
     <SUITE FILE_PATH="coverage/pycharm$destroy_demo.coverage" NAME="destroy_demo Coverage Results" MODIFIED="1504411599710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$test_beautiful_soup.coverage" NAME="test_beautiful_soup Coverage Results" MODIFIED="1511794340886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_authenication.coverage" NAME="qrmaster_community_authenication Coverage Results" MODIFIED="1510674973882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
-    <SUITE FILE_PATH="coverage/pycharm$replace_path.coverage" NAME="replace_path Coverage Results" MODIFIED="1517756456301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_apply_verify.coverage" NAME="qrmaster_apply_verify Coverage Results" MODIFIED="1511277828856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk_demo.coverage" NAME="os_walk_demo Coverage Results" MODIFIED="1504406249477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$map_demo.coverage" NAME="map_demo Coverage Results" MODIFIED="1509285905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$requests_qrmaster_app_demo3.coverage" NAME="requests_qrmaster_app_demo3 Coverage Results" MODIFIED="1510408168714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
     <SUITE FILE_PATH="coverage/pycharm$WuJiaoXing.coverage" NAME="WuJiaoXing Coverage Results" MODIFIED="1508942684398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$jenkins_urllib2_get.coverage" NAME="jenkins_urllib2_get Coverage Results" MODIFIED="1508248629458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
     <SUITE FILE_PATH="coverage/pycharm$test_t.coverage" NAME="test_t Coverage Results" MODIFIED="1509033076768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$http_demo.coverage" NAME="http_demo Coverage Results" MODIFIED="1507960189476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$os_walk.coverage" NAME="os_walk Coverage Results" MODIFIED="1504405524923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -141,81 +98,126 @@
     <SUITE FILE_PATH="coverage/pycharm$test_key.coverage" NAME="test_key Coverage Results" MODIFIED="1508253816045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
     <SUITE FILE_PATH="coverage/pycharm$requests_get_cookies_demo.coverage" NAME="requests_get_cookies_demo Coverage Results" MODIFIED="1510415022542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
     <SUITE FILE_PATH="coverage/pycharm$test_mkdir.coverage" NAME="test_mkdir Coverage Results" MODIFIED="1518011199449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_basic/OO" />
-    <SUITE FILE_PATH="coverage/pycharm$requests_header_demo.coverage" NAME="requests_header_demo Coverage Results" MODIFIED="1507984069413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$rsa_demo.coverage" NAME="rsa_demo Coverage Results" MODIFIED="1508340117777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rsa" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_create_community.coverage" NAME="qrmaster_create_community Coverage Results" MODIFIED="1510671729788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
+    <SUITE FILE_PATH="coverage/pycharm$object_load.coverage" NAME="object_load Coverage Results" MODIFIED="1512889868107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
+    <SUITE FILE_PATH="coverage/pycharm$copy_demo.coverage" NAME="copy_demo Coverage Results" MODIFIED="1508426926987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2_test__1_.coverage" NAME="qrmaster_cookies_urllib2_test (1) Coverage Results" MODIFIED="1510849537512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login/garbage" />
+    <SUITE FILE_PATH="coverage/pycharm$simulate_mouse.coverage" NAME="simulate_mouse Coverage Results" MODIFIED="1503589827996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
+    <SUITE FILE_PATH="coverage/pycharm$lambda_demo.coverage" NAME="lambda_demo Coverage Results" MODIFIED="1509289337274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
+    <SUITE FILE_PATH="coverage/pycharm$filter_demo.coverage" NAME="filter_demo Coverage Results" MODIFIED="1509286248368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
+    <SUITE FILE_PATH="coverage/pycharm$requests_qrmaster_app_demo2.coverage" NAME="requests_qrmaster_app_demo2 Coverage Results" MODIFIED="1510408819194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
+    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_getJob.coverage" NAME="jenkins_build_getJob Coverage Results" MODIFIED="1509632653795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$test_demo8.coverage" NAME="test_demo8 Coverage Results" MODIFIED="1508430934703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_bpass.coverage" NAME="qrmaster_community_bpass Coverage Results" MODIFIED="1511022594953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
+    <SUITE FILE_PATH="coverage/pycharm$reg_demo.coverage" NAME="reg_demo Coverage Results" MODIFIED="1515214829941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web/js" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase Coverage Results" MODIFIED="1508657005232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test19_way2.coverage" NAME="p_test19_way2 Coverage Results" MODIFIED="1508566206274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$moco_get_all_interface_demo.coverage" NAME="moco_get_all_interface_demo Coverage Results" MODIFIED="1509886431994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
+    <SUITE FILE_PATH="coverage/pycharm$Calculator_demo.coverage" NAME="Calculator_demo Coverage Results" MODIFIED="1509264791711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample Coverage Results" MODIFIED="1508656824045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4 Coverage Results" MODIFIED="1508675603788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu_excel.coverage" NAME="qrmaster_syn_meizhu_excel Coverage Results" MODIFIED="1512800960466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+    <SUITE FILE_PATH="coverage/pycharm$module.coverage" NAME="module Coverage Results" MODIFIED="1503797432910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$os_demo.coverage" NAME="os_demo Coverage Results" MODIFIED="1504359804718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$feibonaqie.coverage" NAME="feibonaqie Coverage Results" MODIFIED="1509028070499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
+    <SUITE FILE_PATH="coverage/pycharm$Testsunit.coverage" NAME="Testsunit Coverage Results" MODIFIED="1510497132678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
+    <SUITE FILE_PATH="coverage/pycharm$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1511968582095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
+    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_get.coverage" NAME="jenkins_build_get Coverage Results" MODIFIED="1508342401412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$class_demo3.coverage" NAME="class_demo3 Coverage Results" MODIFIED="1512806185658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/class_and_instance" />
+    <SUITE FILE_PATH="coverage/pycharm$Multiplication_table3.coverage" NAME="Multiplication_table3 Coverage Results" MODIFIED="1509033787927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$alert_click.coverage" NAME="alert_click Coverage Results" MODIFIED="1503733120181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
+    <SUITE FILE_PATH="coverage/pycharm$Parameterization.coverage" NAME="Parameterization Coverage Results" MODIFIED="1504429306403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/object" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test23_way3.coverage" NAME="p_test23_way3 Coverage Results" MODIFIED="1508605919194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_jenkins_requests_get_JenkinsGetTestCase_test_get_all_job_names.coverage" NAME="Unittests for jenkins_requests_get.JenkinsGetTestCase.test_get_all_job_names Coverage Results" MODIFIED="1509634861739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$test_range.coverage" NAME="test_range Coverage Results" MODIFIED="1512050197218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
+    <SUITE FILE_PATH="coverage/pycharm$b.coverage" NAME="b Coverage Results" MODIFIED="1510498913871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import" />
+    <SUITE FILE_PATH="coverage/pycharm$long_module.coverage" NAME="long_module Coverage Results" MODIFIED="1504415156416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm$https_demo.coverage" NAME="https_demo Coverage Results" MODIFIED="1507958408033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/pycharm$encode_demo.coverage" NAME="encode_demo Coverage Results" MODIFIED="1510474158595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/encode_demo" />
+    <SUITE FILE_PATH="coverage/pycharm$reduce_demo2.coverage" NAME="reduce_demo2 Coverage Results" MODIFIED="1509280916435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
+    <SUITE FILE_PATH="coverage/pycharm$meizhu_login.coverage" NAME="meizhu_login Coverage Results" MODIFIED="1512206648174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu/login" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test18_way1.coverage" NAME="p_test18_way1 Coverage Results" MODIFIED="1508569529326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods.coverage" NAME="Unittests for basic_demo.TestStringMethods Coverage Results" MODIFIED="1503417202207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
+    <SUITE FILE_PATH="coverage/pycharm$test_compile.coverage" NAME="test_compile Coverage Results" MODIFIED="1511079820599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
+    <SUITE FILE_PATH="coverage/pycharm$duck_type.coverage" NAME="duck_type Coverage Results" MODIFIED="1512875401260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/extend" />
+    <SUITE FILE_PATH="coverage/pycharm$multiprocessing.coverage" NAME="multiprocessing Coverage Results" MODIFIED="1512896020883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multiprocessing" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_jenkins_requests_get_py.coverage" NAME="Unittests in jenkins_requests_get.py Coverage Results" MODIFIED="1509633110428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_post__1_.coverage" NAME="jenkins_build_post (1) Coverage Results" MODIFIED="1508342288300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
+    <SUITE FILE_PATH="coverage/pycharm$feibonaqie3.coverage" NAME="feibonaqie3 Coverage Results" MODIFIED="1509030382479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_all_function.coverage" NAME="qrmaster_all_function Coverage Results" MODIFIED="1512185177047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster.coverage" NAME="qrmaster Coverage Results" MODIFIED="1512799596356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+    <SUITE FILE_PATH="coverage/pycharm$requests_makecard_demo.coverage" NAME="requests_makecard_demo Coverage Results" MODIFIED="1510478659257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
+    <SUITE FILE_PATH="coverage/pycharm$test_mkdir__1_.coverage" NAME="test_mkdir (1) Coverage Results" MODIFIED="1518103548157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_basic/OO/test" />
+    <SUITE FILE_PATH="coverage/pycharm$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1508565761124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$open_file.coverage" NAME="open_file Coverage Results" MODIFIED="1512877367526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
+    <SUITE FILE_PATH="coverage/pycharm$OperateExcel__1_.coverage" NAME="OperateExcel (1) Coverage Results" MODIFIED="1510502363292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/package/Operate" />
+    <SUITE FILE_PATH="coverage/pycharm$class_demo2.coverage" NAME="class_demo2 Coverage Results" MODIFIED="1512803290247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/class_and_instance" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_add_room.coverage" NAME="qrmaster_add_room Coverage Results" MODIFIED="1511368266182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
+    <SUITE FILE_PATH="coverage/pycharm$jenkins_build.coverage" NAME="jenkins_build Coverage Results" MODIFIED="1508166645299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2.coverage" NAME="qrmaster_cookies_urllib2 Coverage Results" MODIFIED="1510845707831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
+    <SUITE FILE_PATH="coverage/pycharm$p_test29.coverage" NAME="p_test29 Coverage Results" MODIFIED="1508947059001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
+    <SUITE FILE_PATH="coverage/pycharm$requests_api2.coverage" NAME="requests_api2 Coverage Results" MODIFIED="1510477103252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
+    <SUITE FILE_PATH="coverage/pycharm$recurion_sum.coverage" NAME="recurion_sum Coverage Results" MODIFIED="1508943352580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
+    <SUITE FILE_PATH="coverage/pycharm$reduce_demo.coverage" NAME="reduce_demo Coverage Results" MODIFIED="1509279496856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
+    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_requests_post.coverage" NAME="jenkins_build_requests_post Coverage Results" MODIFIED="1508341586003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_moco_demo2_py.coverage" NAME="Unittests in moco_post_demo2.py Coverage Results" MODIFIED="1509980715194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
+    <SUITE FILE_PATH="coverage/pycharm$pyunit_unittest_jenkins.coverage" NAME="pyunit_unittest_jenkins Coverage Results" MODIFIED="1508679421799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
+    <SUITE FILE_PATH="coverage/pycharm$p2_fac.coverage" NAME="p2_fac Coverage Results" MODIFIED="1508943618399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
+    <SUITE FILE_PATH="coverage/pycharm$qrm_login_hash.coverage" NAME="qrm_login_hash Coverage Results" MODIFIED="1512488515741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_unittest_baidu_test_py.coverage" NAME="Unittests in unittest_baidu_test.py Coverage Results" MODIFIED="1510490056675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
+    <SUITE FILE_PATH="coverage/pycharm$main.coverage" NAME="main Coverage Results" MODIFIED="1510500414808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test" />
+    <SUITE FILE_PATH="coverage/pycharm$extend_demo.coverage" NAME="extend_demo Coverage Results" MODIFIED="1512873036034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/extend" />
+    <SUITE FILE_PATH="coverage/pycharm$Unittests_in_pyunit_unIttest_demo_py.coverage" NAME="Unittests in pyunit_unIttest_demo.py Coverage Results" MODIFIED="1508656831747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
+    <SUITE FILE_PATH="coverage/pycharm$requests_get_demo.coverage" NAME="requests_get_demo Coverage Results" MODIFIED="1510413223642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
+    <SUITE FILE_PATH="coverage/pycharm$33.coverage" NAME="33 Coverage Results" MODIFIED="1511192640318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
+    <SUITE FILE_PATH="coverage/pycharm$OperateExcel.coverage" NAME="OperateExcel Coverage Results" MODIFIED="1510501437212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/Operate" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_crawler_hash.coverage" NAME="qrmaster_crawler_hash Coverage Results" MODIFIED="1510986670730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
+    <SUITE FILE_PATH="coverage/pycharm$replace_path.coverage" NAME="replace_path Coverage Results" MODIFIED="1517756456301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
+    <SUITE FILE_PATH="coverage/pycharm$qrmaster_apply_verify.coverage" NAME="qrmaster_apply_verify Coverage Results" MODIFIED="1511277828856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
+    <SUITE FILE_PATH="coverage/pycharm$jenkins_urllib2_get.coverage" NAME="jenkins_urllib2_get Coverage Results" MODIFIED="1508248629458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins" />
+    <SUITE FILE_PATH="coverage/pycharm$requests_header_demo.coverage" NAME="requests_header_demo Coverage Results" MODIFIED="1507984069413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$tests.coverage" NAME="tests Coverage Results" MODIFIED="1517061578255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog" />
     <SUITE FILE_PATH="coverage/pycharm$meizhu.coverage" NAME="meizhu Coverage Results" MODIFIED="1512795522752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
     <SUITE FILE_PATH="coverage/pycharm$class_demo.coverage" NAME="class_demo Coverage Results" MODIFIED="1504409116208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
     <SUITE FILE_PATH="coverage/pycharm$List_Comprehensions_demo.coverage" NAME="List_Comprehensions_demo Coverage Results" MODIFIED="1512896947613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/List Comprehensions" />
     <SUITE FILE_PATH="coverage/pycharm$httplib_get.coverage" NAME="httplib_get Coverage Results" MODIFIED="1508046306444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/httplib" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_create_community.coverage" NAME="qrmaster_create_community Coverage Results" MODIFIED="1510671729788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
-    <SUITE FILE_PATH="coverage/pycharm$object_load.coverage" NAME="object_load Coverage Results" MODIFIED="1512889868107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
-    <SUITE FILE_PATH="coverage/pycharm$copy_demo.coverage" NAME="copy_demo Coverage Results" MODIFIED="1508426926987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
     <SUITE FILE_PATH="coverage/pycharm$p_test28.coverage" NAME="p_test28 Coverage Results" MODIFIED="1508946071583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies_urllib2_test__1_.coverage" NAME="qrmaster_cookies_urllib2_test (1) Coverage Results" MODIFIED="1510849537512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login/garbage" />
     <SUITE FILE_PATH="coverage/pycharm$filter_sushu_demo.coverage" NAME="filter_sushu_demo Coverage Results" MODIFIED="1509288899631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_pass.coverage" NAME="qrmaster_community_pass Coverage Results" MODIFIED="1511016220059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_bpass_login.coverage" NAME="qrmaster_bpass_login Coverage Results" MODIFIED="1511081882375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$p_test23_way1.coverage" NAME="p_test23_way1 Coverage Results" MODIFIED="1508605367688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$simulate_mouse.coverage" NAME="simulate_mouse Coverage Results" MODIFIED="1503589827996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
-    <SUITE FILE_PATH="coverage/pycharm$lambda_demo.coverage" NAME="lambda_demo Coverage Results" MODIFIED="1509289337274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$test.coverage" NAME="test Coverage Results" MODIFIED="1515922231956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/BlogProject/myblog" />
-    <SUITE FILE_PATH="coverage/pycharm$filter_demo.coverage" NAME="filter_demo Coverage Results" MODIFIED="1509286248368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/High_order_function" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_moco_post_demo2_test2.coverage" NAME="Unittests for moco_post_demo2.test2 Coverage Results" MODIFIED="1509981389201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
-    <SUITE FILE_PATH="coverage/pycharm$requests_qrmaster_app_demo2.coverage" NAME="requests_qrmaster_app_demo2 Coverage Results" MODIFIED="1510408819194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/requests_demo" />
-    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_getJob.coverage" NAME="jenkins_build_getJob Coverage Results" MODIFIED="1509632653795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
     <SUITE FILE_PATH="coverage/pycharm$yuan.coverage" NAME="yuan Coverage Results" MODIFIED="1508859707296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$test_demo8.coverage" NAME="test_demo8 Coverage Results" MODIFIED="1508430934703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_bpass.coverage" NAME="qrmaster_community_bpass Coverage Results" MODIFIED="1511022594953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
-    <SUITE FILE_PATH="coverage/pycharm$reg_demo.coverage" NAME="reg_demo Coverage Results" MODIFIED="1515214829941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web/js" />
     <SUITE FILE_PATH="coverage/pycharm$handle_file.coverage" NAME="handle_file Coverage Results" MODIFIED="1515226339482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web/python" />
     <SUITE FILE_PATH="coverage/pycharm$jenkins_build_requests_post__1_.coverage" NAME="jenkins_build_requests_post (1) Coverage Results" MODIFIED="1508342446711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
     <SUITE FILE_PATH="coverage/pycharm$meizhu_all_function.coverage" NAME="meizhu_all_function Coverage Results" MODIFIED="1512286328545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_in_unittest__demo_py.coverage" NAME="Unittests in unittest__demo.py Coverage Results" MODIFIED="1510479129021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_online_test_get_room_list.coverage" NAME="qrmaster_online_test_get_room_list Coverage Results" MODIFIED="1510978514352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/room" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase Coverage Results" MODIFIED="1508657005232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$meizhu_login_test.coverage" NAME="meizhu_login_test Coverage Results" MODIFIED="1512205997663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/meizhu/login" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu.coverage" NAME="qrmaster_syn_meizhu Coverage Results" MODIFIED="1512314752236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$Extends_demo.coverage" NAME="Extends_demo Coverage Results" MODIFIED="1504411877675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pycharm$p_test19_way2.coverage" NAME="p_test19_way2 Coverage Results" MODIFIED="1508566206274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_cookies.coverage" NAME="qrmaster_cookies Coverage Results" MODIFIED="1510848014963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$test_cut.coverage" NAME="test_cut Coverage Results" MODIFIED="1517759400731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django/Blog/myblog/test" />
-    <SUITE FILE_PATH="coverage/pycharm$moco_get_all_interface_demo.coverage" NAME="moco_get_all_interface_demo Coverage Results" MODIFIED="1509886431994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
-    <SUITE FILE_PATH="coverage/pycharm$Calculator_demo.coverage" NAME="Calculator_demo Coverage Results" MODIFIED="1509264791711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_sample.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_sample Coverage Results" MODIFIED="1508656824045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_3_div_4.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_3_div_4 Coverage Results" MODIFIED="1508675603788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1510502945660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/import_test/demo" />
     <SUITE FILE_PATH="coverage/pycharm$requests_cancelcard_demo.coverage" NAME="requests_cancelcard_demo Coverage Results" MODIFIED="1508249954265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt_api" />
-    <SUITE FILE_PATH="coverage/pycharm$qrmaster_syn_meizhu_excel.coverage" NAME="qrmaster_syn_meizhu_excel Coverage Results" MODIFIED="1512800960466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
-    <SUITE FILE_PATH="coverage/pycharm$module.coverage" NAME="module Coverage Results" MODIFIED="1503797432910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$p_test50.coverage" NAME="p_test50 Coverage Results" MODIFIED="1509118063248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$os_demo.coverage" NAME="os_demo Coverage Results" MODIFIED="1504359804718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_login_post.coverage" NAME="qrmaster_login_post Coverage Results" MODIFIED="1510667943817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster" />
-    <SUITE FILE_PATH="coverage/pycharm$feibonaqie.coverage" NAME="feibonaqie Coverage Results" MODIFIED="1509028070499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice/digui" />
     <SUITE FILE_PATH="coverage/pycharm$auto.coverage" NAME="auto Coverage Results" MODIFIED="1510406769977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto" />
     <SUITE FILE_PATH="coverage/pycharm$moco_post_demo.coverage" NAME="moco_post_demo Coverage Results" MODIFIED="1509980259042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_basic_demo_TestStringMethods_test_isupper.coverage" NAME="Unittests for basic_demo.TestStringMethods.test_isupper Coverage Results" MODIFIED="1503417320112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
-    <SUITE FILE_PATH="coverage/pycharm$Testsunit.coverage" NAME="Testsunit Coverage Results" MODIFIED="1510497132678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/unittest" />
-    <SUITE FILE_PATH="coverage/pycharm$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1511968582095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
     <SUITE FILE_PATH="coverage/pycharm$test_excel.coverage" NAME="test_excel Coverage Results" MODIFIED="1512659528318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/uclbrt/qrmaster/syn" />
-    <SUITE FILE_PATH="coverage/pycharm$jenkins_build_get.coverage" NAME="jenkins_build_get Coverage Results" MODIFIED="1508342401412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_pyunit_unIttest_demo_MyfirstTestCase_test_1_div_1.coverage" NAME="Unittests for pyunit_unIttest_demo.MyfirstTestCase.test_1_div_1 Coverage Results" MODIFIED="1508675646748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$python_unicode.coverage" NAME="python_unicode Coverage Results" MODIFIED="1512885852185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IO" />
     <SUITE FILE_PATH="coverage/pycharm$p_test19.coverage" NAME="p_test19 Coverage Results" MODIFIED="1508515108240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$class_demo3.coverage" NAME="class_demo3 Coverage Results" MODIFIED="1512806185658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OO/class_and_instance" />
-    <SUITE FILE_PATH="coverage/pycharm$Multiplication_table3.coverage" NAME="Multiplication_table3 Coverage Results" MODIFIED="1509033787927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$alert_click.coverage" NAME="alert_click Coverage Results" MODIFIED="1503733120181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.idea" />
-    <SUITE FILE_PATH="coverage/pycharm$Parameterization.coverage" NAME="Parameterization Coverage Results" MODIFIED="1504429306403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/object" />
     <SUITE FILE_PATH="coverage/pycharm$requests_post.coverage" NAME="requests_post Coverage Results" MODIFIED="1507974135566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$post_demo.coverage" NAME="post_demo Coverage Results" MODIFIED="1508254591757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$Unittests_for_moco_post_demo2_test2_test_aa.coverage" NAME="Unittests for moco_post_demo2.test2.test_aa Coverage Results" MODIFIED="1509981478329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/moco" />
     <SUITE FILE_PATH="coverage/pycharm$json2dict.coverage" NAME="json2dict Coverage Results" MODIFIED="1510404602123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/asset" />
     <SUITE FILE_PATH="coverage/pycharm$private_attr_demo.coverage" NAME="private_attr_demo Coverage Results" MODIFIED="1504413413948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pycharm$p_test23_way3.coverage" NAME="p_test23_way3 Coverage Results" MODIFIED="1508605919194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />
-    <SUITE FILE_PATH="coverage/pycharm$Unittests_for_jenkins_requests_get_JenkinsGetTestCase_test_get_all_job_names.coverage" NAME="Unittests for jenkins_requests_get.JenkinsGetTestCase.test_get_all_job_names Coverage Results" MODIFIED="1509634861739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jenkins/getpost" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_get_hash.coverage" NAME="qrmaster_get_hash Coverage Results" MODIFIED="1510992021943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_bpass_verify.coverage" NAME="qrmaster_bpass_verify Coverage Results" MODIFIED="1511281224861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
-    <SUITE FILE_PATH="coverage/pycharm$test_range.coverage" NAME="test_range Coverage Results" MODIFIED="1512050197218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/test" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_session_test.coverage" NAME="qrmaster_session_test Coverage Results" MODIFIED="1510976603289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/login" />
     <SUITE FILE_PATH="coverage/pycharm$requests_api.coverage" NAME="requests_api Coverage Results" MODIFIED="1510475608518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/pycharm$qrmaster_community_pass__1_.coverage" NAME="qrmaster_community_pass (1) Coverage Results" MODIFIED="1511017360316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qrmaster/community" />
@@ -229,9 +231,21 @@
       <file leaf-file-name="uploadImg.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="115" column="41" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_mkdir.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_basic/OO/test/test_mkdir.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -239,11 +253,19 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/Blog/myblog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mkdir.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/util/mkdir.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -251,51 +273,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django/Blog/myblog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="367" column="28" lean-forward="true" selection-start-line="367" selection-start-column="28" selection-end-line="367" selection-end-column="28" />
+            <state relative-caret-position="6072">
+              <caret line="276" column="8" lean-forward="false" selection-start-line="276" selection-start-column="8" selection-end-line="276" selection-end-column="8" />
               <folding>
                 <element signature="e#26#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setUserInfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setUserInfo2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1621">
-              <caret line="128" column="42" lean-forward="true" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django/Blog/myblog/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -313,7 +295,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>index</find>
       <find>搜索</find>
       <find>am-topbar-right</find>
       <find>paging</find>
@@ -343,6 +324,7 @@
       <find>photo</find>
       <find>input</find>
       <find>basic-div</find>
+      <find>mkdir</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -355,7 +337,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django/Blog/myapp/urls.py" />
         <option value="$PROJECT_DIR$/django/Blog/myapp/templates/blog-list.html" />
         <option value="$PROJECT_DIR$/django/Blog/myapp/views.py" />
         <option value="$PROJECT_DIR$/django/Blog/myapp/templates/blog-details.html" />
@@ -401,10 +382,11 @@
         <option value="$PROJECT_DIR$/django/Blog/myblog/test/test_time.py" />
         <option value="$PROJECT_DIR$/python_basic/OO/test_mkdir.py" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/userInfo.html" />
-        <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/urls.py" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo2.html" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo.html" />
+        <option value="$PROJECT_DIR$/python_basic/OO/test/test_mkdir.py" />
+        <option value="$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/views.py" />
       </list>
     </option>
@@ -423,10 +405,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="662" />
-    <option name="y" value="54" />
-    <option name="width" value="1467" />
-    <option name="height" value="818" />
+    <option name="x" value="217" />
+    <option name="y" value="36" />
+    <option name="width" value="1800" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -484,6 +466,14 @@
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
               <item name="python_basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,7 +487,7 @@
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
               <item name="python_basic" type="462c0819:PsiDirectoryNode" />
               <item name="OO" type="462c0819:PsiDirectoryNode" />
-              <item name="class_and_instance" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
@@ -533,19 +523,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\python_basic\OO\test" />
+      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\templates" />
+      <recent name="D:\linyouwei\python\pycharm\python_basic\OO" />
+      <recent name="D:\linyouwei\python\pycharm\python_basic\OO\util" />
+      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\templates\test" />
       <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\test" />
       <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\static" />
       <recent name="D:\linyouwei\python\pycharm\django\BlogProject\myblog" />
       <recent name="D:\linyouwei\python\pycharm\uclbrt\auto_test\meizhu" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\templates" />
-      <recent name="D:\linyouwei\python\pycharm\python_basic\OO" />
-      <recent name="D:\linyouwei\python\pycharm\python_basic\OO\util" />
-      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\static\img" />
-      <recent name="D:\linyouwei\python\pycharm\django\Blog\myblog\templates\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -560,7 +550,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_mkdir">
+  <component name="RunManager" selected="Python.test_mkdir (1)">
     <configuration name="List_Comprehensions_demo" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -597,24 +587,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="replace_path" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django/Blog/myblog/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pycharm" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django/Blog/myblog/test/replace_path.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="test_cut" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -629,6 +601,24 @@
       <module name="pycharm" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django/Blog/myblog/test/test_cut.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test_mkdir (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basic/OO/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pycharm" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_basic/OO/test/test_mkdir.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -671,19 +661,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.List_Comprehensions_demo" />
-      <item index="1" class="java.lang.String" itemvalue="Python.replace_path" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_cut" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_time" />
-      <item index="4" class="java.lang.String" itemvalue="Python.random_demo" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test_mkdir" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test_cut" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_time" />
+      <item index="3" class="java.lang.String" itemvalue="Python.random_demo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_mkdir" />
+      <item index="5" class="java.lang.String" itemvalue="Python.test_mkdir (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_mkdir" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_time" />
-        <item index="2" class="java.lang.String" itemvalue="Python.random_demo" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_cut" />
-        <item index="4" class="java.lang.String" itemvalue="Python.replace_path" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_mkdir (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_mkdir" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_time" />
+        <item index="3" class="java.lang.String" itemvalue="Python.random_demo" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_cut" />
       </list>
     </recent_temporary>
   </component>
@@ -818,21 +808,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="662" y="54" width="1467" height="818" extended-state="0" />
-    <editor active="true" />
+    <frame x="217" y="36" width="1800" height="974" extended-state="0" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16896552" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.529595" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31026253" sideWeight="0.5042553" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.016638935" sideWeight="0.48798078" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35765123" sideWeight="0.60935146" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.7405446" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16204691" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35765123" sideWeight="0.60935146" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.7405446" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16835444" sideWeight="0.49574468" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -843,6 +831,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16835444" sideWeight="0.49574468" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -964,35 +953,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/myblog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/BlogProject/myblog/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="90" column="17" lean-forward="true" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/include/pager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/pager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="80" column="30" lean-forward="false" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1001,16 +961,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/media/upload/1234.png" />
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/aa.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/bb.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/aa.jpg" />
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/bb.jpg" />
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/static/uploadify/uploadify.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1018,13 +970,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/tests.py" />
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/static/uploadify/uploadify-cancel.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1037,13 +983,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/tutorial2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="113" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/tutorial2.html" />
     <entry file="file://$PROJECT_DIR$/django/Blog/comments/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1072,16 +1012,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/bb.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/1234.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/test/bb.png" />
+    <entry file="file://$PROJECT_DIR$/django/Blog/1234.png" />
     <entry file="file://$PROJECT_DIR$/django/Blog/blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
@@ -1107,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,9 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,9 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,22 +1088,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/media/upload/e1182a35fef3g1b5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/media/upload/e1182a35fef3g1b5.png" />
     <entry file="file://$PROJECT_DIR$/django/Blog/comments/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,34 +1108,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2615">
           <caret line="119" column="37" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/showImg.html" />
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index1.html" />
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test.html" />
     <entry file="file://D:/soft/Python3.5.0/Lib/site-packages/Django-2.0.1-py3.5.egg/django/views/static.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1246,17 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python_basic/OO/test_mkdir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1268,68 +1150,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/userInfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1621">
-          <caret line="128" column="42" lean-forward="true" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+        <state relative-caret-position="2816">
+          <caret line="128" column="42" lean-forward="false" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+        <state relative-caret-position="2640">
+          <caret line="120" column="48" lean-forward="false" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html">
+    <entry file="file://$PROJECT_DIR$/python_basic/OO/test_mkdir.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="110">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basic/OO/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-272345125/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="3574" column="8" lean-forward="false" selection-start-line="3574" selection-start-column="8" selection-end-line="3574" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/setUserInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="836">
+          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/util/mkdir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/uploadImg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="115" column="41" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basic/OO/test/test_mkdir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="367" column="28" lean-forward="true" selection-start-line="367" selection-start-column="28" selection-end-line="367" selection-end-column="28" />
+        <state relative-caret-position="6072">
+          <caret line="276" column="8" lean-forward="false" selection-start-line="276" selection-start-column="8" selection-end-line="276" selection-end-column="8" />
           <folding>
             <element signature="e#26#41#0" expanded="true" />
           </folding>

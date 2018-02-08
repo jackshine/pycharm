@@ -347,7 +347,11 @@ def uploadImg(req):
         now_time = datetime.datetime.now().strftime('%Y%m%d')
         # 创建当前日期的文件夹
         date_path = settings.MEDIA_URL + 'upload/'+now_time
-        mkdir(date_path)
+        import sys
+        sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+        from .util.mkdir import MkDir
+        mk = MkDir()
+        mk.mkdir(date_path)
         # 随机生成16位十六进制数字,生成文件名
         path =  date_path + '/' + getRandomNum() + '.png'
         print(path)

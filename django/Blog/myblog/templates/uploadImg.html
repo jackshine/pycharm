@@ -113,7 +113,7 @@
                 height:300
             }).toDataURL('image/png');
              $target.attr('src', photo);
-            $.post('/myblog/uploadImg', {
+            $.post('/myblog/set/uploadImg', {
                 'photo':photo
             }, function (data) {
                 var status =  $.parseJSON( data ).success;
