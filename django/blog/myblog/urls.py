@@ -3,6 +3,7 @@ from . import views
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.static import serve
+from myblog.UserSetViews import UserSetViews
 
 app_name = 'myblog'
 urlpatterns = [
@@ -23,12 +24,12 @@ urlpatterns = [
     #[0-9]表示这部分必须是数字，+表示至少1个数字
     url(r'^category/(?P<id>[0-9]+)/$', views.CategoryView.as_view(), name='category'),
     url(r'^userInfo', views.userInfo),
-    url(r'^setUserInfo', views.setUserInfo),
+    url(r'^setUserInfo',UserSetViews.setUserInfo),
     url(r'^showImg', views.showImg),
-    url(r'^set/uploadImg', views.uploadImg),
+    url(r'^set/uploadImg', UserSetViews.uploadImg),
     url(r'^set/profile', views.setProfile),
     url(r'^upload_file', views.upload_file),
-    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
-
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    url(r'^test', views.test)
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

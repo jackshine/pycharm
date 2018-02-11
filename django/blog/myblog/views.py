@@ -289,11 +289,7 @@ def userInfo(req):
         return render_to_response("userInfo.html",{'url':url})
 
 
-def setUserInfo(req):
-    if req.method == "POST":
-        return render_to_response("setUserInfo.html")
-    else:
-        return render_to_response("setUserInfo.html")
+
 
         # def upload(req):
         #     if req.method == 'POST':
@@ -339,75 +335,17 @@ def setUserInfo(req):
 #         return render_to_response("uploadImg.html")
 
 
-def uploadImg(req):
-    if req.method == 'POST':
-        img = req.POST.get('photo')
-        binaryImg = base64.b64decode(re.split(',', img)[1])
-        userInfo = UserInfo.objects.get(userid=1)
-        now_time = datetime.datetime.now().strftime('%Y%m%d')
-        # 创建当前日期的文件夹
-        date_path = settings.MEDIA_URL + 'upload/'+now_time
-        import sys
-        sys.path.append(os.path.dirname(os.path.realpath(__file__)))
-        from .util.mkdir import MkDir
-        mk = MkDir()
-        mk.mkdir(date_path)
-        # 随机生成16位十六进制数字,生成文件名
-        path =  date_path + '/' + getRandomNum() + '.png'
-        print(path)
-        new_img = UserDetails(
-                img=path,
-                userId=userInfo
-        )
-        new_img.save()
-        with open(path, 'wb') as f:
-            f.write(binaryImg)
-        return HttpResponse(json.dumps({'success':200}))
-    else:
-        return render_to_response("uploadImg.html")
-
 
 def setProfile(req):
     # ajax  ProfileSubmit
     if req.method == 'POST':
         return render_to_response()
     else:
+
         return render_to_response('setUserInfo.html',{'status':2})
 
 
-def mkdir(path):
-    # 引入模块
 
-    # 去除首位空格
-    path = path.strip()
-    # 去除尾部 \ 符号
-    path = path.rstrip("\\")
-
-    # 判断路径是否存在
-    # 存在     True
-    # 不存在   False
-    isExists = os.path.exists(path)
-
-    # 判断结果
-    if not isExists:
-        # 如果不存在则创建目录
-        print(path + ' 创建成功')
-        # 创建目录操作函数
-        os.makedirs(path)
-        return True
-    else:
-        # 如果目录存在则不创建，并提示目录已存在
-        print(path + ' 目录已存在')
-        return False
-
-
-def getRandomNum():
-    random_list = [i for i in range(0, 10)] + [chr(i) for i in range(97, 122)]
-    # 对应从“a”到“z”的ASCII码 [chr(i) for i in range(97,122)
-    random_str = ''
-    for i in range(16):
-        random_str = random_str + str(random_list[random.randint(1, 16)])
-    return random_str
 
 
 def upload_file(request):
@@ -466,3 +404,7 @@ def showImg(req):
     for i in imgs:
         print(i.img)
     return render_to_response('showImg.html', {'imgs': imgs})
+
+
+def test(req):
+    return render_to_response('date_test.html')

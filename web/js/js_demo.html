@@ -2,9 +2,114 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
     <title>Title</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var china = [
+                {
+                    "p_name": "吉林省",
+                    "p_id": "jl",
+                    "cities": [
+                        {
+                            "c_name": "长春",
+                            "c_id": "cc"
+                        },
+                        {
+                            "c_name": "四平",
+                            "c_id": "sp"
+                        },
+                        {
+                            "c_name": "通化",
+                            "c_id": "th"
+                        },
+                        {
+                            "c_name": "松原",
+                            "c_id": "sy"
+                        }
+                    ]
+                },
+                {
+                    "p_name": "辽宁省",
+                    "p_id": "ln",
+                    "cities": [
+                        {
+                            "c_name": "沈阳",
+                            "c_id": "sy"
+                        },
+                        {
+                            "c_name": "大连",
+                            "c_id": "dl"
+                        },
+                        {
+                            "c_name": "抚顺",
+                            "c_id": "fs"
+                        },
+                        {
+                            "c_name": "铁岭",
+                            "c_id": "tl"
+                        }
+                    ]
+
+                },
+                {
+                    "p_name": "山东省",
+                    "p_id": "sd",
+                    "cities": [
+                        {
+                            "c_name": "济南",
+                            "c_id": "jn"
+                        },
+                        {
+                            "c_name": "青岛",
+                            "c_id": "qd"
+                        },
+                        {
+                            "c_name": "威海",
+                            "c_id": "wh"
+                        },
+                        {
+                            "c_name": "烟台",
+                            "c_id": "yt"
+                        }
+                    ]
+
+                }
+            ];
+            for (var i = 0; i < china.length; i++) {
+                $("#province").append("<option value='" + china[i].p_id + "'>" + china[i].p_name + "</option>");
+            }
+            $("#province").change(function () {
+                var select_val = $(this).children('option:selected').val();
+                //遍历china，找到和该省份一样id的数据，添加到city中
+                console.log(select_val)
+                $.each(china, function (index, value) {
+                    if (china[index].p_id == select_val) {
+                        var cities = china[index].cities;
+                        $("#city").html("<option value='none'>请选择</option>")
+                        $.each(cities,function(i,val){
+                            if(i==0){
+                                 $("#city").append("<option value='" + val.c_id + "' selected>" + val.c_name + "</option>");
+                            }else {
+                                 $("#city").append("<option value='" + val.c_id + "'>" + val.c_name + "</option>");
+                            }
+                        })
+                    }
+                    if(select_val=='none'){
+                        $("#city").html("<option value='none'>请选择</option>")
+                    }
+                })
+            })
+
+        });
+    </script>
 </head>
 <body>
-
+<select id="province" name="province">
+    <option value="none">请选择</option>
+</select>
+<select id="city" name="city">
+    <option value="none">请选择</option>
+</select>
 </body>
 </html>

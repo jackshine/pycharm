@@ -13,8 +13,36 @@
     <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
     <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
     <script type="text/javascript">
+
         $(document).ready(function () {
+
+            for (var i = 0; i < china.length; i++) {
+                $("#province").append("<option value='" + china[i].p_id + "'>" + china[i].p_name + "</option>");
+            }
+            $("#province").change(function () {
+                var select_val = $(this).children('option:selected').val();
+                //遍历china，找到和该省份一样id的数据，添加到city中
+                console.log(select_val)
+                $.each(china, function (index, value) {
+                    if (china[index].p_id == select_val) {
+                        var cities = china[index].cities;
+                        $("#city").html("<option value='none'>请选择</option>")
+                        $.each(cities,function(i,val){
+                            if(i==0){
+                                 $("#city").append("<option value='" + val.c_id + "' selected>" + val.c_name + "</option>");
+                            }else {
+                                 $("#city").append("<option value='" + val.c_id + "'>" + val.c_name + "</option>");
+                            }
+                        })
+                    }
+                    if(select_val=='none'){
+                        $("#city").html("<option value='none'>请选择</option>")
+                    }
+                })
+            })
+
         });
+
 
     </script>
 </head>
@@ -38,16 +66,51 @@
     </div>
 </header>
 <div class="am-form-group">
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="file" name="img">
-        <button type="submit">上传</button>
-    </form>
-    {% if status == 3 %}
-    <div id="basic-div">基本信息</div>
-    {%else%}
-    <div>洽谈</div>
-    {%endif%}
+    <form method="POST" enctype="multipart/form-data" class="am-form">
+
+        {% if status == 3 %}
+            {#账户设置#}
+            <div id="basic-div"></div>
+        {% else %}
+            {#基本资料#}
+            <fieldset>
+                <div class="am-form-group">
+                    <label for="doc-ipt-email-1">姓名</label>
+                    <input type="text" class="" id="doc-ipt-email-1" placeholder="输入姓名">
+                </div>
+
+                <div class="am-form-group">
+                    <label for="doc-ipt-pwd-1">性别</label>
+                    <label for="doc-ipt-email-1">男</label>
+                    <input type="radio" name="Gender" id="Gender" value="0">
+                    <label for="doc-ipt-email-1">女</label>
+                    <input type="radio" name="Gender" id="Gender" value="1">
+                </div>
+
+                <div class="am-form-group">
+                    <label for="doc-ipt-file-1">出生日期</label>
+                    <input type="file" id="doc-ipt-file-1">
+                </div>
+
+                <div>
+                     <label for="doc-ipt-file-1">家乡</label>
+                </div>
+
+                <div class="am-form-group">
+                    <label for="doc-select-1">婚姻</label>
+                    <select id="doc-select-1">
+                        <option value="option1">单身</option>
+                        <option value="option2">已婚</option>
+                        <option value="option3">离异</option>
+                    </select>
+                    <span class="am-form-caret"></span>
+                </div>
+                <p>
+                    <button type="submit" class="am-btn am-btn-default">提交</button>
+                </p>
+            </fieldset>
+            </form>
+        {% endif %}
 </div>
 
 </body>

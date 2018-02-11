@@ -5,11 +5,7 @@ class UserInfo(models.Model):
     userid = models.AutoField(primary_key=True)
     username = models.CharField('用户名',max_length=20)
     password = models.CharField('密码',max_length=32)
-    gender_choices = (
-        (0, "男"),
-        (1, "女"),
-    )
-    sex = models.IntegerField('性别',choices=gender_choices,default=0)
+
     regtime = models.DateTimeField('注册时间' )
     delflag_choices = (
         (0, "普通用户"),
@@ -36,10 +32,20 @@ class Daily(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
     author = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
 
+class Province(models.Model):
+    code = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=200, blank=True)
 class UserDetails(models.Model):
     userId = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
     # img = models.FileField(upload_to='upload/')
-    img = models.CharField(max_length=100)
+    gender_choices = (
+        (0, "男"),
+        (1, "女"),
+    )
+    sex = models.IntegerField('性别',choices=gender_choices,default=0)
+    img = models.CharField(max_length=100,blank=True)
+    province = models.CharField(max_length=20,blank=True)
+    city = models.CharField(max_length=20,blank=True)
 
 
 

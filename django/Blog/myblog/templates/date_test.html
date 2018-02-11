@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <link rel="stylesheet" href="/static/datetimepicker/css/bootstrap-datetimepicker.css">
+    <title>Title</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+<body>
+<input size="16" type="text" value="" class="form_datetime">
+<script type="text/javascript">
+    //日期插件
+    $(".form_datetime").datetimepicker({
+        format: 'yyyy-mm-dd',//显示格式
+        todayHighlight: 1,//今天高亮
+        minView: "month",//设置只显示到月份
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1,
+        autoclose: 1//选择后自动关闭
+    });
+</script>
+</body>
+</html>

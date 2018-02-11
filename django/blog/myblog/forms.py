@@ -16,4 +16,4 @@ class UserInfoLoginForm(forms.ModelForm):
 class UserInfoRegisterForm(forms.ModelForm):
     class Meta:
         model = UserInfo
-        fields = ['username','password','sex']
+        fields = ['username','password']
