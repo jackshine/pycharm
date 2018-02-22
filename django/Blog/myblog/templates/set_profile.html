@@ -12,33 +12,34 @@
     <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
     <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
     <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
-    <link rel="stylesheet" href="/static/datetimepicker/css/bootstrap-datetimepicker.css">
-    <script src="/static/datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <link rel="stylesheet" href="/static/datetimepicker/css/amazeui.datetimepicker.css"/>
+    <script src="/static/datetimepicker/js/amazeui.datetimepicker.min.js"></script>
+    <script src="/static/datetimepicker/js/locales/amazeui.datetimepicker.zh-CN.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(function () {
             //对省份添加option
             $.getJSON("/static/json/province.json", function (data) {
                 p_id = $("#province").val();
                 var china = data;
                 for (var i = 0; i < china.length; i++) {
-                    if(china[i].code!= p_id){
+                    if (china[i].code != p_id) {
                         $("#province").append("<option value='" + china[i].code + "'>" + china[i].name + "</option>");
-                    }else {
+                    } else {
                         continue;
                     }
                 }
             })
             $.getJSON("/static/json/city.json", function (data) {
-                    var cities = data;
-                    //遍历city.json，选择省份的code的数据，添加到city中
-                    $.each(cities, function (index, city) {
-                        if (city.provinceCode ==$("#province").val()) {
-                            if(city.code != $("#city").val()){
-                                $("#city").append("<option value='" + city.code + "'>" + city.name + "</option>");
-                            }
+                var cities = data;
+                //遍历city.json，选择省份的code的数据，添加到city中
+                $.each(cities, function (index, city) {
+                    if (city.provinceCode == $("#province").val()) {
+                        if (city.code != $("#city").val()) {
+                            $("#city").append("<option value='" + city.code + "'>" + city.name + "</option>");
                         }
-                    })
+                    }
                 })
+            })
             //对省份按钮绑定事件
             $("#province").change(function () {
                 $("#city").children().remove();
@@ -57,16 +58,12 @@
                 })
 
             })
-            $("#birth_time").datetimepicker({
+            $('#birth_time').datetimepicker({
+                language:  'zh-CN',
                 format: 'yyyy-mm-dd',//显示格式
-                todayHighlight: 1,//今天高亮
                 minView: "month",//设置只显示到月份
-                startView: 2,
-                forceParse: 0,
-                showMeridian: 1,
                 autoclose: 1//选择后自动关闭
             });
-
         });
     </script>
 
@@ -95,35 +92,39 @@
         <fieldset>
             <div class="am-form-group">
                 <label for="doc-ipt-email-1">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
-                <input type="text" style="width:40%;display: inline" placeholder="输入姓名" name="name" value="{{ user.username}}" >
+                <input type="text" style="width:40%;display: inline" placeholder="输入姓名" name="name"
+                       value="{{ user.username }}">
             </div>
 
             <div class="am-form-group">
                 <label for="doc-ipt-pwd-1">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
                 <label for="doc-ipt-email-1">男</label>
 
-                <input type="radio" name="gender" id="Gender" value="0"  {% if userDetails.sex == 0 %}checked="checked"{% else %}{% endif %}>
+                <input type="radio" name="gender" id="Gender" value="0"
+                       {% if userDetails.sex == 0 %}checked="checked"{% else %}{% endif %}>
                 <label for="doc-ipt-email-1">女</label>
-                <input type="radio" name="gender" id="Gender" value="1" {% if userDetails.sex == 1 %}checked="checked"{% else %}{% endif %}>
+                <input type="radio" name="gender" id="Gender" value="1"
+                       {% if userDetails.sex == 1 %}checked="checked"{% else %}{% endif %}>
             </div>
 
             <div class="am-form-group">
                 <label for="doc-ipt-file-1" style="width:40%;display: inline">出生日期:</label>
-                <input type="text" value="{{ userDetails.birthtime|date:"Y-m-d"}}" id="birth_time" name="birth_time" style="width:40%;display: inline">
+                <input type="text" value="{{ userDetails.birthtime|date:"Y-m-d"}}" class="am-form-field" id="birth_time"
+                       readonly required name="birth_time" style="width:40%;display: inline">
             </div>
 
             <div>
                 <label for="doc-ipt-file-1">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乡:</label>
-                <select id="province" name="province" style="width:40%;display: inline" style="display: inline">
-                     {% if userDetails.province  %}
-                        <option value="{{userDetails.province.code}}">{{userDetails.province.name}}</option>
+                <select id="province" name="province" style="width:40%;display: inline">
+                    {% if userDetails.province %}
+                        <option value="{{ userDetails.province.code }}">{{ userDetails.province.name }}</option>
                     {% else %}
                         <option value="none">请选择</option>
                     {% endif %}
                 </select>
                 <select id="city" name="city" style="width:40%;display: inline" style="display: inline">
-                    {% if userDetails.city  %}
-                        <option value="{{userDetails.city.code}}">{{userDetails.city.name}}</option>
+                    {% if userDetails.city %}
+                        <option value="{{ userDetails.city.code }}">{{ userDetails.city.name }}</option>
                     {% else %}
                         <option value="none">请选择</option>
                     {% endif %}
@@ -133,9 +134,12 @@
             <div class="am-form-group">
                 <label for="doc-select-1">婚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姻:</label>
                 <select id="doc-select-1" name="marriage" style="width:40%;display: inline">
-                    <option value="0" {% if userDetails.marriage == 0 %}selected="selected"{% else %}{% endif %}>单身</option>
-                    <option value="1"  {% if userDetails.marriage == 1 %}selected="selected"{% else %}{% endif %}>已婚</option>
-                    <option value="2"  {% if userDetails.marriage == 2 %}selected="selected"{% else %}{% endif %}>离异</option>
+                    <option value="0" {% if userDetails.marriage == 0 %}selected="selected"{% else %}{% endif %}>单身
+                    </option>
+                    <option value="1" {% if userDetails.marriage == 1 %}selected="selected"{% else %}{% endif %}>已婚
+                    </option>
+                    <option value="2" {% if userDetails.marriage == 2 %}selected="selected"{% else %}{% endif %}>离异
+                    </option>
                 </select>
                 <span class="am-form-caret"></span>
             </div>
