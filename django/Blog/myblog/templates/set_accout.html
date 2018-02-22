@@ -81,60 +81,8 @@
 </header>
 <div class="am-form-group">
     <form method="POST" enctype="multipart/form-data" class="am-form">
+            <div id="basic-div">123</div>
 
-        {% if status == 3 %}
-            {#账户设置#}
-            <div id="basic-div"></div>
-        {% else %}
-            {#基本资料#}
-            <fieldset>
-                <div class="am-form-group">
-                    <label for="doc-ipt-email-1">姓名</label>
-                    <input type="text"  id="doc-ipt-email-1" placeholder="输入姓名" name="name">
-                </div>
-
-                <div class="am-form-group">
-                    <label for="doc-ipt-pwd-1">性别</label>
-                    <label for="doc-ipt-email-1">男</label>
-                    <input type="radio" name="gender" id="Gender" value="0">
-                    <label for="doc-ipt-email-1">女</label>
-                    <input type="radio" name="gender" id="Gender" value="1">
-                </div>
-
-                <div class="am-form-group">
-                    <label for="doc-ipt-file-1">出生日期:</label>
-                    <input type="text" value="" class="birth_time" id="birth_time" style="width:40%;display: inline" name="birth_time" >
-                    <script type="text/javascript">
-                        //日期插件
-
-                    </script>
-                </div>
-
-                <div>
-                    <label for="doc-ipt-file-1">家乡:</label>
-                    <select id="province" name="province" style="display: inline;width: 40% ">
-                        <option value="none">请选择</option>
-                    </select>
-                    <select id="city" name="city" style="display: inline;width: 40% ">
-                        <option value="none">请选择</option>
-                    </select>
-                </div>
-
-                <div class="am-form-group">
-                    <label for="doc-select-1">婚姻</label>
-                    <select id="doc-select-1" name="marriage">
-                        <option value="0">单身</option>
-                        <option value="1">已婚</option>
-                        <option value="2">离异</option>
-                    </select>
-                    <span class="am-form-caret"></span>
-                </div>
-                <p>
-                    <button type="submit" class="am-btn am-btn-default">提交</button>
-                </p>
-            </fieldset>
-            </form>
-        {% endif %}
 </div>
 
 </body>

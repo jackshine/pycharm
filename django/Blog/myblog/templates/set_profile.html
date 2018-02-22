@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Blog </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="/static/datetimepicker/css/bootstrap-datetimepicker.css">
+    <script src="/static/datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //对省份添加option
+            $.getJSON("/static/json/province.json", function (data) {
+                p_id = $("#province").val();
+                var china = data;
+                for (var i = 0; i < china.length; i++) {
+                    if(china[i].code!= p_id){
+                        $("#province").append("<option value='" + china[i].code + "'>" + china[i].name + "</option>");
+                    }else {
+                        continue;
+                    }
+                }
+            })
+            $.getJSON("/static/json/city.json", function (data) {
+                    var cities = data;
+                    //遍历city.json，选择省份的code的数据，添加到city中
+                    $.each(cities, function (index, city) {
+                        if (city.provinceCode ==$("#province").val()) {
+                            if(city.code != $("#city").val()){
+                                $("#city").append("<option value='" + city.code + "'>" + city.name + "</option>");
+                            }
+                        }
+                    })
+                })
+            //对省份按钮绑定事件
+            $("#province").change(function () {
+                $("#city").children().remove();
+                var select_val = $(this).children('option:selected').val();
+                if (select_val == '0') {
+                    $("#city").html("<option value='0'>请选择</option>");
+                }
+                $.getJSON("/static/json/city.json", function (data) {
+                    var cities = data;
+                    //遍历city.json，选择省份的code的数据，添加到city中
+                    $.each(cities, function (index, city) {
+                        if (city.provinceCode == select_val) {
+                            $("#city").append("<option value='" + city.code + "'>" + city.name + "</option>");
+                        }
+                    })
+                })
+
+            })
+            $("#birth_time").datetimepicker({
+                format: 'yyyy-mm-dd',//显示格式
+                todayHighlight: 1,//今天高亮
+                minView: "month",//设置只显示到月份
+                startView: 2,
+                forceParse: 0,
+                showMeridian: 1,
+                autoclose: 1//选择后自动关闭
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+        <a href="#">Amaze UI</a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="/myblog/set/uploadImg">上传头像</a></li>
+            <li class="am-active"><a href="/myblog/set/account/">账户设置</a></li>
+            <li class="am-active"><a href="/myblog/set/profile">基本资料</a></li>
+        </ul>
+
+    </div>
+</header>
+<div class="am-form-group">
+    <form method="POST" enctype="multipart/form-data" class="am-form">
+        <fieldset>
+            <div class="am-form-group">
+                <label for="doc-ipt-email-1">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
+                <input type="text" style="width:40%;display: inline" placeholder="输入姓名" name="name" value="{{ user.username}}" >
+            </div>
+
+            <div class="am-form-group">
+                <label for="doc-ipt-pwd-1">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+                <label for="doc-ipt-email-1">男</label>
+
+                <input type="radio" name="gender" id="Gender" value="0"  {% if userDetails.sex == 0 %}checked="checked"{% else %}{% endif %}>
+                <label for="doc-ipt-email-1">女</label>
+                <input type="radio" name="gender" id="Gender" value="1" {% if userDetails.sex == 1 %}checked="checked"{% else %}{% endif %}>
+            </div>
+
+            <div class="am-form-group">
+                <label for="doc-ipt-file-1" style="width:40%;display: inline">出生日期:</label>
+                <input type="text" value="{{ userDetails.birthtime|date:"Y-m-d"}}" id="birth_time" name="birth_time" style="width:40%;display: inline">
+            </div>
+
+            <div>
+                <label for="doc-ipt-file-1">家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乡:</label>
+                <select id="province" name="province" style="width:40%;display: inline" style="display: inline">
+                     {% if userDetails.province  %}
+                        <option value="{{userDetails.province.code}}">{{userDetails.province.name}}</option>
+                    {% else %}
+                        <option value="none">请选择</option>
+                    {% endif %}
+                </select>
+                <select id="city" name="city" style="width:40%;display: inline" style="display: inline">
+                    {% if userDetails.city  %}
+                        <option value="{{userDetails.city.code}}">{{userDetails.city.name}}</option>
+                    {% else %}
+                        <option value="none">请选择</option>
+                    {% endif %}
+
+                </select>
+            </div>
+            <div class="am-form-group">
+                <label for="doc-select-1">婚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姻:</label>
+                <select id="doc-select-1" name="marriage" style="width:40%;display: inline">
+                    <option value="0" {% if userDetails.marriage == 0 %}selected="selected"{% else %}{% endif %}>单身</option>
+                    <option value="1"  {% if userDetails.marriage == 1 %}selected="selected"{% else %}{% endif %}>已婚</option>
+                    <option value="2"  {% if userDetails.marriage == 2 %}selected="selected"{% else %}{% endif %}>离异</option>
+                </select>
+                <span class="am-form-caret"></span>
+            </div>
+            <p>
+                <button type="submit" class="am-btn am-btn-default">提交</button>
+            </p>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
