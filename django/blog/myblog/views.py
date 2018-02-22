@@ -5,6 +5,7 @@ from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedir
 from .forms import *
 from  comments.forms import CommentForm
 from  comments.models import Comment
+from .models import *
 from django.views.generic import ListView
 import re
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -181,10 +182,9 @@ def register(req):
         if (uf.is_valid()):
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
-            sex = uf.cleaned_data['sex']
             regtime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             password = hashlib.md5(password.encode("utf-8")).hexdigest()
-            UserInfo.objects.create(username=username, password=password, sex=sex, regtime=regtime)
+            UserInfo.objects.create(username=username, password=password, regtime=regtime)
             return HttpResponseRedirect('login.html')
     else:
         uf = UserInfoRegisterForm()
@@ -278,7 +278,7 @@ def userInfo(req):
     if req.method == "POST":
         return render_to_response("userInfo.html")
     else:
-        #根据用户的id，查询其图片
+        # 根据用户的id，查询其图片
         detail = UserDetails.objects.filter(userId_id=1)[0]
         print(detail)
         url = ''
@@ -286,7 +286,7 @@ def userInfo(req):
             url = detail.img
         else:
             url = '/static/img/default.png'
-        return render_to_response("userInfo.html",{'url':url})
+        return render_to_response("userInfo.html", {'url': url})
 
 
 
@@ -320,29 +320,23 @@ def userInfo(req):
         #        # region.save("bb.jpg")
 
 
-# def uploadImg(req):
-#     if req.method == 'POST':
-#         img = req.POST.get('photo')
-#         import re
-#         import base64
-#         imgTobinary = base64.b64decode(re.split(',',img)[1])
-#         from django.conf import settings
-#         path = settings.MEDIA_URL+ '/upload/abdd.png'
-#         with open(path,'wb') as f:
-#             f.write(imgTobinary)
-#         return render_to_response("uploadImg.html")
-#     else:
-#         return render_to_response("uploadImg.html")
+        # def uploadImg(req):
+        #     if req.method == 'POST':
+        #         img = req.POST.get('photo')
+        #         import re
+        #         import base64
+        #         imgTobinary = base64.b64decode(re.split(',',img)[1])
+        #         from django.conf import settings
+        #         path = settings.MEDIA_URL+ '/upload/abdd.png'
+        #         with open(path,'wb') as f:
+        #             f.write(imgTobinary)
+        #         return render_to_response("uploadImg.html")
+        #     else:
+        #         return render_to_response("uploadImg.html")
 
 
-
-def setProfile(req):
-    # ajax  ProfileSubmit
-    if req.method == 'POST':
-        return render_to_response()
-    else:
-
-        return render_to_response('setUserInfo.html',{'status':2})
+        # now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        #   time = datetime.datetime.strptime(now_time, '%Y-%m-%d %H:%M:%S')
 
 
 
@@ -377,7 +371,8 @@ def uploadandcut(req):
         userInfo = UserInfo.objects.get(userid=1)
         details = UserDetails.objects.get(userId=userInfo)
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        # path = os.path.join(BASE_DIR, '/media/upload/1234.png').replace('\\', '/')
+        # path = os.path.join(BASE_
+        # DIR, '/media/upload/1234.png').replace('\\', '/')
         # path = os.path.join(r'D:\linyouwei\python\pycharm\django\Blog\media\upload\1234.png').replace('\\', '/')
         # print(path)
         # from PIL import Image

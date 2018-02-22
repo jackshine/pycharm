@@ -27,7 +27,8 @@ urlpatterns = [
     url(r'^setUserInfo',UserSetViews.setUserInfo),
     url(r'^showImg', views.showImg),
     url(r'^set/uploadImg', UserSetViews.uploadImg),
-    url(r'^set/profile', views.setProfile),
+    url(r'^set/profile', UserSetViews.setProfile),
+    url(r'^set/account', UserSetViews.setAccount),
     url(r'^upload_file', views.upload_file),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     url(r'^test', views.test)

@@ -35,6 +35,12 @@ class Daily(models.Model):
 class Province(models.Model):
     code = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=200, blank=True)
+
+class City(models.Model):
+    code = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=200, blank=True)
+    provinceCode = models.ForeignKey(Province, on_delete=models.CASCADE)
+
 class UserDetails(models.Model):
     userId = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
     # img = models.FileField(upload_to='upload/')
@@ -44,8 +50,15 @@ class UserDetails(models.Model):
     )
     sex = models.IntegerField('性别',choices=gender_choices,default=0)
     img = models.CharField(max_length=100,blank=True)
-    province = models.CharField(max_length=20,blank=True)
-    city = models.CharField(max_length=20,blank=True)
+    birthtime = models.DateTimeField(blank=True)
+    province = models.ForeignKey(Province, on_delete=models.CASCADE)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
+    marriage_choices = (
+        (0, "单身"),
+        (1, "已婚"),
+        (2, "离异"),
+    )
+    marriage  = models.IntegerField('婚姻',choices=marriage_choices, blank=True)
 
 
 

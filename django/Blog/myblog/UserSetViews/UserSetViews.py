@@ -1,5 +1,5 @@
 
-from django.shortcuts import render_to_response, HttpResponse
+from django.shortcuts import render_to_response, HttpResponse,HttpResponseRedirect
 import os
 import sys
 import json
@@ -8,7 +8,7 @@ import re
 import datetime
 import random
 from django.conf import settings
-from  myblog.models import UserInfo,UserDetails
+from  myblog.models import UserInfo,UserDetails,Province,City
 from myblog.util.mkdir import MkDir
 
 
@@ -53,3 +53,33 @@ def setUserInfo(req):
         userDetails = UserDetails.objects.all()
         print(userDetails)
         return render_to_response("setUserInfo.html")
+
+def setProfile(req):
+    # ajax  ProfileSubmit
+    if req.method == 'POST':
+        name = req.POST.get("name")
+        gender = int(req.POST.get("gender"))
+        marriage = int(req.POST.get("marriage"))
+        birth_time = req.POST.get("birth_time")
+        province = int(req.POST.get("province"))
+        city = int(req.POST.get("city"))
+        time = datetime.datetime.strptime(birth_time, '%Y-%m-%d')
+        # 如何userid 存在，则修改数据，若userid不存在，则create数据
+        city = City.objects.get(code=city)
+        province = Province.objects.get(code=province)
+        user = UserInfo.objects.get(userid='3')
+        UserDetails.objects.create(sex=gender, marriage=marriage, birthtime=time, city=city, province=province,userId=user)
+        return HttpResponseRedirect('/myblog/set/profile')
+    else:
+        user = UserInfo.objects.get(userid='1')
+        userDetails = UserDetails.objects.get(userId=user)
+        print(userDetails.province.code,userDetails.city.code,)
+        return render_to_response('set_profile.html',{'userDetails':userDetails,'user':user})
+
+def setAccount(req):
+    # ajax  ProfileSubmit
+    if req.method == 'POST':
+       return render_to_response()
+    else:
+
+        return render_to_response('set_accout.html')
