@@ -2,53 +2,93 @@
 <! DOCTYPE html>
 <html>
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>Login Page | Amaze UI Example</title>
-  <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
-  <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
-  <style>
-    .header {
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 200%;
-      color: #333;
-      margin-top: 30px;
-    }
-    .header p {
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Login Page | Amaze UI Example</title>
+    <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <style>
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 200%;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .header p {
+            font-size: 14px;
+        }
+
+        .form-style {
+            margin: 50px auto;
+            width: 80%;
+        }
+
+        .input-style {
+            margin-left: 35%;
+             margin-bottom: 10px;
+            width: 30%;
+            display: inline-block;
+        }
+
+        .warn-tip {
+            width: 10%;
+            display: inline;
+        }
+        .bnt-style{
+            margin-left: 35%;
+             width: 30%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $("#username").blur(function () {
+                var username = $("#username").val();
+                $.post('/myblog/sign_up_ajax_check/', {
+                    'username': username
+                }, function (data) {
+                    //1为存在用户，0为不存在用户
+                    if (data.msg === '1') {
+                        $('#name_msg').html("您输入的用户名存在！请重新输入！")
+                    } else {
+                        $('#name_msg').html("可以使用")
+                    }
+                })
+            })
+        })
+    </script>
 </head>
 <body>
 <div class="header">
-  <div class="am-g">
-    <h1>Simple Blog</h1>
-  </div>
-  <hr />
+    <div class="am-g">
+        <h1>Simple Blog</h1>
+    </div>
+    <hr/>
 </div>
-<div class="am-g">
-  <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-    <br>
-    <br>
-    <form method="post" class="am-form" action="">
-      <label for="mobile">手机号:</label>
-      <input type="text" name="mobile" id="mobile" value="">
-      <br>
-      <label for="password">密码:</label>
-      <input type="password" name="password" id="password" value="">
-      <br>
-      <br />
-      <div class="am-cf">
-        <input type="submit" value="注 册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
-      </div>
-      <div class="am-cf">
-      <input type="submit" value="注 册" class="am-btn am-btn-primary am-btn-sm am-fl"/>
-      </div>
+<div class="form-style">
+    <form post="" class="am-form">
+        <fieldset class="am-form-set">
+            <div>
+                <div class="input-style">
+                    <input type="text" id="username" name="username" placeholder="你的昵称">
+                </div>
+                <div id="name_msg" class="warn-tip"></div>
+            </div>
+            <div>
+                <div class="input-style">
+                    <input type="password" id="password" name="password" placeholder="设置密码">
+                </div>
+                <div id="name_msg" class="warn-tip"></div>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit" class="am-btn am-btn-primary am-btn-block bnt-style">注册账号</button>
+        </div>
     </form>
-    <hr>
-    <p>© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
-  </div>
+
 </div>
 </body>
 </html>

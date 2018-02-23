@@ -9,5 +9,5 @@ urlpatterns = [
     url(r'^sign_in/$', LoginViews.sign_in),
     url(r'^sign_out/$', LoginViews.sign_out),
     url(r'^sign_up/$', LoginViews.sign_up),
+    url(r'^sign_up_ajax_check/$', LoginViews.sign_up_ajax_check),
 ]
-urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
