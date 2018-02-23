@@ -7,6 +7,8 @@
     <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
     <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
     <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/js/amazeui.min.js"></script>
+    <script src="/static/layer/layer.js"></script>
     <style>
         .header {
             text-align: center;
@@ -22,73 +24,197 @@
             font-size: 14px;
         }
 
-        .form-style {
-            margin: 50px auto;
-            width: 80%;
+        {#        .form-style {#}
+        {#            margin: 50px auto;#}
+        {#            width: 80%;#}
+        {#        }#}
+        {##}
+        {#        .input-style {#}
+        {#            margin-left: 35%;#}
+        {#            margin-bottom: 10px;#}
+        {#            width: 30%;#}
+        {#            display: inline-block;#}
+        {#        }#}
+        {##}
+        {#        .warn-tip {#}
+        {#            width: 10%;#}
+        {#            display: inline;#}
+        {#            color: red;#}
+        {#        }#}
+        {##}
+        {#        .bnt-style {#}
+        {#            margin-left: 35%;#}
+        {#            width: 30%;#}
+        {#        }#}
+        .sign {
+            height: 100%;
+            min-height: 750px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #f1f1f1;
         }
 
-        .input-style {
-            margin-left: 35%;
-             margin-bottom: 10px;
-            width: 30%;
+        .sign .main {
+            width: 400px;
+            margin: 60px auto 0;
+            padding: 50px 50px 30px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+            vertical-align: middle;
             display: inline-block;
         }
 
-        .warn-tip {
-            width: 10%;
-            display: inline;
+        h4 {
+            font-size: 18px;
         }
-        .bnt-style{
-            margin-left: 35%;
-             width: 30%;
+
+        .sign .title {
+            margin: 0 auto 50px;
+            padding: 10px;
+            font-weight: 400;
+            color: #969696;
+        }
+
+        .sign .title a {
+            padding: 10px;
+            color: #969696;
+        }
+
+        .sign .reset-title b, .sign .title b {
+            padding: 10px;
+        }
+
+        .sign .title .active {
+            font-weight: 700;
+            color: #0e90d2;
+            border-bottom: 2px solid #0e90d2;
+        }
+
+        .sign form {
+            margin-bottom: 30px;
+        }
+
+        .sign form .restyle {
+            margin-bottom: 0;
+        }
+
+        .sign form .input-prepend {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .sign form .restyle input {
+            border-bottom: none;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .sign form .input-prepend input {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 0;
+            padding: 4px 12px 4px 35px;
+            border: 1px solid #c8c8c8;
+            border-radius: 0 0 4px 4px;
+            background-color: hsla(0, 0%, 71%, .1);
+            vertical-align: middle;
+        }
+
+        .sign form .input-prepend i {
+            position: absolute;
+            top: 18px;
+            left: 10px;
+            font-size: 18px;
+            color: #969696;
+        }
+
+        .sign .sign-in-button, .sign .sign-up-button {
+            width: 100%;
+            padding: 9px 18px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            background: #0e90d2;
+            cursor: pointer;
+            outline: none;
+            display: block;
+            clear: both;
         }
     </style>
-    <script type="text/javascript">
-        $(function () {
-            $("#username").blur(function () {
-                var username = $("#username").val();
-                $.post('/myblog/sign_up_ajax_check/', {
-                    'username': username
-                }, function (data) {
-                    //1为存在用户，0为不存在用户
-                    if (data.msg === '1') {
-                        $('#name_msg').html("您输入的用户名存在！请重新输入！")
-                    } else {
-                        $('#name_msg').html("可以使用")
-                    }
-                })
-            })
-        })
-    </script>
+
 </head>
 <body>
-<div class="header">
-    <div class="am-g">
-        <h1>Simple Blog</h1>
-    </div>
-    <hr/>
-</div>
-<div class="form-style">
-    <form post="" class="am-form">
-        <fieldset class="am-form-set">
-            <div>
-                <div class="input-style">
-                    <input type="text" id="username" name="username" placeholder="你的昵称">
-                </div>
-                <div id="name_msg" class="warn-tip"></div>
-            </div>
-            <div>
-                <div class="input-style">
-                    <input type="password" id="password" name="password" placeholder="设置密码">
-                </div>
-                <div id="name_msg" class="warn-tip"></div>
-            </div>
-        </fieldset>
-        <div>
-            <button type="submit" class="am-btn am-btn-primary am-btn-block bnt-style">注册账号</button>
+<div class="sign">
+    <div class="header">
+        <div class="am-g">
+            <h1>Simple Blog</h1>
         </div>
-    </form>
+        <hr/>
+    </div>
+    <div class="main">
+        <h4 class="title">
+            <div class="normal-title">
+                <a class="" href="/sign_in">登录</a>
+                <b>·</b>
+                <a id="js-sign-up-btn" class="active" href="/sign_up">注册</a>
+            </div>
+        </h4>
+        <form post="" class="am-form">
+            <fieldset class="am-form-set">
+                <div class="input-prepend restyle">
+                    <input placeholder="你的昵称" type="text" value="" name="user[nickname]" id="user_nickname">
+                    <i class="am-icon-user"></i>
+                </div>
+                <div class="input-prepend restyle">
+                    <input placeholder="设置密码" type="text" value="" name="user[nickname]" id="user_password">
+                    <i class="am-icon-user"></i>
+                </div>
 
+            </fieldset>
+            <div>
+                <input type="submit" name="commit" value="注册" class="sign-up-button" data-disable-with="注册">
+            </div>
+            <button id="test1"></button>
+        </form>
+    </div>
 </div>
 </body>
+<script type="text/javascript">
+    $(function () {
+        $("#user_nickname").blur(function () {
+            var patrn = /^[a-zA-Z]([a-zA-Z0-9]|[._]){2,19}$/;
+            var username = $("#user_nickname").val();
+            console.log(patrn.test(username))
+            if (!patrn.test(username)) {
+                 layer.tips('只能输入5-20个以字母开头、可带数字、“_”、“.”的字串', '#user_nickname');
+{#                $('#name_msg').html("只能输入5-20个以字母开头、可带数字、“_”、“.”的字串")#}
+{#                $('#username').addClass('am-form-field');#}
+{#                $('#username').parent().removeClass("am-form-success").addClass('am-form-error');#}
+                return false;
+            }
+            $.post('/myblog/sign_up_ajax_check/', {
+                'username': username
+            }, function (data) {
+                //1为存在用户，0为不存在用户
+                if (data.msg === '1') {
+                    layer.tips('您输入的用户名存在！请重新输入！', '#user_nickname');
+{#                    $('#name_msg').html("您输入的用户名存在！请重新输入！")#}
+{#                    $('#username').addClass('am-form-field');#}
+{#                    $('#username').parent().removeClass("am-form-success").addClass('am-form-error');#}
+{#                } else {#}
+{#                    $('#username').addClass('am-form-field')#}
+{#                    $('#username').parent().addClass('am-form-success')#}
+                }
+            })
+        })
+        $("#username").focus(function () {
+            $('#name_msg').empty()
+        })
+        $('#test1').on('click', function () {
+
+        })
+    })
+</script>
 </html>
