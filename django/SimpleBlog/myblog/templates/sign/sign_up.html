@@ -24,28 +24,6 @@
             font-size: 14px;
         }
 
-        {#        .form-style {#}
-        {#            margin: 50px auto;#}
-        {#            width: 80%;#}
-        {#        }#}
-        {##}
-        {#        .input-style {#}
-        {#            margin-left: 35%;#}
-        {#            margin-bottom: 10px;#}
-        {#            width: 30%;#}
-        {#            display: inline-block;#}
-        {#        }#}
-        {##}
-        {#        .warn-tip {#}
-        {#            width: 10%;#}
-        {#            display: inline;#}
-        {#            color: red;#}
-        {#        }#}
-        {##}
-        {#        .bnt-style {#}
-        {#            margin-left: 35%;#}
-        {#            width: 30%;#}
-        {#        }#}
         .sign {
             height: 100%;
             min-height: 750px;
@@ -131,7 +109,7 @@
 
         .sign .sign-in-button, .sign .sign-up-button {
             width: 100%;
-            padding: 9px 18px;
+            padding: 12px 120px;
             font-size: 18px;
             border: none;
             border-radius: 25px;
@@ -156,27 +134,26 @@
     <div class="main">
         <h4 class="title">
             <div class="normal-title">
-                <a class="" href="/sign_in">登录</a>
+                <a class="" href="">登录</a>
                 <b>·</b>
-                <a id="js-sign-up-btn" class="active" href="/sign_up">注册</a>
+                <a id="js-sign-up-btn" class="active" href="">注册</a>
             </div>
         </h4>
         <form post="" class="am-form">
             <fieldset class="am-form-set">
                 <div class="input-prepend restyle">
-                    <input placeholder="你的昵称" type="text" value="" name="user[nickname]" id="user_nickname">
+                    <input placeholder="你的昵称" type="text" value="" name="user_nickname" id="user_nickname">
                     <i class="am-icon-user"></i>
                 </div>
                 <div class="input-prepend restyle">
-                    <input placeholder="设置密码" type="text" value="" name="user[nickname]" id="user_password">
+                    <input placeholder="设置密码" type="text" value="" name="user_password" id="user_password">
                     <i class="am-icon-user"></i>
                 </div>
 
             </fieldset>
             <div>
-                <input type="submit" name="commit" value="注册" class="sign-up-button" data-disable-with="注册">
+                <input id="sign-up"  name="commit" value="注册" class="sign-up-button" data-disable-with="注册">
             </div>
-            <button id="test1"></button>
         </form>
     </div>
 </div>
@@ -186,12 +163,8 @@
         $("#user_nickname").blur(function () {
             var patrn = /^[a-zA-Z]([a-zA-Z0-9]|[._]){2,19}$/;
             var username = $("#user_nickname").val();
-            console.log(patrn.test(username))
             if (!patrn.test(username)) {
-                 layer.tips('只能输入5-20个以字母开头、可带数字、“_”、“.”的字串', '#user_nickname');
-{#                $('#name_msg').html("只能输入5-20个以字母开头、可带数字、“_”、“.”的字串")#}
-{#                $('#username').addClass('am-form-field');#}
-{#                $('#username').parent().removeClass("am-form-success").addClass('am-form-error');#}
+                layer.tips('只能输入3-20个以字母开头、可带数字、“_”、“.”的字串', '#user_nickname');
                 return false;
             }
             $.post('/myblog/sign_up_ajax_check/', {
@@ -200,19 +173,31 @@
                 //1为存在用户，0为不存在用户
                 if (data.msg === '1') {
                     layer.tips('您输入的用户名存在！请重新输入！', '#user_nickname');
-{#                    $('#name_msg').html("您输入的用户名存在！请重新输入！")#}
-{#                    $('#username').addClass('am-form-field');#}
-{#                    $('#username').parent().removeClass("am-form-success").addClass('am-form-error');#}
-{#                } else {#}
-{#                    $('#username').addClass('am-form-field')#}
-{#                    $('#username').parent().addClass('am-form-success')#}
                 }
             })
         })
         $("#username").focus(function () {
             $('#name_msg').empty()
         })
-        $('#test1').on('click', function () {
+
+        $("#sign-up").click(function () {
+            var user_nickname = $("#user_nickname").val();
+            var user_password = $("#user_password").val();
+            $.post('/myblog/sign_up/', {
+                'user_nickname': user_nickname,
+                'user_password': user_password
+            }, function (data) {
+                console.log(data.msg);
+                if (data.msg === '301') {
+                    layer.tips('只能输入3-20个以字母开头、可带数字、“_”、“.”的字串', '#user_nickname');
+                } else if (data.msg == '302') {
+                    layer.tips('只能输入6-16位', '#user_password');
+                } else if (data.msg === '303') {
+                    layer.tips('您输入的用户名存在！请重新输入！', '#user_nickname');
+                } else {
+
+                }
+            })
 
         })
     })
