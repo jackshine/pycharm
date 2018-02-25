@@ -120,6 +120,18 @@
             display: block;
             clear: both;
         }
+
+        .sign .remember-btn {
+            float: left;
+            margin: 15px 0;
+        }
+
+        .sign .remember-btn span {
+            margin-left: 5px;
+            font-size: 15px;
+            color: #969696;
+            vertical-align: middle;
+        }
     </style>
 
 </head>
@@ -134,9 +146,9 @@
     <div class="main">
         <h4 class="title">
             <div class="normal-title">
-                <a class="" href="{% url 'myblog:sign_in' %}">登录</a>
+                <a class="active" href="">登录</a>
                 <b>·</b>
-                <a id="js-sign-up-btn" class="active" href="">注册</a>
+                <a id="js-sign-up-btn" href="{% url 'myblog:sign_up' %}">注册</a>
             </div>
         </h4>
         <form post="" class="am-form">
@@ -146,13 +158,17 @@
                     <i class="am-icon-user"></i>
                 </div>
                 <div class="input-prepend restyle">
-                    <input placeholder="设置密码" type="text" value="" name="user_password" id="user_password">
+                    <input placeholder="密码" type="text" value="" name="user_password" id="user_password">
                     <i class="am-icon-user"></i>
+                </div>
+                <div class="remember-btn">
+                    <input type="checkbox" value="true" checked="checked" name="session[remember_me]"
+                           id="session_remember_me"><span>记住我</span>
                 </div>
 
             </fieldset>
             <div>
-                <input id="sign-up"  name="commit" value="注册" class="sign-up-button" data-disable-with="注册">
+                <input id="sign-up" name="commit" value="登录" class="sign-up-button" data-disable-with="登录">
             </div>
         </form>
     </div>
@@ -160,30 +176,10 @@
 </body>
 <script type="text/javascript">
     $(function () {
-        $("#user_nickname").blur(function () {
-            var patrn = /^[a-zA-Z]([a-zA-Z0-9]|[._]){2,19}$/;
-            var username = $("#user_nickname").val();
-            if (!patrn.test(username)) {
-                layer.tips('只能输入3-20个以字母开头、可带数字、“_”、“.”的字串', '#user_nickname');
-                return false;
-            }
-            $.post('/myblog/sign_up_ajax_check/', {
-                'username': username
-            }, function (data) {
-                //1为存在用户，0为不存在用户
-                if (data.msg === '1') {
-                    layer.tips('您输入的用户名存在！请重新输入！', '#user_nickname');
-                }
-            })
-        })
-        $("#username").focus(function () {
-            $('#name_msg').empty()
-        })
-
         $("#sign-up").click(function () {
             var user_nickname = $("#user_nickname").val();
             var user_password = $("#user_password").val();
-            $.post('/myblog/sign_up/', {
+            $.post('/myblog/sign_in/', {
                 'user_nickname': user_nickname,
                 'user_password': user_password
             }, function (data) {
