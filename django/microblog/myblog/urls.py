@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.views.static import serve
 from myblog.views.LoginViews import LoginViews
+from myblog.views.TopicViews import TopicViews
 
 app_name = 'myblog'
 urlpatterns = [
@@ -10,4 +11,5 @@ urlpatterns = [
     # url(r'^sign_out/$', LoginViews.sign_out),
     url(r'^sign_up/$', LoginViews.sign_up,name='sign_up'),
     # url(r'^sign_up_ajax_check/$', LoginViews.sign_up_ajax_check),
+    url(r'^index/$', TopicViews.get_index,name='index'),
 ]

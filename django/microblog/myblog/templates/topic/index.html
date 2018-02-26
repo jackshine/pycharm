@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="/static/assets/css/app.css">
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+        .search-btn {
+            background: none repeat scroll 0 0 #0e90d2;
+            border: 0 none;
+            color: #FFFFFF;
+            height: 30px;
+            width: 70px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 25px;
+        }
+
+        .am-topbar a {
+            color: #FFFFFF;
+        }
+
+    </style>
+
+    <style>
+        #paging li {
+            float: left;
+            list-style: none;
+        }
+
+        /*
+        li:nth-child(1), li:nth-child(2) {
+        width: 50px
+        }
+        li:nth-child(3), li:nth-child(4), li:nth-child(5), li:nth-child(6), li:nth-child(7) {
+        width: 30px
+        }
+        */
+    </style>
+</head>
+
+<body id="blog">
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+        <a href="#">微书</a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="#">发现</a></li>
+            <li><a href="#">关注</a></li>
+            <li><a href="#">消息</a></li>
+        </ul>
+
+        <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+            <div class="am-form-group">
+                <input type="text" class="am-form-field am-input-sm">
+                <input type="button" class="search-btn" value="搜索">
+            </div>
+        </form>
+
+        <div class="am-topbar-right">
+            {% if username %}
+            <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+                <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle"
+                        data-am-dropdown-toggle>{{ username }} <span class="am-icon-caret-down"></span></button>
+                <ul class="am-dropdown-content">
+                    <li><a href="/myblog/myblog">发布</a></li>
+                    <li><a href="/myblog/logout">退出</a></li>
+                    <li><a href="/myblog/showUserInfo">设置</a></li>
+                </ul>
+            </div>
+            {% else %}
+            <div class="am-topbar-right">
+                <a href="/myblog/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm color">注册</a>
+            </div>
+            <div class="am-topbar-right">
+                <a href="/myblog/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</header>
+<!--模板的形式-->
+<div class="am-g am-g-fixed blog-fixed" id="search">
+    <div class="am-u-md-8 am-u-sm-12" id="search_data">
+    </div>
+</div>
+
+
+<script type="text/html" id="js_template">
+    <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 blog-entry-text blog-text-center" id="div_search">
+        <h1><a href=""> </a></h1>
+        <p></p>
+        <p></p>
+    </div>
+</script>
+
+<footer class="blog-footer"></footer>
+<script>
+    function loginBlog() {
+        window.location.href = '/myblog/login/'
+    }
+
+    function registerBlog() {
+        window.location.href = '/myblog/register/'
+    }
+
+    $(function () {
+        $("#btn_searchDaily").click(function () {
+            searchVal = $('#searchVal').val();
+            $.post('/myblog/searchDaily/', {
+                    'searchVal': searchVal
+                }, function (data) {
+                    $("#dataListDiv").hide();
+                    $('#search_data').empty();
+                    $.each(data, function (i, n) {
+                        var row = $($("#js_template").clone().html());
+                        row.find("a").text(n.dailyname)
+                        row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.dailyid)
+                        row.find("p:eq(0)").text(n.daily);
+                        row.find("p:eq(1)").text(n.userid);
+                        row.appendTo("#search_data");
+                    })
+                }
+            )
+        })
+    })
+    $(document).ready(function () {
+        el = "#paging"
+        var length = $(el + " li").length;
+        console.log(length)
+        for (var j = 0; j <= length; j++) {
+            if (j == 0 || j == 1 || j == 2 || j == length || j == length - 1) {
+                $(el + " li:nth-child(" + j + ")").css("width", "50px");
+            } else {
+                $(el + " li:nth-child(" + j + ")").css("width", "30px");
+            }
+        }
+    });
+</script>
+</body>
+</html>
