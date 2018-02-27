@@ -169,7 +169,7 @@
                     <input type="checkbox"  value="true" checked="checked" name="session[remember_me]"
                            id="session_remember_me"><span>记住我</span>
                 </div>
-                {% if  data.status > 0 %}
+                {% if  data.status > 200 %}
                 <div class="warn-tip">{{data.info}}</div>
                 {% endif %}
 

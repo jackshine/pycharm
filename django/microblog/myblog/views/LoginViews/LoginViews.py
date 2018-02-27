@@ -10,7 +10,7 @@ def sign_in(req):
 
     if req.method == 'POST':
         data = {
-            'status': 0
+            'status': 200
         }
         username = req.POST.get('username')
         password = req.POST.get('password')
