@@ -132,6 +132,10 @@
             color: #969696;
             vertical-align: middle;
         }
+        .warn-tip{
+            color: red;
+            padding-right: 60px;
+        }
     </style>
 
 </head>
@@ -151,51 +155,32 @@
                 <a id="js-sign-up-btn" href="{% url 'myblog:sign_up' %}">注册</a>
             </div>
         </h4>
-        <form post="" class="am-form">
+        <form action="{% url 'myblog:sign_in' %}" method="post" class="am-form">
             <fieldset class="am-form-set">
                 <div class="input-prepend restyle">
-                    <input placeholder="你的昵称" type="text" value="" name="user_nickname" id="user_nickname">
+                    <input placeholder="你的昵称" type="text" value="" name="username" id="username">
                     <i class="am-icon-user"></i>
                 </div>
                 <div class="input-prepend restyle">
-                    <input placeholder="密码" type="text" value="" name="user_password" id="user_password">
+                    <input placeholder="密码" type="text" value="" name="password" id="password">
                     <i class="am-icon-user"></i>
                 </div>
                 <div class="remember-btn">
-                    <input type="checkbox" value="true" checked="checked" name="session[remember_me]"
+                    <input type="checkbox"  value="true" checked="checked" name="session[remember_me]"
                            id="session_remember_me"><span>记住我</span>
                 </div>
+                {% if  data.status > 0 %}
+                <div class="warn-tip">{{data.info}}</div>
+                {% endif %}
 
             </fieldset>
             <div>
-                <input id="sign-up" name="commit" value="登录" class="sign-up-button" data-disable-with="登录">
+                <input id="sign-in" type="submit" name="commit" value="登录" class="sign-up-button" data-disable-with="登录">
             </div>
         </form>
     </div>
 </div>
 </body>
 <script type="text/javascript">
-    $(function () {
-        $("#sign-up").click(function () {
-            var user_nickname = $("#user_nickname").val();
-            var user_password = $("#user_password").val();
-            $.post('/myblog/sign_in/', {
-                'user_nickname': user_nickname,
-                'user_password': user_password
-            }, function (data) {
-                console.log(data.msg);
-                if (data.msg === '301') {
-                    layer.tips('只能输入3-20个以字母开头、可带数字、“_”、“.”的字串', '#user_nickname');
-                } else if (data.msg == '302') {
-                    layer.tips('只能输入6-16位', '#user_password');
-                } else if (data.msg === '303') {
-                    layer.tips('您输入的用户名存在！请重新输入！', '#user_nickname');
-                } else {
-
-                }
-            })
-
-        })
-    })
 </script>
 </html>

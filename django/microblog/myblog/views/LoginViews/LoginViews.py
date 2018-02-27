@@ -10,26 +10,31 @@ def sign_in(req):
 
     if req.method == 'POST':
         data = {
-            'msg': '0'
+            'status': 0
         }
-        username = req.POST.get('user_nickname')
-        password = req.POST.get('user_password')
-
+        username = req.POST.get('username')
+        password = req.POST.get('password')
+        print(username,password)
         # user = UserInfo.objects.all().filter(username=username)
         dao = UserInfoDao()
         user = dao.getUserInfoByName(username)
         # 若不存在该用户，则提示用户不存在，
         if not user:
-            data['msg'] = '304' #用户不存在
-            return HttpResponse(json.dumps(data), content_type="application/json")
+            data['status'] = 304 #用户不存在
+            data['info'] = '用户不存在'
+            return render_to_response('sign/sign_in.html',{'data':data})
         else:
             password = hashlib.md5(password.encode("utf-8")).hexdigest()
             if password==user['password']:
-                print('1234')
-                return HttpResponseRedirect('/myblog/index/')
+                req.session['username'] = user['username']
+                req.session['userid'] = user['userid']
+                response = HttpResponseRedirect('/myblog/index/')
+                response.set_cookie('username', username, 3600)
+                return response
             else:
-                data['msg'] = '305'#密码不对
-            return HttpResponse(json.dumps(data), content_type="application/json")
+                data['status'] = 305#密码不对
+                data['info'] = '密码不对'
+            return render_to_response('sign/sign_in.html', {'data': data})
     else:
         return render_to_response('sign/sign_in.html')
 
@@ -76,10 +81,10 @@ def sign_up(req):
             dao.addUserInfo(username,password,regtime,**extra)
             user = dao.getUserInfoByName(username)
             print(user)
-            # req.session['username'] = user['username']
-            # req.session['userid'] = user['userid']
+            req.session['username'] = user['username']
+            req.session['userid'] = user['userid']
             response = HttpResponseRedirect('/myblog/index/')
-            # response.set_cookie('username', username, 3600)
+            response.set_cookie('username', username, 3600)
             return response
         else:
             data['msg'] = '303'

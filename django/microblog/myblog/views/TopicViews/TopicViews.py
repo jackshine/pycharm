@@ -6,7 +6,8 @@ def get_index(req):
     if req.method == 'POST':
         return render_to_response('topic/index.html')
     else:
-        return render_to_response('topic/index.html')
+        print(req.session['username'])
+        return render_to_response('topic/index.html',{'username':req.session['username']})
 
 
 

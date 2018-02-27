@@ -71,9 +71,9 @@
                 <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle"
                         data-am-dropdown-toggle>{{ username }} <span class="am-icon-caret-down"></span></button>
                 <ul class="am-dropdown-content">
-                    <li><a href="/myblog/myblog">发布</a></li>
-                    <li><a href="/myblog/logout">退出</a></li>
-                    <li><a href="/myblog/showUserInfo">设置</a></li>
+                    <li><a href="{% url 'myblog:sign_up' %}">发布</a></li>
+                    <li><a href="{% url 'myblog:sign_out' %}">退出</a></li>
+                    <li><a href="{% url 'myblog:sign_up' %}">设置</a></li>
                 </ul>
             </div>
             {% else %}
