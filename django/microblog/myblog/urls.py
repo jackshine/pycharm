@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^sign_up/$', LoginViews.sign_up,name='sign_up'),
     # url(r'^sign_up_ajax_check/$', LoginViews.sign_up_ajax_check),
     url(r'^index/$', TopicViews.get_index,name='index'),
+    url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', TopicViews.get_index, name='archives'),
 ]

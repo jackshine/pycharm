@@ -1,5 +1,5 @@
 from myblog.mysql.DBUtil import DBUtil
-class UserInfoDao:
+class DailyDao:
     def __init__(self):
         self.db = DBUtil()
     def addDaily(self,title,body,created_time,category,user_id):
@@ -8,7 +8,46 @@ class UserInfoDao:
         db.execute_insert('insert into daily VALUE(id,%s,%s,%s,%s)',(title,body,created_time,category,user_id))
     def getAllDaily(self):
         db = DBUtil()
-        pass
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM `daily` d '
+                         'INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['id'] = row[0]
+            dict['title'] = row[1]
+            dict['body'] = row[2]
+            dict['created_time'] = row[3]
+            dict['user_id'] = row[4]
+            dict['user_name'] = row[5]
+            dataList.append(dict)
+        return dataList
+    def getRecentDaily(self):
+        db = DBUtil()
+        results = db.execute('SELECT * FROM daily  ORDER BY created_time DESC  LIMIT 5')
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['id'] = row[0]
+            dict['title'] = row[1]
+            dict['body'] = row[2]
+            dict['created_time'] = row[3]
+            dict['user_id'] = row[4]
+            dict['user_name'] = row[5]
+            dataList.append(dict)
+        return dataList
+    def getArchivesDaily(self):
+        db = DBUtil()
+        results = db.execute('SELECT COUNT(*) AS COUNT, DATE_FORMAT( created_time, \'%Y-%m\') AS created_time FROM daily GROUP BY DATE_FORMAT( created_time, \'%Y-%m\')  ORDER BY created_time DESC')
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['count'] = row[0]
+            dict['date'] = row[1]
+            dict['year']  =row[1].split('-')[0]
+            dict['month'] =row[1].split('-')[1]
+            dataList.append(dict)
+        print(dataList)
+        return dataList
     def getDailyById(self,id):
         db = DBUtil()
         data = self.db.execute_select("SELECT * FROM USERINFO WHERE USERID=%S",id)

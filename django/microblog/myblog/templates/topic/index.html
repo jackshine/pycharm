@@ -85,24 +85,13 @@
         <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 ">
             <h1><a href="/myblog/daily/?dailyid={{ field.id }}">{{ field.title }} </a></h1>
             <p>{{ field.body }}</p>
-            <p>{{ field.author_id }} 发布于 {{ field.created_time|date:"Y-m-d H:i:s"}}</p>
+            <p>{{ field.user_name }} 发布于 {{ field.created_time|date:"Y-m-d H:i:s"}}</p>
         </div>
         {% endfor %}
-        <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 ">
-            <ul id="">
-                {% for row in dataList %}
-                <li>{{ row.name }}-{{ row.age }}</li>
-                {% endfor %}
-            </ul>
-            <ul class="pagination pagination-sm" id="paging">
-                {{ page_obj.page_str|safe }}
-            </ul>
-        </div>
     </div>
     <div class="am-u-md-3 am-u-sm-12">
         <div class="am-g am-g-fixed">
             <h3 class="">最新文章</h3>
-            {% get_recent_dailys as recent_daily_list %}
             <ul>
                 {% for daily in recent_daily_list %}
                 <li>
@@ -115,9 +104,8 @@
         </div>
         <div class="am-g am-g-fixed">
             <h3 class="">归档</h3>
-            {% archives as date_list %}
             <ul>
-                {% for daily in date_list %}
+                {% for daily in archives_list %}
                 <li>
                     <a href="{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a>
                 </li>
@@ -126,19 +114,18 @@
                 {% endfor %}
             </ul>
         </div>
-        <div class="am-g am-g-fixed">
-            <h3 class="">分类</h3>
-            {% get_categories as category_list %}
-            <ul>
-                {% for category in category_list %}
-                <li>
-                    <a href="{% url 'myblog:category' category.id %}">{{category.name}}</a>
-                </li>
-                {% empty %}
-                暂无分类！
-                {% endfor %}
-            </ul>
-        </div>
+        <!--<div class="am-g am-g-fixed">-->
+            <!--<h3 class="">分类</h3>-->
+            <!--<ul>-->
+                <!--{% for category in category_list %}-->
+                <!--<li>-->
+                    <!--<a href="{% url 'myblog:category' category.id %}">{{category.name}}</a>-->
+                <!--</li>-->
+                <!--{% empty %}-->
+                <!--暂无分类！-->
+                <!--{% endfor %}-->
+            <!--</ul>-->
+        <!--</div>-->
     </div>
 </div>
 <div class="am-g am-g-fixed blog-fixed" id="search">
