@@ -48,6 +48,22 @@ class DailyDao:
             dataList.append(dict)
         print(dataList)
         return dataList
+
+    def getCategoryDaily(self):
+        #SELECT * FROM `category` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
+        db = DBUtil()
+        results = db.execute(
+            'SELECT COUNT(*) AS COUNT, DATE_FORMAT( created_time, \'%Y-%m\') AS created_time FROM daily GROUP BY DATE_FORMAT( created_time, \'%Y-%m\')  ORDER BY created_time DESC')
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['count'] = row[0]
+            dict['date'] = row[1]
+            dict['year'] = row[1].split('-')[0]
+            dict['month'] = row[1].split('-')[1]
+            dataList.append(dict)
+        print(dataList)
+        return dataList
     def getDailyById(self,id):
         db = DBUtil()
         data = self.db.execute_select("SELECT * FROM USERINFO WHERE USERID=%S",id)

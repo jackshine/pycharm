@@ -107,25 +107,25 @@
             <ul>
                 {% for daily in archives_list %}
                 <li>
-                    <a href="{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a>
+                    <a href="{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a> <p>{{daily.count}}篇</p>
                 </li>
                 {% empty %}
                 暂无归档！
                 {% endfor %}
             </ul>
         </div>
-        <!--<div class="am-g am-g-fixed">-->
-            <!--<h3 class="">分类</h3>-->
-            <!--<ul>-->
-                <!--{% for category in category_list %}-->
-                <!--<li>-->
-                    <!--<a href="{% url 'myblog:category' category.id %}">{{category.name}}</a>-->
-                <!--</li>-->
-                <!--{% empty %}-->
-                <!--暂无分类！-->
-                <!--{% endfor %}-->
-            <!--</ul>-->
-        <!--</div>-->
+        <div class="am-g am-g-fixed">
+            <h3 class="">分类</h3>
+            <ul>
+                {% for category in category_list %}
+                <li>
+                    <a href="{% url 'myblog:category' category.id %}">{{category.name}}</a>
+                </li>
+                {% empty %}
+                暂无分类！
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 <div class="am-g am-g-fixed blog-fixed" id="search">
