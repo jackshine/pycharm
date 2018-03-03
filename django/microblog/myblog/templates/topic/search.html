@@ -79,7 +79,7 @@
         <div class="am-g am-g-fixed">
             <ul class="am-nav">
                 <li id="note"><a href="#">文章</a></li>
-                <div id="user"><li><a href="#">用户</a></li></div>
+                <li id="user"><a href="#">用户</a></li>
             </ul>
         </div>
     </div>
@@ -92,11 +92,7 @@
         </div>
         {% endfor %}
     </div>
-    <div class="am-u-md-9 am-u-sm-12" id="user-list">
-        <ul>
-            <li></li>
-        </ul>
-    </div>
+    <div class="am-u-md-9 am-u-sm-12" id="user-list"><ul></ul></div>
 </div>
 <div class="am-g am-g-fixed blog-fixed" id="search">
     <div class="am-u-md-8 am-u-sm-12" id="search_data">
@@ -113,10 +109,22 @@
                     'searchVal': $("#search-data").val()
                 }, function (data) {
                     $("#daily-list").hide()
-                     $('#user-list').empty();
+                     $('#user-list').children().empty();
                     $.each(data,function (i,n) {
-                        console.log(n.username);
-                        $("#user-list ul").append("<li>我是内容</li>");;
+                        $("#user-list").children().html("<li>"+n.username+"</li>");
+                    })
+                }
+            )
+        })
+         $("#note").click(function () {
+            $.get('/myblog/searchDaily', {
+                    'type': 'note',
+                    'searchVal': $("#search-data").val()
+                }, function (data) {
+                    $("#daily-list").hide()
+                     $('#user-list').children().empty();
+                    $.each(data,function (i,n) {
+                        $("#user-list").children().html("<li>"+n.username+"</li>");
                     })
                 }
             )
