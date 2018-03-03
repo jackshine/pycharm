@@ -23,7 +23,7 @@ def search_daily(req):
     search_str = req.POST.get('searchVal')
     dao = DailyDao()
     dailyList = dao.search_daily(search_str)
-    print(dailyList)
+
     return HttpResponse(json.dumps(dailyList), content_type="application/json")
 
 

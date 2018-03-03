@@ -1,4 +1,6 @@
 from myblog.mysql.DBUtil import DBUtil
+from myblog.mysql.CJsonEncoder import CJsonEncoder
+import json
 class DailyDao:
     def __init__(self):
         self.db = DBUtil()
@@ -91,11 +93,11 @@ class DailyDao:
             dict['id'] = row[0]
             dict['title'] = row[1]
             dict['body'] = row[2]
-            dict['created_time'] = row[3]
+            print(json.dumps(row[3], cls=CJsonEncoder))
+            dict['created_time'] =json.dumps(row[3], cls=CJsonEncoder).replace("\"","")
             dict['user_id'] = row[4]
             dict['user_name'] = row[5]
             dataList.append(dict)
-            print(dict)
         return dataList
 
 
