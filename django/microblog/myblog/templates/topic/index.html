@@ -49,10 +49,11 @@
             <li  class="am-active"><a href="#">消息</a></li>
         </ul>
 
-        <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+        <form method="get" action="{% url 'myblog:searchDaily' %}" class="am-topbar-form am-topbar-left am-form-inline" role="search">
             <div class="am-form-group">
-                <input type="text" class="am-form-field am-input-sm"id="search-data">
-                <input type="button" class="search-btn" id="search-btn" value="搜索">
+                <input type="text" class="am-form-field am-input-sm"id="search-data" name="searchVal">
+                <input type="submit" class="search-btn" id="search-btn" value="搜索">
+                <input type="hidden" name="type" value="note">
             </div>
         </form>
 
@@ -151,40 +152,30 @@
         window.location.href = '/myblog/register/'
     }
 
-    $(function () {
-        $("#search-btn").click(function () {
-            searchVal = $('#search-data').val();
-            $.post('/myblog/searchDaily/', {
-                    'searchVal': searchVal
-                }, function (data) {
-                    console.log(data);
-                    $("#dataListDiv").hide();
-                    $('#search_data').empty();
-                    $.each(data, function (i, n) {
 
-                        var row = $($("#js_template").clone().html());
-                        row.find("a").text(n.title)
-                        row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.id)
-                        row.find("p:eq(0)").text(n.body);
-                        row.find("p:eq(1)").text(n.user_name+'发布于'+n.created_time);
-                        row.appendTo("#search_data");
-                    })
-                }
-            )
-        })
-    })
-    $(document).ready(function () {
-        el = "#paging"
-        var length = $(el + " li").length;
-        console.log(length)
-        for (var j = 0; j <= length; j++) {
-            if (j == 0 || j == 1 || j == 2 || j == length || j == length - 1) {
-                $(el + " li:nth-child(" + j + ")").css("width", "50px");
-            } else {
-                $(el + " li:nth-child(" + j + ")").css("width", "30px");
-            }
-        }
-    });
+//    $(function () {
+//        $("#search-btn").click(function () {
+//            searchVal = $('#search-data').val();
+//            $.post('/myblog/searchDaily/', {
+//                    'searchVal': searchVal
+//                }, function (data) {
+//                    console.log(data);
+//                    $("#dataListDiv").hide();
+//                    $('#search_data').empty();
+//                    $.each(data, function (i, n) {
+//
+//                        var row = $($("#js_template").clone().html());
+//                        row.find("a").text(n.title)
+//                        row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.id)
+//                        row.find("p:eq(0)").text(n.body);
+//                        row.find("p:eq(1)").text(n.user_name+'发布于'+n.created_time);
+//                        row.appendTo("#search_data");
+//                    })
+//                }
+//            )
+//        })
+//    })
+
 </script>
 </body>
 </html>

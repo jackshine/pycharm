@@ -93,8 +93,9 @@ class DailyDao:
             dict['id'] = row[0]
             dict['title'] = row[1]
             dict['body'] = row[2]
-            print(json.dumps(row[3], cls=CJsonEncoder))
-            dict['created_time'] =json.dumps(row[3], cls=CJsonEncoder).replace("\"","")
+            # print(json.dumps(row[3], cls=CJsonEncoder))
+            # dict['created_time'] =json.dumps(row[3], cls=CJsonEncoder).replace("\"","")
+            dict['created_time'] =row[3]
             dict['user_id'] = row[4]
             dict['user_name'] = row[5]
             dataList.append(dict)

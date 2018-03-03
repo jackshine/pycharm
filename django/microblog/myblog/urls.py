@@ -14,5 +14,5 @@ urlpatterns = [
     url(r'^index/$', TopicViews.get_index, name='index'),
     url(r'^archives/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2})/$', TopicViews.get_index, name='archives'),
     url(r'^category/(?P<id>[0-9]+)/$', TopicViews.get_index, name='category'),
-    url(r'^searchDaily/$', TopicViews.search_daily),
+    url(r'^searchDaily/$', TopicViews.search_daily,name='searchDaily'),
 ]

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="/static/assets/css/app.css">
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+        .search-btn {
+            background: none repeat scroll 0 0 #0e90d2;
+            border: 0 none;
+            color: #FFFFFF;
+            height: 30px;
+            width: 70px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 25px;
+        }
+    </style>
+
+    <style>
+        #paging li {
+            float: left;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body id="blog">
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+        <a class="am-active" href="#">微书</a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="#">发现</a></li>
+            <li class="am-active"><a href="#">关注</a></li>
+            <li class="am-active"><a href="#">消息</a></li>
+        </ul>
+
+        <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+            <div class="am-form-group">
+                <input type="text" class="am-form-field am-input-sm" id="search-data" value="{{searchVal}}">
+                <input type="button" class="search-btn" id="search-btn" value="搜索">
+            </div>
+        </form>
+
+        <div class="am-topbar-right">
+            {% if username %}
+            <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+                <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle"
+                        data-am-dropdown-toggle>{{ username }} <span class="am-icon-caret-down"></span></button>
+                <ul class="am-dropdown-content">
+                    <li><a href="{% url 'myblog:sign_up' %}">发布</a></li>
+                    <li><a href="{% url 'myblog:sign_out' %}">退出</a></li>
+                    <li><a href="{% url 'myblog:sign_up' %}">设置</a></li>
+                </ul>
+            </div>
+            {% else %}
+            <div class="am-topbar-right">
+                <a href="/myblog/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm color">注册</a>
+            </div>
+            <div class="am-topbar-right">
+                <a href="/myblog/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</header>
+<div class="am-g am-g-fixed" id="dataListDiv">
+    <div class="am-u-md-3 am-u-sm-12">
+        <div class="am-g am-g-fixed">
+            <ul class="am-nav">
+                <li id="note"><a href="#">文章</a></li>
+                <div id="user"><li><a href="#">用户</a></li></div>
+            </ul>
+        </div>
+    </div>
+    <div class="am-u-md-9 am-u-sm-12" id="daily-list">
+        {% for field in dailyList %}
+        <div class="am-u-lg-12 am-u-md-12 am-u-sm-12 ">
+            <h1><a href="/myblog/daily/?dailyid={{ field.id }}">{{ field.title }} </a></h1>
+            <p>{{ field.body }}</p>
+            <p>{{ field.user_name }} 发布于 {{ field.created_time|date:"Y-m-d H:i:s"}}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="am-u-md-9 am-u-sm-12" id="user-list">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div class="am-g am-g-fixed blog-fixed" id="search">
+    <div class="am-u-md-8 am-u-sm-12" id="search_data">
+    </div>
+</div>
+
+
+<footer class="blog-footer"></footer>
+<script>
+    $(function () {
+        $("#user").click(function () {
+            $.get('/myblog/searchDaily', {
+                    'type': 'user',
+                    'searchVal': $("#search-data").val()
+                }, function (data) {
+                    $("#daily-list").hide()
+                     $('#user-list').empty();
+                    $.each(data,function (i,n) {
+                        console.log(n.username);
+                        $("#user-list ul").append("<li>我是内容</li>");;
+                    })
+                }
+            )
+        })
+    })
+</script>
+</body>
+</html>
