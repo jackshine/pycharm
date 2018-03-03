@@ -17,7 +17,6 @@
             font-size: 14px;
             border-radius: 25px;
         }
-
         /*.am-topbar a {*/
             /*color: #FFFFFF;*/
         /*}*/
@@ -52,8 +51,8 @@
 
         <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
             <div class="am-form-group">
-                <input type="text" class="am-form-field am-input-sm">
-                <input type="button" class="search-btn" value="搜索">
+                <input type="text" class="am-form-field am-input-sm"id="search-data">
+                <input type="button" class="search-btn" id="search-btn" value="搜索">
             </div>
         </form>
 
@@ -107,7 +106,7 @@
             <ul>
                 {% for daily in archives_list %}
                 <li>
-                    <a href="{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a> <p>{{daily.count}}篇</p>
+                    <a href="{% url 'myblog:archives' daily.year daily.month %}">{{ daily.year }}年{{ daily.month }}月</a> <span style="color:#0e90d2">{{daily.count}}篇</span>
                 </li>
                 {% empty %}
                 暂无归档！
@@ -153,19 +152,21 @@
     }
 
     $(function () {
-        $("#btn_searchDaily").click(function () {
-            searchVal = $('#searchVal').val();
+        $("#search-btn").click(function () {
+            searchVal = $('#search-data').val();
             $.post('/myblog/searchDaily/', {
                     'searchVal': searchVal
                 }, function (data) {
+                    console.log(data);
                     $("#dataListDiv").hide();
                     $('#search_data').empty();
                     $.each(data, function (i, n) {
+
                         var row = $($("#js_template").clone().html());
-                        row.find("a").text(n.dailyname)
-                        row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.dailyid)
-                        row.find("p:eq(0)").text(n.daily);
-                        row.find("p:eq(1)").text(n.userid);
+                        row.find("a").text(n.title)
+                        row.find("a").attr('href', "/myblog/daily/?dailyid=" + n.id)
+                        row.find("p:eq(0)").text(n.body);
+                        row.find("p:eq(1)").text(n.user_name+'发布于'+n.created_time);
                         row.appendTo("#search_data");
                     })
                 }

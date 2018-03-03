@@ -53,14 +53,12 @@ class DailyDao:
         #SELECT * FROM `category` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
         db = DBUtil()
         results = db.execute(
-            'SELECT COUNT(*) AS COUNT, DATE_FORMAT( created_time, \'%Y-%m\') AS created_time FROM daily GROUP BY DATE_FORMAT( created_time, \'%Y-%m\')  ORDER BY created_time DESC')
+            'SELECT * FROM `category`')
         dataList = []
         for row in results:
             dict = {}
-            dict['count'] = row[0]
-            dict['date'] = row[1]
-            dict['year'] = row[1].split('-')[0]
-            dict['month'] = row[1].split('-')[1]
+            dict['id'] = row[0]
+            dict['name'] = row[1]
             dataList.append(dict)
         print(dataList)
         return dataList
@@ -81,4 +79,23 @@ class DailyDao:
             dict['regtime'] = data[3]
             dict['delflag'] = data[4]
         return dict
+    def search_daily(self,str):
+        db = DBUtil()
+        # str = like  '%str%'
+        sql = "SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM (SELECT * FROM daily WHERE title LIKE \'%"+str+"%\' or body LIKE \'%"+str+"%\' ) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`"
+        print(sql)
+        results = db.execute(sql)
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['id'] = row[0]
+            dict['title'] = row[1]
+            dict['body'] = row[2]
+            dict['created_time'] = row[3]
+            dict['user_id'] = row[4]
+            dict['user_name'] = row[5]
+            dataList.append(dict)
+            print(dict)
+        return dataList
+
 
