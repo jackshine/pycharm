@@ -31,7 +31,7 @@
 <body id="blog">
 <header class="am-topbar">
     <h1 class="am-topbar-brand">
-        <a class="am-active" href="#">微书</a>
+        <a class="am-active" href="{% url 'myblog:index' %}">微书</a>
     </h1>
 
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
@@ -117,15 +117,13 @@
             )
         })
          $("#note").click(function () {
+//             window.location.href = '/myblog/searchDaily/?searchVal='+ $("#search-data").val()+'&type=user';
             $.get('/myblog/searchDaily', {
                     'type': 'note',
                     'searchVal': $("#search-data").val()
                 }, function (data) {
-                    $("#daily-list").hide()
-                     $('#user-list').children().empty();
-                    $.each(data,function (i,n) {
-                        $("#user-list").children().html("<li>"+n.username+"</li>");
-                    })
+                    $("#daily-list").show()
+                     $('#user-list').children().empty()
                 }
             )
         })

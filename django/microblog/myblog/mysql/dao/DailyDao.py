@@ -48,7 +48,6 @@ class DailyDao:
             dict['year']  =row[1].split('-')[0]
             dict['month'] =row[1].split('-')[1]
             dataList.append(dict)
-        print(dataList)
         return dataList
 
     def getCategoryDaily(self):
@@ -62,12 +61,20 @@ class DailyDao:
             dict['id'] = row[0]
             dict['name'] = row[1]
             dataList.append(dict)
-        print(dataList)
         return dataList
     def getDailyById(self,id):
         db = DBUtil()
-        data = self.db.execute_select("SELECT * FROM USERINFO WHERE USERID=%S",id)
-        return data
+        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `daily` WHERE id=%s) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`",id)
+        dict = {}
+        if data:
+            row = data[0]
+            dict['id'] = row[0]
+            dict['title'] = row[1]
+            dict['body'] = row[2]
+            dict['created_time'] = row[3]
+            dict['user_id'] = row[4]
+            dict['user_name'] = row[5]
+            return dict
     def searchDailyByName(self,username):
         db = DBUtil()
         data = db.execute_select("SELECT * FROM USERINFO WHERE USERNAME=%s",username)
@@ -85,7 +92,6 @@ class DailyDao:
         db = DBUtil()
         # str = like  '%str%'
         sql = "SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM (SELECT * FROM daily WHERE title LIKE \'%"+str+"%\' or body LIKE \'%"+str+"%\' ) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`"
-        print(sql)
         results = db.execute(sql)
         dataList = []
         for row in results:

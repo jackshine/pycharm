@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Blog </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="alternate icon" type="image/png" href="/static/assets/i/favicon.png">
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        @media only screen and (min-width: 1200px) {
+            .blog-g-fixed {
+                max-width: 1200px;
+            }
+        }
+
+        @media only screen and (min-width: 641px) {
+            .blog-sidebar {
+                font-size: 1.4rem;
+            }
+        }
+
+        .blog-main {
+            padding: 20px 0;
+        }
+
+        .blog-title {
+            margin: 10px 0 20px 0;
+        }
+
+        .blog-meta {
+            font-size: 14px;
+            margin: 10px 0 20px 0;
+            color: #222;
+        }
+
+        .blog-meta a {
+            color: #27ae60;
+        }
+
+        .blog-pagination a {
+            font-size: 1.4rem;
+        }
+
+        .blog-team li {
+            padding: 4px;
+        }
+
+        .blog-team img {
+            margin-bottom: 0;
+        }
+
+        .blog-content img,
+        .blog-team img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-footer {
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+        <a class="am-active" href="{% url 'myblog:index' %}">微书</a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="#">发现</a></li>
+            <li class="am-active"><a href="#">关注</a></li>
+            <li class="am-active"><a href="#">消息</a></li>
+        </ul>
+
+        <form method="get" action="{% url 'myblog:searchDaily' %}" class="am-topbar-form am-topbar-left am-form-inline"
+              role="search">
+            <div class="am-form-group">
+                <input type="text" class="am-form-field am-input-sm" id="search-data" name="searchVal">
+                <input type="submit" class="search-btn" id="search-btn" value="搜索">
+                <input type="hidden" name="type" value="note">
+            </div>
+        </form>
+
+        <div class="am-topbar-right">
+            {% if username %}
+            <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+                <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle"
+                        data-am-dropdown-toggle>{{ username }} <span class="am-icon-caret-down"></span></button>
+                <ul class="am-dropdown-content">
+                    <li><a href="{% url 'myblog:sign_up' %}">发布</a></li>
+                    <li><a href="{% url 'myblog:sign_out' %}">退出</a></li>
+                    <li><a href="{% url 'myblog:sign_up' %}">设置</a></li>
+                </ul>
+            </div>
+            {% else %}
+            <div class="am-topbar-right">
+                <a href="/myblog/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm color">注册</a>
+            </div>
+            <div class="am-topbar-right">
+                <a href="/myblog/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</header>
+
+<div class="am-g am-g-fixed blog-g-fixed">
+    <div class="am-u-md-8">
+        <article class="blog-main">
+            <h3 class="am-article-title blog-title">
+                <a href="#">{{ daily.title }}</a>
+            </h3>
+            <h4 class="am-article-meta blog-meta">by <a href="">{{ daily.user_id }}</a> post
+                on {{ daily.created_time|date:"Y-m-d H:i:s" }}</h4>
+            <div class="am-g blog-content">
+                <div class="am-u-lg-7">
+                </div>
+                <p>{{ daily.body }}</p>
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-12">
+                </div>
+            </div>
+        </article>
+        <hr class="am-article-divider blog-hr">
+        <hr class="am-article-divider blog-hr">
+        <ul class="am-pagination blog-pagination">
+            <li class="am-pagination-prev"><a href="/myblog/daily/?dailyid={{ daily.id | add:-1}}">&laquo; 上一页</a></li>
+            <li class="am-pagination-next"><a href="/myblog/daily/?dailyid={{ daily.id | add:1}}">下一页 &raquo;</a></li>
+        </ul>
+    </div>
+</div>
+{% if username %}
+<div class="am-g am-g-fixed blog-g-fixed">
+    <div class="am-u-md-8">
+        <form  method="post" class="am-form">
+            <fieldset>
+                <div class="am-form-group">
+                    <label for="doc-ipt-email-1">姓名</label>
+                    <input type="text" disabled value="{{ username }}">
+                </div>
+                <div class="am-form-group">
+                    <label for="doc-ta-1">评论</label>
+                    <textarea class="text" rows="5" id="comment-content" value=""></textarea>
+                    <input type="hidden" value="{{daily.id}}" name='daily_id'id="daily_id">
+                </div>
+                <button class="am-btn am-btn-primary" id="btn-submit">发表</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% else %}
+<div class="am-g am-g-fixed blog-g-fixed">
+    <div class="am-u-md-8">
+        注册用户登录后才能发表评论，请
+        <a href="/myblog/login">登录</a>
+        <a href="/myblog/register">注册</a>
+        <a href="/myblog/index">访问</a>网站首页
+    </div>
+</div>
+{% endif %}
+{#评论列表#}
+<div class="am-g am-g-fixed blog-g-fixed">
+    <div class="am-u-md-8">
+        <ul class="am-comments-list">
+            {% for comment in commentList %}
+            <li class="am-comment">
+                <article class="am-comment"> <!-- 评论容器 -->
+                    <a href="">
+                        <img class="am-comment-avatar"
+                             src="http://www.gravatar.com/avatar/1ecedeede84abbf371b9d8d656bb4265?d=mm&s=96"
+                             alt=""/>
+                        <!-- 评论者头像 -->
+                    </a>
+                    <div class="am-comment-main"> <!-- 评论内容容器 -->
+                        <header class="am-comment-hd">
+                            <!--<h3 class="am-comment-title">评论标题</h3>-->
+                            <div class="am-comment-meta"> <!-- 评论元数据 -->
+                                <a href="#link-to-user" class="am-comment-author">{{ comment.name }}</a>
+                                <!-- 评论者 -->
+                                评论于
+                                <time datetime="">{{ comment.create_time|date:"Y-m-d H:i:s" }}</time>
+                            </div>
+                        </header>
+
+                        <div class="am-comment-bd">{{ comment.content }}</div> <!-- 评论内容 -->
+                    </div>
+                </article>
+            </li>
+            {% empty %}
+            暂无评论
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<li class="am-comment" id="comment-template">
+    <article class="am-comment"> <!-- 评论容器 -->
+        <a href="">
+            <img class="am-comment-avatar"
+                 src="http://www.gravatar.com/avatar/1ecedeede84abbf371b9d8d656bb4265?d=mm&s=96"
+                 alt=""/>
+        </a>
+        <div class="am-comment-main">
+            <header class="am-comment-hd">
+                <div class="am-comment-meta">
+                    <a href="#link-to-user" class="am-comment-author"></a>
+                    <time datetime=""></time>
+                </div>
+            </header>
+            <div class="am-comment-bd"></div>
+        </div>
+    </article>
+</li>
+</footer>
+<script>
+       $(function () {
+        $("#btn-submit").click(function () {
+            $.post('/myblog/comment/', {
+                    'daily_id': $("#daily_id").val(),
+                    'content': $("#comment-content").val(),
+                }, function (data) {
+                    alert('111111')
+                }
+            )
+        })
+    })
+</script>
+
+</body>
+</html>

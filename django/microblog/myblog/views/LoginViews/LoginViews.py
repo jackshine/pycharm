@@ -84,6 +84,7 @@ def sign_up(req):
             req.session['userid'] = user['userid']
             response = HttpResponseRedirect('/myblog/index/')
             response.set_cookie('username', username, 3600)
+            response.set_cookie('userid', user['userid'], 3600)
             return response
         else:
             data['msg'] = '303'

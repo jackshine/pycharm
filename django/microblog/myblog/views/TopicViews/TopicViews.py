@@ -1,7 +1,10 @@
 from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedirect, get_object_or_404, render
 from myblog.mysql.dao.DailyDao import DailyDao
 from myblog.mysql.dao.UserInfoDao import UserInfoDao
+from myblog.mysql.dao.CommentDao import CommentDao
 import json
+
+
 
 
 def get_index(req):
@@ -12,11 +15,9 @@ def get_index(req):
         #获取得到日志
         dao = DailyDao()
         dailyList = dao.getAllDaily()
-        print(dailyList)
         recent_daily_list = dao.getRecentDaily()
         archives_list = dao.getArchivesDaily()
         category_list  =  dao.getCategoryDaily()
-        print(category_list)
         return render_to_response('topic/index.html',{'username':req.session['username'],'dailyList':dailyList,
                                                       'recent_daily_list':recent_daily_list,'archives_list':archives_list,'category_list':category_list})
 
@@ -30,8 +31,18 @@ def search_daily(req):
     else:
         dao = UserInfoDao()
         userList = dao.searchUserInfo(search_str)
-        print(userList)
         return HttpResponse(json.dumps(userList), content_type="application/json")
+
+def daily_detail(req):
+    daily_id = req.GET.get('dailyid')
+    dao = DailyDao()
+    daily = dao.getDailyById(daily_id)
+    dao = CommentDao()
+    commentList = dao.getAllCommentByDailyId(daily_id)
+    print('----------')
+    return render_to_response('topic/detail.html',
+                              {'username': req.session['username'], 'daily': daily,'commentList':commentList})
+
 
 
 

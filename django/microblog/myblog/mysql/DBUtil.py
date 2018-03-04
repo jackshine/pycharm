@@ -53,6 +53,8 @@ class DBUtil:
         try:
             conn = self.conn
             cur = conn.cursor()  # 获取一个游标
+            print(insert_str)
+            print(data)
             cur.execute(insert_str, data)
             data = cur.fetchall()
             # last_id = cur.lastrowid
