@@ -4,42 +4,41 @@ import json
 class DailyDao:
     def __init__(self):
         self.db = DBUtil()
-    def addDaily(self,title,body,created_time,category,user_id):
+    def addDaily(self,title,body,create_time,category,user_id):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db = DBUtil()
-        db.execute_insert('insert into daily VALUE(id,%s,%s,%s,%s)',(title,body,created_time,category,user_id))
+        db.execute_insert('insert into daily VALUE(id,%s,%s,%s,%s)',(title,body,create_time,category,user_id))
     def getAllDaily(self):
         db = DBUtil()
-        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM `daily` d '
-                         'INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM `daily` d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
         dataList = []
         for row in results:
             dict = {}
             dict['id'] = row[0]
             dict['title'] = row[1]
             dict['body'] = row[2]
-            dict['created_time'] = row[3]
+            dict['create_time'] = row[3]
             dict['user_id'] = row[4]
             dict['user_name'] = row[5]
             dataList.append(dict)
         return dataList
     def getRecentDaily(self):
         db = DBUtil()
-        results = db.execute('SELECT * FROM daily  ORDER BY created_time DESC  LIMIT 5')
+        results = db.execute('SELECT * FROM daily  ORDER BY create_time DESC  LIMIT 5')
         dataList = []
         for row in results:
             dict = {}
             dict['id'] = row[0]
             dict['title'] = row[1]
             dict['body'] = row[2]
-            dict['created_time'] = row[3]
+            dict['create_time'] = row[3]
             dict['user_id'] = row[4]
             dict['user_name'] = row[5]
             dataList.append(dict)
         return dataList
-    def getArchivesDaily(self):
+    def getArchivesDate(self):
         db = DBUtil()
-        results = db.execute('SELECT COUNT(*) AS COUNT, DATE_FORMAT( created_time, \'%Y-%m\') AS created_time FROM daily GROUP BY DATE_FORMAT( created_time, \'%Y-%m\')  ORDER BY created_time DESC')
+        results = db.execute('SELECT COUNT(*) AS COUNT, DATE_FORMAT( create_time, \'%Y-%m\') AS create_time FROM daily GROUP BY DATE_FORMAT( create_time, \'%Y-%m\')  ORDER BY create_time DESC')
         dataList = []
         for row in results:
             dict = {}
@@ -50,7 +49,43 @@ class DailyDao:
             dataList.append(dict)
         return dataList
 
-    def getCategoryDaily(self):
+    #获取指定月份下的所有文章
+    def getArchivesDaily(self,year,month):
+        db = DBUtil()
+        search_sql = "SELECT * FROM `daily` WHERE MONTH(create_time)='%s' AND YEAR(create_time)='%s'"%(month,year)
+        print(search_sql)
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM ('+search_sql+') as  d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['id'] = row[0]
+            dict['title'] = row[1]
+            dict['body'] = row[2]
+            dict['create_time'] = row[3]
+            dict['user_id'] = row[4]
+            dict['user_name'] = row[5]
+            dataList.append(dict)
+        return dataList
+
+    #获取指定分类下的所有文章
+    def getCategoryDailyList(self,id):
+        db = DBUtil()
+        search_sql = "SELECT * FROM `daily` WHERE category_id='%s' " % id
+        print(search_sql)
+        results = db.execute(
+            'SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (' + search_sql + ') as  d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+        dataList = []
+        for row in results:
+            dict = {}
+            dict['id'] = row[0]
+            dict['title'] = row[1]
+            dict['body'] = row[2]
+            dict['create_time'] = row[3]
+            dict['user_id'] = row[4]
+            dict['user_name'] = row[5]
+            dataList.append(dict)
+        return dataList
+    def getCategoryList(self):
         #SELECT * FROM `category` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
         db = DBUtil()
         results = db.execute(
@@ -64,14 +99,14 @@ class DailyDao:
         return dataList
     def getDailyById(self,id):
         db = DBUtil()
-        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `daily` WHERE id=%s) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`",id)
+        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `daily` WHERE id=%s) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`",id)
         dict = {}
         if data:
             row = data[0]
             dict['id'] = row[0]
             dict['title'] = row[1]
             dict['body'] = row[2]
-            dict['created_time'] = row[3]
+            dict['create_time'] = row[3]
             dict['user_id'] = row[4]
             dict['user_name'] = row[5]
             return dict
@@ -91,7 +126,7 @@ class DailyDao:
     def search_daily(self,str):
         db = DBUtil()
         # str = like  '%str%'
-        sql = "SELECT d.`id`,d.`title`,d.`body`,d.`created_time`,d.`user_id`,u.`username` FROM (SELECT * FROM daily WHERE title LIKE \'%"+str+"%\' or body LIKE \'%"+str+"%\' ) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`"
+        sql = "SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM daily WHERE title LIKE \'%"+str+"%\' or body LIKE \'%"+str+"%\' ) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`"
         results = db.execute(sql)
         dataList = []
         for row in results:
@@ -100,8 +135,8 @@ class DailyDao:
             dict['title'] = row[1]
             dict['body'] = row[2]
             # print(json.dumps(row[3], cls=CJsonEncoder))
-            # dict['created_time'] =json.dumps(row[3], cls=CJsonEncoder).replace("\"","")
-            dict['created_time'] =row[3]
+            # dict['create_time'] =json.dumps(row[3], cls=CJsonEncoder).replace("\"","")
+            dict['create_time'] =row[3]
             dict['user_id'] = row[4]
             dict['user_name'] = row[5]
             dataList.append(dict)

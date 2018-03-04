@@ -11,8 +11,7 @@ class CommentDao:
     def addComment(self, content, create_time, daily_id, user_id):
         db = DBUtil()
         print(content, create_time, daily_id, user_id)
-        data = db.execute_insert("INSERT INTO `COMMENT` VALUE(ID,,%s,%s,%d,%d)", (content, create_time, 1, 1))
-        print(data)
+        db.execute("INSERT INTO `COMMENT` VALUE(ID,'%s','%s',%d,%d)"%(content, create_time, daily_id, user_id))
 
     def getAllComments(self):
         db = DBUtil()

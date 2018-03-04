@@ -6,10 +6,10 @@ import DBUtil
 class UserInfoDao:
     def __init__(self):
         self.db = DBUtil.DBUtil()
-    def addUserInfo(self,username,password,created_time):
+    def addUserInfo(self,username,password,create_time):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db =DBUtil.DBUtil()
-        db.execute_insert('insert into userinfo VALUE(id,%s,%s,%s)',(username,password,created_time))
+        db.execute_insert('insert into userinfo VALUE(id,%s,%s,%s)',(username,password,create_time))
     def getAllUserInfo(self):
       pass
 
@@ -22,7 +22,7 @@ class UserInfoDao:
             dict['id'] = row[0]
             dict['username'] = row[1]
             dict['password'] = row[2]
-            dict['created_time'] = json.dumps(row[3], cls=CJsonEncoder).replace("\"", "")
+            dict['create_time'] = json.dumps(row[3], cls=CJsonEncoder).replace("\"", "")
             userList.append(dict)
         return userList
     def getUserInfoById(self,id):
@@ -39,7 +39,7 @@ class UserInfoDao:
             dict['userid'] = data[0]
             dict['username'] = data[1]
             dict['password'] = data[2]
-            dict['CREATED_TIME'] = data[3]
+            dict['CREATE_TIME'] = data[3]
         return dict
 if __name__ == "__main__":
     db = UserInfoDao()
