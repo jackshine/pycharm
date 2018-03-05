@@ -17,7 +17,8 @@ def create_comment(req):
         #添加评论
         dao.addComment(content,create_time,daily_id,user_id)
         #查找该文章最后一条评论
-        comment = dao.getLastComment(daily_id)
+        print(daily_id,type(daily_id),'---',user_id,type(user_id))
+        comment = dao.getLastComment(daily_id,user_id)
         return HttpResponse(json.dumps(comment), content_type="application/json")
     else:
         print('bbbbbbbbbbbbbbb')

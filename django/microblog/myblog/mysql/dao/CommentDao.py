@@ -35,10 +35,11 @@ class CommentDao:
                 commentList.append(dict)
         return commentList
 
-    def getLastComment(self, id):
+    def getLastComment(self, daily_id,user_id):
         db = DBUtil()
-        row = self.db.execute_select("SELECT c.`ID`,c.`CONTENT`,c.`create_time`,c.`daily_id`,c.`user_id`,u.`USERNAME` FROM `comment` AS c LEFT JOIN `userinfo` AS u ON c.`USER_ID`=u.`ID` WHERE c.`daily_id` = %s ORDER BY CREATE_TIME DESC LIMIT 1",
-                                     id)
+        row = self.db.execute_select("SELECT c.`ID`,c.`CONTENT`,c.`create_time`,c.`daily_id`,c.`user_id`,u.`USERNAME` FROM `comment` AS c LEFT JOIN `userinfo` AS u ON c.`USER_ID`=u.`ID` WHERE c.`daily_id` = %s AND c.`USER_ID`=%s  ORDER BY CREATE_TIME DESC LIMIT 1",
+                                     (daily_id,user_id))[0]
+        print(row)
         dict = {}
         dict['id'] = row[0]
         dict['content'] = row[1]
