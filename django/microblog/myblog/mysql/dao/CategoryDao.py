@@ -1,5 +1,5 @@
 from myblog.mysql.DBUtil import DBUtil
-class UserInfoDao:
+class CategoryDao:
     def __init__(self):
         self.db = DBUtil()
     def addCategory(self,name):

@@ -154,7 +154,7 @@
                 <div class="am-form-group">
                     <label for="doc-ta-1">评论</label>
                     <textarea class="text" rows="5" id="comment-content" value=""></textarea>
-                    <input type="hidden" value="{{daily.id}}" name='daily_id' id="daily_id">
+                    <input type="hidden" value="{{daily.id}}" name='dailyid' id="dailyid">
                 </div>
                 <button class="am-btn am-btn-primary" id="btn-submit">发表</button>
             </fieldset>
@@ -227,7 +227,7 @@
     $(function () {
         $("#btn-submit").click(function () {
             $.post('/myblog/comment/', {
-                    'daily_id': $("#daily_id").val(),
+                    'dailyid': $("#dailyid").val(),
                     'content': $("#comment-content").val()
                 }, function (data) {
                     console.log('111111');

@@ -17,7 +17,7 @@ def get_index(req):
         dailyList = dao.getAllDaily()
         recent_daily_list = dao.getRecentDaily()
         archives_list = dao.getArchivesDate()
-        category_list  =  dao.getCategoryDaily()
+        category_list  =  dao.getCategoryList()
         return render_to_response('topic/index.html',{'username':req.session['username'],'dailyList':dailyList,
                                                       'recent_daily_list':recent_daily_list,'archives_list':archives_list,'category_list':category_list})
 
@@ -58,7 +58,7 @@ def get_archives(req,year,month):
         archives_list = dao.getArchivesDate()
         #获取最近的日志
         recent_daily_list = dao.getRecentDaily()
-        category_list = dao.getCategoryDaily()
+        category_list = dao.getCategoryList()
         return render_to_response('topic/index.html',{'username':req.session['username'],'dailyList':dailyList,
                                                       'recent_daily_list':recent_daily_list,'archives_list':archives_list,'category_list':category_list})
 

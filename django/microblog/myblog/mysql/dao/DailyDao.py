@@ -85,6 +85,7 @@ class DailyDao:
             dict['user_name'] = row[5]
             dataList.append(dict)
         return dataList
+    #获取分类列表
     def getCategoryList(self):
         #SELECT * FROM `category` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
         db = DBUtil()

@@ -11,7 +11,7 @@ def create_comment(req):
         user_id = req.session['userid']
         #插入评论
         content = req.POST.get('content')
-        daily_id = int(req.POST.get('daily_id'))
+        daily_id = int(req.POST.get('dailyid'))
         create_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         dao = CommentDao()
         #添加评论
