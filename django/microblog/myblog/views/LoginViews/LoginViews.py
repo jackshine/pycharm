@@ -12,8 +12,8 @@ def sign_in(req):
         data = {
             'status': 200
         }
-        username = req.POST.get('username')
-        password = req.POST.get('password')
+        username = req.POST.get('username','')
+        password = req.POST.get('password','')
         print(username,password)
         # user = UserInfo.objects.all().filter(username=username)
         dao = UserInfoDao()

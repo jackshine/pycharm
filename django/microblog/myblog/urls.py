@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^category/(?P<id>[0-9]+)/$', TopicViews.get_category, name='category'),
     url(r'^searchDaily/$', TopicViews.search_daily, name='searchDaily'),
     url(r'^daily/$', TopicViews.daily_detail, name='daily'),
+    url(r'^setting_basic/$', TopicViews.setting_basic, name='setting_basic'),
 
     url(r'^comment/$', CommentViews.create_comment, name='comment'),
 ]

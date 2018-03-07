@@ -2,6 +2,7 @@ from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedir
 from myblog.mysql.dao.DailyDao import DailyDao
 from myblog.mysql.dao.UserInfoDao import UserInfoDao
 from myblog.mysql.dao.CommentDao import CommentDao
+import datetime
 import json
 
 
@@ -80,6 +81,26 @@ def get_category(req,id):
         category_list = dao.getCategoryList()
         return render_to_response('topic/index.html',{'username':req.session['username'],'dailyList':dailyList,
                                                       'recent_daily_list':recent_daily_list,'archives_list':archives_list,'category_list':category_list})
+
+
+def setting_basic(req):
+    # ajax  ProfileSubmit
+    if req.method == 'POST':
+        name = req.POST.get("name")
+        gender = int(req.POST.get("gender"))
+        marriage = int(req.POST.get("marriage"))
+        birth_time = req.POST.get("birth_time")
+        province = int(req.POST.get("province"))
+        city = int(req.POST.get("city"))
+        print(name,gender,marriage,birth_time,province,city)
+        time = datetime.datetime.strptime(birth_time, '%Y-%m-%d')
+        # 如何userid 存在，则修改数据，若userid不存在，则create数据
+        # 插入数据
+
+
+        return HttpResponseRedirect('/myblog/set/profile')
+    else:
+        return render_to_response('topic/setting.html', {'username': req.session['username']})
 
 
 
