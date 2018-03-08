@@ -15,21 +15,20 @@ class UserDetailsDao:
 
     def getUserDetail(self, user_login_id):
         db = DBUtil()
-        data = db.execute_select('select * from user_details where user_login_id = %s', user_login_id)
+        data = db.execute_select('SELECT USER_LOGIN_ID,gender,IMG_PATH,BIRTHDAY,PROVINCE,CITY,MARRIAGE,l.`USERNAME` FROM `USER_DETAILS` d LEFT JOIN `user_login` l ON  d.`USER_LOGIN_ID`=l.`ID` WHERE d.`USER_LOGIN_ID`=%', user_login_id)
         print('************')
         print(data)
         print('************')
         if data:
             row = data[0]
             user_details = {}
-            user_details['id'] = row[0]
-            user_details['user_login_id'] = row[1]
-            user_details['gender'] = row[2]
-            user_details['img_path'] = row[3]
-            user_details['birthday'] = row[4]
-            user_details['province'] = row[5]
-            user_details['city'] = row[6]
-            user_details['marriage'] = row[7]
+            user_details['user_login_id'] = row[0]
+            user_details['gender'] = row[1]
+            user_details['img_path'] = row[2]
+            user_details['birthday'] = row[3]
+            user_details['province'] = row[4]
+            user_details['city'] = row[5]
+            user_details['marriage'] = row[6]
             return row
         else:
             return False
