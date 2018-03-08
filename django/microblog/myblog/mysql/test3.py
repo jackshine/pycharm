@@ -20,7 +20,7 @@ class CommentDao:
     def getAllCommentByDailyId(self, id):
         db = DBUtil()
         data = self.db.execute_select(
-            "SELECT c.`ID`,c.`CONTENT`,c.`create_time`,c.`daily_id`,c.`user_id`,u.`USERNAME` FROM `comment` AS c LEFT JOIN `userinfo` AS u ON c.`USER_ID`=u.`ID` WHERE c.`daily_id` = %s",
+            "SELECT c.`ID`,c.`CONTENT`,c.`create_time`,c.`daily_id`,c.`user_id`,u.`USERNAME` FROM `comment` AS c LEFT JOIN `user_login` AS u ON c.`USER_ID`=u.`ID` WHERE c.`daily_id` = %s",
             id)
         commentList = []
         if data:
@@ -37,7 +37,7 @@ class CommentDao:
 
     def getLastComment(self, id):
         db = DBUtil()
-        row = self.db.execute_select("SELECT c.`ID`,c.`CONTENT`,c.`create_time`,c.`daily_id`,c.`user_id`,u.`USERNAME` FROM `comment` AS c LEFT JOIN `userinfo` AS u ON c.`USER_ID`=u.`ID` WHERE c.`daily_id` = %s ORDER BY CREATE_TIME DESC LIMIT 1",
+        row = self.db.execute_select("SELECT c.`ID`,c.`CONTENT`,c.`create_time`,c.`daily_id`,c.`user_id`,u.`USERNAME` FROM `comment` AS c LEFT JOIN `user_login` AS u ON c.`USER_ID`=u.`ID` WHERE c.`daily_id` = %s ORDER BY CREATE_TIME DESC LIMIT 1",
                                      id)
         dict = {}
         dict['id'] = row[0]

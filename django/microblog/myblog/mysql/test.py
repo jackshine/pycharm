@@ -9,13 +9,13 @@ class UserInfoDao:
     def addUserInfo(self,username,password,create_time):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db =DBUtil.DBUtil()
-        db.execute_insert('insert into userinfo VALUE(id,%s,%s,%s)',(username,password,create_time))
+        db.execute_insert('insert into user_login VALUE(id,%s,%s,%s)',(username,password,create_time))
     def getAllUserInfo(self):
       pass
 
     def searchUserInfo(self,str):
         db = DBUtil()
-        dataList = db.execute("select * from userinfo where username like '%"+str+"%'")
+        dataList = db.execute("select * from user_login where username like '%"+str+"%'")
         dict = {}
         userList = []
         for row in dataList:
@@ -27,11 +27,11 @@ class UserInfoDao:
         return userList
     def getUserInfoById(self,id):
         db = DBUtil()
-        data = self.db.execute_select("SELECT * FROM USERINFO WHERE ID=%S",id)
+        data = self.db.execute_select("SELECT * FROM user_login WHERE ID=%S",id)
         return data
     def getUserInfoByName(self,username):
         db = DBUtil()
-        data = db.execute_select("SELECT * FROM USERINFO WHERE USERNAME=%s",username)
+        data = db.execute_select("SELECT * FROM user_login WHERE USERNAME=%s",username)
         #得到元组，转成字典
         dict = {}
         if data:

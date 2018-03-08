@@ -7,13 +7,13 @@ class UserInfoDao:
     def addUserInfo(self,username,password,create_time):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db = DBUtil()
-        db.execute_insert('insert into userinfo VALUE(id,%s,%s,%s)',(username,password,create_time))
+        db.execute_insert('insert into user_login VALUE(id,%s,%s,%s)',(username,password,create_time))
     def getAllUserInfo(self):
       pass
 
     def searchUserInfo(self,str):
         db = DBUtil()
-        dataList = db.execute("select * from userinfo where username like '%"+str+"%'")
+        dataList = db.execute("select * from user_login where username like '%"+str+"%'")
         dict = {}
         userList = []
         for row in dataList:

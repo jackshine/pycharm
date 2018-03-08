@@ -10,7 +10,7 @@ class DailyDao:
         db.execute_insert('insert into daily VALUE(id,%s,%s,%s,%s)',(title,body,create_time,category,user_id))
     def getAllDaily(self):
         db = DBUtil()
-        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM `daily` d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM `daily` d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
         dataList = []
         for row in results:
             dict = {}
@@ -54,7 +54,7 @@ class DailyDao:
         db = DBUtil()
         search_sql = "SELECT * FROM `daily` WHERE MONTH(create_time)='%s' AND YEAR(create_time)='%s'"%(month,year)
         print(search_sql)
-        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM ('+search_sql+') as  d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM ('+search_sql+') as  d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
         dataList = []
         for row in results:
             dict = {}
@@ -73,7 +73,7 @@ class DailyDao:
         search_sql = "SELECT * FROM `daily` WHERE category_id='%s' " % id
         print(search_sql)
         results = db.execute(
-            'SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (' + search_sql + ') as  d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`')
+            'SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (' + search_sql + ') as  d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
         dataList = []
         for row in results:
             dict = {}
@@ -100,7 +100,7 @@ class DailyDao:
         return dataList
     def getDailyById(self,id):
         db = DBUtil()
-        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `daily` WHERE id=%s) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`",id)
+        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `daily` WHERE id=%s) AS d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`",id)
         dict = {}
         if data:
             row = data[0]
@@ -113,7 +113,7 @@ class DailyDao:
             return dict
     def searchDailyByName(self,username):
         db = DBUtil()
-        data = db.execute_select("SELECT * FROM USERINFO WHERE USERNAME=%s",username)
+        data = db.execute_select("SELECT * FROM user_login WHERE USERNAME=%s",username)
         #得到元组，转成字典
         dict = {}
         if data:
@@ -127,7 +127,7 @@ class DailyDao:
     def search_daily(self,str):
         db = DBUtil()
         # str = like  '%str%'
-        sql = "SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM daily WHERE title LIKE \'%"+str+"%\' or body LIKE \'%"+str+"%\' ) AS d INNER JOIN `userinfo` u ON  d.`user_id`=u.`id`"
+        sql = "SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM daily WHERE title LIKE \'%"+str+"%\' or body LIKE \'%"+str+"%\' ) AS d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`"
         results = db.execute(sql)
         dataList = []
         for row in results:

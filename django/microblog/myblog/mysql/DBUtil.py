@@ -35,6 +35,7 @@ class DBUtil:
         try:
             conn = self.conn
             cur = conn.cursor()  # 获取一个游标
+            print(sql_str)
             cur.execute(sql_str)
             data = cur.fetchall()
             conn.commit()
@@ -54,7 +55,6 @@ class DBUtil:
             conn = self.conn
             cur = conn.cursor()  # 获取一个游标
             print(insert_str)
-            print(data)
             cur.execute(insert_str, data)
             data = cur.fetchall()
             # last_id = cur.lastrowid
@@ -75,6 +75,7 @@ class DBUtil:
         try:
             conn = self.conn
             cur = conn.cursor()  # 获取一个游标
+            print(update_str, data)
             count = cur.execute(update_str, data)
             conn.commit()
             cur.close()  # 关闭游标
@@ -125,4 +126,4 @@ class DBUtil:
 if __name__ == "__main__":
     # host, user, passwd, db, port, charset
     db = DBUtil()
-    data = db.execute('SELECT * FROM userinfo')
+    data = db.execute('SELECT * FROM user_login')
