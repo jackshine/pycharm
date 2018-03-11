@@ -213,7 +213,63 @@
     <favorites_list name="pycharm" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TopicViews.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#110#0" expanded="true" />
+                <element signature="e#540#1219#0" expanded="false" />
+                <element signature="e#1249#1784#0" expanded="false" />
+                <element signature="e#1814#2173#0" expanded="false" />
+                <element signature="e#2216#2978#0" expanded="false" />
+                <element signature="e#3012#3783#0" expanded="false" />
+                <element signature="e#3814#5399#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxfileupload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/static/ajax/ajaxfileupload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxfileupload123.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/static/ajax/ajaxfileupload123.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1977">
+              <caret line="233" column="21" lean-forward="true" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#4;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -226,9 +282,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>comment-template</find>
-      <find>search_data</find>
-      <find>HttpResponse</find>
       <find>daily-list</find>
       <find>user-list</find>
       <find>{</find>
@@ -256,16 +309,19 @@
       <find>date</find>
       <find>update</find>
       <find>bootstrap.min.js</find>
+      <find>jQuery.extend</find>
+      <find>HttpResponse</find>
+      <find>avatar</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>D:\linyouwei\python\pycharm\django\microblog\myblog</dir>
       <dir>D:\linyouwei\python\pycharm\django\Blog\myblog</dir>
       <dir>D:\linyouwei\python\pycharm\django\Blog</dir>
       <dir>D:\linyouwei\python\pycharm\django\microblog\microblog</dir>
       <dir>D:\linyouwei\python\pycharm\django\microblog</dir>
+      <dir>D:\linyouwei\python\pycharm\django\microblog\myblog</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -275,7 +331,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django/SimpleBlog/myblog/templates/register.html" />
         <option value="$PROJECT_DIR$/django/SimpleBlog/myblog/templates/sign_in.html" />
         <option value="$PROJECT_DIR$/django/SimpleBlog/myblog/urls.py" />
         <option value="$PROJECT_DIR$/django/SimpleBlog/SimpleBlog/settings.py" />
@@ -322,10 +377,11 @@
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserDetailsDao.py" />
         <option value="$PROJECT_DIR$/django/microblog/microblog/settings.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/urls.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserImgDao.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/uesr_img.sql" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserImgDao.py" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/static/ajax/ajaxfileupload.js" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" />
       </list>
     </option>
   </component>
@@ -342,8 +398,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="292" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="263" />
     <option name="width" value="1077" />
     <option name="height" value="735" />
   </component>
@@ -537,6 +593,57 @@
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="microblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="microblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="microblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="microblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="microblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="microblog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="TopicViews" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
               <item name="python_basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -570,11 +677,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static\ajax" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static\jquery" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\dao" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\sql" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\util" />
-      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static\ajax" />
@@ -854,9 +961,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="0" width="1077" height="735" extended-state="1" />
+    <frame x="263" y="0" width="1077" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26745328" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33628318" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17504333" sideWeight="0.5042553" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -999,20 +1107,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/CategoryDao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/test3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1311,34 +1405,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/static/ajax/ajaxfileupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/test/uploadImgdemo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="145" column="34" lean-forward="true" selection-start-line="145" selection-start-column="34" selection-end-line="145" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#4;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,22 +1436,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="161" column="24" lean-forward="true" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#110#0" expanded="true" />
-            <element signature="e#540#1219#0" expanded="false" />
-            <element signature="e#1249#1784#0" expanded="false" />
-            <element signature="e#1814#2173#0" expanded="false" />
-            <element signature="e#2216#2978#0" expanded="false" />
-            <element signature="e#3012#3783#0" expanded="false" />
-            <element signature="e#3814#5399#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserDetailsDao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-104">
@@ -1391,22 +1446,6 @@
             <marker date="1520738879665" expanded="true" signature="1330:1488" ph="SELECT p.`co... province" />
             <marker date="1520738879665" expanded="true" signature="1330:1490" ph="SELECT p.`co... province" />
             <marker date="1520738879665" expanded="true" signature="2111:2230" ph="UPDATE `user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserImgDao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <marker date="1520757949908" expanded="true" signature="274:310" ph="insert into user_img... " />
-            <marker date="1520757949908" expanded="true" signature="437:491" ph="update user_... " />
-            <marker date="1520757949908" expanded="true" signature="437:493" ph="update user_... " />
-            <marker date="1520757949908" expanded="true" signature="437:522" ph="update user_... " />
-            <marker date="1520757949908" expanded="true" signature="445:455" ph="insert into user_img... " />
-            <marker date="1520757949908" expanded="true" signature="619:662" ph="select * fro... user_img" />
-            <marker date="1520757949908" expanded="true" signature="619:664" ph="select * fro... user_img" />
           </folding>
         </state>
       </provider>
@@ -1424,6 +1463,74 @@
         <state relative-caret-position="92">
           <caret line="352" column="26" lean-forward="true" selection-start-line="350" selection-start-column="3" selection-end-line="352" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/media/upload/20180311/4c55g82d42g91c52.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserImgDao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <marker date="1520758763359" expanded="true" signature="274:310" ph="insert into user_img... " />
+            <marker date="1520758763359" expanded="true" signature="437:493" ph="update user_... " />
+            <marker date="1520758763359" expanded="true" signature="437:495" ph="update user_... " />
+            <marker date="1520758763359" expanded="true" signature="437:524" ph="update user_... " />
+            <marker date="1520758763359" expanded="true" signature="445:455" ph="insert into user_img... " />
+            <marker date="1520758763359" expanded="true" signature="621:666" ph="select * fro... user_img" />
+            <marker date="1520758763359" expanded="true" signature="621:668" ph="select * fro... user_img" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/static/ajax/ajaxfileupload123.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/static/ajax/ajaxfileupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1977">
+          <caret line="233" column="21" lean-forward="true" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#4;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#110#0" expanded="true" />
+            <element signature="e#540#1219#0" expanded="false" />
+            <element signature="e#1249#1784#0" expanded="false" />
+            <element signature="e#1814#2173#0" expanded="false" />
+            <element signature="e#2216#2978#0" expanded="false" />
+            <element signature="e#3012#3783#0" expanded="false" />
+            <element signature="e#3814#5399#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

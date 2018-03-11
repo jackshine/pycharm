@@ -151,7 +151,7 @@ def uploadImg(req):
         # 随机生成16位十六进制数字,生成文件名
         path =  date_path + '/' + getRandomNum() + '.png'
         dao = UserImgDao()
-        user_login_id  =  req.session['userid']
+        user_login_id  = 22
         with open(path, 'wb')as f:  # with open 无法创建文件夹，需要自己创建
             for chunk in img.chunks():
                 f.write(chunk)
@@ -162,12 +162,12 @@ def uploadImg(req):
             dao.updateUserImg(user_login_id, path)
         else:
             dao.addUserImg(user_login_id, path)
-        response = {
-            'error': 0,
+        msg = {
+            'success': 200,
             'url': path
             # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
         }
-        return HttpResponse(json.dumps({'success':200}))
+        return HttpResponse(json.dumps(msg),content_type="application/json")
 
 def getRandomNum():
     random_list = [i for i in range(0, 10)] + [chr(i) for i in range(97, 122)]
