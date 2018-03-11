@@ -5,6 +5,7 @@ from django.views.static import serve
 from myblog.views.LoginViews import LoginViews
 from myblog.views.TopicViews import TopicViews
 from myblog.views.CommentViews import CommentViews
+from django.views.static import serve
 
 app_name = 'myblog'
 urlpatterns = [
@@ -22,4 +23,6 @@ urlpatterns = [
     url(r'^uploadImg/$', TopicViews.uploadImg, name='uploadImg'),
 
     url(r'^comment/$', CommentViews.create_comment, name='comment'),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+
 ]

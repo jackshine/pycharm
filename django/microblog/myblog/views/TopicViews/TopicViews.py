@@ -119,7 +119,7 @@ def setting_basic(req):
 
         if user_details:
             # 修改数据
-            dao.updateUserDetail(user_login_id, gender, img_path, birthday, province, city, marriage)
+            dao.updateUserDetail(user_login_id, gender, img_path, birthday, province, city, marriage,name)
             data['status'] = 200
         else:
             # 插入数据
@@ -137,7 +137,16 @@ def setting_basic(req):
         data = dao.getUserDetail(user_login_id)
         user_details = data[0]
         distict = data[1]
-        return render_to_response('topic/setting.html', {'username': req.session['username'],'user_details':user_details,'distict':distict})
+        img_dao = UserImgDao()
+        user_img = img_dao.getUserImg(user_login_id)
+        dict = {'username': req.session['username'],
+                'user_details': user_details,
+                'distict': distict,
+                }
+        if user_img:
+            dict['user_img'] = user_img
+        print(dict)
+        return render_to_response('topic/setting.html', dict)
 
 def uploadImg(req):
     if req.method == 'POST':
@@ -151,7 +160,7 @@ def uploadImg(req):
         # 随机生成16位十六进制数字,生成文件名
         path =  date_path + '/' + getRandomNum() + '.png'
         dao = UserImgDao()
-        user_login_id  = 22
+        user_login_id  =req.session['userid']
         with open(path, 'wb')as f:  # with open 无法创建文件夹，需要自己创建
             for chunk in img.chunks():
                 f.write(chunk)
@@ -164,7 +173,7 @@ def uploadImg(req):
             dao.addUserImg(user_login_id, path)
         msg = {
             'success': 200,
-            'url': path
+            'url': '/'+path
             # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
         }
         return HttpResponse(json.dumps(msg),content_type="application/json")

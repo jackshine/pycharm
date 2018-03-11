@@ -22,4 +22,14 @@ class UserImgDao:
             return True
         else:
             return False
-
+    def getUserImg(self, user_login_id):
+        db = DBUtil()
+        data = db.execute("select img_path,user_login_id from `user_img` where user_login_id=%s"%(user_login_id))
+        img_data = {}
+        if data:
+            row = data[0]
+            img_data['img_path'] = '/'+row[0]
+            img_data['user_login_id'] = row[1]
+        else:
+            return False
+        return img_data

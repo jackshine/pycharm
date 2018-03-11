@@ -45,7 +45,9 @@ class UserDetailsDao:
         else:
             return False
 
-    def updateUserDetail(self, user_login_id, gender, img_path, birthday, province, city, marriage):
+    def updateUserDetail(self, user_login_id, gender, img_path, birthday, province, city, marriage,name):
         db = DBUtil()
         db.execute(
             "UPDATE `user_details` SET gender=%s,img_path='%s',birthday='%s',province=%s,city=%s,marriage=%s  WHERE user_login_id = %s"%(gender, img_path, birthday, province, city, marriage, user_login_id))
+        db = DBUtil()
+        db.execute("UPDATE `user_login` SET USERNAME ='%s' WHERE id=%s"%(name,user_login_id))
