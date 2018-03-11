@@ -25,11 +25,11 @@ class UserInfoDao:
         return userList
     def getUserInfoById(self,id):
         db = DBUtil()
-        data = self.db.execute_select("SELECT * FROM USERINFO WHERE ID=%S",id)
+        data = self.db.execute_select("SELECT * FROM user_login WHERE ID=%S",id)
         return data
     def getUserInfoByName(self,username):
         db = DBUtil()
-        data = db.execute_select("SELECT * FROM USERINFO WHERE USERNAME=%s",username)
+        data = db.execute_select("SELECT * FROM user_login WHERE USERNAME=%s",username)
         #得到元组，转成字典
         dict = {}
         if data:

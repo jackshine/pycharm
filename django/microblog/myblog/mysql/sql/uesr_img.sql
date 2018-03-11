@@ -1,0 +1,8 @@
+use `microblog`
+DROP TABLE IF EXISTS `USER_IMG`;
+CREATE TABLE `USER_IMG`(
+ `ID` INT(5) NOT NULL AUTO_INCREMENT ,
+  `img_path` VARCHAR(200) NOT NULL,
+  `user_login_id` int(5) not null,
+  PRIMARY KEY (`ID`)
+) ENGINE=INNODB DEFAULT CHARSET=UTF8;

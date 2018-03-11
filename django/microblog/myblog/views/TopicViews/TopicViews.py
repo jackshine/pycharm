@@ -3,8 +3,15 @@ from myblog.mysql.dao.DailyDao import DailyDao
 from myblog.mysql.dao.UserInfoDao import UserInfoDao
 from myblog.mysql.dao.CommentDao import CommentDao
 from myblog.mysql.dao.UserDetailsDao import UserDetailsDao
+from myblog.mysql.dao.UserImgDao import UserImgDao
+from myblog.mysql.util.mkdir import MkDir
+from django.conf import settings
+
 import datetime
 import json
+import re
+import base64
+import random
 
 
 def get_index(req):
@@ -124,4 +131,48 @@ def setting_basic(req):
         return HttpResponse(json.dumps(data), content_type="application/json")
 
     else:
-        return render_to_response('topic/setting.html', {'username': req.session['username']})
+        #获取用户的信息
+        dao = UserDetailsDao()
+        user_login_id = req.session['userid']
+        data = dao.getUserDetail(user_login_id)
+        user_details = data[0]
+        distict = data[1]
+        return render_to_response('topic/setting.html', {'username': req.session['username'],'user_details':user_details,'distict':distict})
+
+def uploadImg(req):
+    if req.method == 'POST':
+        img = req.FILES.get('photo')
+
+        now_time = datetime.datetime.now().strftime('%Y%m%d')
+        # 创建当前日期的文件夹
+        date_path = settings.MEDIA_URL + 'upload/'+now_time
+        mk = MkDir()
+        mk.mkdir(date_path)
+        # 随机生成16位十六进制数字,生成文件名
+        path =  date_path + '/' + getRandomNum() + '.png'
+        dao = UserImgDao()
+        user_login_id  =  req.session['userid']
+        with open(path, 'wb')as f:  # with open 无法创建文件夹，需要自己创建
+            for chunk in img.chunks():
+                f.write(chunk)
+        print('---------------')
+        print(path)
+        print('333333333333333')
+        if dao.getUserImgById(user_login_id):
+            dao.updateUserImg(user_login_id, path)
+        else:
+            dao.addUserImg(user_login_id, path)
+        response = {
+            'error': 0,
+            'url': path
+            # 客户端拿到路径，才能预览图片; media在setting中配置了别名，这里只写media，客户端就可以找到路径，前面不需要加/app
+        }
+        return HttpResponse(json.dumps({'success':200}))
+
+def getRandomNum():
+    random_list = [i for i in range(0, 10)] + [chr(i) for i in range(97, 122)]
+    # 对应从“a”到“z”的ASCII码 [chr(i) for i in range(97,122)
+    random_str = ''
+    for i in range(16):
+        random_str = random_str + str(random_list[random.randint(1, 16)])
+    return random_str

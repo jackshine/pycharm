@@ -14,11 +14,9 @@ class UserDetailsDao:
                           (user_login_id, gender, img_path, birthday, province, city, marriage))
 
     def getUserDetail(self, user_login_id):
+        print(user_login_id)
         db = DBUtil()
-        data = db.execute_select('SELECT USER_LOGIN_ID,gender,IMG_PATH,BIRTHDAY,PROVINCE,CITY,MARRIAGE,l.`USERNAME` FROM `USER_DETAILS` d LEFT JOIN `user_login` l ON  d.`USER_LOGIN_ID`=l.`ID` WHERE d.`USER_LOGIN_ID`=%', user_login_id)
-        print('************')
-        print(data)
-        print('************')
+        data = db.execute_select('SELECT USER_LOGIN_ID,gender,IMG_PATH,BIRTHDAY,PROVINCE,CITY,MARRIAGE,l.`USERNAME` FROM `USER_DETAILS` d LEFT JOIN `user_login` l ON  d.`USER_LOGIN_ID`=l.`ID` WHERE d.`USER_LOGIN_ID`=%s', user_login_id)
         if data:
             row = data[0]
             user_details = {}
@@ -29,7 +27,21 @@ class UserDetailsDao:
             user_details['province'] = row[4]
             user_details['city'] = row[5]
             user_details['marriage'] = row[6]
-            return row
+            user_details['username'] = row[7]
+            db2 = DBUtil()
+            region=  db2.execute_select("SELECT p.`code` p_code,c.`code` c_code,p.`name` p_name,c.`name` c_name FROM `province` p INNER JOIN `city` c ON c.`province_code` = p.`code` WHERE c.`code` = %s",user_details['city'])
+            distict = {}
+            if region:
+                 temp = region[0]
+                 distict['p_code']= temp[0]
+                 distict['c_code']= temp[1]
+                 distict['p_name']= temp[2]
+                 distict['c_name']= temp[3]
+
+            print('************')
+            print(user_details)
+            print('************')
+            return (user_details,distict)
         else:
             return False
 

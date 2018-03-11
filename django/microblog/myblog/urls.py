@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^searchDaily/$', TopicViews.search_daily, name='searchDaily'),
     url(r'^daily/$', TopicViews.daily_detail, name='daily'),
     url(r'^setting_basic/$', TopicViews.setting_basic, name='setting_basic'),
+    url(r'^uploadImg/$', TopicViews.uploadImg, name='uploadImg'),
 
     url(r'^comment/$', CommentViews.create_comment, name='comment'),
 ]
