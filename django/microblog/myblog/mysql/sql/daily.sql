@@ -7,5 +7,6 @@ CREATE TABLE `daily`(
   `modified_time` DATETIME NOT NULL ,
   `category_id` INT(5) NOT NULL   COMMENT '分类',
   `user_id` VARCHAR(50) NOT NULL COMMENT '作者',
+  `click` INT(10) not null DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8;
