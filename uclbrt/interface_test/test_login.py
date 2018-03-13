@@ -1,7 +1,8 @@
 import requests
 import json
 import unittest
-
+import time
+from HTMLTestRunner import HTMLTestRunner
 
 class MyTest(unittest.TestCase):  # 封装测试环境的初始化和还原的类
     def setUp(self):  # 放对数据可操作的代码，如对mysql、momgodb的初始化等,这里不对数据库进行操作！
@@ -32,10 +33,31 @@ class test_login_get(MyTest):  # 把这个接口封装一个类，下面的方�
         print(json.dumps(self.data))
         r = requests.post(url=self.url, data=self.data)
         # return r.json()
-        print(r.text)
-        print()
-        # self.assertIn("true", self.r.text)  # 断言判断接口返回是否符合要求，可以写多个断言！
+        status = json.loads(r.text)['status']
+        print(type(status))
+        self.assertEqual(200,status)  # 断言判断接口返回是否符合要求，可以写多个断言！
 
 
 if __name__ == "__main__":
-    unittest.main()
+    # suite = unittest.TestSuite()
+    # suite.addTest(test_login_get.test_login_get("test_login_get"))
+    # testunit = unittest.TestSuite()
+    # testunit.addTest(suite)
+    suite = unittest.makeSuite(test_login_get)
+    # # 按照一定的格式获取当前的时间
+    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    test_report = r"D:\linyouwei\python\pycharm\uclbrt\interface_test"
+    # 定义报告存放路径
+    filename = test_report + "\\" + now + 'result.html'
+    print(filename)
+    fp = open(filename, "wb")
+
+    # 定义测试报告
+    runner = HTMLTestRunner(stream=fp,
+                            title="接口测试报告",
+                            description="测试用例执行情况：")
+
+    # 运行测试
+    runner.run(suite)
+    fp.close()  # 关闭文件对象把数据写进磁盘
+    print('aaa')
