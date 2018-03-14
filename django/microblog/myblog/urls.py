@@ -21,8 +21,10 @@ urlpatterns = [
     url(r'^daily/$', TopicViews.daily_detail, name='daily'),
     url(r'^setting_basic/$', TopicViews.setting_basic, name='setting_basic'),
     url(r'^uploadImg/$', TopicViews.uploadImg, name='uploadImg'),
-
     url(r'^comment/$', CommentViews.create_comment, name='comment'),
+
+    url(r'^publish/$', TopicViews.publish, name='publish'),
+    url(r'^publishEdit/$', TopicViews.publishEdit, name='publishEdit'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 
 ]

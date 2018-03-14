@@ -185,3 +185,10 @@ def getRandomNum():
     for i in range(16):
         random_str = random_str + str(random_list[random.randint(1, 16)])
     return random_str
+
+def publish(req):
+    return render_to_response('topic/publish.html')
+
+
+def publishEdit(req):
+    return render_to_response('topic/publish-edit.html')
