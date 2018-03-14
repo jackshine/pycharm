@@ -2,212 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="jenkins">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/10.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/101.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/102.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/103.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/104.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/105.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/106.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/107.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/108.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/109.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/11.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/110.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/111.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/112.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/113.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/114.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/115.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/116.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/117.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/118.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/119.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/12.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/120.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/121.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/122.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/123.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/124.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/125.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/126.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/127.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/128.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/129.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/13.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/130.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/131.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/132.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/133.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/134.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/14.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/15.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/17.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/18.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/19.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/20.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/21.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/22.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/23.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/24.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/25.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/26.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/27.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/28.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/29.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/30.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/31.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/32.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/33.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/34.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/35.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/36.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/37.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/38.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/39.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/40.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/41.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/42.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/43.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/44.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/45.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/46.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/47.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/48.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/49.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/50.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/51.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/52.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/53.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/54.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/55.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/56.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/57.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/58.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/59.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/6.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/61.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/62.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/63.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/64.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/65.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/66.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/67.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/68.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/69.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/7.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/70.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/71.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/72.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/73.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/74.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/75.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/76.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/77.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/78.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/79.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/8.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/81.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/82.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/83.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/84.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/85.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/86.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/87.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/88.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/89.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/91.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/92.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/93.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/94.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/95.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/96.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/97.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/98.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/99.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/images/static.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/image/images/align_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/image/images/align_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/image/images/align_top.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/image/images/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/multiimage/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/multiimage/images/select-files-en.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/multiimage/images/select-files-zh_CN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/multiimage/images/swfupload.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/common/anchor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/common/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/common/flash.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/common/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/common/media.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/common/rm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/default/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/default/default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/qq/editor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/kindeditor-all-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/kindeditor-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/kindeditor-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/kindeditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/lang/zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/lang/zh_TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/php/JSON.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/php/demo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/php/file_manager_json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/php/upload_json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/anchor/anchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/autoheight/autoheight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/baidumap/baidumap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/baidumap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/baidumap/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/clearhtml/clearhtml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/code/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/code/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/code/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/emoticons/emoticons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/flash/flash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/image/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/insertfile/insertfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/lineheight/lineheight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/link/link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/map/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/map/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/media/media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/multiimage/multiimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/pagebreak/pagebreak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/plainpaste/plainpaste.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/preview/preview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/quickformat/quickformat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/table/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/template/html/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/template/html/2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/template/html/3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/template/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/plugins/wordpaste/wordpaste.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/default/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/qq/qq.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/themes/simple/simple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/html/ul-li.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html" afterPath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/urls.py" afterPath="$PROJECT_DIR$/django/microblog/myblog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" afterPath="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html" afterPath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -436,16 +234,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="66" column="55" lean-forward="false" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -469,8 +257,8 @@
       <file leaf-file-name="publish.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="130" column="65" lean-forward="true" selection-start-line="130" selection-start-column="65" selection-end-line="130" selection-end-column="65" />
+            <state relative-caret-position="205">
+              <caret line="132" column="17" lean-forward="true" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -479,11 +267,51 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="category.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/category.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_daily_tags.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_category.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_details.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_details.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="publish-edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state relative-caret-position="205">
+              <caret line="127" column="31" lean-forward="true" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -491,11 +319,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ul-li.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ul-li.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/html/ul-li.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="264">
+              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -573,9 +401,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django/microblog/myblog/test2.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/CJsonEncoder.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/test.html" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/comment.sql" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/test.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/search.html" />
@@ -621,9 +446,12 @@
         <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/urls.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html" />
         <option value="$PROJECT_DIR$/web/html/ul-li.html" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/person_category.sql" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql" />
       </list>
     </option>
   </component>
@@ -641,10 +469,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="584" />
-    <option name="y" value="23" />
-    <option name="width" value="1262" />
-    <option name="height" value="1030" />
+    <option name="x" value="757" />
+    <option name="y" value="110" />
+    <option name="width" value="1089" />
+    <option name="height" value="943" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -858,11 +686,11 @@
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\sql" />
       <recent name="D:\linyouwei\python\pycharm\web\html" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\templates\topic" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static" />
       <recent name="D:\linyouwei\python\pycharm\uclbrt\interface_test" />
-      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1123,10 +951,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="584" y="23" width="1262" height="1030" extended-state="0" />
+    <frame x="757" y="110" width="1089" height="943" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22212978" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25947523" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5293383" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13043478" sideWeight="0.5042553" order="11" side_tool="true" content_ui="tabs" />
@@ -1269,23 +1097,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserImgDao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="15" column="87" lean-forward="false" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/media/upload/20180311/g36a474ecgb9357g.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/media/upload/20180311/f7e7gd37289gf4g3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4136">
@@ -1387,24 +1198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_details.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/uesr_login.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1441,6 +1238,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1571,27 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="130" column="65" lean-forward="true" selection-start-line="130" selection-start-column="65" selection-end-line="130" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/padding.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1602,8 +1379,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/html/ul-li.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="264">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="127" column="31" lean-forward="true" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="132" column="17" lean-forward="true" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/category.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_details.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding />
         </state>
       </provider>
