@@ -38,8 +38,7 @@ def login_test():
     #查找元素，得到一个元组
     dict = {'name_id':"requestUsername","pwd_id":"requestPassword","login_id":"requestSubmit"}
     list = findEle(b,dict)
-    print tuple
-    #插入登录信息
+    print(tuple)    #插入登录信息
     account = {"name":account_name,"pwd":accout_pwd}
     sendInfo(account,list)
 if __name__ == "main":

@@ -15,7 +15,7 @@ class MyTest(unittest.TestCase):  # 封装测试环境的初始化和还原的�
 
 class test_building_get(MyTest):  # 把这个接口封装一个类，下面的方法是具体的测试用例
     '''''接口名称：获取资质'''  # 这个描述接口名称
-
+    @staticmethod
     def test_login_token_id(self):
         host = "115.29.142.212:8020"
         link = "/mobile/user/login"
