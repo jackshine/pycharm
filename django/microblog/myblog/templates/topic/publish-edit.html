@@ -134,28 +134,77 @@
         </div>
     </div>
     <div class="am-u-md-9 am-u-sm-12" id="user-list">
-    <textarea id="mul_input" name="content" style="width:700px;height:200px;visibility:hidden;display: block;">KindEditor</textarea>
+    <textarea id="mul_input" name="content" style="width:700px;height:200px;visibility:hidden;display: block;"></textarea>
+        <br>
+        <div id="moreDiv">
+            <div class="pos-box">
+                <div class="form-group row form-control-sm">
+                    <label class="labTitle col-form-label">文章标签：</label>
+                    <div  style="display: inline-block" >
+                            <button id="addTag">添加标签</button>
+                    </div>
+                </div>
+                <div class="form-group row form-control-sm">
+                    <label class="labTitle col-form-label">个人分类：</label>
+                    <div class="txt-box" style="display: inline-block">
+                        <div class="tag-box d-flex flex-row" id="categorieBox">
+                            <button class="btn-add-tag" id="addCategorie">
+                                <i class="xheIcon icon-tianjia mr8" aria-hidden="true"></i>添加新分类
+                            </button>
+                        </div>
+                        <div class="categorie-list" style="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row form-control-sm">
+                    <label class="labTitle col-form-label">博客分类：</label>
+                    <div style="display: inline-block">
+                        <select class="droBlogType" id="radChl" name="radChl">
+                            <option value="0">123</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="opt-box row unfull">
+                    <label class="labTitle col-form-label"></label>
+                    <div class="txt-box">
+                        <input id="btnPublish" type="button" class="btn btn-outline-danger" value="发布博客" title="发布博客">
+                        <input id="btnDraft" type="button" class="btn btn-outline-danger ml-24 btn-baocun" value="保存草稿"
+                               title="保存文章并留在当前页">
+                        <input id="btnCancel" type="button" class="btn btn-outline-secondary ml-24 btn-shanchu"
+                               title="返回列表页" value="返回">
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </div>
+
 </div>
+    <script>
+            var editor;
+            KindEditor.ready(function(K) {
+                editor = K.create('textarea[name="content"]', {
+                    allowFileManager : true
+                });
+                K('#btnPublish]').click(function(e) {
+                    user_tags =
+                    $.post("",{
+                        "text_conent": editor.html(),
+                        "user_tags":user_tags
+                    },function () {
 
+                    })
 
+                });
+            });
+        </script>
 <footer class="blog-footer"></footer>
-
 <script>
-    //简单模式初始化
-    var editor;
-    KindEditor.ready(function (K) {
-        editor = K.create('textarea[name="content"]', {
-            resizeType: 1,
-            allowPreviewEmoticons: false,
-            allowImageUpload: false,
-            items: [
-                'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
-                'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-                'insertunorderedlist', '|', 'emoticons', 'image', 'link']
-        });
-    });
+    $(function () {
+        $("#input-button").click(function () {
+             alert($('#mul_input').val())
+        })
+    })
 </script>
 </body>
 </html>
