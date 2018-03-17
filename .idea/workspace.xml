@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="jenkins">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql" afterPath="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql" afterPath="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html" afterPath="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html" />
-    </list>
+    <list default="true" id="e4c4fe3f-d6fb-4de0-beee-a4fc9c929c13" name="默认的" comment="jenkins" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -237,22 +232,43 @@
       <file leaf-file-name="DailyDao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/DailyDao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="263">
+              <caret line="140" column="39" lean-forward="true" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <marker date="1520517258305" expanded="true" signature="385:424" ph="insert into daily... " />
-                <marker date="1520517258305" expanded="true" signature="548:685" ph="SELECT d.`id... daily" />
-                <marker date="1520517258305" expanded="true" signature="1118:1173" ph="SELECT * FRO... daily" />
-                <marker date="1520517258305" expanded="true" signature="1607:1768" ph="SELECT COUNT... " />
-                <marker date="1520517258305" expanded="true" signature="2172:2250" ph="SELECT * FRO... daily" />
-                <marker date="1520517258305" expanded="true" signature="2321:2471" ph="SELECT d.`id... missing_value" />
-                <marker date="1520517258305" expanded="true" signature="3045:3199" ph="SELECT d.`id... missing_value" />
-                <marker date="1520517258305" expanded="true" signature="4055:4223" ph="SELECT d.`id... *" />
-                <marker date="1520517258305" expanded="true" signature="4135:4168" ph="SELECT * FRO... daily" />
-                <marker date="1520517258305" expanded="true" signature="4630:4672" ph="SELECT * FRO... user_login" />
-                <marker date="1520517258305" expanded="true" signature="5075:5288" ph="SELECT d.`id... *" />
-                <marker date="1520517258305" expanded="true" signature="5155:5232" ph="SELECT * FRO... daily" />
+                <marker date="1521279137632" expanded="true" signature="428:460" ph="insert into daily... " />
+                <marker date="1521279137632" expanded="true" signature="428:463" ph="insert into daily... " />
+                <marker date="1521279137632" expanded="true" signature="428:465" ph="insert into daily... " />
+                <marker date="1521279137632" expanded="true" signature="428:468" ph="insert into daily... " />
+                <marker date="1521279137632" expanded="true" signature="428:484" ph="insert into daily... " />
+                <marker date="1521279137632" expanded="true" signature="428:547" ph="insert into daily... " />
+                <marker date="1521279137632" expanded="true" signature="628:765" ph="SELECT d.`id... daily" />
+                <marker date="1521279137632" expanded="true" signature="1198:1253" ph="SELECT * FRO... daily" />
+                <marker date="1521279137632" expanded="true" signature="1687:1848" ph="SELECT COUNT... " />
+                <marker date="1521279137632" expanded="true" signature="2252:2330" ph="SELECT * FRO... daily" />
+                <marker date="1521279137632" expanded="true" signature="2401:2551" ph="SELECT d.`id... missing_value" />
+                <marker date="1521279137632" expanded="true" signature="3004:3048" ph="SELECT * FRO... daily" />
+                <marker date="1521279137632" expanded="true" signature="3125:3279" ph="SELECT d.`id... missing_value" />
+                <marker date="1521279137632" expanded="true" signature="3820:3844" ph="SELECT * FRO... category" />
+                <marker date="1521279137632" expanded="true" signature="4135:4303" ph="SELECT d.`id... *" />
+                <marker date="1521279137632" expanded="true" signature="4215:4248" ph="SELECT * FRO... daily" />
+                <marker date="1521279137632" expanded="true" signature="4710:4752" ph="SELECT * FRO... user_login" />
+                <marker date="1521279137632" expanded="true" signature="5155:5368" ph="SELECT d.`id... *" />
+                <marker date="1521279137632" expanded="true" signature="5235:5312" ph="SELECT * FRO... daily" />
+                <marker date="1521279137632" expanded="true" signature="5981:6003" ph="select id fr... daily" />
+                <marker date="1521279137632" expanded="true" signature="5981:6018" ph="select id fr... daily" />
+                <marker date="1521279137632" expanded="true" signature="5981:6020" ph="select id fr... daily" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBUtil.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/DBUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <marker date="1520734108588" expanded="true" signature="3734:3758" ph="SELECT * FRO... user_login" />
               </folding>
             </state>
           </provider>
@@ -261,9 +277,21 @@
       <file leaf-file-name="daily.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="190">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopicViews.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="207" column="15" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -271,34 +299,22 @@
       <file leaf-file-name="user_daily_tags.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="19">
+              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_category.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="publish-edit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="publish-edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="141" column="72" lean-forward="true" selection-start-line="141" selection-start-column="72" selection-end-line="141" selection-end-column="72" />
+            <state relative-caret-position="295">
+              <caret line="235" column="22" lean-forward="false" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -310,28 +326,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="HTML4 File" />
         <option value="Python Script" />
+        <option value="HTML4 File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>birth</find>
-      <find>userinfo</find>
-      <find>session</find>
-      <find>d.create_time</find>
-      <find>dailyList</find>
-      <find>if</find>
-      <find>img-preview</find>
-      <find>cut_photo</find>
-      <find>crop()</find>
-      <find>crop</find>
-      <find>btn-hollow</find>
-      <find>initCropper</find>
-      <find>result</find>
       <find>MEDIA_URL</find>
-      <find>birth_time</find>
       <find>datetimepicker</find>
       <find>getCroppedCanvas</find>
       <find>form</find>
@@ -347,16 +349,32 @@
       <find>setting_basic</find>
       <find>WEBSOCKET_ACCEPT_ALL</find>
       <find>content</find>
+      <find>http</find>
+      <find>AddMoreFileBox</find>
+      <find>div-float</find>
+      <find>clear:both;height:0;overflow:hidden;</find>
+      <find>div-parent</find>
+      <find>InputsWrapper</find>
+      <find>categoryWrapper</find>
+      <find>for</find>
+      <find>tags</find>
+      <find>birth_time</find>
+      <find>option</find>
+      <find>category</find>
+      <find>textarea</find>
+      <find>create_time</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\linyouwei\python\pycharm\django\Blog\myblog</dir>
-      <dir>D:\linyouwei\python\pycharm\django\Blog</dir>
       <dir>D:\linyouwei\python\pycharm\django\microblog\microblog</dir>
       <dir>D:\linyouwei\python\pycharm\django\microblog</dir>
       <dir>D:\linyouwei\python\pycharm\django\microblog\myblog</dir>
+      <dir>D:\linyouwei\python\pycharm\django\Blog</dir>
+      <dir>D:\linyouwei\python\pycharm\django\microblog\myblog\templates</dir>
+      <dir>D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\dao</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -366,12 +384,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/comment.sql" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/test.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/search.html" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/CategoryDao.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/DailyDao.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/test3.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/views/CommentViews/CommentViews.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/CommentDao.py" />
         <option value="$PROJECT_DIR$/django/Blog/myblog/templates/index.html" />
@@ -400,7 +412,6 @@
         <option value="$PROJECT_DIR$/django/web/web/settings.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/role.sql" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/uesr_login.sql" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/redis_test.py" />
         <option value="$PROJECT_DIR$/uclbrt/interface_test/test.py" />
         <option value="$PROJECT_DIR$/uclbrt/interface_test/test_addbuilding.py" />
@@ -410,13 +421,20 @@
         <option value="$PROJECT_DIR$/uclbrt/interface_test/test_suite.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/urls.py" />
-        <option value="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" />
         <option value="$PROJECT_DIR$/web/html/ul-li.html" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish.html" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/person_category.sql" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/test/input_test.html" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/templates/test/input_test2.html" />
+        <option value="$PROJECT_DIR$/web/html/float.html" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/CategoryDao.py" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserTag.py" />
         <option value="$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/mysql/dao/DailyDao.py" />
+        <option value="$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py" />
       </list>
     </option>
   </component>
@@ -434,9 +452,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="525" />
-    <option name="width" value="1247" />
-    <option name="height" value="1047" />
+    <option name="x" value="40" />
+    <option name="width" value="1386" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -456,7 +474,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -468,6 +485,27 @@
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
               <item name="django" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
@@ -514,8 +552,7 @@
               <item name="django" type="462c0819:PsiDirectoryNode" />
               <item name="microblog" type="462c0819:PsiDirectoryNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
@@ -524,6 +561,7 @@
               <item name="microblog" type="462c0819:PsiDirectoryNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pycharm" type="b2602c69:ProjectViewProjectNode" />
@@ -584,6 +622,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -603,19 +642,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\dao" />
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\templates\test" />
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\templates\topic" />
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\sql" />
+      <recent name="D:\linyouwei\python\pycharm\web\html" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\templates\test" />
       <recent name="D:\linyouwei\python\pycharm\django\web\cmdb" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static\ajax" />
       <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\sql" />
-      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\mysql\sql" />
-      <recent name="D:\linyouwei\python\pycharm\web\html" />
-      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\templates\topic" />
-      <recent name="D:\linyouwei\python\pycharm\django\microblog\myblog\static" />
-      <recent name="D:\linyouwei\python\pycharm\uclbrt\interface_test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -876,31 +915,31 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="525" y="0" width="1247" height="1047" extended-state="0" />
+    <frame x="40" y="0" width="1386" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1010952" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20286576" sideWeight="0.49250534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5293383" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13043478" sideWeight="0.5042553" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.016638935" sideWeight="0.48798078" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35765123" sideWeight="0.60935146" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38826466" sideWeight="0.7405446" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32216907" sideWeight="0.5074946" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1717647" sideWeight="0.49574468" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5293383" sideWeight="0.49122807" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38826466" sideWeight="0.7405446" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1717647" sideWeight="0.49574468" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1022,70 +1061,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django/SimpleBlog/SimpleBlog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/websocket/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/django/websocket/websocket/urls.py" />
-    <entry file="file://$PROJECT_DIR$/django/web/manage.py" />
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/web/web/urls.py" />
-    <entry file="file://$PROJECT_DIR$/django/web/cmdb/views.py" />
-    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="288" column="64" lean-forward="true" selection-start-line="288" selection-start-column="7" selection-end-line="288" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/dj_websocket/dj_websocket/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/dj_websocket/demo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/Blog/blog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="58" column="57" lean-forward="true" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/web/web/settings.py" />
-    <entry file="file://$PROJECT_DIR$/django/dj_websocket/dj_websocket/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2177">
-          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/web/cmdb/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/django/dj_websocket/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1148,13 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/DBUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1221,13 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="66" column="55" lean-forward="false" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/static/kindeditor/lang/zh_TW.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3036">
@@ -1242,19 +1203,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/html/padding.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,7 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,15 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="188" column="17" lean-forward="false" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,66 +1246,232 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql">
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/DailyDao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/Blog/myblog/templates/date_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="854" column="0" lean-forward="false" selection-start-line="854" selection-start-column="0" selection-end-line="854" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/test/input_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/test/input_test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/html/float.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="174" column="69" lean-forward="false" selection-start-line="174" selection-start-column="69" selection-end-line="174" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/CategoryDao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1520517258305" expanded="true" signature="385:424" ph="insert into daily... " />
-            <marker date="1520517258305" expanded="true" signature="548:685" ph="SELECT d.`id... daily" />
-            <marker date="1520517258305" expanded="true" signature="1118:1173" ph="SELECT * FRO... daily" />
-            <marker date="1520517258305" expanded="true" signature="1607:1768" ph="SELECT COUNT... " />
-            <marker date="1520517258305" expanded="true" signature="2172:2250" ph="SELECT * FRO... daily" />
-            <marker date="1520517258305" expanded="true" signature="2321:2471" ph="SELECT d.`id... missing_value" />
-            <marker date="1520517258305" expanded="true" signature="3045:3199" ph="SELECT d.`id... missing_value" />
-            <marker date="1520517258305" expanded="true" signature="4055:4223" ph="SELECT d.`id... *" />
-            <marker date="1520517258305" expanded="true" signature="4135:4168" ph="SELECT * FRO... daily" />
-            <marker date="1520517258305" expanded="true" signature="4630:4672" ph="SELECT * FRO... user_login" />
-            <marker date="1520517258305" expanded="true" signature="5075:5288" ph="SELECT d.`id... *" />
-            <marker date="1520517258305" expanded="true" signature="5155:5232" ph="SELECT * FRO... daily" />
+            <marker date="1521267225930" expanded="true" signature="298:331" ph="insert into Category... " />
+            <marker date="1521267225930" expanded="true" signature="509:539" ph="SELECT * FRO... category" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql">
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserCategory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520734473304" expanded="true" signature="381:422" ph="insert into user_login... " />
+            <marker date="1520734473304" expanded="true" signature="586:642" ph="select * fro... user_login" />
+            <marker date="1520734473304" expanded="true" signature="1064:1100" ph="SELECT * FRO... user_login" />
+            <marker date="1520734473304" expanded="true" signature="1224:1266" ph="SELECT * FRO... user_login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/LoginViews/LoginViews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/UserTag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <marker date="1521275663015" expanded="true" signature="357:402" ph="insert into user_login... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_category.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="133">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django/microblog/myblog/templates/topic/publish-edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="141" column="72" lean-forward="true" selection-start-line="141" selection-start-column="72" selection-end-line="141" selection-end-column="72" />
+        <state relative-caret-position="295">
+          <caret line="235" column="22" lean-forward="false" selection-start-line="235" selection-start-column="17" selection-end-line="235" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/user_daily_tags.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/sql/daily.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/DBUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <marker date="1520734108588" expanded="true" signature="3734:3758" ph="SELECT * FRO... user_login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/mysql/dao/DailyDao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="140" column="39" lean-forward="true" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
+          <folding>
+            <marker date="1521279137632" expanded="true" signature="428:460" ph="insert into daily... " />
+            <marker date="1521279137632" expanded="true" signature="428:463" ph="insert into daily... " />
+            <marker date="1521279137632" expanded="true" signature="428:465" ph="insert into daily... " />
+            <marker date="1521279137632" expanded="true" signature="428:468" ph="insert into daily... " />
+            <marker date="1521279137632" expanded="true" signature="428:484" ph="insert into daily... " />
+            <marker date="1521279137632" expanded="true" signature="428:547" ph="insert into daily... " />
+            <marker date="1521279137632" expanded="true" signature="628:765" ph="SELECT d.`id... daily" />
+            <marker date="1521279137632" expanded="true" signature="1198:1253" ph="SELECT * FRO... daily" />
+            <marker date="1521279137632" expanded="true" signature="1687:1848" ph="SELECT COUNT... " />
+            <marker date="1521279137632" expanded="true" signature="2252:2330" ph="SELECT * FRO... daily" />
+            <marker date="1521279137632" expanded="true" signature="2401:2551" ph="SELECT d.`id... missing_value" />
+            <marker date="1521279137632" expanded="true" signature="3004:3048" ph="SELECT * FRO... daily" />
+            <marker date="1521279137632" expanded="true" signature="3125:3279" ph="SELECT d.`id... missing_value" />
+            <marker date="1521279137632" expanded="true" signature="3820:3844" ph="SELECT * FRO... category" />
+            <marker date="1521279137632" expanded="true" signature="4135:4303" ph="SELECT d.`id... *" />
+            <marker date="1521279137632" expanded="true" signature="4215:4248" ph="SELECT * FRO... daily" />
+            <marker date="1521279137632" expanded="true" signature="4710:4752" ph="SELECT * FRO... user_login" />
+            <marker date="1521279137632" expanded="true" signature="5155:5368" ph="SELECT d.`id... *" />
+            <marker date="1521279137632" expanded="true" signature="5235:5312" ph="SELECT * FRO... daily" />
+            <marker date="1521279137632" expanded="true" signature="5981:6003" ph="select id fr... daily" />
+            <marker date="1521279137632" expanded="true" signature="5981:6018" ph="select id fr... daily" />
+            <marker date="1521279137632" expanded="true" signature="5981:6020" ph="select id fr... daily" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/microblog/myblog/views/TopicViews/TopicViews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="207" column="15" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#110#0" expanded="true" />
           </folding>
         </state>
       </provider>

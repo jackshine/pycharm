@@ -4,10 +4,11 @@ import json
 class DailyDao:
     def __init__(self):
         self.db = DBUtil()
-    def addDaily(self,title,body,create_time,category,user_id):
+    def addDaily(self,title,body,create_time,category,user_id,modified_time,click):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db = DBUtil()
-        db.execute_insert('insert into daily VALUE(id,%s,%s,%s,%s)',(title,body,create_time,category,user_id))
+        print(type(category))
+        db.execute('insert into daily VALUE(id,"%s","%s","%s","%s",%d,%d,%d)'%(title,body,create_time,modified_time,category,user_id,click))
     def getAllDaily(self):
         db = DBUtil()
         results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM `daily` d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
@@ -142,5 +143,13 @@ class DailyDao:
             dict['user_name'] = row[5]
             dataList.append(dict)
         return dataList
+    def getDailyIdByUser(self,user_login_id):
+        db = DBUtil()
+        sql = "select id from `daily` where user_id=%d"%user_login_id
+        print(sql)
+        results = db.execute(sql)
+
+
+
 
 

@@ -3,7 +3,9 @@ from myblog.mysql.dao.DailyDao import DailyDao
 from myblog.mysql.dao.UserInfoDao import UserInfoDao
 from myblog.mysql.dao.CommentDao import CommentDao
 from myblog.mysql.dao.UserDetailsDao import UserDetailsDao
+from myblog.mysql.dao.CategoryDao import CategoryDao
 from myblog.mysql.dao.UserImgDao import UserImgDao
+from myblog.mysql.dao.UserTag import UserTag
 from myblog.mysql.util.mkdir import MkDir
 from django.conf import settings
 
@@ -191,4 +193,31 @@ def publish(req):
 
 
 def publishEdit(req):
-    return render_to_response('topic/publish-edit.html')
+    if req.method =="POST":
+         title = req.POST.get("title",'') #文章内容
+         content = req.POST.get("content",'') #文章内容
+         tagArr = req.POST.getlist("tagsArr[]") # 文章标签
+         userCategoryList = req.POST.getlist("userCategoryList[]") #文章所属个人分类
+         category = int(req.POST.get("category"))# 文章所属系统分类
+         user_id = req.session["userid"]
+         # 插入日志内容
+         dao = DailyDao()
+         create_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+         dao.addDaily(title,content,create_time,category,user_id,modified_time='',click=0,)
+         #获取日志的id
+         # dailyId = dao.get
+         # 存储个人分类
+        # dao =UserTag()
+        #  for tag in  tagArr:
+        #      dao = UserTag()
+        #      dao.addUserTag(user_id,tag)
+
+         # 存储文章标签
+         # 存储文章
+         return render_to_response('topic/publish-edit.html',{})
+
+    else:
+        #查询分类
+        category = CategoryDao()
+        categoryList = category.getCategoryList()
+        return render_to_response('topic/publish-edit.html',{'categoryList':categoryList,'username': req.session['username']})
