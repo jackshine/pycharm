@@ -10,13 +10,13 @@ class UserDetailsDao:
     def addUserDetail(self, user_login_id, gender, img_path, birthday, province, city, marriage):
         #
         db = DBUtil()
-        db.execute_insert('insert into user_details VALUE(id,%s,%s,%s,%s,%s,%s,%s)',
+        db.execute_insert('insert into `USER_DETAILS` VALUE(id,%s,%s,%s,%s,%s,%s,%s)',
                           (user_login_id, gender, img_path, birthday, province, city, marriage))
 
     def getUserDetail(self, user_login_id):
         print(user_login_id)
         db = DBUtil()
-        data = db.execute_select('SELECT USER_LOGIN_ID,gender,IMG_PATH,BIRTHDAY,PROVINCE,CITY,MARRIAGE,l.`USERNAME` FROM `USER_DETAILS` d LEFT JOIN `user_login` l ON  d.`USER_LOGIN_ID`=l.`ID` WHERE d.`USER_LOGIN_ID`=%s', user_login_id)
+        data = db.execute_select('SELECT USER_LOGIN_ID,gender,IMG_PATH,BIRTHDAY,PROVINCE,CITY,MARRIAGE,l.`USERNAME` FROM `USER_DETAILS` d LEFT JOIN `USER_LOGIN` l ON  d.`USER_LOGIN_ID`=l.`ID` WHERE d.`USER_LOGIN_ID`=%s', user_login_id)
         if data:
             row = data[0]
             user_details = {}

@@ -73,11 +73,10 @@ def sign_up(req):
         # 若不存在该用户，则注册该用户，
         if not user:
             create_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            print(create_time)
             password = hashlib.md5(password.encode("utf-8")).hexdigest()
             # UserInfo.objects.create(username=username, password=password, regtime=regtime)
             # user = UserInfo.objects.all().filter(username=username)[0]
-            dao.addUserInfo(username,password,create_time)
+            dao.addUserInfo(username,password,create_time,role_id=3)
             user = dao.getUserInfoByName(username)
             print(user)
             req.session['username'] = user['username']

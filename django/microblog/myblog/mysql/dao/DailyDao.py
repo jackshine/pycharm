@@ -8,10 +8,12 @@ class DailyDao:
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db = DBUtil()
         print(type(category))
-        db.execute('insert into daily VALUE(id,"%s","%s","%s","%s",%d,%d,%d)'%(title,body,create_time,modified_time,category,user_id,click))
+        id = db.execute_insert('insert into `DAILY` VALUE(id,"%s","%s","%s","%s",%d,%d,%d)'%(title,body,create_time,modified_time,category,user_id,click))
+        return id
+
     def getAllDaily(self):
         db = DBUtil()
-        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM `daily` d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM `DAILY` d INNER JOIN `USER_LOGIN` u ON  d.`user_id`=u.`id`')
         dataList = []
         for row in results:
             dict = {}
@@ -25,7 +27,7 @@ class DailyDao:
         return dataList
     def getRecentDaily(self):
         db = DBUtil()
-        results = db.execute('SELECT * FROM daily  ORDER BY create_time DESC  LIMIT 5')
+        results = db.execute('SELECT * FROM `DAILY`  ORDER BY create_time DESC  LIMIT 5')
         dataList = []
         for row in results:
             dict = {}
@@ -39,7 +41,7 @@ class DailyDao:
         return dataList
     def getArchivesDate(self):
         db = DBUtil()
-        results = db.execute('SELECT COUNT(*) AS COUNT, DATE_FORMAT( create_time, \'%Y-%m\') AS create_time FROM daily GROUP BY DATE_FORMAT( create_time, \'%Y-%m\')  ORDER BY create_time DESC')
+        results = db.execute('SELECT COUNT(*) AS COUNT, DATE_FORMAT( create_time, \'%Y-%m\') AS create_time FROM `DAILY` GROUP BY DATE_FORMAT( create_time, \'%Y-%m\')  ORDER BY create_time DESC')
         dataList = []
         for row in results:
             dict = {}
@@ -53,9 +55,9 @@ class DailyDao:
     #获取指定月份下的所有文章
     def getArchivesDaily(self,year,month):
         db = DBUtil()
-        search_sql = "SELECT * FROM `daily` WHERE MONTH(create_time)='%s' AND YEAR(create_time)='%s'"%(month,year)
+        search_sql = "SELECT * FROM `DAILY` WHERE MONTH(create_time)='%s' AND YEAR(create_time)='%s'"%(month,year)
         print(search_sql)
-        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM ('+search_sql+') as  d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
+        results = db.execute('SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM ('+search_sql+') as  d INNER JOIN `USER_LOGIN` u ON  d.`user_id`=u.`id`')
         dataList = []
         for row in results:
             dict = {}
@@ -71,7 +73,7 @@ class DailyDao:
     #获取指定分类下的所有文章
     def getCategoryDailyList(self,id):
         db = DBUtil()
-        search_sql = "SELECT * FROM `daily` WHERE category_id='%s' " % id
+        search_sql = "SELECT * FROM `DAILY` WHERE category_id='%s' " % id
         print(search_sql)
         results = db.execute(
             'SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (' + search_sql + ') as  d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`')
@@ -88,10 +90,9 @@ class DailyDao:
         return dataList
     #获取分类列表
     def getCategoryList(self):
-        #SELECT * FROM `category` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
+        #SELECT * FROM `category` c LEFT JOIN `DAILY` d ON c.`ID`=d.`category_id`
         db = DBUtil()
-        results = db.execute(
-            'SELECT * FROM `category`')
+        results = db.execute('SELECT * FROM `CATEGORY`')
         dataList = []
         for row in results:
             dict = {}
@@ -101,7 +102,7 @@ class DailyDao:
         return dataList
     def getDailyById(self,id):
         db = DBUtil()
-        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `daily` WHERE id=%s) AS d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`",id)
+        data = self.db.execute_select("SELECT d.`id`,d.`title`,d.`body`,d.`create_time`,d.`user_id`,u.`username` FROM (SELECT * FROM `DAILY` WHERE id=%s) AS d INNER JOIN `user_login` u ON  d.`user_id`=u.`id`",id)
         dict = {}
         if data:
             row = data[0]
@@ -114,7 +115,7 @@ class DailyDao:
             return dict
     def searchDailyByName(self,username):
         db = DBUtil()
-        data = db.execute_select("SELECT * FROM user_login WHERE USERNAME=%s",username)
+        data = db.execute_select("SELECT * FROM `USER_LOGIN` WHERE USERNAME=%s",username)
         #得到元组，转成字典
         dict = {}
         if data:
@@ -145,7 +146,7 @@ class DailyDao:
         return dataList
     def getDailyIdByUser(self,user_login_id):
         db = DBUtil()
-        sql = "select id from `daily` where user_id=%d"%user_login_id
+        sql = "select id from `DAILY` where user_id=%d"%user_login_id
         print(sql)
         results = db.execute(sql)
 

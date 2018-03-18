@@ -4,6 +4,7 @@ from myblog.mysql.dao.UserInfoDao import UserInfoDao
 from myblog.mysql.dao.CommentDao import CommentDao
 from myblog.mysql.dao.UserDetailsDao import UserDetailsDao
 from myblog.mysql.dao.CategoryDao import CategoryDao
+from myblog.mysql.dao.UserCategoryDao import UserCategoryDao
 from myblog.mysql.dao.UserImgDao import UserImgDao
 from myblog.mysql.dao.UserTag import UserTag
 from myblog.mysql.util.mkdir import MkDir
@@ -193,31 +194,64 @@ def publish(req):
 
 
 def publishEdit(req):
+    user_id = req.session["userid"]
+    username =req.session['username']
     if req.method =="POST":
          title = req.POST.get("title",'') #文章内容
          content = req.POST.get("content",'') #文章内容
          tagArr = req.POST.getlist("tagsArr[]") # 文章标签
          userCategoryList = req.POST.getlist("userCategoryList[]") #文章所属个人分类
+         existUserCategoryList = req.POST.getlist("existUserCategoryList[]")#文章勾选已存在的个人分类
          category = int(req.POST.get("category"))# 文章所属系统分类
          user_id = req.session["userid"]
          # 插入日志内容
          dao = DailyDao()
          create_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-         dao.addDaily(title,content,create_time,category,user_id,modified_time='',click=0,)
-         #获取日志的id
-         # dailyId = dao.get
-         # 存储个人分类
-        # dao =UserTag()
-        #  for tag in  tagArr:
-        #      dao = UserTag()
-        #      dao.addUserTag(user_id,tag)
-
+         modified_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+         daily_id = dao.addDaily(title,content,create_time,category,user_id,modified_time,click=0,)
          # 存储文章标签
+         for tag in tagArr:
+             dao = UserTag()
+             dao.addUserTag(user_id,daily_id,tag)
+
+         # 存储个人分类
+         for category_name in  userCategoryList:
+             print(userCategoryList)
+             dao = UserCategoryDao()
+             flag = dao.getUserCategoryByName(user_id,category_name)
+             if flag:
+                 continue
+             else:
+                 dao = UserCategoryDao()
+                 dao.addUserCategory(user_id, daily_id, category_name)
+         #添加新的博客所属的分类
+         print('----')
+         print(existUserCategoryList)
+         print('1111')
+         for category_name in existUserCategoryList:
+             print(userCategoryList)
+             dao = UserCategoryDao()
+             flag = dao.getUserCategoryByName(user_id, category_name)
+             if flag:
+                 continue
+             else:
+                 dao = UserCategoryDao()
+                 dao.addUserCategory(user_id, daily_id, category_name)
          # 存储文章
-         return render_to_response('topic/publish-edit.html',{})
+         return render_to_response('topic/publish-edit.html',{'1':1})
 
     else:
+
         #查询分类
         category = CategoryDao()
         categoryList = category.getCategoryList()
-        return render_to_response('topic/publish-edit.html',{'categoryList':categoryList,'username': req.session['username']})
+        #查询个人分类
+        user_category = UserCategoryDao()
+        existUserCategory = user_category.getUserCategory(user_id)
+        print(existUserCategory)
+        data ={
+            'categoryList': categoryList,
+            'existUserCategory':existUserCategory,
+            'username': username
+        }
+        return render_to_response('topic/publish-edit.html',data)

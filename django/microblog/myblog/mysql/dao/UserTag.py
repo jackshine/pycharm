@@ -4,10 +4,12 @@ import json
 class UserTag:
     def __init__(self):
         self.db = DBUtil()
-    def addUserTag(self,userid,tag):
+    def addUserTag(self,userid,daily_id,tag):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db = DBUtil()
-        db.execute_insert('insert into `USER_DAILY_TAGS` VALUE(id,%s,%s)',(userid,tag))
+        sql = 'insert into `USER_DAILY_TAGS` VALUE(id,%d,%d,"%s")'%(userid,daily_id,tag)
+        id = db.execute_insert(sql)
+        return id
     def getAllUserInfo(self):
       pass
 

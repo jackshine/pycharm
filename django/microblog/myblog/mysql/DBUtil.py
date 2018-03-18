@@ -2,9 +2,9 @@ import pymysql as mdb
 
 
 class DBUtil:
-    __host = '127.0.0.1'
+    __host = '120.79.140.153'
     __user = 'root'
-    __passwd = ''
+    __passwd = '111111b'
     __db = 'microblog'
     __port = 3306
     __charset = 'utf8'
@@ -46,7 +46,7 @@ class DBUtil:
             raise e
 
     # 插入数据，返回数据主键
-    def execute_insert(self, insert_str, data):
+    def execute_insert(self, insert_str):
         if insert_str is None:
             raise Exception("参数不能为空：sql_str")
         if len(insert_str) == 0:
@@ -55,8 +55,8 @@ class DBUtil:
             conn = self.conn
             cur = conn.cursor()  # 获取一个游标
             print(insert_str)
-            cur.execute(insert_str, data)
-            data = cur.fetchall()
+            cur.execute(insert_str)
+            # data = cur.fetchall()
             # last_id = cur.lastrowid
             last_id = conn.insert_id()
             conn.commit()

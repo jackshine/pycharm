@@ -11,9 +11,9 @@ class CategoryDao:
         db.execute_insert('insert into Category VALUE(id,%s)', (name))
 
     def getCategoryList(self):
-        # SELECT * FROM `category` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
+        # SELECT * FROM `CATEGORY` c LEFT JOIN `daily` d ON c.`ID`=d.`category_id`
         db = DBUtil()
-        results = db.execute('SELECT id,name FROM `category`')
+        results = db.execute('SELECT id,name FROM `CATEGORY`')
         dataList = []
         for row in results:
             dict = {}

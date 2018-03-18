@@ -178,7 +178,12 @@
                         <button id="addCategory">添加新分类</button>
                     </div>
                     <div class="div-clear-float"></div>
-
+                    {% if existUserCategory %}
+                        {% for category in existUserCategory %}
+                        <input type="checkbox" value="{{category.id}}" name="existUserCategory">
+                        <span>{{category.name}}</span>
+                        {% endfor %}
+                    {% endif %}
                 </div>
                 <div class="form-group row form-control-sm">
                     <label class="labTitle col-form-label">博客分类：</label>
@@ -219,15 +224,20 @@
         });
         $('#btnPublish').click(function (e) {
             var tagsList = $("input[name='tags']");
-            var tagsArr = []
+            var tagsArr = [];
             for (var i = 0; i < tagsList.length; i++) {
                 tagsArr.push(tagsList.eq(i).val());
             }
             console.log(tagsArr);
-            var userCategoryList = $("input[name='category']");
-            var userCategoryArr = []
+            var userCategoryList = $("input[name='userCategory']");
+            var userCategoryArr = [];
             for (var i = 0; i < userCategoryList.length; i++) {
                 userCategoryArr.push(userCategoryList.eq(i).val());
+            }
+            var existUserCategoryList = $("input[name='existUserCategory']");
+            var existUserCategoryArr = [];
+            for (var i = 0; i < existUserCategoryList.length; i++) {
+                existUserCategoryArr.push(existUserCategoryList.eq(i).val());
             }
             console.log(userCategoryArr);
             var category = $("#radChl option:selected").val();
@@ -237,6 +247,7 @@
                 'content': editor.html(),
                 'tagsArr':tagsArr,
                 'userCategoryList':userCategoryArr,
+                'existUserCategoryList':existUserCategoryArr,
                 'category':category,
             }, function () {
 
@@ -270,7 +281,7 @@
         var categoryCount = 0;
         $("#addCategory").click(function () {
             categoryCount++;
-            $("#categoryWrapper").append('<div class="div-tags"><input class="input-tags" type="text"name="category" id="category_' + categoryCount + '"/><a href="#" class="removeclass">×</a></div>')
+            $("#categoryWrapper").append('<div class="div-tags"><input class="input-tags" type="text"name="userCategory" id="category_' + categoryCount + '"/><a href="#" class="removeclass">×</a></div>')
         })
         $("body").on('click', '.removeclass', function () {
             $(this).parent('div').remove();
