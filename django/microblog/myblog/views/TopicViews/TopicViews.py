@@ -201,7 +201,7 @@ def publishEdit(req):
          content = req.POST.get("content",'') #文章内容
          tagArr = req.POST.getlist("tagsArr[]") # 文章标签
          userCategoryList = req.POST.getlist("userCategoryList[]") #文章所属个人分类
-         existUserCategoryList = req.POST.getlist("existUserCategoryList[]")#文章勾选已存在的个人分类
+         # existUserCategoryList = req.POST.getlist("existUserCategoryList[]")#文章勾选已存在的个人分类
          category = int(req.POST.get("category"))# 文章所属系统分类
          user_id = req.session["userid"]
          # 插入日志内容
@@ -223,20 +223,22 @@ def publishEdit(req):
                  continue
              else:
                  dao = UserCategoryDao()
-                 dao.addUserCategory(user_id, daily_id, category_name)
-         #添加新的博客所属的分类
-         print('----')
-         print(existUserCategoryList)
-         print('1111')
-         for category_name in existUserCategoryList:
-             print(userCategoryList)
-             dao = UserCategoryDao()
-             flag = dao.getUserCategoryByName(user_id, category_name)
-             if flag:
-                 continue
-             else:
+                 category_id = dao.addUserCategory(user_id, daily_id, category_name,isDelete=0)
                  dao = UserCategoryDao()
-                 dao.addUserCategory(user_id, daily_id, category_name)
+                 dao.addUserDailyDetail(category_id,daily_id)
+         #添加新的博客所属的分类
+         # print('----')
+         # print(existUserCategoryList)
+         # print('1111')
+         # for category_name in existUserCategoryList:
+         #     print(userCategoryList)
+         #     dao = UserCategoryDao()
+         #     flag = dao.getUserCategoryByName(user_id, category_name)
+         #     if flag:
+         #         continue
+         #     else:
+         #         dao = UserCategoryDao()
+         #         dao.addUserCategory(user_id, daily_id, category_name)
          # 存储文章
          return render_to_response('topic/publish-edit.html',{'1':1})
 
