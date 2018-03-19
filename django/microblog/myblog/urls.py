@@ -25,6 +25,7 @@ urlpatterns = [
 
     url(r'^publish/$', TopicViews.publish, name='publish'),
     url(r'^publishEdit/$', TopicViews.publishEdit, name='publishEdit'),
+    url(r'^publishSuccess/$', TopicViews.publishSuccess, name='publishSuccess'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 
 ]

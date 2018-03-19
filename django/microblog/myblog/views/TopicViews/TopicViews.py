@@ -209,7 +209,7 @@ def publishEdit(req):
          dao = DailyDao()
          create_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
          modified_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-         daily_id = dao.addDaily(title,content,create_time,category,user_id,modified_time,click=0,)
+         daily_id = dao.addDaily(title,content,create_time,category,user_id,modified_time,click=0)
          # 存储文章标签
          for tag in tagArr:
              dao = UserTag()
@@ -235,16 +235,15 @@ def publishEdit(req):
              dao = UserDailyCategoryDao()
              # 判断该博客的分类是否已添加到USER_DAILY_DETAILS中，如果没有添加，则添加，如果已经添加，则不处理
              flag = dao.getUserDailyDetailById(category_id, daily_id)
-             print('--')
-             print(flag)
-             print('--')
              if flag:
                  continue
              else:
                  dao = UserDailyCategoryDao()
                  dao.addUserDailyDetail(category_id, daily_id)
-         # 存储文章
-         return render_to_response('topic/publish-edit.html',{'1':1})
+         msg = {
+             'status':200
+         }
+         return HttpResponse(json.dumps(msg), content_type="application/json")
 
     else:
 
@@ -254,10 +253,15 @@ def publishEdit(req):
         #查询个人分类
         user_category = UserCategoryDao()
         existUserCategory = user_category.getUserCategory(user_id)
-        print(existUserCategory)
         data ={
             'categoryList': categoryList,
             'existUserCategory':existUserCategory,
             'username': username
         }
         return render_to_response('topic/publish-edit.html',data)
+
+def publishSuccess(req):
+    if req.method =="POST":
+        pass
+    else:
+        return render_to_response('topic/publish-success.html')

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <script src="/static/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
+
+</head>
+
+<body>
+<div style="width:600px;margin-left:auto;margin-right:auto;margin-top: 10%">
+    <div class="text-center title">222</div>
+    <div class="text-center status-box">
+        <i class="icon-success-font c-green"></i>文章发布成功
+    </div>
+    <p class="text-center zhaiyao">文章摘要由系统生成</p>
+    <div class="opt-box text-center">
+        <a href="{% url 'myblog:publishEdit' %}">写新文章</a>
+        <a  href="{% url 'myblog:publish' %}">管理博文</a>
+        <a href="{% url 'myblog:sign_up' %}">查看文章</a>
+    </div>
+</div>
+
+
+</body>
+</html>

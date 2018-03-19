@@ -188,7 +188,7 @@
                 <div class="form-group row form-control-sm">
                     <label class="labTitle col-form-label">博客分类：</label>
                     <div style="display: inline-block">
-                        <select class="droBlogType" id="radChl" name="radChl">'
+                        <select  id="blogCategory" name="blogCategory">'
                             <option value="0">选择分类</option>
                             {% for c in categoryList%}
                             <option value="{{c.id}}" name="category">{{c.name}}</option>
@@ -223,6 +223,22 @@
 
         });
         $('#btnPublish').click(function (e) {
+            //标题、文章内容、博客分类是必选
+            // 文章标签、个人分类是可选
+//            if($("#txtTitle").val().length==0){
+//                alert('标题不能为空');
+//                return false;
+//            }
+//            if( editor.html().length==0){
+//                 alert('内容不能为空');
+//                return false;
+//            }
+            var category = $("#blogCategory option:selected").val();
+//            console.log(category);
+//            if(category==0){
+//                alert('选择博客分类');
+//                return false;
+//            }
             var tagsList = $("input[name='tags']");
             var tagsArr = [];
             for (var i = 0; i < tagsList.length; i++) {
@@ -241,8 +257,8 @@
                 existUserCategoryArr.push(existUserCategoryList.eq(i).val());
             }
             console.log(existUserCategoryArr);
-            var category = $("#radChl option:selected").val();
-            console.log(category);
+
+
             $.post("/myblog/publishEdit/", {
                 'title':$("#txtTitle").val(),
                 'content': editor.html(),
@@ -250,8 +266,11 @@
                 'userCategoryList':userCategoryArr,
                 'existUserCategoryList':existUserCategoryArr,
                 'category':category,
-            }, function () {
-
+            }, function (data) {
+                console.log(data)
+                    if(data.status==200){
+                        window.location.href='/myblog/publishSuccess'
+                    }
             })
 
         });
