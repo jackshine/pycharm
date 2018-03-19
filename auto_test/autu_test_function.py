@@ -4,7 +4,7 @@ import time
 
 
 def getHandler():
-    return webdriver.Firefox()
+    return webdriver.Ie()
 
 
 def openUrl(b, url):
@@ -32,21 +32,125 @@ def sendInfo(acount_list, Ele_list):
     Ele_list[len(list_key)].click()
 
 
-def login_test(acount_list, ele_id_dict):
-    b = getHandler()
-    print(b)
-    openUrl(b, acount_list['url'])
-    Ele_list = findEle(b,ele_id_dict)
-    sendInfo(acount_list, Ele_list)
+# 办理入住
+def checkIn(b):
+    # 选择方格
+    select_square_Ele = b.find_element_by_xpath("//*[@id='orderListBody']/tr[1]/td[4]/div")
+    select_square_Ele.click()
+    time.sleep(6)
+    # 输入姓名
+    order_name_ele = b.find_element_by_xpath("//*[@id='addOrderRoom']/table/tbody/tr[2]/td[1]/input")
+    order_name_ele.send_keys("lin")
+    # 点击“提交订单”
+    submit_Ele = b.find_element_by_xpath('//*[@id="submitBook"]')
+    submit_Ele.click()
+    alt = b.switch_to_alert()
+    time.sleep(1)
+    alt.accept()
+    time.sleep(1)
+    # 点击“确认办理入住”
+    checkIn_Ele = b.find_element_by_xpath('//*[@id="initCheckIn"]')
+    checkIn_Ele.click()
+    time.sleep(1)
+    confirm_Ele = b.find_element_by_xpath('//*[@id="checkInConfirm"]')
+    confirm_Ele.click()
+    time.sleep(1)
+    # 点击“弹出框”
+    continue_Alert = b.find_element_by_xpath('//*[@id="confirmEnterBtnL"]')
+    continue_Alert.click()
+    time.sleep(1)
+    issue_Ele = b.find_element_by_xpath('//*[@id="orderInitContent"]/div[2]/div[1]/div[3]')
+    issue_Ele.click()
+    time.sleep(2)
+    # 签发RF卡
+    issue_button = b.find_element_by_xpath('//*[@id="orderRfContainer"]/div/div[2]/div[3]/div[1]')
+    issue_button.click()
+    time.sleep(2)
+    # 点击X按钮
+    cancel_Ele = b.find_element_by_xpath('//*[@id="orderQRContent"]/div[1]/button')
+    cancel_Ele.click()
+
+
+def cancelOrder(b):
     time.sleep(5)
-     # .findElement(By.xpath("/html/body/div/input[@value='查询']"))
-    name_Ele = b.find_element_by_xpath("//*[@id='orderListBody']/tr[1]/td[4]/div")
-    name_Ele.click()
+    select_square_Ele = b.find_element_by_xpath("//*[@id='orderListBody']/tr[1]/td[4]/div")
+    select_square_Ele.click()
+    time.sleep(5)
+    # 点击“取消订单”
+    cancel_order_Ele = b.find_element_by_xpath('//*[@id="initCancel"]')
+    cancel_order_Ele.click()
+    confirm_cancel_Ele = b.find_element_by_xpath('//*[@id="cancelOrderConfirm"]')
+    confirm_cancel_Ele.click()
+
+# 直接入住
+def directCheckIn(b):
+    time.sleep(5)
+    select_square_Ele = b.find_element_by_xpath("//*[@id='orderListBody']/tr[1]/td[4]/div")
+    select_square_Ele.click()
+    time.sleep(4)
+    order_name_ele = b.find_element_by_xpath("//*[@id='addOrderRoom']/table/tbody/tr[2]/td[1]/input")
+    order_name_ele.send_keys("lin")
+    direct_checkin_ele = b.find_element_by_xpath('//*[@id="submitCheckIn"]')
+    direct_checkin_ele.click()
+    alt = b.switch_to_alert()
+    alt.accept()
+    # 点击“继续”
+    continue_Ele = b.find_element_by_xpath('//*[@id="confirmEnterBtnL"]')
+    continue_Ele.click()
+    time.sleep(2)
+    # 点击“办理退房”
+    checkout_Ele = b.find_element_by_xpath('//*[@id="initCheckOut"]')
+    checkout_Ele.click()
+    # 确认办理
+    confirm_Ele = b.find_element_by_xpath('//*[@id="checkoutConfirm"]')
+    confirm_Ele.click()
+
+
+def loginQRInn(b, acount_list, ele_id_dict):
+    time.sleep(5)
+    openUrl(b, acount_list['url'])
+    Ele_list = findEle(b, ele_id_dict)
+    sendInfo(acount_list, Ele_list)
+
+def loginOut(b):
+    time.sleep(5)
+    # avatar_Ele = b.find_element_by_xpath('//*[@id="adminId"]')
+    # avatar_Ele.click()
+    # time.sleep(5)
+    # check_out_Ele = b.find_element_by_xpath('//*[@id="doc-header"]/div[2]/ul[4]')
+    # check_out_Ele.click()
+    url ="http://115.29.142.212:8010/logout.html"
+    openUrl(b,url)
+
+
+def changeHotel(b):
+    # 切换客栈
+    time.sleep(10)
+    change_Hotel_Ele = b.find_element_by_xpath('//*[@id="doc-header-brand"]')
+    # 点击客栈
+    change_Hotel_Ele.click()
+    time.sleep(4)
+    location_Hotle_Ele = b.find_element_by_xpath('//*[@id="doc-header-brand-dropdown"]/div/li[4]/a')
+    location_Hotle_Ele.click()
+    time.sleep(2)
+
+
+def controller(acount_list, ele_id_dict):
+    b = getHandler()
+    openUrl(b, acount_list['url'])
+    # loginQRInn(b,acount_list, ele_id_dict)
+    # changeHotel(b)
+    # checkIn(b)
+    # cancelOrder(b)
+    # directCheckIn(b)
+    loginOut(b)
+
 
 if __name__ == "__main__":
-    account_name = '13480251015'
+    account_name = '18926368199'
     account_pwd = "111111b"
     url = "http://115.29.142.212:8010/login.html"
     acount_list = {"account_name": account_name, "account_pwd": account_pwd, "url": url}
     ele_id_dict = {"mobile_id": "requestUsername", "pwd_id": "requestPassword", "login_id": "requestSubmit"}
-    login_test(acount_list, ele_id_dict)
+    # login_test(acount_list, ele_id_dict)
+    controller(acount_list, ele_id_dict)
