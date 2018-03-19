@@ -5,6 +5,7 @@ from myblog.mysql.dao.CommentDao import CommentDao
 from myblog.mysql.dao.UserDetailsDao import UserDetailsDao
 from myblog.mysql.dao.CategoryDao import CategoryDao
 from myblog.mysql.dao.UserCategoryDao import UserCategoryDao
+from myblog.mysql.dao.UserDailyCategoryDao import UserDailyCategoryDao
 from myblog.mysql.dao.UserImgDao import UserImgDao
 from myblog.mysql.dao.UserTag import UserTag
 from myblog.mysql.util.mkdir import MkDir
@@ -201,7 +202,7 @@ def publishEdit(req):
          content = req.POST.get("content",'') #文章内容
          tagArr = req.POST.getlist("tagsArr[]") # 文章标签
          userCategoryList = req.POST.getlist("userCategoryList[]") #文章所属个人分类
-         # existUserCategoryList = req.POST.getlist("existUserCategoryList[]")#文章勾选已存在的个人分类
+         existUserCategoryList = req.POST.getlist("existUserCategoryList[]")#文章勾选已存在的个人分类
          category = int(req.POST.get("category"))# 文章所属系统分类
          user_id = req.session["userid"]
          # 插入日志内容
@@ -223,22 +224,25 @@ def publishEdit(req):
                  continue
              else:
                  dao = UserCategoryDao()
-                 category_id = dao.addUserCategory(user_id, daily_id, category_name,isDelete=0)
-                 dao = UserCategoryDao()
+                 category_id = dao.addUserCategory(user_id, category_name,0)
+                 dao = UserDailyCategoryDao()
                  dao.addUserDailyDetail(category_id,daily_id)
+
          #添加新的博客所属的分类
-         # print('----')
-         # print(existUserCategoryList)
-         # print('1111')
-         # for category_name in existUserCategoryList:
-         #     print(userCategoryList)
-         #     dao = UserCategoryDao()
-         #     flag = dao.getUserCategoryByName(user_id, category_name)
-         #     if flag:
-         #         continue
-         #     else:
-         #         dao = UserCategoryDao()
-         #         dao.addUserCategory(user_id, daily_id, category_name)
+         for category_id in existUserCategoryList:
+             category_id = int(category_id)
+             print(userCategoryList)
+             dao = UserDailyCategoryDao()
+             # 判断该博客的分类是否已添加到USER_DAILY_DETAILS中，如果没有添加，则添加，如果已经添加，则不处理
+             flag = dao.getUserDailyDetailById(category_id, daily_id)
+             print('--')
+             print(flag)
+             print('--')
+             if flag:
+                 continue
+             else:
+                 dao = UserDailyCategoryDao()
+                 dao.addUserDailyDetail(category_id, daily_id)
          # 存储文章
          return render_to_response('topic/publish-edit.html',{'1':1})
 

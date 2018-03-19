@@ -4,10 +4,10 @@ import json
 class UserCategoryDao:
     def __init__(self):
         self.db = DBUtil()
-    def addUserCategory(self,user_id,daily_id,category_name,isDelete):
+    def addUserCategory(self,user_id,category_name,isDelete):
         #USERID INT PRIMARY KEY,USERNAME VARCHAR(20),PASSWORD VARCHAR(32),REGTIME DATETIME,DELFLAG INT
         db = DBUtil()
-        sql = 'insert into `USER_CATEGORY` VALUE(id,%d,"%s")'%(user_id,daily_id,category_name,isDelete)
+        sql = 'insert into `USER_CATEGORY` VALUE(id,%d,"%s",%d)'%(user_id,category_name,isDelete)
         id = db.execute_insert(sql)
         return id
 

@@ -234,12 +234,13 @@
             for (var i = 0; i < userCategoryList.length; i++) {
                 userCategoryArr.push(userCategoryList.eq(i).val());
             }
-            var existUserCategoryList = $("input[name='existUserCategory']");
+            // 只需传category_id
+            var existUserCategoryList = $("input[name='existUserCategory']:checked");
             var existUserCategoryArr = [];
             for (var i = 0; i < existUserCategoryList.length; i++) {
                 existUserCategoryArr.push(existUserCategoryList.eq(i).val());
             }
-            console.log(userCategoryArr);
+            console.log(existUserCategoryArr);
             var category = $("#radChl option:selected").val();
             console.log(category);
             $.post("/myblog/publishEdit/", {
