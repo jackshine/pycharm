@@ -138,11 +138,11 @@ def changeHotel(b):
 def controller(acount_list, ele_id_dict):
     b = getHandler()
     openUrl(b, acount_list['url'])
-    loginQRInn(b,acount_list, ele_id_dict)
-    changeHotel(b)
-    checkIn(b)
-    cancelOrder(b)
-    directCheckIn(b)
+    # loginQRInn(b,acount_list, ele_id_dict)
+    # changeHotel(b)
+    # checkIn(b)
+    # cancelOrder(b)
+    # directCheckIn(b)
     loginOut(b)
 
 
