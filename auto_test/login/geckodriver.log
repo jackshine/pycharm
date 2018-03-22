@@ -1,0 +1,398 @@
+1521705451223	geckodriver	INFO	geckodriver 0.19.0
+1521705451229	geckodriver	INFO	Listening on 127.0.0.1:26712
+1521705453311	mozrunner::runner	INFO	Running command: "d:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.Y8BQzcoQBCnj"
+1521705454092	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521705454818	Marionette	INFO	Enabled via --marionette
+1521705457432	Marionette	INFO	Listening on port 26718
+1521705457456	Marionette	INFO	Listening on port 26718
+1521705457465	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521705457499	Marionette	DEBUG	loaded listener.js
+1521705457555	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521705457700	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521705457700	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521705458008	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705458298	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705461756	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705469957	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705470240	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705470241	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705470353	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705470355	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1521705470356	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1521705470356	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1521705470383	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+[GPU 12696] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10880] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2472] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2472] WARNING: pipe error: 109: file c:/builds
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+nState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521705476445	Marionette	INFO	Enabled via --marionette
+1521705479249	Marionette	INFO	Listening on port 26790
+1521705479256	Marionette	INFO	Listening on port 26790
+1521705479622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521705479654	Marionette	DEBUG	loaded listener.js
+1521705479681	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521705479824	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521705479824	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521705480227	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705480554	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705483973	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705487273	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705487518	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705487518	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705488195	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705488659	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705489037	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705492101	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705492356	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705492357	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705492683	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705492999	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705493260	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705493649	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705493649	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705494326	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705494350	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705496408	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705497194	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/v_new_order.mp3"
+1521705498871	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705506903	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705507100	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705507102	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705507226	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705507229	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1521705507232	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1521705507232	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483663"
+1521705507261	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ng on 127.0.0.1:26903
+1521705512374	mozrunner::runner	INFO	Running command: "d:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.9XI0ZwKiN45Q"
+1521705513183	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521705513999	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: RecentWindow.getMostRecentBrowserWindow(...) is null
+[GPU 14140] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1521705517219	Marionette	INFO	Listening on port 26909
+1521705517233	Marionette	INFO	Listening on port 26909
+1521705517653	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521705517685	Marionette	DEBUG	loaded listener.js
+1521705517700	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521705517846	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521705517846	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521705518182	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705518328	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483651"
+1521705518567	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1521705518568	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1521705545270	geckodriver	INFO	geckodriver 0.19.0
+1521705545276	geckodriver	INFO	Listening on 127.0.0.1:26937
+1521705547312	mozrunner::runner	INFO	Running command: "d:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.nucwQcwdrP9w"
+1521705548097	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521705548724	Marionette	INFO	Enabled via --marionette
+1521705551283	Marionette	INFO	Listening on port 26947
+1521705551302	Marionette	INFO	Listening on port 26947
+1521705551456	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521705551487	Marionette	DEBUG	loaded listener.js
+1521705551501	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521705551648	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521705551649	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521705552152	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705552429	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705555827	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705564133	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705564329	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705564330	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705564456	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705564460	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1521705564460	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1521705564460	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1521705564482	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705567861	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705570925	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705571067	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705571068	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705571401	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705571660	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705572023	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705575067	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705575209	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705575209	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705575540	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705575791	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705576068	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705576375	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705576375	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705576510	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705576511	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/v_new_order.mp3"
+1521705576514	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705576765	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705579630	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1521705582222	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705590250	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705590480	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705590482	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705590619	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705590622	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483667"
+1521705590622	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483669"
+1521705590622	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483671"
+1521705590653	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705594019	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705597054	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705597194	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705597195	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705597504	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705597705	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705644725	geckodriver	INFO	geckodriver 0.19.0
+1521705644731	geckodriver	INFO	Listening on 127.0.0.1:27151
+1521705646799	mozrunner::runner	INFO	Running command: "d:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.vRx9JwQtocn8"
+1521705647122	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521705647734	Marionette	INFO	Enabled via --marionette
+1521705650501	Marionette	INFO	Listening on port 27158
+1521705650506	Marionette	INFO	Listening on port 27158
+1521705650948	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521705651007	Marionette	DEBUG	loaded listener.js
+1521705651097	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521705651270	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521705651270	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521705651614	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705651895	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705655359	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705663650	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705663824	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705663825	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705663955	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705663960	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1521705663960	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1521705663960	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1521705663996	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705667396	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705670460	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705670606	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705670607	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705670914	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705671156	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705671539	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705674596	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705674740	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705674743	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705675065	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705675321	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705675674	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705675969	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705675970	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705676088	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705676089	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705676349	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705676382	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/v_new_order.mp3"
+1521705676558	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705684593	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705684771	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705684774	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705684903	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705684907	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483671"
+1521705684908	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483667"
+1521705684908	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483669"
+1521705684935	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705688307	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705691351	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705691503	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705691506	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705691834	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705692023	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705816978	geckodriver	INFO	geckodriver 0.19.0
+1521705816983	geckodriver	INFO	Listening on 127.0.0.1:27362
+1521705819040	mozrunner::runner	INFO	Running command: "d:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.W000nWu1HkxA"
+1521705819302	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521705819878	Marionette	INFO	Enabled via --marionette
+[GPU 10292] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4764] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4764] WARNING: pipe error: 109: file c:/b1521705822602	Marionette	INFO	Listening on port 27369
+1521705822606	Marionette	INFO	Listening on port 27369
+1521705822683	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521705822715	Marionette	DEBUG	loaded listener.js
+1521705822738	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521705822888	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521705822888	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521705823237	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705823607	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705827037	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705835220	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705835421	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705835423	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705835555	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705835558	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967302"
+1521705835559	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967304"
+1521705835559	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967306"
+1521705835587	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705839052	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705842110	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705842795	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705842799	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705844093	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705845395	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705845782	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705848834	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705848985	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705848987	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705849335	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705849594	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705849892	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705850211	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705850211	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705850335	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705850339	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521705850612	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705850643	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/v_new_order.mp3"
+1521705850817	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705858845	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705859022	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705859024	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521705859148	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705859151	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967316"
+1521705859151	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967312"
+1521705859151	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967314"
+1521705859204	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521705862576	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521705865619	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521705865763	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521705865765	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521705866082	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521705866292	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706309913	geckodriver	INFO	geckodriver 0.19.0
+1521706309919	geckodriver	INFO	Listening on 127.0.0.1:27654
+1521706311990	mozrunner::runner	INFO	Running command: "d:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.S98MTtJWfVeq"
+1521706312444	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521706313089	Marionette	INFO	Enabled via --marionette
+[GPU 14204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1521706316548	Marionette	INFO	Listening on port 27660
+1521706316555	Marionette	INFO	Listening on port 27660
+1521706317236	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521706317266	Marionette	DEBUG	loaded listener.js
+1521706317288	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521706317433	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521706317433	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521706317759	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706317968	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706321402	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521706329652	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706329846	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706329848	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706330275	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1521706330275	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483659"
+1521706330276	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1521706330337	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706330360	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706333772	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521706336855	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521706337000	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521706337008	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521706337332	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706337583	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706337957	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521706341001	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521706341148	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521706341149	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521706341465	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706341739	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706342124	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521706345161	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521706345304	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521706345315	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521706345689	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706345939	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706346224	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521706346553	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521706346555	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521706346674	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521706346676	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521706346939	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706347275	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/v_new_order.mp3"
+1521706347287	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706355307	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706355484	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706355486	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521706355608	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706355612	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483672"
+1521706355612	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483668"
+1521706355612	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483670"
+1521706355642	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521706359036	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521706362086	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521706362233	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521706362235	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521706362555	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521706362750	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+[GPU 14204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 13204] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_wi1521707668131	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///d:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1521707668839	Marionette	INFO	Enabled via --marionette
+[GPU 15164] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15308] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15308] WARNING: pipe error: 109: f1521707671743	Marionette	INFO	Listening on port 28380
+1521707671771	Marionette	INFO	Listening on port 28380
+1521707672459	Marionette	WARN	TLS certificate errors will be ignored for this session
+1521707672493	Marionette	DEBUG	loaded listener.js
+1521707672521	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1521707672668	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1521707672668	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1521707674050	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707674244	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521707677643	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521707686433	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707686603	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707686604	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707686725	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707686728	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967302"
+1521707686729	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967304"
+1521707686729	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967306"
+1521707686761	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521707690142	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521707693177	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521707693321	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521707693324	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521707693656	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707693861	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521707694228	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521707697268	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521707697417	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521707697420	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521707697741	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707697985	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521707698359	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521707701398	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521707701543	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521707701544	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521707701865	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707702109	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521707702403	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521707702732	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521707702733	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521707702838	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521707702841	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/warn.mp3"
+1521707703292	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707703417	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Public/uclbrt/audio/v_new_order.mp3"
+1521707703454	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707711475	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707711650	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707711651	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/Home/BookPage/index.html"
+1521707711776	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707711782	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967317"
+1521707711782	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967313"
+1521707711782	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967315"
+1521707711813	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+1521707715168	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1521707718203	Marionette	DEBUG	Received DOM event "beforeunload" for "http://115.29.142.212:8010/login.html"
+1521707718351	Marionette	DEBUG	Received DOM event "pagehide" for "http://115.29.142.212:8010/login.html"
+1521707718355	Marionette	DEBUG	Received DOM event "unload" for "http://115.29.142.212:8010/login.html"
+1521707718684	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://115.29.142.212:8010/login.html"
+1521707718884	Marionette	DEBUG	Received DOM event "pageshow" for "http://115.29.142.212:8010/login.html"
+[GPU 15164] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15164] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 14880] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14488] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14488] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15164] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-000
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

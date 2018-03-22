@@ -1,0 +1,3 @@
+mobile_id=requestUsername
+pwd_id=requestPassword
+login_id=requestSubmit

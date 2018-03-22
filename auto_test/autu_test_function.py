@@ -33,7 +33,7 @@ def sendInfo(acount_list, Ele_list):
 
 
 # 办理入住
-def checkIn(b):
+def issueCard(b):
     # 选择方格
     select_square_Ele = b.find_element_by_xpath("//*[@id='orderListBody']/tr[1]/td[4]/div")
     select_square_Ele.click()
@@ -82,45 +82,6 @@ def cancelOrder(b):
     confirm_cancel_Ele = b.find_element_by_xpath('//*[@id="cancelOrderConfirm"]')
     confirm_cancel_Ele.click()
 
-# 直接入住
-def directCheckIn(b):
-    time.sleep(5)
-    select_square_Ele = b.find_element_by_xpath("//*[@id='orderListBody']/tr[1]/td[4]/div")
-    select_square_Ele.click()
-    time.sleep(4)
-    order_name_ele = b.find_element_by_xpath("//*[@id='addOrderRoom']/table/tbody/tr[2]/td[1]/input")
-    order_name_ele.send_keys("lin")
-    direct_checkin_ele = b.find_element_by_xpath('//*[@id="submitCheckIn"]')
-    direct_checkin_ele.click()
-    alt = b.switch_to_alert()
-    alt.accept()
-    # 点击“继续”
-    continue_Ele = b.find_element_by_xpath('//*[@id="confirmEnterBtnL"]')
-    continue_Ele.click()
-    time.sleep(2)
-    # 点击“办理退房”
-    checkout_Ele = b.find_element_by_xpath('//*[@id="initCheckOut"]')
-    checkout_Ele.click()
-    # 确认办理
-    confirm_Ele = b.find_element_by_xpath('//*[@id="checkoutConfirm"]')
-    confirm_Ele.click()
-
-
-def loginQRInn(b, acount_list, ele_id_dict):
-    time.sleep(5)
-    openUrl(b, acount_list['url'])
-    Ele_list = findEle(b, ele_id_dict)
-    sendInfo(acount_list, Ele_list)
-
-def loginOut(b):
-    time.sleep(5)
-    # avatar_Ele = b.find_element_by_xpath('//*[@id="adminId"]')
-    # avatar_Ele.click()
-    # time.sleep(5)
-    # check_out_Ele = b.find_element_by_xpath('//*[@id="doc-header"]/div[2]/ul[4]')
-    # check_out_Ele.click()
-    url ="http://115.29.142.212:8010/logout.html"
-    openUrl(b,url)
 
 
 def changeHotel(b):
@@ -138,12 +99,8 @@ def changeHotel(b):
 def controller(acount_list, ele_id_dict):
     b = getHandler()
     openUrl(b, acount_list['url'])
-    loginQRInn(b,acount_list, ele_id_dict)
     changeHotel(b)
-    checkIn(b)
-    cancelOrder(b)
-    directCheckIn(b)
-    loginOut(b)
+    issueCard(b)
 
 
 if __name__ == "__main__":
