@@ -65,7 +65,7 @@ def issueCard(b):
     # 签发RF卡
     issue_button = b.find_element_by_xpath('//*[@id="orderRfContainer"]/div/div[2]/div[3]/div[1]')
     issue_button.click()
-    time.sleep(2)
+    time.sleep(5)
     # 点击X按钮
     cancel_Ele = b.find_element_by_xpath('//*[@id="orderQRContent"]/div[1]/button')
     cancel_Ele.click()
