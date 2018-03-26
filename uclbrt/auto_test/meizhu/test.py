@@ -1,17 +1,24 @@
-from openpyxl import load_workbook
-from openpyxl import Workbook
-from openpyxl.writer.excel import ExcelWriter
-
-def write_excel():
-    ex=load_workbook(filename=r'./case.xlsx')
-    print('open excel success!')
-    ws = ex.get_sheet_by_name("Sheet1")
-    print('open sheet1 success!')
-    ws.cell(row=4, column=2).value = 'hupi2222'
-    print('write values success!')
-    ex.save(filename='case.xlsx')
-    print('save success!')
+def get_list_min_num(build_num_list):
+    temp = build_num_list[0]
+    for i in build_num_list:
+        if temp > i:
+            temp = i
+    return temp
 
 
-if __name__ == '__main__':
-    write_excel()
+def generate_num(min_num, build_num_list):
+    # 查找楼栋编号的最小值
+    num = min_num + 1
+    if num not in build_num_list:
+        return num
+    elif num == 255:
+        raise '超出范围'
+    else:
+        return generate_num(num, build_num_list)
+
+
+if __name__ == "__main__":
+    list = [255,254,253]
+    temp = get_list_min_num(list)
+    num = generate_num(temp,list)
+    print(num)

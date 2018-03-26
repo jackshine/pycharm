@@ -93,24 +93,22 @@ class test_building_get(MyTest):  # 把这个接口封装一个类，下面的�
             return temp
 
         def generate_num(min_num, build_num_list):
+
             # 查找楼栋编号的最小值
             num = min_num + 1
-            if num  in build_num_list:
-                generate_num(num,build_num_list)
-            elif num == 255:
-                raise "楼栋号超过了255"
-            else:
+            if num not in build_num_list:
                 return num
-
-
-
+            elif num == 255:
+                raise '超出范围'
+            else:
+                return generate_num(num, build_num_list)
 
         token_with_id = login_token_id()
         communtity_id = get_communtity_id(token_with_id)
         build_id_list = get_building_id_list(token_with_id, communtity_id)
         build_num_list = get_building_num(token_with_id, communtity_id, build_id_list)
         min_num = get_list_min_num(build_num_list)
-        print(build_num_list)
+        num = generate_num(min_num,build_num_list)
 
 
 if __name__ == "__main__":
